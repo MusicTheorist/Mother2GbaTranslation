@@ -1737,7 +1737,7 @@ m2_font_main:
 m2_font_saturn:
 .incbin "data/m2-font-saturn.bin"
 m2_font_big:
-.incbin "data/bigfont.bin"
+.incbin "data/m2-font-big.bin"
 m2_font_battle:
 .incbin "data/m2-font-battle.bin"
 m2_font_tiny:
@@ -1765,7 +1765,7 @@ m2_widths_main:
 m2_widths_saturn:
 .incbin "data/m2-widths-saturn.bin"
 m2_widths_big:
-.incbin "data/largewidths.bin"
+.incbin "data/m2-widths-big.bin"
 m2_widths_battle:
 .incbin "data/m2-widths-battle.bin"
 m2_widths_tiny:
