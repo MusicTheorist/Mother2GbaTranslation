@@ -46,6 +46,12 @@ mov     r2,1
 mov     r3,6
 
 //---------------------------------------------------------
+// 00270 hacks (intro screen)
+//---------------------------------------------------------
+
+.org 0x800027A :: bl m12_intro_screen
+
+//---------------------------------------------------------
 // C0A5C hacks (status window)
 //---------------------------------------------------------
 
@@ -1817,6 +1823,16 @@ optimized_byte_4bpp_to_1bpp_table:
 m12_cartridge_palettes_dimmed:
 .incbin "data/m12-cartridge-palettes-dimmed.bin"
 
+.org 0x8FEE000
+disclaimer_palette:
+.incbin "data/intro-screen-pal.bin"
+.align 4
+disclaimer_graphics:
+.incbin "data/intro-screen-gfx.bin"
+.align 4
+disclaimer_map:
+.incbin "data/intro-screen-map.bin"
+
 
 //==============================================================================
 // Existing subroutines/data
@@ -1897,6 +1913,8 @@ m12_cartridge_palettes_dimmed:
 // Code files
 //==============================================================================
 
+.include "m12-gfx.asm"
+
 .org 0x80FCE6C
 .include "syscalls.asm"
 .include "m2-vwf.asm"
@@ -1905,5 +1923,22 @@ m12_cartridge_palettes_dimmed:
 .include "m2-customcodes.asm"
 .include "m2-compiled.asm"
 .include "m2-flyover.asm"
+.include "m12-intro.asm"
+
+//==============================================================================
+// ROM Header Stuff
+//==============================================================================
+
+//Changes game title (12 characters) to EARTHBOUNTCG
+.org 0x80000A0 :: .byte 0x45,0x41,0x52,0x54,0x48,0x42,0x4F,0x55,0x4E,0x54,0x43,0x47
+
+//Changes game code (4 characters) from A2UJ to A2UU
+.org 0x80000AC :: .byte 0x41,0x32,0x55,0x55
+
+//???
+.org 0x80000B4 :: .byte 0x80
+
+//Complement check
+.org 0x80000BD :: .byte 0xCD
 
 .close
