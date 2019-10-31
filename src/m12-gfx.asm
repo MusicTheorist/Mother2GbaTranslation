@@ -44,19 +44,15 @@
 ////////Audio///////
 ////////////////////
 //Sound Effects
-//.org 0x810c2c0 :: .byte 0xC8,0x66,0x2B //Repoint spanking noise (Unconfirmed perfect)
 .org 0x810BF50 :: .byte 0x88,0x66,0xcD,0x08,0x01 //Repoint Attack noise
 .org 0x8CD6670 :: .incbin "data/m2-snd-attack.bin" //attac noise
 
-.org 0x810BF58 :: .byte 0x24,0x1D,0xC0//Repoint Enemy attack noise
+.org 0x810BF58 :: .byte 0x24,0x1D,0xC0 //Repoint Enemy attack noise
 .org 0x8C01D10 :: .incbin "data/m2-snd-enemyattack.bin" //Enemy attac noise
 
 //Music
 .org 0x810B830 :: .byte 0xCC,0x6C,0xCD,0x08,0x00 //Repoint Weird opponent
 .org 0x8CD6720 :: .incbin "data/m2-snd-weird.bin" //Weird Opponent (almost)
 
-.org 0x810b778 :: .byte 0xDC,0x6D,0xCD,0x08,0x00 //Repoint Giygas' intimidation
-.org 0x8cd6d10 :: .incbin "data/m2-snd-giygas1.bin" //Giygas' intimidation
-
-//Fix Title menu skipping (only for EB title hack)
-//.org 0x810bb90 :: .byte 0x48,0x06,0x2B
+.org 0x810BAF8 :: .byte 0xC8,0x9C,0xCD,0x08,0x00 //Repoint Giygas is Wounded!
+.org 0x8CD84e4 :: .incbin "data/m2-snd-giygas2.bin" //Giygas is Wounded!
