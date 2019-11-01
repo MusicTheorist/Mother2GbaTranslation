@@ -53,6 +53,3 @@
 //Music
 .org 0x810B830 :: .byte 0xCC,0x6C,0xCD,0x08,0x00 //Repoint Weird opponent
 .org 0x8CD6720 :: .incbin "data/m2-snd-weird.bin" //Weird Opponent (almost)
-
-.org 0x810BAF8 :: .byte 0xC8,0x9C,0xCD,0x08,0x00 //Repoint Giygas is Wounded!
-.org 0x8CD84e4 :: .incbin "data/m2-snd-giygas2.bin" //Giygas is Wounded!
