@@ -1,36 +1,36 @@
 	.include "MPlayDef.s"
 
-	.equ	song185wip_grp, voicegroup000
-	.equ	song185wip_pri, 0
-	.equ	song185wip_rev, 0
-	.equ	song185wip_mvl, 127
-	.equ	song185wip_key, 0
-	.equ	song185wip_tbs, 1
-	.equ	song185wip_exg, 0
-	.equ	song185wip_cmp, 1
+	.equ	song185WIP_grp, voicegroup000
+	.equ	song185WIP_pri, 0
+	.equ	song185WIP_rev, 0
+	.equ	song185WIP_mvl, 127
+	.equ	song185WIP_key, 0
+	.equ	song185WIP_tbs, 1
+	.equ	song185WIP_exg, 0
+	.equ	song185WIP_cmp, 1
 
 	.section .rodata
-	.global	song185wip
+	.global	song185WIP
 	.align	2
 
 @**************** Track 1 (Midi-Chn.1) ****************@
 
-song185wip_1:
-	.byte	KEYSH , song185wip_key+0
+song185WIP_1:
+	.byte	KEYSH , song185WIP_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 27
 	.byte		PAN   , c_v-64
-	.byte		VOL   , 47*song185wip_mvl/mxv
-	.byte		        47*song185wip_mvl/mxv
-	.byte		        63*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
+	.byte		        47*song185WIP_mvl/mxv
+	.byte		        63*song185WIP_mvl/mxv
 	.byte		PAN   , c_v-32
 	.byte		        c_v-32
-	.byte		VOL   , 63*song185wip_mvl/mxv
-	.byte		        63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
+	.byte		        63*song185WIP_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		        c_v-32
 	.byte		        c_v-32
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+9
 	.byte		TIE   , En1 , v100
 	.byte	W96
@@ -41,56 +41,56 @@ song185wip_1:
 @ 002   ----------------------------------------
 	.byte	W66
 	.byte		PAN   , c_v+16
-	.byte		VOL   , 67*song185wip_mvl/mxv
+	.byte		VOL   , 67*song185WIP_mvl/mxv
 	.byte	W01
 	.byte		BEND  , c_v+10
 	.byte		TIE   , Fs1 
 	.byte	W02
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte	W24
 	.byte		PAN   , c_v-10
-	.byte		VOL   , 67*song185wip_mvl/mxv
+	.byte		VOL   , 67*song185WIP_mvl/mxv
 	.byte	W03
 @ 003   ----------------------------------------
 	.byte	W04
 	.byte		PAN   , c_v-32
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte	W14
 	.byte		PAN   , c_v-18
-	.byte		VOL   , 54*song185wip_mvl/mxv
+	.byte		VOL   , 54*song185WIP_mvl/mxv
 	.byte		PAN   , c_v-32
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte	W02
 	.byte		PAN   , c_v-18
-	.byte		VOL   , 54*song185wip_mvl/mxv
+	.byte		VOL   , 54*song185WIP_mvl/mxv
 	.byte	W02
 	.byte		PAN   , c_v-32
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte	W16
 	.byte		PAN   , c_v-37
-	.byte		VOL   , 67*song185wip_mvl/mxv
+	.byte		VOL   , 67*song185WIP_mvl/mxv
 	.byte	W01
 	.byte		PAN   , c_v-64
-	.byte		VOL   , 54*song185wip_mvl/mxv
+	.byte		VOL   , 54*song185WIP_mvl/mxv
 	.byte	W28
-	.byte		        63*song185wip_mvl/mxv
+	.byte		        63*song185WIP_mvl/mxv
 	.byte	W11
-	.byte		        54*song185wip_mvl/mxv
+	.byte		        54*song185WIP_mvl/mxv
 	.byte	W18
 @ 004   ----------------------------------------
 	.byte	W01
 	.byte		EOT   
 	.byte	W03
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+9
 	.byte		TIE   , En1 
 	.byte	W04
-	.byte		VOL   , 54*song185wip_mvl/mxv
+	.byte		VOL   , 54*song185WIP_mvl/mxv
 	.byte	W24
 	.byte	W02
 	.byte		PAN   , c_v-32
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte	W06
 	.byte		BEND  , c_v+8
 	.byte	W05
@@ -99,12 +99,12 @@ song185wip_1:
 	.byte		        c_v+6
 	.byte	W01
 	.byte		PAN   , c_v-18
-	.byte		VOL   , 54*song185wip_mvl/mxv
+	.byte		VOL   , 54*song185WIP_mvl/mxv
 	.byte	W04
 	.byte		BEND  , c_v+5
 	.byte	W05
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+4
 	.byte	W04
 	.byte		        c_v+3
@@ -112,43 +112,43 @@ song185wip_1:
 	.byte		        c_v+2
 	.byte	W03
 	.byte		PAN   , c_v+16
-	.byte		VOL   , 67*song185wip_mvl/mxv
+	.byte		VOL   , 67*song185WIP_mvl/mxv
 	.byte	W02
 	.byte		BEND  , c_v+1
 	.byte	W04
 	.byte		PAN   , c_v+32
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte	W01
 	.byte		BEND  , c_v+0
 	.byte	W05
 	.byte		        c_v+0
 	.byte	W03
 	.byte		PAN   , c_v+27
-	.byte		VOL   , 54*song185wip_mvl/mxv
+	.byte		VOL   , 54*song185WIP_mvl/mxv
 	.byte	W03
 	.byte		BEND  , c_v-1
 	.byte	W01
 	.byte		PAN   , c_v+32
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte	W04
 	.byte		BEND  , c_v-3
 	.byte	W02
 @ 005   ----------------------------------------
 	.byte	W02
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 54*song185wip_mvl/mxv
+	.byte		VOL   , 54*song185WIP_mvl/mxv
 	.byte	W01
 	.byte		BEND  , c_v-3
 	.byte	W05
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-5
 	.byte	W05
-	.byte		VOL   , 54*song185wip_mvl/mxv
+	.byte		VOL   , 54*song185WIP_mvl/mxv
 	.byte	W01
-	.byte		        63*song185wip_mvl/mxv
+	.byte		        63*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-6
 	.byte	W01
-	.byte		VOL   , 54*song185wip_mvl/mxv
+	.byte		VOL   , 54*song185WIP_mvl/mxv
 	.byte	W04
 	.byte		BEND  , c_v-7
 	.byte	W05
@@ -158,26 +158,26 @@ song185wip_1:
 	.byte	W04
 	.byte		EOT   
 	.byte	W05
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte	W11
-	.byte		        54*song185wip_mvl/mxv
+	.byte		        54*song185WIP_mvl/mxv
 	.byte	W23
-	.byte		        63*song185wip_mvl/mxv
+	.byte		        63*song185WIP_mvl/mxv
 	.byte	W12
-	.byte		        54*song185wip_mvl/mxv
+	.byte		        54*song185WIP_mvl/mxv
 	.byte	W11
 @ 006   ----------------------------------------
 	.byte	W12
-	.byte		        63*song185wip_mvl/mxv
+	.byte		        63*song185WIP_mvl/mxv
 	.byte	W11
-	.byte		        54*song185wip_mvl/mxv
+	.byte		        54*song185WIP_mvl/mxv
 	.byte	W24
-	.byte		        63*song185wip_mvl/mxv
+	.byte		        63*song185WIP_mvl/mxv
 	.byte	W11
-	.byte		        54*song185wip_mvl/mxv
+	.byte		        54*song185WIP_mvl/mxv
 	.byte	W13
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+9
 	.byte		N42   , Cs1 
 	.byte	W24
@@ -401,13 +401,13 @@ song185wip_1:
 	.byte		VOICE , 28
 	.byte	W03
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-2
 	.byte		N36   , An3 
 	.byte	W17
-	.byte		VOL   , 28*song185wip_mvl/mxv
+	.byte		VOL   , 28*song185WIP_mvl/mxv
 	.byte	W01
-	.byte		        47*song185wip_mvl/mxv
+	.byte		        47*song185WIP_mvl/mxv
 	.byte	W14
 	.byte		BEND  , c_v-7
 	.byte	W01
@@ -426,7 +426,7 @@ song185wip_1:
 	.byte		        c_v-3
 	.byte		N04   , Gs2 
 	.byte	W01
-	.byte		VOL   , 28*song185wip_mvl/mxv
+	.byte		VOL   , 28*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-18
 	.byte	W01
 	.byte		        c_v-33
@@ -439,14 +439,14 @@ song185wip_1:
 	.byte		BEND  , c_v-50
 	.byte	W01
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 28*song185wip_mvl/mxv
+	.byte		VOL   , 28*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-32
 	.byte		N01   , Cs0 
 	.byte	W01
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N01   , BnM2
 	.byte		N01   , CsM1
@@ -492,7 +492,7 @@ song185wip_1:
 	.byte		BEND  , c_v-7
 	.byte	W01
 	.byte		PAN   , c_v-18
-	.byte		VOL   , 54*song185wip_mvl/mxv
+	.byte		VOL   , 54*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-12
 	.byte	W01
 	.byte		        c_v-19
@@ -502,7 +502,7 @@ song185wip_1:
 	.byte		        c_v-31
 	.byte	W01
 	.byte		PAN   , c_v-64
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-39
 	.byte	W01
 	.byte		        c_v-47
@@ -518,7 +518,7 @@ song185wip_1:
 	.byte	W01
 	.byte		        c_v-34
 	.byte	W01
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-48
 	.byte	W01
 	.byte		        c_v+0
@@ -526,7 +526,7 @@ song185wip_1:
 	.byte	W01
 	.byte		BEND  , c_v-30
 	.byte	W01
-	.byte		VOL   , 28*song185wip_mvl/mxv
+	.byte		VOL   , 28*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-56
 	.byte	W01
 	.byte		        c_v-58
@@ -546,7 +546,7 @@ song185wip_1:
 	.byte		        c_v-9
 	.byte	W01
 @ 009   ----------------------------------------
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-11
 	.byte	W01
 	.byte		        c_v-14
@@ -691,10 +691,10 @@ song185wip_1:
 	.byte	W01
 	.byte		        c_v-49
 	.byte	W01
-	.byte		VOL   , 28*song185wip_mvl/mxv
+	.byte		VOL   , 28*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-58
 	.byte	W01
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-64
 	.byte	W01
 	.byte		        c_v-8
@@ -714,154 +714,154 @@ song185wip_1:
 	.byte		BEND  , c_v-1
 	.byte		N92   , Cs0 
 	.byte	W15
-	.byte		VOL   , 28*song185wip_mvl/mxv
+	.byte		VOL   , 28*song185WIP_mvl/mxv
 	.byte	W05
 @ 010   ----------------------------------------
 	.byte	W02
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		PAN   , c_v-64
-	.byte		VOL   , 28*song185wip_mvl/mxv
+	.byte		VOL   , 28*song185WIP_mvl/mxv
 	.byte	W01
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte	W19
 	.byte		PAN   , c_v+27
-	.byte		VOL   , 54*song185wip_mvl/mxv
+	.byte		VOL   , 54*song185WIP_mvl/mxv
 	.byte	W04
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte	W03
-	.byte		        28*song185wip_mvl/mxv
+	.byte		        28*song185WIP_mvl/mxv
 	.byte	W01
-	.byte		        47*song185wip_mvl/mxv
+	.byte		        47*song185WIP_mvl/mxv
 	.byte	W02
-	.byte		        28*song185wip_mvl/mxv
+	.byte		        28*song185WIP_mvl/mxv
 	.byte	W11
-	.byte		        47*song185wip_mvl/mxv
+	.byte		        47*song185WIP_mvl/mxv
 	.byte	W32
 	.byte	W01
 	.byte		VOICE , 28
 	.byte		PAN   , c_v-32
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		PAN   , c_v-32
 	.byte		        c_v-32
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		PAN   , c_v-32
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-1
 	.byte	FINE
 
 @**************** Track 2 (Midi-Chn.2) ****************@
 
-song185wip_2:
-	.byte	KEYSH , song185wip_key+0
+song185WIP_2:
+	.byte	KEYSH , song185WIP_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 46
 	.byte		PAN   , c_v-18
-	.byte		VOL   , 54*song185wip_mvl/mxv
+	.byte		VOL   , 54*song185WIP_mvl/mxv
 	.byte		PAN   , c_v-18
-	.byte		VOL   , 54*song185wip_mvl/mxv
+	.byte		VOL   , 54*song185WIP_mvl/mxv
 	.byte		PAN   , c_v+46
-	.byte		VOL   , 92*song185wip_mvl/mxv
+	.byte		VOL   , 92*song185WIP_mvl/mxv
 	.byte		PAN   , c_v+46
-	.byte		VOL   , 92*song185wip_mvl/mxv
+	.byte		VOL   , 92*song185WIP_mvl/mxv
 	.byte		PAN   , c_v+46
-	.byte		VOL   , 92*song185wip_mvl/mxv
+	.byte		VOL   , 92*song185WIP_mvl/mxv
 	.byte		PAN   , c_v+46
-	.byte		VOL   , 92*song185wip_mvl/mxv
+	.byte		VOL   , 92*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N13   , Fn0 , v100
 	.byte	W16
 	.byte		N13   
 	.byte	W01
-	.byte		VOL   , 94*song185wip_mvl/mxv
+	.byte		VOL   , 94*song185WIP_mvl/mxv
 	.byte		PAN   , c_v+36
 	.byte	W15
 	.byte		N13   
 	.byte	W02
-	.byte		VOL   , 95*song185wip_mvl/mxv
+	.byte		VOL   , 95*song185WIP_mvl/mxv
 	.byte		PAN   , c_v+31
 	.byte	W05
-	.byte		VOL   , 94*song185wip_mvl/mxv
+	.byte		VOL   , 94*song185WIP_mvl/mxv
 	.byte		PAN   , c_v+27
 	.byte	W09
 	.byte		N13   
 	.byte	W04
-	.byte		VOL   , 95*song185wip_mvl/mxv
+	.byte		VOL   , 95*song185WIP_mvl/mxv
 	.byte		PAN   , c_v+22
 	.byte	W12
-	.byte		VOL   , 94*song185wip_mvl/mxv
+	.byte		VOL   , 94*song185WIP_mvl/mxv
 	.byte		PAN   , c_v+18
 	.byte		N13   
 	.byte	W02
-	.byte		VOL   , 95*song185wip_mvl/mxv
+	.byte		VOL   , 95*song185WIP_mvl/mxv
 	.byte		PAN   , c_v+13
 	.byte	W13
-	.byte		VOL   , 97*song185wip_mvl/mxv
+	.byte		VOL   , 97*song185WIP_mvl/mxv
 	.byte		PAN   , c_v+8
 	.byte	W01
 	.byte		N13   
 	.byte	W02
-	.byte		VOL   , 95*song185wip_mvl/mxv
+	.byte		VOL   , 95*song185WIP_mvl/mxv
 	.byte		PAN   , c_v+5
 	.byte	W09
-	.byte		VOL   , 97*song185wip_mvl/mxv
+	.byte		VOL   , 97*song185WIP_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte	W05
 @ 001   ----------------------------------------
 	.byte	W01
-	.byte		VOL   , 95*song185wip_mvl/mxv
+	.byte		VOL   , 95*song185WIP_mvl/mxv
 	.byte		PAN   , c_v-3
 	.byte		N13   
 	.byte	W09
 	.byte		PAN   , c_v-8
-	.byte		VOL   , 97*song185wip_mvl/mxv
+	.byte		VOL   , 97*song185WIP_mvl/mxv
 	.byte	W03
 	.byte		PAN   , c_v-12
-	.byte		VOL   , 95*song185wip_mvl/mxv
+	.byte		VOL   , 95*song185WIP_mvl/mxv
 	.byte	W04
 	.byte		N13   
 	.byte	W08
 	.byte		PAN   , c_v-18
-	.byte		VOL   , 94*song185wip_mvl/mxv
+	.byte		VOL   , 94*song185WIP_mvl/mxv
 	.byte	W03
 	.byte		PAN   , c_v-20
-	.byte		VOL   , 95*song185wip_mvl/mxv
+	.byte		VOL   , 95*song185WIP_mvl/mxv
 	.byte	W05
 	.byte		N13   
 	.byte	W07
 	.byte		PAN   , c_v-27
-	.byte		VOL   , 94*song185wip_mvl/mxv
+	.byte		VOL   , 94*song185WIP_mvl/mxv
 	.byte	W09
 	.byte		N13   
 	.byte	W04
 	.byte		PAN   , c_v-29
-	.byte		VOL   , 95*song185wip_mvl/mxv
+	.byte		VOL   , 95*song185WIP_mvl/mxv
 	.byte	W04
 	.byte		PAN   , c_v-36
-	.byte		VOL   , 94*song185wip_mvl/mxv
+	.byte		VOL   , 94*song185WIP_mvl/mxv
 	.byte	W08
 	.byte		N13   
 	.byte	W10
 	.byte		PAN   , c_v-44
-	.byte		VOL   , 92*song185wip_mvl/mxv
+	.byte		VOL   , 92*song185WIP_mvl/mxv
 	.byte	W07
 	.byte		N13   
 	.byte	W12
 	.byte		PAN   , c_v-45
-	.byte		VOL   , 94*song185wip_mvl/mxv
+	.byte		VOL   , 94*song185WIP_mvl/mxv
 	.byte	W02
 @ 002   ----------------------------------------
 	.byte		PAN   , c_v-54
-	.byte		VOL   , 92*song185wip_mvl/mxv
+	.byte		VOL   , 92*song185WIP_mvl/mxv
 	.byte	W02
 	.byte		N13   
 	.byte	W16
 	.byte		N13   
 	.byte	W08
 	.byte		PAN   , c_v-64
-	.byte		VOL   , 90*song185wip_mvl/mxv
+	.byte		VOL   , 90*song185WIP_mvl/mxv
 	.byte	W08
 	.byte		N13   
 	.byte	W16
@@ -872,99 +872,99 @@ song185wip_2:
 	.byte		N13   
 	.byte	W01
 	.byte		PAN   , c_v-54
-	.byte		VOL   , 92*song185wip_mvl/mxv
+	.byte		VOL   , 92*song185WIP_mvl/mxv
 	.byte	W12
 @ 003   ----------------------------------------
 	.byte	W03
 	.byte		N13   
 	.byte	W08
 	.byte		PAN   , c_v-45
-	.byte		VOL   , 94*song185wip_mvl/mxv
+	.byte		VOL   , 94*song185WIP_mvl/mxv
 	.byte	W02
 	.byte		PAN   , c_v-44
-	.byte		VOL   , 92*song185wip_mvl/mxv
+	.byte		VOL   , 92*song185WIP_mvl/mxv
 	.byte	W06
 	.byte		N13   
 	.byte	W10
 	.byte		PAN   , c_v-36
-	.byte		VOL   , 94*song185wip_mvl/mxv
+	.byte		VOL   , 94*song185WIP_mvl/mxv
 	.byte	W06
 	.byte		N13   
 	.byte	W09
 	.byte		PAN   , c_v-29
-	.byte		VOL   , 95*song185wip_mvl/mxv
+	.byte		VOL   , 95*song185WIP_mvl/mxv
 	.byte	W04
 	.byte		PAN   , c_v-27
-	.byte		VOL   , 94*song185wip_mvl/mxv
+	.byte		VOL   , 94*song185WIP_mvl/mxv
 	.byte	W03
 	.byte		N13   
 	.byte	W08
 	.byte		PAN   , c_v-20
-	.byte		VOL   , 95*song185wip_mvl/mxv
+	.byte		VOL   , 95*song185WIP_mvl/mxv
 	.byte	W09
 	.byte		N13   
 	.byte	W01
 	.byte		PAN   , c_v-18
-	.byte		VOL   , 94*song185wip_mvl/mxv
+	.byte		VOL   , 94*song185WIP_mvl/mxv
 	.byte	W02
 	.byte		PAN   , c_v-12
-	.byte		VOL   , 95*song185wip_mvl/mxv
+	.byte		VOL   , 95*song185WIP_mvl/mxv
 	.byte	W11
 	.byte		PAN   , c_v-8
-	.byte		VOL   , 97*song185wip_mvl/mxv
+	.byte		VOL   , 97*song185WIP_mvl/mxv
 	.byte	W02
 	.byte		N13   
 	.byte	W01
 	.byte		PAN   , c_v-3
-	.byte		VOL   , 95*song185wip_mvl/mxv
+	.byte		VOL   , 95*song185WIP_mvl/mxv
 	.byte	W08
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 97*song185wip_mvl/mxv
+	.byte		VOL   , 97*song185WIP_mvl/mxv
 	.byte	W03
 @ 004   ----------------------------------------
 	.byte	W01
 	.byte		PAN   , c_v+5
-	.byte		VOL   , 95*song185wip_mvl/mxv
+	.byte		VOL   , 95*song185WIP_mvl/mxv
 	.byte	W03
 	.byte		N13   
 	.byte	W05
 	.byte		PAN   , c_v+8
-	.byte		VOL   , 97*song185wip_mvl/mxv
+	.byte		VOL   , 97*song185WIP_mvl/mxv
 	.byte	W03
 	.byte		PAN   , c_v+13
-	.byte		VOL   , 95*song185wip_mvl/mxv
+	.byte		VOL   , 95*song185WIP_mvl/mxv
 	.byte	W08
 	.byte		N13   
 	.byte	W02
 	.byte		PAN   , c_v+18
-	.byte		VOL   , 94*song185wip_mvl/mxv
+	.byte		VOL   , 94*song185WIP_mvl/mxv
 	.byte	W02
 	.byte		PAN   , c_v+22
-	.byte		VOL   , 95*song185wip_mvl/mxv
+	.byte		VOL   , 95*song185WIP_mvl/mxv
 	.byte	W11
 	.byte		PAN   , c_v+27
-	.byte		VOL   , 94*song185wip_mvl/mxv
+	.byte		VOL   , 94*song185WIP_mvl/mxv
 	.byte	W01
 	.byte		N13   
 	.byte	W10
 	.byte		PAN   , c_v+31
-	.byte		VOL   , 95*song185wip_mvl/mxv
+	.byte		VOL   , 95*song185WIP_mvl/mxv
 	.byte	W04
 	.byte		PAN   , c_v+36
-	.byte		VOL   , 94*song185wip_mvl/mxv
+	.byte		VOL   , 94*song185WIP_mvl/mxv
 	.byte	W03
 	.byte		N13   
 	.byte	W12
 	.byte		PAN   , c_v+46
-	.byte		VOL   , 92*song185wip_mvl/mxv
+	.byte		VOL   , 92*song185WIP_mvl/mxv
 	.byte	W04
 	.byte		N13   
 	.byte	W12
 	.byte		PAN   , c_v+45
-	.byte		VOL   , 94*song185wip_mvl/mxv
+	.byte		VOL   , 94*song185WIP_mvl/mxv
 	.byte	W02
 	.byte		PAN   , c_v+56
-	.byte		VOL   , 92*song185wip_mvl/mxv
+	.byte		VOL   , 92*song185WIP_mvl/mxv
 	.byte	W02
 	.byte		N13   
 	.byte	W11
@@ -973,112 +973,112 @@ song185wip_2:
 	.byte		N13   
 	.byte	W05
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 90*song185wip_mvl/mxv
+	.byte		VOL   , 90*song185WIP_mvl/mxv
 	.byte	W12
 	.byte		N13   
 	.byte	W16
 	.byte		N13   
 	.byte	W08
 	.byte		PAN   , c_v+56
-	.byte		VOL   , 92*song185wip_mvl/mxv
+	.byte		VOL   , 92*song185WIP_mvl/mxv
 	.byte	W08
 	.byte		N13   
 	.byte	W13
 	.byte		PAN   , c_v+45
-	.byte		VOL   , 94*song185wip_mvl/mxv
+	.byte		VOL   , 94*song185WIP_mvl/mxv
 	.byte	W02
 	.byte		PAN   , c_v+46
-	.byte		VOL   , 92*song185wip_mvl/mxv
+	.byte		VOL   , 92*song185WIP_mvl/mxv
 	.byte	W01
 	.byte		N13   
 	.byte	W15
 	.byte		PAN   , c_v+36
-	.byte		VOL   , 94*song185wip_mvl/mxv
+	.byte		VOL   , 94*song185WIP_mvl/mxv
 	.byte	W01
 	.byte		N13   
 	.byte	W10
 @ 006   ----------------------------------------
 	.byte	W03
 	.byte		PAN   , c_v+31
-	.byte		VOL   , 95*song185wip_mvl/mxv
+	.byte		VOL   , 95*song185WIP_mvl/mxv
 	.byte	W03
 	.byte		N13   
 	.byte	W01
 	.byte		PAN   , c_v+27
-	.byte		VOL   , 94*song185wip_mvl/mxv
+	.byte		VOL   , 94*song185WIP_mvl/mxv
 	.byte	W10
 	.byte		PAN   , c_v+22
-	.byte		VOL   , 95*song185wip_mvl/mxv
+	.byte		VOL   , 95*song185WIP_mvl/mxv
 	.byte	W05
 	.byte		N13   
 	.byte	W05
 	.byte		PAN   , c_v+18
-	.byte		VOL   , 94*song185wip_mvl/mxv
+	.byte		VOL   , 94*song185WIP_mvl/mxv
 	.byte	W02
 	.byte		PAN   , c_v+13
-	.byte		VOL   , 95*song185wip_mvl/mxv
+	.byte		VOL   , 95*song185WIP_mvl/mxv
 	.byte	W10
 	.byte		PAN   , c_v+8
-	.byte		VOL   , 97*song185wip_mvl/mxv
+	.byte		VOL   , 97*song185WIP_mvl/mxv
 	.byte		N13   
 	.byte	W03
 	.byte		PAN   , c_v+5
-	.byte		VOL   , 95*song185wip_mvl/mxv
+	.byte		VOL   , 95*song185WIP_mvl/mxv
 	.byte	W07
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 97*song185wip_mvl/mxv
+	.byte		VOL   , 97*song185WIP_mvl/mxv
 	.byte	W05
 	.byte		PAN   , c_v-3
-	.byte		VOL   , 95*song185wip_mvl/mxv
+	.byte		VOL   , 95*song185WIP_mvl/mxv
 	.byte	W01
 	.byte		N13   
 	.byte	W06
 	.byte		PAN   , c_v-8
-	.byte		VOL   , 97*song185wip_mvl/mxv
+	.byte		VOL   , 97*song185WIP_mvl/mxv
 	.byte	W03
 	.byte		PAN   , c_v-12
-	.byte		VOL   , 95*song185wip_mvl/mxv
+	.byte		VOL   , 95*song185WIP_mvl/mxv
 	.byte	W07
 	.byte		N13   
 	.byte	W03
 	.byte		PAN   , c_v-18
-	.byte		VOL   , 94*song185wip_mvl/mxv
+	.byte		VOL   , 94*song185WIP_mvl/mxv
 	.byte	W02
 	.byte		PAN   , c_v-20
-	.byte		VOL   , 95*song185wip_mvl/mxv
+	.byte		VOL   , 95*song185WIP_mvl/mxv
 	.byte	W10
 	.byte		PAN   , c_v-27
-	.byte		VOL   , 94*song185wip_mvl/mxv
+	.byte		VOL   , 94*song185WIP_mvl/mxv
 	.byte	W01
 	.byte		N13   
 	.byte	W09
 @ 007   ----------------------------------------
 	.byte	W01
 	.byte		PAN   , c_v-29
-	.byte		VOL   , 95*song185wip_mvl/mxv
+	.byte		VOL   , 95*song185WIP_mvl/mxv
 	.byte	W03
 	.byte		PAN   , c_v-36
-	.byte		VOL   , 94*song185wip_mvl/mxv
+	.byte		VOL   , 94*song185WIP_mvl/mxv
 	.byte	W03
 	.byte		N13   
 	.byte	W11
 	.byte		PAN   , c_v-44
-	.byte		VOL   , 92*song185wip_mvl/mxv
+	.byte		VOL   , 92*song185WIP_mvl/mxv
 	.byte	W06
 	.byte		N13   
 	.byte	W10
 	.byte		PAN   , c_v-45
-	.byte		VOL   , 94*song185wip_mvl/mxv
+	.byte		VOL   , 94*song185WIP_mvl/mxv
 	.byte	W02
 	.byte		PAN   , c_v-54
-	.byte		VOL   , 92*song185wip_mvl/mxv
+	.byte		VOL   , 92*song185WIP_mvl/mxv
 	.byte	W04
 	.byte		N13   
 	.byte	W16
 	.byte		N13   
 	.byte	W02
 	.byte		PAN   , c_v-64
-	.byte		VOL   , 90*song185wip_mvl/mxv
+	.byte		VOL   , 90*song185WIP_mvl/mxv
 	.byte	W14
 	.byte		N13   
 	.byte	W17
@@ -1086,12 +1086,12 @@ song185wip_2:
 	.byte	W07
 @ 008   ----------------------------------------
 	.byte	W09
-	.byte		VOL   , 0*song185wip_mvl/mxv
+	.byte		VOL   , 0*song185WIP_mvl/mxv
 	.byte		N13   , Fs0 
 	.byte	W16
 	.byte		N13   
 	.byte	W08
-	.byte		VOL   , 28*song185wip_mvl/mxv
+	.byte		VOL   , 28*song185WIP_mvl/mxv
 	.byte	W08
 	.byte		N13   
 	.byte	W16
@@ -1099,88 +1099,88 @@ song185wip_2:
 	.byte	W17
 	.byte		N13   
 	.byte	W05
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte	W11
 	.byte		N13   
 	.byte	W06
 @ 009   ----------------------------------------
 	.byte	W02
 	.byte		PAN   , c_v-18
-	.byte		VOL   , 54*song185wip_mvl/mxv
+	.byte		VOL   , 54*song185WIP_mvl/mxv
 	.byte	W08
 	.byte		N13   
 	.byte	W16
 	.byte		N13   
 	.byte	W03
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte	W13
 	.byte		N13   
 	.byte	W04
 	.byte		PAN   , c_v+16
-	.byte		VOL   , 67*song185wip_mvl/mxv
+	.byte		VOL   , 67*song185WIP_mvl/mxv
 	.byte	W12
 	.byte		N13   
 	.byte	W05
 	.byte		PAN   , c_v+21
-	.byte		VOL   , 73*song185wip_mvl/mxv
+	.byte		VOL   , 73*song185WIP_mvl/mxv
 	.byte	W12
 	.byte		N13   
 	.byte	W04
 	.byte		PAN   , c_v+30
-	.byte		VOL   , 76*song185wip_mvl/mxv
+	.byte		VOL   , 76*song185WIP_mvl/mxv
 	.byte	W12
 	.byte		N13   
 	.byte	W03
 	.byte		PAN   , c_v+42
-	.byte		VOL   , 73*song185wip_mvl/mxv
+	.byte		VOL   , 73*song185WIP_mvl/mxv
 	.byte	W02
 @ 010   ----------------------------------------
 	.byte		PAN   , c_v+48
-	.byte		VOL   , 76*song185wip_mvl/mxv
+	.byte		VOL   , 76*song185WIP_mvl/mxv
 	.byte	W11
 	.byte		N13   
 	.byte	W04
-	.byte		VOL   , 80*song185wip_mvl/mxv
+	.byte		VOL   , 80*song185WIP_mvl/mxv
 	.byte	W12
 	.byte		N13   
 	.byte	W03
 	.byte		PAN   , c_v+52
-	.byte		VOL   , 82*song185wip_mvl/mxv
+	.byte		VOL   , 82*song185WIP_mvl/mxv
 	.byte	W07
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 80*song185wip_mvl/mxv
+	.byte		VOL   , 80*song185WIP_mvl/mxv
 	.byte	W06
-	.byte		        82*song185wip_mvl/mxv
+	.byte		        82*song185WIP_mvl/mxv
 	.byte		N13   
 	.byte	W17
 	.byte		N13   
 	.byte	W16
 	.byte		VOICE , 46
 	.byte		PAN   , c_v+46
-	.byte		VOL   , 92*song185wip_mvl/mxv
+	.byte		VOL   , 92*song185WIP_mvl/mxv
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 82*song185wip_mvl/mxv
+	.byte		VOL   , 82*song185WIP_mvl/mxv
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 82*song185wip_mvl/mxv
+	.byte		VOL   , 82*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	FINE
 
 @**************** Track 3 (Midi-Chn.3) ****************@
 
-song185wip_3:
-	.byte	KEYSH , song185wip_key+0
+song185WIP_3:
+	.byte	KEYSH , song185WIP_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 27
 	.byte		PAN   , c_v-64
-	.byte		VOL   , 0*song185wip_mvl/mxv
-	.byte		        63*song185wip_mvl/mxv
+	.byte		VOL   , 0*song185WIP_mvl/mxv
+	.byte		        63*song185WIP_mvl/mxv
 	.byte		PAN   , c_v-64
-	.byte		VOL   , 63*song185wip_mvl/mxv
-	.byte		        47*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
+	.byte		        47*song185WIP_mvl/mxv
 	.byte		PAN   , c_v-64
-	.byte		VOL   , 63*song185wip_mvl/mxv
-	.byte		        63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
+	.byte		        63*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+4
 	.byte		N28   , Cn3 , v100
 	.byte	W01
@@ -1242,7 +1242,7 @@ song185wip_3:
 	.byte	W01
 	.byte		        c_v-11
 	.byte	W19
-	.byte		VOL   , 0*song185wip_mvl/mxv
+	.byte		VOL   , 0*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+11
 	.byte		N28   
 	.byte	W01
@@ -1373,7 +1373,7 @@ song185wip_3:
 	.byte	W96
 @ 004   ----------------------------------------
 	.byte	W04
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+12
 	.byte		N60   
 	.byte	W01
@@ -1502,7 +1502,7 @@ song185wip_3:
 	.byte		        c_v-19
 	.byte	W03
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 28*song185wip_mvl/mxv
+	.byte		VOL   , 28*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+9
 	.byte		N60   
 	.byte	W01
@@ -1632,7 +1632,7 @@ song185wip_3:
 	.byte		        c_v-18
 	.byte	W03
 	.byte		PAN   , c_v-64
-	.byte		VOL   , 0*song185wip_mvl/mxv
+	.byte		VOL   , 0*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+6
 	.byte		N60   
 	.byte	W01
@@ -2140,7 +2140,7 @@ song185wip_3:
 	.byte	W01
 	.byte		        c_v-20
 	.byte	W03
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+8
 	.byte		N28   
 	.byte	W01
@@ -2202,7 +2202,7 @@ song185wip_3:
 	.byte	W01
 	.byte		        c_v-11
 	.byte	W19
-	.byte		VOL   , 0*song185wip_mvl/mxv
+	.byte		VOL   , 0*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+14
 	.byte		N28   
 	.byte	W01
@@ -2333,33 +2333,33 @@ song185wip_3:
 @ 010   ----------------------------------------
 	.byte	W76
 	.byte		VOICE , 27
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		BEND  , c_v-13
 	.byte	FINE
 
 @**************** Track 4 (Midi-Chn.4) ****************@
 
-song185wip_4:
-	.byte	KEYSH , song185wip_key+0
+song185WIP_4:
+	.byte	KEYSH , song185WIP_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 27
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 54*song185wip_mvl/mxv
+	.byte		VOL   , 54*song185WIP_mvl/mxv
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 54*song185wip_mvl/mxv
-	.byte		        47*song185wip_mvl/mxv
+	.byte		VOL   , 54*song185WIP_mvl/mxv
+	.byte		        47*song185WIP_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		        c_v+0
-	.byte		VOL   , 47*song185wip_mvl/mxv
-	.byte		        47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
+	.byte		        47*song185WIP_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		        c_v+0
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-43
 	.byte	W15
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 67*song185wip_mvl/mxv
+	.byte		VOL   , 67*song185WIP_mvl/mxv
 	.byte	W01
 	.byte		BEND  , c_v+10
 	.byte		TIE   , En1 , v100
@@ -2625,11 +2625,11 @@ song185wip_4:
 	.byte		VOICE , 28
 	.byte	W01
 	.byte		PAN   , c_v-64
-	.byte		VOL   , 54*song185wip_mvl/mxv
+	.byte		VOL   , 54*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N32   , Cn3 
 	.byte	W17
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte	W15
 	.byte		BEND  , c_v-7
 	.byte	W01
@@ -2661,7 +2661,7 @@ song185wip_4:
 	.byte		        c_v-9
 	.byte	W01
 	.byte		PAN   , c_v-18
-	.byte		VOL   , 54*song185wip_mvl/mxv
+	.byte		VOL   , 54*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-13
 	.byte	W01
 	.byte		        c_v-16
@@ -2698,13 +2698,13 @@ song185wip_4:
 	.byte		        c_v-23
 	.byte	W01
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-31
 	.byte	W01
 	.byte		        c_v-39
 	.byte	W01
 	.byte		PAN   , c_v+27
-	.byte		VOL   , 54*song185wip_mvl/mxv
+	.byte		VOL   , 54*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-48
 	.byte	W01
 	.byte		        c_v-56
@@ -2747,7 +2747,7 @@ song185wip_4:
 	.byte		        c_v-18
 	.byte	W01
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-21
 	.byte	W01
 	.byte		        c_v-25
@@ -2804,7 +2804,7 @@ song185wip_4:
 	.byte		        c_v+2
 	.byte		N02   , Bn1 
 	.byte	W01
-	.byte		VOL   , 54*song185wip_mvl/mxv
+	.byte		VOL   , 54*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-30
 	.byte	W01
 	.byte		        c_v-51
@@ -2875,7 +2875,7 @@ song185wip_4:
 	.byte	W01
 	.byte		        c_v-41
 	.byte	W01
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-48
 	.byte	W01
 	.byte		        c_v-57
@@ -2931,72 +2931,72 @@ song185wip_4:
 	.byte		        c_v-43
 	.byte	W04
 	.byte		PAN   , c_v+27
-	.byte		VOL   , 54*song185wip_mvl/mxv
+	.byte		VOL   , 54*song185WIP_mvl/mxv
 	.byte	W16
 @ 010   ----------------------------------------
 	.byte	W01
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte	W02
 	.byte		PAN   , c_v-18
-	.byte		VOL   , 54*song185wip_mvl/mxv
+	.byte		VOL   , 54*song185WIP_mvl/mxv
 	.byte	W18
 	.byte		PAN   , c_v-64
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte	W24
 	.byte	W02
-	.byte		        54*song185wip_mvl/mxv
+	.byte		        54*song185WIP_mvl/mxv
 	.byte	W24
 	.byte	W02
 	.byte		EOT   
 	.byte	W03
 	.byte		VOICE , 28
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 54*song185wip_mvl/mxv
-	.byte		        54*song185wip_mvl/mxv
+	.byte		VOL   , 54*song185WIP_mvl/mxv
+	.byte		        54*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-43
 	.byte	FINE
 
 @**************** Track 5 (Midi-Chn.5) ****************@
 
-song185wip_5:
-	.byte	KEYSH , song185wip_key+0
+song185WIP_5:
+	.byte	KEYSH , song185WIP_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 28
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 47*song185wip_mvl/mxv
-	.byte		        47*song185wip_mvl/mxv
-	.byte		PAN   , c_v+0
-	.byte		        c_v+0
-	.byte		VOL   , 47*song185wip_mvl/mxv
-	.byte		        47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
+	.byte		        47*song185WIP_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		        c_v+0
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
+	.byte		        47*song185WIP_mvl/mxv
+	.byte		PAN   , c_v+0
+	.byte		        c_v+0
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W02
-	.byte		VOL   , 73*song185wip_mvl/mxv
+	.byte		VOL   , 73*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte		N05   , As1 , v100
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-1
 	.byte		N05   , Cn5 
 	.byte	W08
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-2
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 80*song185wip_mvl/mxv
+	.byte		VOL   , 80*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte		N05   , Gs4 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte	W01
 	.byte		BEND  , c_v-1
 	.byte		N05   , Cn5 
@@ -3006,19 +3006,19 @@ song185wip_5:
 	.byte		BEND  , c_v+1
 	.byte		N05   , As1 
 	.byte	W08
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-1
 	.byte		N05   , Cn5 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Gn4 
 	.byte	W08
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+2
 	.byte		N05   , Fs4 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-1
 	.byte		N05   , Cn5 
 	.byte	W05
@@ -3031,28 +3031,28 @@ song185wip_5:
 	.byte	W08
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		N02   
 	.byte	W09
-	.byte		VOL   , 73*song185wip_mvl/mxv
+	.byte		VOL   , 73*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte		N05   , As1 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-1
 	.byte		N05   , Cn5 
 	.byte	W08
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-2
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 80*song185wip_mvl/mxv
+	.byte		VOL   , 80*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte		N05   , Gs4 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-1
 	.byte		N05   , Cn5 
 	.byte	W08
@@ -3063,19 +3063,19 @@ song185wip_5:
 	.byte	W04
 @ 002   ----------------------------------------
 	.byte	W04
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-1
 	.byte		N05   , Cn5 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Gn4 
 	.byte	W08
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+2
 	.byte		N05   , Fs4 
 	.byte	W09
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-1
 	.byte		N05   , Cn5 
 	.byte	W08
@@ -3086,30 +3086,30 @@ song185wip_5:
 	.byte	W08
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		N02   
 	.byte	W08
-	.byte		VOL   , 73*song185wip_mvl/mxv
+	.byte		VOL   , 73*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte		N05   , As1 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-1
 	.byte		N05   , Cn5 
 	.byte	W08
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-2
 	.byte		N05   
 	.byte	W03
 @ 003   ----------------------------------------
 	.byte	W05
-	.byte		VOL   , 80*song185wip_mvl/mxv
+	.byte		VOL   , 80*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte		N05   , Gs4 
 	.byte	W09
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-1
 	.byte		N05   , Cn5 
 	.byte	W08
@@ -3118,19 +3118,19 @@ song185wip_5:
 	.byte		BEND  , c_v+1
 	.byte		N05   , As1 
 	.byte	W08
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-1
 	.byte		N05   , Cn5 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Gn4 
 	.byte	W08
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+2
 	.byte		N05   , Fs4 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-1
 	.byte		N05   , Cn5 
 	.byte	W08
@@ -3141,28 +3141,28 @@ song185wip_5:
 	.byte	W08
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		N02   
 	.byte	W02
 @ 004   ----------------------------------------
 	.byte	W07
-	.byte		VOL   , 73*song185wip_mvl/mxv
+	.byte		VOL   , 73*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte		N05   , Fs2 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-2
 	.byte		N05   , An1 
 	.byte	W08
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		N05   , An2 
 	.byte	W08
-	.byte		VOL   , 80*song185wip_mvl/mxv
+	.byte		VOL   , 80*song185WIP_mvl/mxv
 	.byte		N05   , Cn5 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		N05   , An1 
 	.byte	W08
 	.byte		N05   
@@ -3170,19 +3170,19 @@ song185wip_5:
 	.byte		BEND  , c_v+1
 	.byte		N05   , Fs2 
 	.byte	W09
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-2
 	.byte		N05   , An1 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-2
 	.byte		N05   , Cn5 
 	.byte	W08
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-3
 	.byte	W08
 @ 005   ----------------------------------------
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-2
 	.byte		N05   , An1 
 	.byte	W08
@@ -3193,30 +3193,30 @@ song185wip_5:
 	.byte	W08
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		N02   
 	.byte	W08
-	.byte		VOL   , 73*song185wip_mvl/mxv
+	.byte		VOL   , 73*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte		N05   , Fs2 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-2
 	.byte		N05   , An1 
 	.byte	W09
 	.byte		N05   
 	.byte	W07
 	.byte		PAN   , c_v-18
-	.byte		VOL   , 54*song185wip_mvl/mxv
+	.byte		VOL   , 54*song185WIP_mvl/mxv
 	.byte	W01
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		N05   , An2 
 	.byte	W08
-	.byte		VOL   , 80*song185wip_mvl/mxv
+	.byte		VOL   , 80*song185WIP_mvl/mxv
 	.byte		N05   , Cn5 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		N05   , An1 
 	.byte	W08
 	.byte		N05   
@@ -3226,18 +3226,18 @@ song185wip_5:
 	.byte		BEND  , c_v+1
 	.byte		N05   , Fs2 
 	.byte	W08
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-2
 	.byte		N05   , An1 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-2
 	.byte		N05   , Cn5 
 	.byte	W08
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-3
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-2
 	.byte		N05   , An1 
 	.byte	W08
@@ -3248,14 +3248,14 @@ song185wip_5:
 	.byte	W09
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		N02   
 	.byte	W08
-	.byte		VOL   , 73*song185wip_mvl/mxv
+	.byte		VOL   , 73*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte		N05   , Fs2 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-2
 	.byte		N05   , An1 
 	.byte	W08
@@ -3263,13 +3263,13 @@ song185wip_5:
 	.byte	W06
 @ 007   ----------------------------------------
 	.byte	W02
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		N05   , An2 
 	.byte	W08
-	.byte		VOL   , 80*song185wip_mvl/mxv
+	.byte		VOL   , 80*song185WIP_mvl/mxv
 	.byte		N05   , Cn5 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		N05   , An1 
 	.byte	W08
 	.byte		N05   
@@ -3277,18 +3277,18 @@ song185wip_5:
 	.byte		BEND  , c_v+1
 	.byte		N05   , Fs2 
 	.byte	W09
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-2
 	.byte		N05   , An1 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-2
 	.byte		N05   , Cn5 
 	.byte	W08
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-3
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-2
 	.byte		N05   , An1 
 	.byte	W08
@@ -3301,27 +3301,27 @@ song185wip_5:
 	.byte	W05
 @ 008   ----------------------------------------
 	.byte	W04
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		N02   
 	.byte	W07
-	.byte		VOL   , 73*song185wip_mvl/mxv
+	.byte		VOL   , 73*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Cn3 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+2
 	.byte		N05   , As2 
 	.byte	W08
 	.byte		N05   
 	.byte	W09
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		N05   , As3 
 	.byte	W08
-	.byte		VOL   , 80*song185wip_mvl/mxv
+	.byte		VOL   , 80*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+2
 	.byte		N05   , Ds2 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+2
 	.byte		N05   , As2 
 	.byte	W08
@@ -3330,21 +3330,21 @@ song185wip_5:
 	.byte		BEND  , c_v+0
 	.byte		N05   , Cn3 
 	.byte	W08
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+2
 	.byte		N05   , As2 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-2
 	.byte		N05   , An2 
 	.byte	W08
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Ds3 
 	.byte	W04
 @ 009   ----------------------------------------
 	.byte	W04
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+2
 	.byte		N05   , As2 
 	.byte	W08
@@ -3355,27 +3355,27 @@ song185wip_5:
 	.byte	W08
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		N02   
 	.byte	W08
-	.byte		VOL   , 73*song185wip_mvl/mxv
+	.byte		VOL   , 73*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+2
 	.byte		N05   , En3 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+2
 	.byte		N05   , Fs3 
 	.byte	W08
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		N05   , Fs4 
 	.byte	W08
-	.byte		VOL   , 80*song185wip_mvl/mxv
+	.byte		VOL   , 80*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte		N05   , Fn3 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+2
 	.byte		N05   , Fs3 
 	.byte	W08
@@ -3386,19 +3386,19 @@ song185wip_5:
 	.byte		BEND  , c_v+2
 	.byte		N05   , En3 
 	.byte	W08
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+2
 	.byte		N05   , Fs3 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+2
 	.byte		N05   , As3 
 	.byte	W08
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-1
 	.byte		N05   , En4 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+2
 	.byte		N05   , Fs3 
 	.byte	W08
@@ -3409,132 +3409,132 @@ song185wip_5:
 	.byte	W08
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		N02   
 	.byte	W06
 	.byte		VOICE , 28
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		        c_v+0
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	FINE
 
 @**************** Track 6 (Midi-Chn.6) ****************@
 
-song185wip_6:
-	.byte	KEYSH , song185wip_key+0
+song185WIP_6:
+	.byte	KEYSH , song185WIP_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 28
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 67*song185wip_mvl/mxv
+	.byte		VOL   , 67*song185WIP_mvl/mxv
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 67*song185wip_mvl/mxv
+	.byte		VOL   , 67*song185WIP_mvl/mxv
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 67*song185wip_mvl/mxv
+	.byte		VOL   , 67*song185WIP_mvl/mxv
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 67*song185wip_mvl/mxv
+	.byte		VOL   , 67*song185WIP_mvl/mxv
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 67*song185wip_mvl/mxv
+	.byte		VOL   , 67*song185WIP_mvl/mxv
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 67*song185wip_mvl/mxv
+	.byte		VOL   , 67*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Cn1 , v100
 	.byte	W07
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , As4 
 	.byte	W09
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		BEND  , c_v+0
 	.byte		N05   , Gs4 
 	.byte	W08
-	.byte		VOL   , 73*song185wip_mvl/mxv
+	.byte		VOL   , 73*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Ds4 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , As4 
 	.byte	W08
-	.byte		VOL   , 54*song185wip_mvl/mxv
+	.byte		VOL   , 54*song185WIP_mvl/mxv
 	.byte		PAN   , c_v+63
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Cn1 
 	.byte	W08
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , As4 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		BEND  , c_v+0
 	.byte		N05   , Fn4 
 	.byte	W08
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Cn1 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , As4 
 	.byte	W08
 @ 001   ----------------------------------------
 	.byte	W01
-	.byte		VOL   , 67*song185wip_mvl/mxv
+	.byte		VOL   , 67*song185WIP_mvl/mxv
 	.byte		PAN   , c_v+63
 	.byte		BEND  , c_v+0
 	.byte		N05   , An3 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , As4 
 	.byte	W08
-	.byte		VOL   , 67*song185wip_mvl/mxv
+	.byte		VOL   , 67*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Fn4 
 	.byte	W08
 	.byte		PAN   , c_v-64
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Cn1 
 	.byte	W08
-	.byte		VOL   , 67*song185wip_mvl/mxv
+	.byte		VOL   , 67*song185WIP_mvl/mxv
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , As4 
 	.byte	W08
 	.byte		PAN   , c_v+63
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Gs4 
 	.byte	W08
-	.byte		VOL   , 73*song185wip_mvl/mxv
+	.byte		VOL   , 73*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Ds4 
 	.byte	W08
 	.byte		PAN   , c_v-64
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , As4 
 	.byte	W08
-	.byte		VOL   , 54*song185wip_mvl/mxv
+	.byte		VOL   , 54*song185WIP_mvl/mxv
 	.byte	W01
 	.byte		N05   
 	.byte	W07
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte	W01
 	.byte		BEND  , c_v+0
 	.byte		N05   , Cn1 
@@ -3542,472 +3542,472 @@ song185wip_6:
 @ 002   ----------------------------------------
 	.byte	W02
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , As4 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Fn4 
 	.byte	W08
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Cn1 
 	.byte	W08
 	.byte		PAN   , c_v-64
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , As4 
 	.byte	W08
-	.byte		VOL   , 67*song185wip_mvl/mxv
+	.byte		VOL   , 67*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , An3 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , As4 
 	.byte	W08
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 73*song185wip_mvl/mxv
+	.byte		VOL   , 73*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Fn4 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Cn1 
 	.byte	W09
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 67*song185wip_mvl/mxv
+	.byte		VOL   , 67*song185WIP_mvl/mxv
 	.byte		N04   
 	.byte	W07
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , As4 
 	.byte	W09
 	.byte		N05   
 	.byte	W08
 	.byte		PAN   , c_v-64
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Gs4 
 	.byte	W05
 @ 003   ----------------------------------------
 	.byte	W03
-	.byte		VOL   , 73*song185wip_mvl/mxv
+	.byte		VOL   , 73*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Ds4 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , As4 
 	.byte	W08
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 54*song185wip_mvl/mxv
+	.byte		VOL   , 54*song185WIP_mvl/mxv
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Cn1 
 	.byte	W08
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , As4 
 	.byte	W08
 	.byte		PAN   , c_v-64
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Fn4 
 	.byte	W08
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Cn1 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte	W01
 	.byte		BEND  , c_v+0
 	.byte		N05   , As4 
 	.byte	W08
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 67*song185wip_mvl/mxv
+	.byte		VOL   , 67*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , An3 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , As4 
 	.byte	W08
-	.byte		VOL   , 67*song185wip_mvl/mxv
+	.byte		VOL   , 67*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Fn4 
 	.byte	W08
 	.byte		PAN   , c_v-64
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Cn1 
 	.byte	W04
 @ 004   ----------------------------------------
 	.byte	W04
-	.byte		VOL   , 67*song185wip_mvl/mxv
+	.byte		VOL   , 67*song185WIP_mvl/mxv
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , As4 
 	.byte	W08
 	.byte		PAN   , c_v+63
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Gs4 
 	.byte	W08
-	.byte		VOL   , 73*song185wip_mvl/mxv
+	.byte		VOL   , 73*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Ds4 
 	.byte	W08
 	.byte		PAN   , c_v-64
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte	W01
 	.byte		BEND  , c_v+0
 	.byte		N05   , As4 
 	.byte	W07
-	.byte		VOL   , 54*song185wip_mvl/mxv
+	.byte		VOL   , 54*song185WIP_mvl/mxv
 	.byte	W01
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Cn1 
 	.byte	W08
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , As4 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Fn4 
 	.byte	W08
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Cn1 
 	.byte	W08
 	.byte		PAN   , c_v-64
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , As4 
 	.byte	W03
 @ 005   ----------------------------------------
 	.byte	W05
-	.byte		VOL   , 67*song185wip_mvl/mxv
+	.byte		VOL   , 67*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , An3 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , As4 
 	.byte	W08
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 73*song185wip_mvl/mxv
+	.byte		VOL   , 73*song185WIP_mvl/mxv
 	.byte	W01
 	.byte		BEND  , c_v+0
 	.byte		N05   , Fn4 
 	.byte	W07
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Cn1 
 	.byte	W09
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 67*song185wip_mvl/mxv
+	.byte		VOL   , 67*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Cn2 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , CnM2
 	.byte	W08
 	.byte		N05   
 	.byte	W08
 	.byte		PAN   , c_v-64
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		N05   , CnM1
 	.byte	W08
-	.byte		VOL   , 73*song185wip_mvl/mxv
+	.byte		VOL   , 73*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Gs0 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , CnM2
 	.byte	W08
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 54*song185wip_mvl/mxv
+	.byte		VOL   , 54*song185WIP_mvl/mxv
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Cn2 
 	.byte	W02
 @ 006   ----------------------------------------
 	.byte	W06
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , CnM2
 	.byte	W08
 	.byte		PAN   , c_v-64
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , GnM1
 	.byte	W08
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		N05   , Cn2 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte	W01
 	.byte		BEND  , c_v+0
 	.byte		N05   , CnM2
 	.byte	W08
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 67*song185wip_mvl/mxv
+	.byte		VOL   , 67*song185WIP_mvl/mxv
 	.byte		N05   , Cn4 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		N05   , CnM2
 	.byte	W08
-	.byte		VOL   , 67*song185wip_mvl/mxv
+	.byte		VOL   , 67*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , GnM1
 	.byte	W08
 	.byte		PAN   , c_v-64
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		N05   , Cn2 
 	.byte	W08
-	.byte		VOL   , 67*song185wip_mvl/mxv
+	.byte		VOL   , 67*song185WIP_mvl/mxv
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , CnM2
 	.byte	W08
 	.byte		PAN   , c_v+63
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		N05   , CnM1
 	.byte	W01
 @ 007   ----------------------------------------
 	.byte	W07
-	.byte		VOL   , 73*song185wip_mvl/mxv
+	.byte		VOL   , 73*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Gs0 
 	.byte	W09
 	.byte		PAN   , c_v-64
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , CnM2
 	.byte	W08
-	.byte		VOL   , 54*song185wip_mvl/mxv
+	.byte		VOL   , 54*song185WIP_mvl/mxv
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Cn2 
 	.byte	W08
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , CnM2
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , GnM1
 	.byte	W08
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		N05   , Cn2 
 	.byte	W08
 	.byte		PAN   , c_v-64
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , CnM2
 	.byte	W08
-	.byte		VOL   , 67*song185wip_mvl/mxv
+	.byte		VOL   , 67*song185WIP_mvl/mxv
 	.byte		N05   , Cn4 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		N05   , CnM2
 	.byte	W09
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 73*song185wip_mvl/mxv
+	.byte		VOL   , 73*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , GnM1
 	.byte	W07
 @ 008   ----------------------------------------
 	.byte	W01
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		N05   , Cn2 
 	.byte	W08
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 67*song185wip_mvl/mxv
+	.byte		VOL   , 67*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-1
 	.byte		N04   , Gs2 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Cn2 
 	.byte	W08
 	.byte		N05   
 	.byte	W08
 	.byte		PAN   , c_v-64
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		N05   , Cn3 
 	.byte	W08
-	.byte		VOL   , 73*song185wip_mvl/mxv
+	.byte		VOL   , 73*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Cs4 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Cn2 
 	.byte	W08
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 54*song185wip_mvl/mxv
+	.byte		VOL   , 54*song185WIP_mvl/mxv
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-1
 	.byte		N05   , Gs2 
 	.byte	W09
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Cn2 
 	.byte	W08
 	.byte		PAN   , c_v-64
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		N05   , Gn3 
 	.byte	W08
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-1
 	.byte		N05   , Gs2 
 	.byte	W06
 @ 009   ----------------------------------------
 	.byte	W02
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Cn2 
 	.byte	W08
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 67*song185wip_mvl/mxv
+	.byte		VOL   , 67*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Ds4 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Cn2 
 	.byte	W08
-	.byte		VOL   , 67*song185wip_mvl/mxv
+	.byte		VOL   , 67*song185WIP_mvl/mxv
 	.byte		N05   , Gn3 
 	.byte	W08
 	.byte		PAN   , c_v-64
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-1
 	.byte		N05   , Gs2 
 	.byte	W08
-	.byte		VOL   , 67*song185wip_mvl/mxv
+	.byte		VOL   , 67*song185WIP_mvl/mxv
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Cn2 
 	.byte	W08
 	.byte		PAN   , c_v+63
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		N05   , Cn3 
 	.byte	W09
-	.byte		VOL   , 73*song185wip_mvl/mxv
+	.byte		VOL   , 73*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Cs4 
 	.byte	W08
 	.byte		PAN   , c_v-64
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Cn2 
 	.byte	W08
-	.byte		VOL   , 54*song185wip_mvl/mxv
+	.byte		VOL   , 54*song185WIP_mvl/mxv
 	.byte		N05   
 	.byte	W05
 @ 010   ----------------------------------------
 	.byte	W03
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-1
 	.byte		N05   , Gs2 
 	.byte	W08
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Cn2 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		N05   , Gn3 
 	.byte	W08
-	.byte		VOL   , 63*song185wip_mvl/mxv
+	.byte		VOL   , 63*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-1
 	.byte		N05   , Gs2 
 	.byte	W08
 	.byte		PAN   , c_v-64
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Cn2 
 	.byte	W08
-	.byte		VOL   , 67*song185wip_mvl/mxv
+	.byte		VOL   , 67*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Ds4 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N05   , Cn2 
 	.byte	W09
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 73*song185wip_mvl/mxv
+	.byte		VOL   , 73*song185WIP_mvl/mxv
 	.byte		N05   , Gn3 
 	.byte	W08
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-1
 	.byte		N05   , Gs2 
 	.byte	W08
 	.byte		VOICE , 28
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 67*song185wip_mvl/mxv
+	.byte		VOL   , 67*song185WIP_mvl/mxv
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-1
 	.byte	FINE
 
 @**************** Track 7 (Midi-Chn.7) ****************@
 
-song185wip_7:
-	.byte	KEYSH , song185wip_key+0
+song185WIP_7:
+	.byte	KEYSH , song185WIP_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 27
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 28*song185wip_mvl/mxv
+	.byte		VOL   , 28*song185WIP_mvl/mxv
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 28*song185wip_mvl/mxv
-	.byte		        97*song185wip_mvl/mxv
+	.byte		VOL   , 28*song185WIP_mvl/mxv
+	.byte		        97*song185WIP_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		        c_v+0
-	.byte		VOL   , 97*song185wip_mvl/mxv
-	.byte		        97*song185wip_mvl/mxv
+	.byte		VOL   , 97*song185WIP_mvl/mxv
+	.byte		        97*song185WIP_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		        c_v+0
-	.byte		VOL   , 97*song185wip_mvl/mxv
+	.byte		VOL   , 97*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W05
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 54*song185wip_mvl/mxv
+	.byte		VOL   , 54*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+10
 	.byte		N28   , Cn3 , v100
 	.byte	W01
@@ -4069,7 +4069,7 @@ song185wip_7:
 	.byte	W01
 	.byte		        c_v-13
 	.byte	W19
-	.byte		VOL   , 28*song185wip_mvl/mxv
+	.byte		VOL   , 28*song185WIP_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		BEND  , c_v+10
 	.byte		N28   
@@ -4197,7 +4197,7 @@ song185wip_7:
 @ 005   ----------------------------------------
 	.byte	W42
 	.byte	W01
-	.byte		VOL   , 47*song185wip_mvl/mxv
+	.byte		VOL   , 47*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+13
 	.byte		N60   
 	.byte	W01
@@ -4327,7 +4327,7 @@ song185wip_7:
 	.byte		        c_v-13
 	.byte	W03
 	.byte		PAN   , c_v-64
-	.byte		VOL   , 28*song185wip_mvl/mxv
+	.byte		VOL   , 28*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+9
 	.byte		N56   
 	.byte	W01
@@ -4571,7 +4571,7 @@ song185wip_7:
 	.byte	W01
 	.byte		        c_v-12
 	.byte	W03
-	.byte		VOL   , 0*song185wip_mvl/mxv
+	.byte		VOL   , 0*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+14
 	.byte		N60   
 	.byte	W01
@@ -4701,7 +4701,7 @@ song185wip_7:
 	.byte		        c_v-12
 	.byte	W08
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 54*song185wip_mvl/mxv
+	.byte		VOL   , 54*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+15
 	.byte		N28   
 	.byte	W01
@@ -4764,7 +4764,7 @@ song185wip_7:
 	.byte		        c_v-12
 	.byte	W20
 	.byte		PAN   , c_v-64
-	.byte		VOL   , 28*song185wip_mvl/mxv
+	.byte		VOL   , 28*song185WIP_mvl/mxv
 	.byte		BEND  , c_v+11
 	.byte		N28   
 	.byte	W01
@@ -4884,32 +4884,32 @@ song185wip_7:
 @ 010   ----------------------------------------
 	.byte	W76
 	.byte		VOICE , 27
-	.byte		VOL   , 97*song185wip_mvl/mxv
+	.byte		VOL   , 97*song185WIP_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		        c_v+63
-	.byte		VOL   , 28*song185wip_mvl/mxv
+	.byte		VOL   , 28*song185WIP_mvl/mxv
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 28*song185wip_mvl/mxv
+	.byte		VOL   , 28*song185WIP_mvl/mxv
 	.byte		BEND  , c_v-10
 	.byte	FINE
 
 @******************************************************@
 	.align	2
 
-song185wip:
+song185WIP:
 	.byte	7	@ NumTrks
 	.byte	0	@ NumBlks
-	.byte	song185wip_pri	@ Priority
-	.byte	song185wip_rev	@ Reverb.
+	.byte	song185WIP_pri	@ Priority
+	.byte	song185WIP_rev	@ Reverb.
 
-	.word	song185wip_grp
+	.word	song185WIP_grp
 
-	.word	song185wip_1
-	.word	song185wip_2
-	.word	song185wip_3
-	.word	song185wip_4
-	.word	song185wip_5
-	.word	song185wip_6
-	.word	song185wip_7
+	.word	song185WIP_1
+	.word	song185WIP_2
+	.word	song185WIP_3
+	.word	song185WIP_4
+	.word	song185WIP_5
+	.word	song185WIP_6
+	.word	song185WIP_7
 
 	.end
