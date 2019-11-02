@@ -46,10 +46,16 @@
 //Sound Effects
 .org 0x810BF50 :: .byte 0x88,0x66,0xcD,0x08,0x01 //Repoint Attack noise
 .org 0x8CD6670 :: .incbin "data/m2-snd-attack.bin" //attac noise
-
 .org 0x810BF58 :: .byte 0x24,0x1D,0xC0 //Repoint Enemy attack noise
 .org 0x8C01D10 :: .incbin "data/m2-snd-enemyattack.bin" //Enemy attac noise
 
 //Music
-.org 0x810B830 :: .byte 0xCC,0x6C,0xCD,0x08,0x00 //Repoint Weird opponent
-.org 0x8CD6720 :: .incbin "data/m2-snd-weird.bin" //Weird Opponent (almost)
+.org 0x8CD6720
+weird:
+.incbin "data/m2-snd-weird.bin" //Weird Opponent (almost)
+.org 0x810B830 :: .word weird+0x5AC //Repoint Weird opponent
+
+.org 0x8CD6D80
+giygasw:
+.incbin "data/m2-snd-giygasw.bin"
+.org 0x810BAF8 :: .word giygasw+0x1854
