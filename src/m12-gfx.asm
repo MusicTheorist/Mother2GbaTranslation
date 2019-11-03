@@ -46,8 +46,17 @@
 //Sound Effects
 .org 0x810BF50 :: .byte 0x88,0x66,0xcD,0x08,0x01 //Repoint Attack noise
 .org 0x8CD6670 :: .incbin "data/m2-snd-attack.bin" //attac noise
-.org 0x810BF58 :: .byte 0x24,0x1D,0xC0 //Repoint Enemy attack noise
-.org 0x8C01D10 :: .incbin "data/m2-snd-enemyattack.bin" //Enemy attac noise
+
+.org 0x8CD86D0
+eattack:
+.incbin "data/m2-snd-enemyattack.bin"
+.org 0x810bf58 :: .word eattack+0x40
+
+.org 0x8CD8610
+pheal:
+.incbin "data/m2-snd-pheal.bin"
+.org 0x810bfb0 :: .word pheal+0xA4
+
 
 //Music
 .org 0x8CD6720
