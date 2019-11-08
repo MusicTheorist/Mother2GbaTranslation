@@ -59,12 +59,15 @@ pheal:
 
 
 //Music
-.org 0x8CD6720
-weird:
-.incbin "data/m2-snd-weird.bin" //Weird Opponent (almost)
-.org 0x810B830 :: .word weird+0x5AC //Repoint Weird opponent
-
-.org 0x8CD6D80
+.org 0x8CD6270
 giygasw:
-.incbin "data/m2-snd-giygasw.bin"
-.org 0x810BAF8 :: .word giygasw+0x1854
+.include "sound/song185.asm"
+//.org 0x8CD6720
+//weird:
+//.incbin "data/m2-snd-weird.bin" //Weird Opponent (almost)
+//.org 0x810B830 :: .word weird+0x5AC //Repoint Weird opponent
+
+//.org 0x8CD6D80
+//giygasw:
+//.incbin "data/m2-snd-giygasw.bin"
+//.org 0x810BAF8 :: .word giygasw+0x1854

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "GasToArmips/0.1.0": {
+        "runtime": {
+          "GasToArmips.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GasToArmips/0.1.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
