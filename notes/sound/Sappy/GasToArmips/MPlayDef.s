@@ -429,37 +429,37 @@
 @ parameter of MODT, BRET
 @******************************************************@
 
-	.equ	mod_vib,0		@ vibrate
-	.equ	mod_tre,1		@ tremolo
-	.equ	mod_pan,2		@ auto-panpot
+	.equ	mod_vib, 0		@ vibrate
+	.equ	mod_tre, 1		@ tremolo
+	.equ	mod_pan, 2		@ auto-panpot
 
 @***
 @ parameter of MEMACC
 @******************************************************@
 
-	.equ	mem_set,0		@
-	.equ	mem_add,1		@
-	.equ	mem_sub,2		@
-	.equ	mem_mem_set,3		@
-	.equ	mem_mem_add,4		@
-	.equ	mem_mem_sub,5		@
-	.equ	mem_beq,6		@
-	.equ	mem_bne,7		@
-	.equ	mem_bhi,8		@
-	.equ	mem_bhs,9		@
-	.equ	mem_bls,10		@
-	.equ	mem_blo,11		@
-	.equ	mem_mem_beq,12		@
-	.equ	mem_mem_bne,13		@
-	.equ	mem_mem_bhi,14		@
-	.equ	mem_mem_bhs,15		@
-	.equ	mem_mem_bls,16		@
-	.equ	mem_mem_blo,17		@
+	.equ	mem_set, 0		@
+	.equ	mem_add, 1		@
+	.equ	mem_sub, 2		@
+	.equ	mem_mem_set, 3		@
+	.equ	mem_mem_add, 4		@
+	.equ	mem_mem_sub, 5		@
+	.equ	mem_beq, 6		@
+	.equ	mem_bne, 7		@
+	.equ	mem_bhi, 8		@
+	.equ	mem_bhs, 9		@
+	.equ	mem_bls, 10		@
+	.equ	mem_blo, 11		@
+	.equ	mem_mem_beq, 12		@
+	.equ	mem_mem_bne, 13		@
+	.equ	mem_mem_bhi, 14		@
+	.equ	mem_mem_bhs, 15		@
+	.equ	mem_mem_bls, 16		@
+	.equ	mem_mem_blo, 17		@
 
 @***
 @ etc.
 @******************************************************@
 
-	.equ	reverb_set,0x80		@ SOUND_MODE_REVERB_SET
+	.equ	reverb_set, 0x80		@ SOUND_MODE_REVERB_SET
 	.equ	PAM, PAN		@ 
 

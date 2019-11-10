@@ -1,7 +1,7 @@
 	.include "MPlayDef.s"
 
 	.equ	song336restored_grp, voicegroup000
-	.equ	song336restored_pri, 0
+	.equ	song336restored_pri, 100
 	.equ	song336restored_rev, 0
 	.equ	song336restored_mvl, 127
 	.equ	song336restored_key, 0

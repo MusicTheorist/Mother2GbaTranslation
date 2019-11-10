@@ -43,31 +43,27 @@
 ////////////////////
 ////////Audio///////
 ////////////////////
-//Sound Effects
-.org 0x810BF50 :: .byte 0x88,0x66,0xcD,0x08,0x01 //Repoint Attack noise
-.org 0x8CD6670 :: .incbin "data/m2-snd-attack.bin" //attac noise
 
-.org 0x8CD86D0
-eattack:
-.incbin "data/m2-snd-enemyattack.bin"
-.org 0x810bf58 :: .word eattack+0x40
+.org 0x8C917D0
+//This is the sound data
+.include "ArmipsMusicPlayDef.asm"
+.include "./sound/song185restored.asm" //Giygas is Wounded!
+.include "./sound/song324restored.asm" //Player Attack
+.include "./sound/song326restored.asm" //S w i s h
+.include "./sound/song329restored.asm"
+.include "./sound/song330restored.asm"
+.include "./sound/song356restored.asm" //PSI Freeze (A)
+.include "./sound/song357restored.asm" //PSI Freeze (B)
+.include "./sound/song358restored.asm" //PSI Freeze (C)
+.include "./sound/song365restored.asm"
 
-.org 0x8CD8610
-pheal:
-.incbin "data/m2-snd-pheal.bin"
-.org 0x810bfb0 :: .word pheal+0xA4
-
-
-//Music
-.org 0x8CD6270
-giygasw:
-.include "sound/song185.asm"
-//.org 0x8CD6720
-//weird:
-//.incbin "data/m2-snd-weird.bin" //Weird Opponent (almost)
-//.org 0x810B830 :: .word weird+0x5AC //Repoint Weird opponent
-
-//.org 0x8CD6D80
-//giygasw:
-//.incbin "data/m2-snd-giygasw.bin"
-//.org 0x810BAF8 :: .word giygasw+0x1854
+//This repoints the sound bytes to their new locations
+.org 0x810BAF8 :: .word song185restored
+.org 0x810BF50 :: .word song324restored
+.org 0x810BF60 :: .word song326restored
+.org 0x810BF78 :: .word song329restored
+.org 0x810BF80 :: .word song330restored 
+.org 0x810C050 :: .word song356restored
+.org 0x810C058 :: .word song357restored
+.org 0x810C060 :: .word song358restored
+.org 0x810C098 :: .word song365restored

@@ -1,7 +1,7 @@
 	.include "MPlayDef.s"
 
 	.equ	song329restored_FINAL_grp, voicegroup000
-	.equ	song329restored_FINAL_pri, 60
+	.equ	song329restored_FINAL_pri, 100
 	.equ	song329restored_FINAL_rev, 0
 	.equ	song329restored_FINAL_mvl, 127
 	.equ	song329restored_FINAL_key, 0
