@@ -1,7 +1,7 @@
 	.include "MPlayDef.s"
 
 	.equ	song326restored_grp, voicegroup000
-	.equ	song326restored_pri, 0
+	.equ	song326restored_pri, 100
 	.equ	song326restored_rev, 0
 	.equ	song326restored_mvl, 127
 	.equ	song326restored_key, 0
@@ -26,32 +26,237 @@ song326restored_1:
 	.byte		PAN   , c_v+0
 	.byte		VOL   , 0*song326restored_mvl/mxv
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 5*song326restored_mvl/mxv
+	.byte		VOL   , 9*song326restored_mvl/mxv
 	.byte		BEND  , c_v+0
-	.byte		N07   , Cn4 , v100
+	.byte		N07   , Cn4 , v127
 	.byte	W01
-	.byte		VOL   , 25*song326restored_mvl/mxv
+	.byte		VOL   , 27*song326restored_mvl/mxv
 	.byte	W01
 	.byte		        45*song326restored_mvl/mxv
 	.byte	W01
-	.byte		        65*song326restored_mvl/mxv
+	.byte		        63*song326restored_mvl/mxv
 	.byte	W01
-	.byte		        86*song326restored_mvl/mxv
+	.byte		        81*song326restored_mvl/mxv
 	.byte	W01
-	.byte		        96*song326restored_mvl/mxv
-	.byte	W90
+	.byte		        99*song326restored_mvl/mxv
+	.byte	W01
+	.byte		        117*song326restored_mvl/mxv
+	.byte	W01
+	.byte		        126*song326restored_mvl/mxv
+	.byte	W01
+	.byte		        126*song326restored_mvl/mxv
+	.byte	W01
+	.byte		        126*song326restored_mvl/mxv
+	.byte	W01
+	.byte		        126*song326restored_mvl/mxv
+	.byte	W14
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W01
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W01
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W01
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W01
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W01
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W01
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W01
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W01
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W01
+	.byte		        127*song326restored_mvl/mxv
 	.byte	W01
 @ 001   ----------------------------------------
-	.byte	W92
-	.byte	W03
-	.byte		        0*song326restored_mvl/mxv
 	.byte	W01
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W01
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W01
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W01
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W01
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W01
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W01
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W01
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W01
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W01
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W01
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W01
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
 @ 002   ----------------------------------------
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W02
+	.byte		        127*song326restored_mvl/mxv
+	.byte	W92
+	.byte	W01
 	.byte		VOICE , 70
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 96*song326restored_mvl/mxv
+	.byte		VOL   , 0*song326restored_mvl/mxv
+	.byte		BEND  , c_v+0
+	.byte	W01
+@ 003   ----------------------------------------
+	.byte		VOICE , 70
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 96*song326restored_mvl/mxv
+	.byte		VOL   , 127*song326restored_mvl/mxv
+	.byte		PAN   , c_v+0
+	.byte		VOL   , 127*song326restored_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	FINE
 
