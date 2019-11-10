@@ -48,10 +48,13 @@
 //This is the sound data
 .include "ArmipsMusicPlayDef.asm"
 .include "./sound/song185restored.asm" //Giygas is Wounded!
-.include "./sound/song324restored.asm" //Player Attack
+.include "./sound/song324restored.asm" //Player Attack (Imperfect)
 .include "./sound/song326restored.asm" //S w i s h
 .include "./sound/song329restored.asm"
 .include "./sound/song330restored.asm"
+.include "./sound/song331restored.asm" //SMAAAASHH!
+.include "./sound/song332restored.asm" //ded
+.include "./sound/song336restored.asm" //Heal noise
 .include "./sound/song356restored.asm" //PSI Freeze (A)
 .include "./sound/song357restored.asm" //PSI Freeze (B)
 .include "./sound/song358restored.asm" //PSI Freeze (C)
@@ -63,6 +66,9 @@
 .org 0x810BF60 :: .word song326restored
 .org 0x810BF78 :: .word song329restored
 .org 0x810BF80 :: .word song330restored 
+.org 0x810BF88 :: .word song331restored 
+.org 0x810BF90 :: .word song332restored 
+.org 0x810BFB0 :: .word song336restored 
 .org 0x810C050 :: .word song356restored
 .org 0x810C058 :: .word song357restored
 .org 0x810C060 :: .word song358restored
