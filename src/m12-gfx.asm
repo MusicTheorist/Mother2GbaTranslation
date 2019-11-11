@@ -47,6 +47,7 @@
 .org 0x8C917D0
 //This is the sound data
 .include "ArmipsMusicPlayDef.asm"
+.include "./sound/song125restored.asm" //Snowman
 .include "./sound/song185restored.asm" //Giygas is Wounded!
 .include "./sound/song324restored.asm" //Player Attack (Imperfect)
 .include "./sound/song326restored.asm" //S w i s h
@@ -59,8 +60,10 @@
 .include "./sound/song357restored.asm" //PSI Freeze (B)
 .include "./sound/song358restored.asm" //PSI Freeze (C)
 .include "./sound/song365restored.asm"
+.include "./sound/song395restored.asm" //Magic Butterfly
 
 //This repoints the sound bytes to their new locations
+.org 0x810B918 :: .word song125restored
 .org 0x810BAF8 :: .word song185restored
 .org 0x810BF50 :: .word song324restored
 .org 0x810BF60 :: .word song326restored
@@ -73,3 +76,4 @@
 .org 0x810C058 :: .word song357restored
 .org 0x810C060 :: .word song358restored
 .org 0x810C098 :: .word song365restored
+.org 0x810C188 :: .word song395restored
