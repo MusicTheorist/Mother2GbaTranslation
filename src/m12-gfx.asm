@@ -48,6 +48,8 @@
 //This is the sound data
 .include "ArmipsMusicPlayDef.asm"
 .include "./sound/song013restored.asm" //Teleportation
+.include "./sound/song100restored.asm" //Franky
+.include "./sound/song104restored.asm" //Kraken of The Sea
 .include "./sound/song125restored.asm" //Snowman
 .include "./sound/song185restored.asm" //Giygas is Wounded!
 .include "./sound/song324restored.asm" //Player Attack (Imperfect)
@@ -57,6 +59,9 @@
 .include "./sound/song331restored.asm" //SMAAAASHH!
 .include "./sound/song332restored.asm" //ded
 .include "./sound/song336restored.asm" //Heal noise
+.include "./sound/song348restored.asm" //PSI Rockin (A)
+.include "./sound/song349restored.asm" //PSI Rockin (B)
+.include "./sound/song350restored.asm" //PSI Rockin (C)
 .include "./sound/song356restored.asm" //PSI Freeze (A)
 .include "./sound/song357restored.asm" //PSI Freeze (B)
 .include "./sound/song358restored.asm" //PSI Freeze (C)
@@ -65,6 +70,8 @@
 
 //This repoints the sound bytes to their new locations
 .org 0x810B598 :: .word song013restored
+.org 0x810B850 :: .word song100restored
+.org 0x810B870 :: .word song104restored
 .org 0x810B918 :: .word song125restored
 .org 0x810BAF8 :: .word song185restored
 .org 0x810BF50 :: .word song324restored
@@ -74,6 +81,9 @@
 .org 0x810BF88 :: .word song331restored 
 .org 0x810BF90 :: .word song332restored 
 .org 0x810BFB0 :: .word song336restored 
+.org 0x810C010 :: .word song348restored 
+.org 0x810C018 :: .word song349restored 
+.org 0x810C020 :: .word song350restored 
 .org 0x810C050 :: .word song356restored
 .org 0x810C058 :: .word song357restored
 .org 0x810C060 :: .word song358restored

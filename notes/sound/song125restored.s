@@ -16,6 +16,7 @@
 @**************** Track 1 (Midi-Chn.1) ****************@
 
 song125restored_1:
+	.byte	TEMPO , 45
 	.byte	KEYSH , song125restored_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 41
@@ -23,13 +24,13 @@ song125restored_1:
 	.byte		VOL   , 80*song125restored_mvl/mxv
 	.byte		PAN   , c_v+12
 	.byte		VOL   , 80*song125restored_mvl/mxv
-	.byte		        80*song125restored_mvl/mxv
 	.byte		PAN   , c_v+12
-	.byte		        c_v+12
 	.byte		VOL   , 80*song125restored_mvl/mxv
-	.byte		        80*song125restored_mvl/mxv
 	.byte		PAN   , c_v+12
-	.byte		        c_v+12
+	.byte		VOL   , 80*song125restored_mvl/mxv
+	.byte		PAN   , c_v+12
+	.byte		VOL   , 80*song125restored_mvl/mxv
+	.byte		PAN   , c_v+12
 	.byte		VOL   , 80*song125restored_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W96
@@ -307,8 +308,9 @@ song125restored_1_027:
 	.byte	W66
 	.byte	W01
 	.byte		VOICE , 41
-	.byte		VOL   , 80*song125restored_mvl/mxv
 	.byte		PAN   , c_v+12
+	.byte		VOL   , 80*song125restored_mvl/mxv
+	.byte		BEND  , c_v+0
 	.byte	W01
 @ 050   ----------------------------------------
 	.byte		VOICE , 41
@@ -329,13 +331,13 @@ song125restored_2:
 	.byte		VOL   , 43*song125restored_mvl/mxv
 	.byte		PAN   , c_v-45
 	.byte		VOL   , 43*song125restored_mvl/mxv
-	.byte		        43*song125restored_mvl/mxv
 	.byte		PAN   , c_v-45
-	.byte		        c_v-45
 	.byte		VOL   , 43*song125restored_mvl/mxv
-	.byte		        43*song125restored_mvl/mxv
 	.byte		PAN   , c_v-45
-	.byte		        c_v-45
+	.byte		VOL   , 43*song125restored_mvl/mxv
+	.byte		PAN   , c_v-45
+	.byte		VOL   , 43*song125restored_mvl/mxv
+	.byte		PAN   , c_v-45
 	.byte		VOL   , 43*song125restored_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W96
@@ -617,8 +619,9 @@ song125restored_2_027:
 	.byte	W60
 	.byte	W03
 	.byte		VOICE , 41
-	.byte		VOL   , 43*song125restored_mvl/mxv
 	.byte		PAN   , c_v-45
+	.byte		VOL   , 43*song125restored_mvl/mxv
+	.byte		BEND  , c_v+0
 	.byte	W01
 @ 050   ----------------------------------------
 	.byte		VOICE , 41
@@ -640,21 +643,21 @@ song125restored_3:
 	.byte		PAN   , c_v-1
 	.byte		VOL   , 66*song125restored_mvl/mxv
 	.byte		MOD   , 0
-	.byte		VOL   , 66*song125restored_mvl/mxv
 	.byte		PAN   , c_v-1
-	.byte		        c_v-1
 	.byte		VOL   , 66*song125restored_mvl/mxv
 	.byte		MOD   , 0
-	.byte		VOL   , 66*song125restored_mvl/mxv
 	.byte		PAN   , c_v-1
-	.byte		        c_v-1
+	.byte		VOL   , 66*song125restored_mvl/mxv
+	.byte		MOD   , 0
+	.byte		PAN   , c_v-1
+	.byte		VOL   , 66*song125restored_mvl/mxv
+	.byte		MOD   , 0
+	.byte		PAN   , c_v-1
 	.byte		VOL   , 66*song125restored_mvl/mxv
 	.byte		MOD   , 0
 	.byte		BEND  , c_v+0
 	.byte		N21   , Cn2 , v124
-	.byte	W19
-	.byte		MOD   , 0
-	.byte	W05
+	.byte	W24
 	.byte		N10   , Cs2 
 	.byte	W12
 	.byte		N21   , Gs2 
@@ -1368,8 +1371,10 @@ song125restored_3_038:
 	.byte	W92
 	.byte	W03
 	.byte		VOICE , 27
-	.byte		VOL   , 66*song125restored_mvl/mxv
 	.byte		PAN   , c_v-1
+	.byte		VOL   , 66*song125restored_mvl/mxv
+	.byte		MOD   , 0
+	.byte		BEND  , c_v+0
 	.byte	W01
 @ 050   ----------------------------------------
 	.byte		VOICE , 27
@@ -1392,13 +1397,13 @@ song125restored_4:
 	.byte		VOL   , 58*song125restored_mvl/mxv
 	.byte		PAN   , c_v-1
 	.byte		VOL   , 58*song125restored_mvl/mxv
-	.byte		        58*song125restored_mvl/mxv
 	.byte		PAN   , c_v-1
-	.byte		        c_v-1
 	.byte		VOL   , 58*song125restored_mvl/mxv
-	.byte		        58*song125restored_mvl/mxv
 	.byte		PAN   , c_v-1
-	.byte		        c_v-1
+	.byte		VOL   , 58*song125restored_mvl/mxv
+	.byte		PAN   , c_v-1
+	.byte		VOL   , 58*song125restored_mvl/mxv
+	.byte		PAN   , c_v-1
 	.byte		VOL   , 58*song125restored_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N21   , Cs2 , v127
@@ -1954,8 +1959,9 @@ song125restored_4_046:
 	.byte	W92
 	.byte	W03
 	.byte		VOICE , 0
-	.byte		VOL   , 58*song125restored_mvl/mxv
 	.byte		PAN   , c_v-1
+	.byte		VOL   , 58*song125restored_mvl/mxv
+	.byte		BEND  , c_v+0
 	.byte	W01
 @ 050   ----------------------------------------
 	.byte		VOICE , 0
@@ -1973,40 +1979,71 @@ song125restored_5:
 @ 000   ----------------------------------------
 	.byte		VOICE , 27
 	.byte		PAN   , c_v+50
-	.byte		VOL   , 49*song125restored_mvl/mxv
+	.byte		VOL   , 25*song125restored_mvl/mxv
 	.byte		PAN   , c_v+50
-	.byte		VOL   , 49*song125restored_mvl/mxv
+	.byte		VOL   , 25*song125restored_mvl/mxv
 	.byte		MOD   , 0
-	.byte		VOL   , 49*song125restored_mvl/mxv
 	.byte		PAN   , c_v+50
-	.byte		        c_v+50
-	.byte		VOL   , 49*song125restored_mvl/mxv
+	.byte		VOL   , 25*song125restored_mvl/mxv
 	.byte		MOD   , 0
-	.byte		VOL   , 49*song125restored_mvl/mxv
 	.byte		PAN   , c_v+50
-	.byte		        c_v+50
-	.byte		VOL   , 49*song125restored_mvl/mxv
+	.byte		VOL   , 25*song125restored_mvl/mxv
+	.byte		MOD   , 0
+	.byte		PAN   , c_v+50
+	.byte		VOL   , 25*song125restored_mvl/mxv
+	.byte		MOD   , 0
+	.byte		PAN   , c_v+50
+	.byte		VOL   , 25*song125restored_mvl/mxv
 	.byte		MOD   , 0
 	.byte		BEND  , c_v+0
-	.byte	W18
+	.byte	W04
+	.byte		VOL   , 25*song125restored_mvl/mxv
+	.byte	W06
+	.byte		        25*song125restored_mvl/mxv
+	.byte	W06
+	.byte		        25*song125restored_mvl/mxv
+	.byte	W02
 	.byte		N21   , Cn2 , v124
-	.byte	W19
+	.byte	W05
+	.byte		VOL   , 25*song125restored_mvl/mxv
+	.byte	W06
+	.byte		        25*song125restored_mvl/mxv
+	.byte	W07
+	.byte		        25*song125restored_mvl/mxv
+	.byte	W01
 	.byte		MOD   , 16
 	.byte	W02
 	.byte		        0
 	.byte	W03
+	.byte		VOL   , 25*song125restored_mvl/mxv
 	.byte		N10   , Cs2 
-	.byte	W12
+	.byte	W06
+	.byte		VOL   , 25*song125restored_mvl/mxv
+	.byte	W06
 	.byte		N21   , Gs2 
-	.byte	W19
+	.byte	W01
+	.byte		VOL   , 25*song125restored_mvl/mxv
+	.byte	W06
+	.byte		        25*song125restored_mvl/mxv
+	.byte	W06
+	.byte		        25*song125restored_mvl/mxv
+	.byte	W06
 	.byte		MOD   , 16
-	.byte	W02
-	.byte		        0
+	.byte	W01
+	.byte		VOL   , 25*song125restored_mvl/mxv
+	.byte	W01
+	.byte		MOD   , 0
 	.byte	W03
 	.byte		N10   , Gn2 
-	.byte	W12
+	.byte	W02
+	.byte		VOL   , 25*song125restored_mvl/mxv
+	.byte	W07
+	.byte		        25*song125restored_mvl/mxv
+	.byte	W03
 	.byte		N21   , Fn2 
-	.byte	W06
+	.byte	W03
+	.byte		VOL   , 25*song125restored_mvl/mxv
+	.byte	W03
 @ 001   ----------------------------------------
 song125restored_5_001:
 	.byte	W13
@@ -2936,16 +2973,18 @@ song125restored_5_038:
 	.byte	W92
 	.byte	W03
 	.byte		VOICE , 27
-	.byte		VOL   , 49*song125restored_mvl/mxv
 	.byte		PAN   , c_v+50
+	.byte		VOL   , 25*song125restored_mvl/mxv
+	.byte		MOD   , 0
+	.byte		BEND  , c_v+0
 	.byte	W01
 @ 050   ----------------------------------------
 	.byte		VOICE , 27
 	.byte		PAN   , c_v+50
-	.byte		VOL   , 49*song125restored_mvl/mxv
+	.byte		VOL   , 25*song125restored_mvl/mxv
 	.byte		MOD   , 0
 	.byte		PAN   , c_v+50
-	.byte		VOL   , 49*song125restored_mvl/mxv
+	.byte		VOL   , 25*song125restored_mvl/mxv
 	.byte		MOD   , 0
 	.byte		BEND  , c_v+0
 	.byte	FINE
@@ -2964,87 +3003,17 @@ song125restored_6:
 	.byte		VOL   , 64*song125restored_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		VOL   , 64*song125restored_mvl/mxv
+	.byte		PAN   , c_v+0
+	.byte		VOL   , 64*song125restored_mvl/mxv
+	.byte		PAN   , c_v+0
+	.byte		VOL   , 64*song125restored_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N32   , Ds2 , v100
-	.byte	W05
-	.byte		VOL   , 64*song125restored_mvl/mxv
-	.byte	W02
-	.byte		        64*song125restored_mvl/mxv
-	.byte	W02
-	.byte		        64*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        64*song125restored_mvl/mxv
-	.byte	W02
-	.byte		        64*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        64*song125restored_mvl/mxv
-	.byte	W02
-	.byte		        64*song125restored_mvl/mxv
-	.byte	W02
-	.byte		        64*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        64*song125restored_mvl/mxv
-	.byte	W02
-	.byte		        64*song125restored_mvl/mxv
-	.byte	W02
-	.byte		        64*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        64*song125restored_mvl/mxv
-	.byte	W02
-	.byte		        64*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        64*song125restored_mvl/mxv
-	.byte	W02
-	.byte		        64*song125restored_mvl/mxv
-	.byte	W02
-	.byte		        64*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        64*song125restored_mvl/mxv
-	.byte	W02
-	.byte		        64*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        64*song125restored_mvl/mxv
-	.byte	W02
-	.byte		        64*song125restored_mvl/mxv
+	.byte	W36
 	.byte		N16   , Fn2 
-	.byte	W02
-	.byte		VOL   , 64*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        64*song125restored_mvl/mxv
-	.byte	W02
-	.byte		        64*song125restored_mvl/mxv
-	.byte	W02
-	.byte		        64*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        64*song125restored_mvl/mxv
-	.byte	W02
-	.byte		        64*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        64*song125restored_mvl/mxv
-	.byte	W02
-	.byte		        64*song125restored_mvl/mxv
-	.byte	W02
-	.byte		        64*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        64*song125restored_mvl/mxv
-	.byte	W02
-	.byte		        64*song125restored_mvl/mxv
-	.byte	W02
-	.byte		        64*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        64*song125restored_mvl/mxv
-	.byte	W02
-	.byte		        64*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        64*song125restored_mvl/mxv
+	.byte	W24
 	.byte		N10   
-	.byte	W02
-	.byte		VOL   , 64*song125restored_mvl/mxv
-	.byte	W02
-	.byte		        64*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        64*song125restored_mvl/mxv
-	.byte	W07
+	.byte	W12
 	.byte		N32   , Ds2 
 	.byte	W24
 @ 001   ----------------------------------------
@@ -3777,7 +3746,10 @@ song125restored_6_027:
 @ 049   ----------------------------------------
 	.byte	W92
 	.byte	W03
+	.byte		VOICE , 10
+	.byte		PAN   , c_v+0
 	.byte		VOL   , 64*song125restored_mvl/mxv
+	.byte		BEND  , c_v+0
 	.byte	W01
 @ 050   ----------------------------------------
 	.byte		VOICE , 10
@@ -3802,45 +3774,13 @@ song125restored_7:
 	.byte		VOL   , 63*song125restored_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		VOL   , 63*song125restored_mvl/mxv
+	.byte		PAN   , c_v+0
+	.byte		VOL   , 63*song125restored_mvl/mxv
+	.byte		PAN   , c_v+0
+	.byte		VOL   , 63*song125restored_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N56   , Gs2 , v076
-	.byte	W01
-	.byte		VOL   , 63*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        63*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        63*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        63*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        63*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        63*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        63*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        63*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        63*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        63*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        63*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        63*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        63*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        63*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        63*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        63*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        63*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        63*song125restored_mvl/mxv
-	.byte	W42
+	.byte	W60
 	.byte		N11   , As2 
 	.byte	W12
 	.byte		N32   , Gn2 
@@ -4141,14 +4081,8 @@ song125restored_7_012:
 	.byte	W44
 	.byte	W03
 	.byte		VOL   , 63*song125restored_mvl/mxv
+	.byte	W28
 	.byte	W01
-	.byte		        63*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        63*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        63*song125restored_mvl/mxv
-	.byte	W24
-	.byte	W02
 	.byte		N56   , Gs2 , v076
 	.byte	W20
 @ 025   ----------------------------------------
@@ -4267,54 +4201,16 @@ song125restored_7_037:
 	.byte		N11   
 	.byte	W09
 	.byte		VOL   , 28*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        28*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        28*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        28*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        28*song125restored_mvl/mxv
-	.byte	W01
+	.byte	W09
+	.byte		        29*song125restored_mvl/mxv
+	.byte	W08
 	.byte		        28*song125restored_mvl/mxv
 	.byte	W04
-	.byte		        29*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        29*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        29*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        29*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        29*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        29*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        29*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        29*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        28*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        28*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        28*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        28*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        28*song125restored_mvl/mxv
 	.byte		N04   , Gs1 , v100
-	.byte	W01
-	.byte		VOL   , 28*song125restored_mvl/mxv
-	.byte	W01
+	.byte	W02
 @ 043   ----------------------------------------
-	.byte		        28*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        28*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        28*song125restored_mvl/mxv
-	.byte	W01
-	.byte		        29*song125restored_mvl/mxv
+	.byte	W03
+	.byte		VOL   , 29*song125restored_mvl/mxv
 	.byte	W01
 	.byte		        28*song125restored_mvl/mxv
 	.byte		N04   , As1 
@@ -4510,7 +4406,10 @@ song125restored_7_037:
 	.byte		VOL   , 63*song125restored_mvl/mxv
 	.byte	W44
 	.byte	W03
-	.byte		        63*song125restored_mvl/mxv
+	.byte		VOICE , 10
+	.byte		PAN   , c_v+0
+	.byte		VOL   , 63*song125restored_mvl/mxv
+	.byte		BEND  , c_v+0
 	.byte	W01
 @ 050   ----------------------------------------
 	.byte		VOICE , 10

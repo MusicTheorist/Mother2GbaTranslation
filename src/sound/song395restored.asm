@@ -13,6 +13,7 @@
 ;**************** Track 1 (Midi-Chn.7) ****************;
 
 @song395restored_1:
+	.byte	TEMPO , 66
 	.byte	KEYSH , song395restored_key+0
 ; 000   ----------------------------------------
 	.byte		VOICE , 11
