@@ -48,6 +48,7 @@
 //This is the sound data
 .include "ArmipsMusicPlayDef.asm"
 .include "./sound/song013restored.asm" //Teleportation
+.include "./sound/song041restored.asm" //Cavern of Winters
 .include "./sound/song055restored.asm" //Cavern of Winters
 .include "./sound/song100restored.asm" //Franky
 .include "./sound/song104restored.asm" //Kraken of The Sea
@@ -74,6 +75,7 @@
 
 //This repoints the sound bytes to their new locations
 .org 0x810B598 :: .word song013restored
+.org 0x810B678 :: .word song041restored
 .org 0x810B6E8 :: .word song055restored
 .org 0x810B850 :: .word song100restored
 .org 0x810B870 :: .word song104restored
