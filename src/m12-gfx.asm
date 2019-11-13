@@ -51,7 +51,7 @@
 .include "./sound/song055restored.asm" //Cavern of Winters
 .include "./sound/song100restored.asm" //Franky
 .include "./sound/song104restored.asm" //Kraken of The Sea
-.include "./sound/song105restored.asm" //Kraken of The Sea
+.include "./sound/song105restored.asm" //Pokey Means Business!
 .include "./sound/song121restored.asm" //Onett (No Sunrise)
 .include "./sound/song125restored.asm" //Snowman (NOT_WORKING)
 .include "./sound/song185restored.asm" //Giygas is Wounded!
