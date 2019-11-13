@@ -1,44 +1,39 @@
 	.include "MPlayDef.s"
 
-	.equ	song105restored_FINAL_grp, voicegroup000
-	.equ	song105restored_FINAL_pri, 0
-	.equ	song105restored_FINAL_rev, 0
-	.equ	song105restored_FINAL_mvl, 127
-	.equ	song105restored_FINAL_key, 0
-	.equ	song105restored_FINAL_tbs, 1
-	.equ	song105restored_FINAL_exg, 0
-	.equ	song105restored_FINAL_cmp, 1
+	.equ	song105restored_testloop_grp, voicegroup000
+	.equ	song105restored_testloop_pri, 0
+	.equ	song105restored_testloop_rev, 0
+	.equ	song105restored_testloop_mvl, 127
+	.equ	song105restored_testloop_key, 0
+	.equ	song105restored_testloop_tbs, 1
+	.equ	song105restored_testloop_exg, 0
+	.equ	song105restored_testloop_cmp, 1
 
 	.section .rodata
-	.global	song105restored_FINAL
+	.global	song105restored_testloop
 	.align	2
 
 @**************** Track 1 (Midi-Chn.1) ****************@
 
-song105restored_FINAL_1:
-	.byte TEMPO, 64
-	.byte	KEYSH , song105restored_FINAL_key+0
+song105restored_testloop_1:
+	.byte	KEYSH , song105restored_testloop_key+0
 @ 000   ----------------------------------------
+	.byte	TEMPO , 125*song105restored_testloop_tbs/2
 	.byte		VOICE , 78
-	.byte		MODT  , 0
-	.byte		LFOS  , 44
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
-	.byte		BENDR , 12
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
-	.byte		        24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
+	.byte		        47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
-	.byte		BENDR , 12
+	.byte		        c_v+0
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
+	.byte		        47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
-	.byte		        24*song105restored_FINAL_mvl/mxv
-	.byte		PAN   , c_v+0
-	.byte		BENDR , 12
-	.byte		PAN   , c_v+0
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		        c_v+0
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		BEND  , c_v+0
-	.byte		N01   , En3 , v088
+	.byte		N01   , En3 , v100
 	.byte	W06
 	.byte		N01   
 	.byte	W06
@@ -733,567 +728,569 @@ song105restored_FINAL_1:
 	.byte	W07
 	.byte		VOICE , 29
 	.byte		PAN   , c_v-37
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N08   , Cn3 
-	.byte	W11
+	.byte	W01
+song105restored_testloop_1_B1:
+	.byte	W10
 	.byte		PAN   , c_v-64
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
-	.byte		N09   
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
+	.byte		N09   , Cn3 , v100
 	.byte	W11
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W07
 @ 028   ----------------------------------------
 	.byte	W04
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte	W01
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W12
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W12
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W12
 @ 029   ----------------------------------------
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W12
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W12
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W12
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W05
 @ 030   ----------------------------------------
 	.byte	W06
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W12
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte	W01
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W12
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W10
 @ 031   ----------------------------------------
 	.byte	W01
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte	W01
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W12
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte	W01
 	.byte		N08   
 	.byte	W10
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W12
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W12
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W03
 @ 032   ----------------------------------------
 	.byte	W08
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte	W01
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte	W01
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W12
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W08
 @ 033   ----------------------------------------
 	.byte	W03
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W12
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W12
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte	W01
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W02
 @ 034   ----------------------------------------
 	.byte	W10
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W12
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W12
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W12
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W06
 @ 035   ----------------------------------------
 	.byte	W05
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte	W01
 	.byte		N08   
 	.byte	W11
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N08   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W12
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W12
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W11
 @ 036   ----------------------------------------
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte	W01
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W12
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W12
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 31*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 54*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-18
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W05
 @ 037   ----------------------------------------
 	.byte	W07
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte	W01
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W12
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W12
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W09
 @ 038   ----------------------------------------
 	.byte	W02
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W12
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
-	.byte		PAN   , c_v-64
-	.byte		N09   
-	.byte	W12
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
-	.byte		PAN   , c_v-37
-	.byte		N09   
-	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W12
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
+	.byte		PAN   , c_v-64
+	.byte		N09   
+	.byte	W12
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
+	.byte		PAN   , c_v-37
+	.byte		N09   
+	.byte	W11
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W03
 @ 039   ----------------------------------------
 	.byte	W09
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
-	.byte		PAN   , c_v-64
-	.byte	W01
-	.byte		N09   
-	.byte	W11
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
-	.byte		PAN   , c_v-37
-	.byte		N09   
-	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte	W01
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
+	.byte		PAN   , c_v-64
+	.byte	W01
+	.byte		N09   
+	.byte	W11
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
+	.byte		PAN   , c_v-37
+	.byte		N09   
+	.byte	W11
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W08
 @ 040   ----------------------------------------
 	.byte	W04
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte	W01
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W12
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte	W01
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W01
 @ 041   ----------------------------------------
 	.byte	W10
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W12
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N08   
 	.byte	W11
-	.byte		VOL   , 31*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 54*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-18
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W12
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W12
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W06
 @ 042   ----------------------------------------
 	.byte	W05
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte	W01
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte	W01
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N08   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N09   
 	.byte	W12
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 50*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 73*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-42
 	.byte	W01
 	.byte		N04   
@@ -1327,7 +1324,7 @@ song105restored_FINAL_1:
 @ 045   ----------------------------------------
 	.byte	W42
 	.byte	W01
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte	W01
 	.byte		N14   
@@ -1358,7 +1355,7 @@ song105restored_FINAL_1:
 	.byte	W16
 	.byte		N13   
 	.byte	W16
-	.byte		VOL   , 0*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 0*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N14   
 	.byte	W17
@@ -1370,279 +1367,279 @@ song105restored_FINAL_1:
 	.byte	W01
 @ 048   ----------------------------------------
 	.byte	W15
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N06   
 	.byte	W09
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte	W01
 	.byte		N06   
 	.byte	W07
 @ 049   ----------------------------------------
 	.byte	W01
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N06   
 	.byte	W09
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N06   
 	.byte	W07
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte	W01
 	.byte		N06   
 	.byte	W06
 @ 050   ----------------------------------------
 	.byte	W02
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte	W01
 	.byte		N06   
 	.byte	W07
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte	W01
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte	W01
 	.byte		N06   
 	.byte	W04
 @ 051   ----------------------------------------
 	.byte	W04
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N06   
 	.byte	W09
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N06   
 	.byte	W07
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte	W01
 	.byte		N06   
 	.byte	W03
 @ 052   ----------------------------------------
 	.byte	W05
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N06   
 	.byte	W09
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N06   
 	.byte	W02
 @ 053   ----------------------------------------
 	.byte	W06
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N06   
 	.byte	W09
-	.byte		VOL   , 50*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 73*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-42
 	.byte		N04   
 	.byte	W07
@@ -1658,15 +1655,15 @@ song105restored_FINAL_1:
 	.byte	W23
 	.byte		N12   
 	.byte	W16
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+63
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 10*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 28*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 50*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 73*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-42
 	.byte	W01
 	.byte		N04   
@@ -1683,246 +1680,246 @@ song105restored_FINAL_1:
 	.byte	W23
 	.byte		N12   
 	.byte	W16
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+63
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 10*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 28*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N12   
 	.byte	W03
 @ 056   ----------------------------------------
 	.byte	W13
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		N24   
 	.byte	W80
 	.byte	W03
 @ 057   ----------------------------------------
 	.byte	W44
 	.byte	W01
-	.byte		VOL   , 50*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 73*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 31*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 54*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte	W01
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 31*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 54*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W05
 @ 058   ----------------------------------------
 	.byte	W10
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W16
-	.byte		VOL   , 31*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 54*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 31*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 54*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W16
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 31*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 54*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W09
 @ 059   ----------------------------------------
 	.byte	W07
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 31*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 54*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W16
-	.byte		VOL   , 31*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 54*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W16
-	.byte		VOL   , 31*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 54*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W12
 @ 060   ----------------------------------------
 	.byte	W03
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 31*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 54*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W16
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 31*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 54*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte	W01
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 31*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 54*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W01
 @ 061   ----------------------------------------
 	.byte	W15
-	.byte		VOL   , 31*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 54*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 31*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 54*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W16
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 31*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 54*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte	W01
 	.byte		N12   
 	.byte	W04
 @ 062   ----------------------------------------
 	.byte	W11
-	.byte		VOL   , 31*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 54*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W16
-	.byte		VOL   , 31*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 54*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 50*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 73*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 31*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 54*song105restored_testloop_mvl/mxv
 	.byte	W01
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W08
 @ 063   ----------------------------------------
 	.byte	W07
-	.byte		VOL   , 31*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 54*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W16
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 31*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 54*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W16
-	.byte		VOL   , 31*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 54*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W12
 @ 064   ----------------------------------------
 	.byte	W03
-	.byte		VOL   , 31*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 54*song105restored_testloop_mvl/mxv
 	.byte	W01
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 31*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 54*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W16
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 31*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 54*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W16
 @ 065   ----------------------------------------
-	.byte		VOL   , 31*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 54*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 31*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 54*song105restored_testloop_mvl/mxv
 	.byte	W01
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 31*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 54*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W16
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 31*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 54*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W04
 @ 066   ----------------------------------------
 	.byte	W11
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte	W01
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 31*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 54*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W16
-	.byte		VOL   , 31*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 54*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 31*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 54*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W08
 @ 067   ----------------------------------------
 	.byte	W08
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 31*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 54*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W16
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 31*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 54*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte	W01
 	.byte		N17   
 	.byte	W20
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		N17   
 	.byte	W06
 @ 068   ----------------------------------------
@@ -1941,45 +1938,42 @@ song105restored_FINAL_1:
 	.byte	W20
 @ 069   ----------------------------------------
 	.byte	W01
+	.byte	GOTO
+	 .word	song105restored_testloop_1_B1
+song105restored_testloop_1_B2:
+	.byte	TEMPO , 125*song105restored_testloop_tbs/2
 	.byte		VOICE , 29
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
-	.byte		BENDR , 12
+	.byte		        c_v-37
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
-	.byte		BENDR , 12
-	.byte		PAN   , c_v-37
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	FINE
 
 @**************** Track 2 (Midi-Chn.2) ****************@
 
-song105restored_FINAL_2:
-	.byte	KEYSH , song105restored_FINAL_key+0
+song105restored_testloop_2:
+	.byte	KEYSH , song105restored_testloop_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 13
-	.byte		MODT  , 0
-	.byte		LFOS  , 44
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
-	.byte		BENDR , 12
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
-	.byte		        24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
+	.byte		        47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
-	.byte		BENDR , 12
+	.byte		        c_v+0
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
+	.byte		        47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
-	.byte		        24*song105restored_FINAL_mvl/mxv
-	.byte		PAN   , c_v+0
-	.byte		BENDR , 12
-	.byte		PAN   , c_v+0
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		        c_v+0
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		BEND  , c_v+0
-	.byte		N32   , As2 , v088
+	.byte		N32   , As2 , v100
 	.byte	W36
 	.byte	W01
 	.byte		N44   , Bn2 
@@ -2287,20 +2281,22 @@ song105restored_FINAL_2:
 	.byte	W60
 	.byte	W02
 	.byte		VOICE , 30
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N03   
-	.byte	W05
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
-	.byte		N03   
+	.byte	W01
+song105restored_testloop_2_B1:
+	.byte	W04
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
+	.byte		N03   , Gs1 , v100
 	.byte	W06
 	.byte		N03   
 	.byte	W05
 	.byte		N03   
 	.byte	W06
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W06
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W01
 @ 028   ----------------------------------------
@@ -2309,20 +2305,20 @@ song105restored_FINAL_2:
 	.byte	W05
 	.byte		N03   
 	.byte	W06
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W06
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W05
 	.byte		N03   
 	.byte	W06
 	.byte		N03   
 	.byte	W06
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W05
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte	W01
 	.byte		N03   
 	.byte	W05
@@ -2330,20 +2326,20 @@ song105restored_FINAL_2:
 	.byte	W06
 	.byte		N03   
 	.byte	W06
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W05
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W06
 	.byte		N03   
 	.byte	W06
 	.byte		N03   
 	.byte	W05
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W06
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W06
 @ 029   ----------------------------------------
@@ -2351,40 +2347,40 @@ song105restored_FINAL_2:
 	.byte	W05
 	.byte		N03   
 	.byte	W06
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W06
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
-	.byte		N03   
-	.byte	W06
-	.byte		N03   
-	.byte	W05
-	.byte		N03   
-	.byte	W06
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
-	.byte		N03   
-	.byte	W06
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
-	.byte		N03   
-	.byte	W05
-	.byte		N03   
-	.byte	W06
-	.byte		N03   
-	.byte	W06
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
-	.byte		N03   
-	.byte	W05
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
-	.byte		N03   
-	.byte	W06
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W06
 	.byte		N03   
 	.byte	W05
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
 	.byte		N03   
 	.byte	W06
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
+	.byte		N03   
+	.byte	W06
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
+	.byte		N03   
+	.byte	W05
+	.byte		N03   
+	.byte	W06
+	.byte		N03   
+	.byte	W06
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
+	.byte		N03   
+	.byte	W05
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
+	.byte		N03   
+	.byte	W06
+	.byte		N03   
+	.byte	W06
+	.byte		N03   
+	.byte	W05
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
+	.byte		N03   
+	.byte	W06
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W06
 	.byte		N03   
@@ -2393,40 +2389,40 @@ song105restored_FINAL_2:
 	.byte	W01
 	.byte		N03   
 	.byte	W05
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W06
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
-	.byte		N03   
-	.byte	W06
-	.byte		N03   
-	.byte	W05
-	.byte		N03   
-	.byte	W06
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
-	.byte		N03   
-	.byte	W06
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W06
 	.byte		N03   
 	.byte	W05
 	.byte		N03   
 	.byte	W06
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W06
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
+	.byte		N03   
+	.byte	W06
+	.byte		N03   
+	.byte	W05
+	.byte		N03   
+	.byte	W06
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
+	.byte		N03   
+	.byte	W06
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W05
 	.byte		N03   
 	.byte	W06
 	.byte		N03   
 	.byte	W06
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W05
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W06
 	.byte		N03   
@@ -2435,101 +2431,101 @@ song105restored_FINAL_2:
 	.byte	W04
 @ 031   ----------------------------------------
 	.byte	W01
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte	W01
 	.byte		N03   
 	.byte	W05
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W06
 	.byte		N03   
 	.byte	W06
 	.byte		N03   
 	.byte	W05
-	.byte		VOL   , 74*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 92*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-14
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		N03   
 	.byte	W06
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W06
 	.byte		N03   
 	.byte	W05
 	.byte		N03   
 	.byte	W06
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte	W01
 	.byte		N03   
 	.byte	W05
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W05
 	.byte		N03   
 	.byte	W06
 	.byte		N03   
 	.byte	W06
-	.byte		VOL   , 74*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 92*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-14
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		N03   
 	.byte	W06
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W05
 	.byte		N03   
 	.byte	W06
 	.byte		N03   
 	.byte	W06
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W03
 @ 032   ----------------------------------------
 	.byte	W02
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W06
 	.byte		N03   
 	.byte	W06
 	.byte		N03   
 	.byte	W05
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte	W01
 	.byte		N03   
 	.byte	W05
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W06
 	.byte		N03   
 	.byte	W06
 	.byte		N03   
 	.byte	W05
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W06
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W06
 	.byte		N03   
 	.byte	W05
 	.byte		N03   
 	.byte	W06
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W06
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W05
 	.byte		N03   
 	.byte	W06
 	.byte		N03   
 	.byte	W06
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W05
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte	W01
 	.byte		N03   
 	.byte	W02
@@ -2539,40 +2535,40 @@ song105restored_FINAL_2:
 	.byte	W06
 	.byte		N03   
 	.byte	W06
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W05
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W06
 	.byte		N03   
 	.byte	W06
 	.byte		N03   
 	.byte	W06
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W05
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
-	.byte		N03   
-	.byte	W06
-	.byte		N03   
-	.byte	W05
-	.byte		N03   
-	.byte	W06
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
-	.byte		N03   
-	.byte	W06
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W06
 	.byte		N03   
 	.byte	W05
 	.byte		N03   
 	.byte	W06
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W06
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
+	.byte		N03   
+	.byte	W06
+	.byte		N03   
+	.byte	W05
+	.byte		N03   
+	.byte	W06
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
+	.byte		N03   
+	.byte	W06
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W05
 	.byte		N03   
@@ -2581,40 +2577,40 @@ song105restored_FINAL_2:
 	.byte	W04
 	.byte		N03   
 	.byte	W06
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W05
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W06
 	.byte		N03   
 	.byte	W06
 	.byte		N03   
 	.byte	W06
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W05
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W06
-	.byte		N03   
-	.byte	W06
-	.byte		N03   
-	.byte	W05
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
-	.byte		N03   
-	.byte	W06
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
 	.byte		N03   
 	.byte	W06
 	.byte		N03   
 	.byte	W05
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W06
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W06
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		N03   
+	.byte	W05
+	.byte		N03   
+	.byte	W06
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
+	.byte		N03   
+	.byte	W06
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W06
 	.byte		N03   
@@ -2623,10 +2619,10 @@ song105restored_FINAL_2:
 	.byte	W01
 @ 035   ----------------------------------------
 	.byte	W05
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W06
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W06
 	.byte		N03   
@@ -2637,10 +2633,10 @@ song105restored_FINAL_2:
 	.byte	W11
 	.byte		N09   
 	.byte	W12
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N09   
 	.byte	W11
 	.byte		N03   
@@ -2650,10 +2646,10 @@ song105restored_FINAL_2:
 	.byte		N09   
 	.byte	W11
 @ 036   ----------------------------------------
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte	W01
 	.byte		N09   
 	.byte	W11
@@ -2661,10 +2657,10 @@ song105restored_FINAL_2:
 	.byte	W11
 	.byte		N09   
 	.byte	W12
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W06
 	.byte		N03   
@@ -2673,12 +2669,12 @@ song105restored_FINAL_2:
 	.byte	W11
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		N09   
 	.byte	W05
 @ 037   ----------------------------------------
 	.byte	W07
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N09   
 	.byte	W11
 	.byte		N09   
@@ -2695,24 +2691,24 @@ song105restored_FINAL_2:
 	.byte	W11
 	.byte		N09   
 	.byte	W12
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		N09   
 	.byte	W09
 @ 038   ----------------------------------------
 	.byte	W02
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N09   
 	.byte	W11
 	.byte		N09   
 	.byte	W12
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 54*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 76*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-45
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		N09   
 	.byte	W12
@@ -2720,10 +2716,10 @@ song105restored_FINAL_2:
 	.byte	W11
 	.byte		N09   
 	.byte	W12
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N09   
 	.byte	W03
 @ 039   ----------------------------------------
@@ -2732,10 +2728,10 @@ song105restored_FINAL_2:
 	.byte	W11
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		N09   
 	.byte	W12
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N09   
 	.byte	W11
 	.byte		N03   
@@ -2744,10 +2740,10 @@ song105restored_FINAL_2:
 	.byte	W06
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N09   
 	.byte	W08
 @ 040   ----------------------------------------
@@ -2756,11 +2752,11 @@ song105restored_FINAL_2:
 	.byte	W11
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte	W01
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W05
 	.byte		N03   
@@ -2769,10 +2765,10 @@ song105restored_FINAL_2:
 	.byte	W12
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte	W01
 	.byte		N09   
 	.byte	W11
@@ -2792,10 +2788,10 @@ song105restored_FINAL_2:
 	.byte	W12
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		N09   
 	.byte	W12
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N09   
 	.byte	W11
 	.byte		N09   
@@ -2804,10 +2800,10 @@ song105restored_FINAL_2:
 	.byte	W06
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte	W01
 	.byte		N09   
 	.byte	W11
@@ -2815,13 +2811,13 @@ song105restored_FINAL_2:
 	.byte	W11
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		N09   
 	.byte	W12
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte	W01
 	.byte		N04   
 	.byte	W07
@@ -2854,7 +2850,7 @@ song105restored_FINAL_2:
 @ 045   ----------------------------------------
 	.byte	W42
 	.byte	W01
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte	W01
 	.byte		N06   
 	.byte	W08
@@ -2871,50 +2867,50 @@ song105restored_FINAL_2:
 	.byte	W96
 @ 048   ----------------------------------------
 	.byte	W15
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W05
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
 	.byte		N02   
 	.byte	W04
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
-	.byte		N02   
-	.byte	W04
-	.byte		N02   
-	.byte	W04
-	.byte		N02   
-	.byte	W04
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
-	.byte		N02   
-	.byte	W04
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
 	.byte		N02   
 	.byte	W04
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
 	.byte		N02   
 	.byte	W04
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
+	.byte		N02   
+	.byte	W04
+	.byte		N02   
+	.byte	W04
+	.byte		N02   
+	.byte	W04
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
+	.byte		N02   
+	.byte	W04
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W05
 	.byte		N02   
@@ -2923,60 +2919,60 @@ song105restored_FINAL_2:
 	.byte	W03
 @ 049   ----------------------------------------
 	.byte	W01
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
-	.byte		N02   
-	.byte	W04
-	.byte		N02   
-	.byte	W04
-	.byte		N02   
-	.byte	W04
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
-	.byte		N02   
-	.byte	W04
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
 	.byte		N02   
 	.byte	W04
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
-	.byte		N02   
-	.byte	W04
-	.byte		N02   
-	.byte	W04
-	.byte		N02   
-	.byte	W04
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
-	.byte		N02   
-	.byte	W04
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
 	.byte		N02   
 	.byte	W04
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
+	.byte		N02   
+	.byte	W04
+	.byte		N02   
+	.byte	W04
+	.byte		N02   
+	.byte	W04
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
+	.byte		N02   
+	.byte	W04
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
+	.byte		N02   
+	.byte	W04
+	.byte		N02   
+	.byte	W04
+	.byte		N02   
+	.byte	W04
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
+	.byte		N02   
+	.byte	W04
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
 	.byte		N02   
 	.byte	W04
 	.byte		N02   
 	.byte	W05
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W03
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W05
 	.byte		N02   
@@ -2985,12 +2981,12 @@ song105restored_FINAL_2:
 	.byte	W02
 @ 050   ----------------------------------------
 	.byte	W02
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 77*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 94*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+9
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		N02   
 	.byte	W04
@@ -2998,41 +2994,41 @@ song105restored_FINAL_2:
 	.byte	W04
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
-	.byte		N02   
-	.byte	W04
-	.byte		N02   
-	.byte	W04
-	.byte		N02   
-	.byte	W04
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
-	.byte		N02   
-	.byte	W04
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
 	.byte		N02   
 	.byte	W04
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
+	.byte		N02   
+	.byte	W04
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
+	.byte		N02   
+	.byte	W04
+	.byte		N02   
+	.byte	W04
+	.byte		N02   
+	.byte	W04
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte	W01
 	.byte		N02   
 	.byte	W03
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W05
 	.byte		N02   
 	.byte	W04
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W03
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte	W01
 	.byte		N02   
 	.byte	W04
@@ -3040,10 +3036,10 @@ song105restored_FINAL_2:
 	.byte	W04
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W05
 	.byte		N02   
@@ -3051,52 +3047,52 @@ song105restored_FINAL_2:
 @ 051   ----------------------------------------
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
-	.byte		N02   
-	.byte	W04
-	.byte		N02   
-	.byte	W04
-	.byte		N02   
-	.byte	W04
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
-	.byte		N02   
-	.byte	W04
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
 	.byte		N02   
 	.byte	W04
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
-	.byte		N02   
-	.byte	W04
-	.byte		N02   
-	.byte	W04
-	.byte		N02   
-	.byte	W04
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
-	.byte		N02   
-	.byte	W04
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
 	.byte		N02   
 	.byte	W04
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 74*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
+	.byte		N02   
+	.byte	W04
+	.byte		N02   
+	.byte	W04
+	.byte		N02   
+	.byte	W04
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
+	.byte		N02   
+	.byte	W04
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
+	.byte		N02   
+	.byte	W04
+	.byte		N02   
+	.byte	W04
+	.byte		N02   
+	.byte	W04
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
+	.byte		N02   
+	.byte	W04
+	.byte		VOL   , 92*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+16
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		N02   
 	.byte	W04
@@ -3104,10 +3100,10 @@ song105restored_FINAL_2:
 	.byte	W04
 	.byte		N02   
 	.byte	W05
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W03
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte	W01
 	.byte		N02   
 	.byte	W04
@@ -3117,60 +3113,60 @@ song105restored_FINAL_2:
 	.byte	W01
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
-	.byte		N02   
-	.byte	W04
-	.byte		N02   
-	.byte	W04
-	.byte		N02   
-	.byte	W04
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
-	.byte		N02   
-	.byte	W04
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
 	.byte		N02   
 	.byte	W04
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
 	.byte		N02   
 	.byte	W04
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
+	.byte		N02   
+	.byte	W04
+	.byte		N02   
+	.byte	W04
+	.byte		N02   
+	.byte	W04
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
+	.byte		N02   
+	.byte	W04
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
 	.byte		N02   
 	.byte	W04
 	.byte		N02   
 	.byte	W05
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W03
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W05
 	.byte		N02   
 	.byte	W04
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
 	.byte		N02   
@@ -3179,37 +3175,37 @@ song105restored_FINAL_2:
 	.byte	W02
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
-	.byte		N02   
-	.byte	W04
-	.byte		N02   
-	.byte	W04
-	.byte		N02   
-	.byte	W04
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
-	.byte		N02   
-	.byte	W04
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
 	.byte		N02   
 	.byte	W04
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
+	.byte		N02   
+	.byte	W04
+	.byte		N02   
+	.byte	W04
+	.byte		N02   
+	.byte	W04
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
+	.byte		N02   
+	.byte	W04
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
 	.byte		N02   
 	.byte	W04
 	.byte		N02   
 	.byte	W05
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N04   
 	.byte	W07
 	.byte		N20   
@@ -3249,24 +3245,24 @@ song105restored_FINAL_2:
 	.byte	W03
 @ 056   ----------------------------------------
 	.byte	W13
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N24   
 	.byte	W80
 	.byte	W03
 @ 057   ----------------------------------------
 	.byte	W44
 	.byte	W01
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte	W01
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W05
 @ 058   ----------------------------------------
@@ -3277,10 +3273,10 @@ song105restored_FINAL_2:
 	.byte	W08
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W16
 	.byte		N12   
@@ -3289,10 +3285,10 @@ song105restored_FINAL_2:
 	.byte	W09
 @ 059   ----------------------------------------
 	.byte	W07
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N04   
 	.byte	W08
 	.byte		N04   
@@ -3301,10 +3297,10 @@ song105restored_FINAL_2:
 	.byte	W16
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W16
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W12
 @ 060   ----------------------------------------
@@ -3323,22 +3319,22 @@ song105restored_FINAL_2:
 	.byte	W15
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W01
 @ 061   ----------------------------------------
 	.byte	W15
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
 	.byte		N12   
 	.byte	W15
 	.byte		N12   
 	.byte	W16
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W16
 	.byte		N12   
@@ -3347,25 +3343,25 @@ song105restored_FINAL_2:
 	.byte	W11
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W16
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte	W01
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W08
 @ 063   ----------------------------------------
 	.byte	W07
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W16
 	.byte		N04   
@@ -3374,10 +3370,10 @@ song105restored_FINAL_2:
 	.byte	W08
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W16
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
 	.byte		N12   
@@ -3386,10 +3382,10 @@ song105restored_FINAL_2:
 	.byte	W04
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N04   
 	.byte	W08
 	.byte		N04   
@@ -3398,13 +3394,13 @@ song105restored_FINAL_2:
 	.byte	W15
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W16
 @ 065   ----------------------------------------
-	.byte		VOL   , 54*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 76*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-45
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		N12   
 	.byte	W15
@@ -3424,21 +3420,21 @@ song105restored_FINAL_2:
 	.byte	W04
 @ 066   ----------------------------------------
 	.byte	W11
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte	W01
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
 	.byte		N12   
 	.byte	W16
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W08
 @ 067   ----------------------------------------
@@ -3447,10 +3443,10 @@ song105restored_FINAL_2:
 	.byte	W15
 	.byte		N12   
 	.byte	W16
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W16
 	.byte		N12   
@@ -3459,10 +3455,10 @@ song105restored_FINAL_2:
 	.byte	W11
 @ 068   ----------------------------------------
 	.byte	W04
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W16
 	.byte		N04   
@@ -3474,43 +3470,39 @@ song105restored_FINAL_2:
 	.byte	W02
 @ 069   ----------------------------------------
 	.byte	W01
+	.byte	GOTO
+	 .word	song105restored_testloop_2_B1
+song105restored_testloop_2_B2:
 	.byte		VOICE , 30
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
-	.byte		BENDR , 12
+	.byte		        c_v+0
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
-	.byte		BENDR , 12
-	.byte		PAN   , c_v+0
-	.byte		VOL   , 81*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 97*song105restored_testloop_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	FINE
 
 @**************** Track 3 (Midi-Chn.3) ****************@
 
-song105restored_FINAL_3:
-	.byte	KEYSH , song105restored_FINAL_key+0
+song105restored_testloop_3:
+	.byte	KEYSH , song105restored_testloop_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 13
-	.byte		MODT  , 0
-	.byte		LFOS  , 44
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
-	.byte		BENDR , 12
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
-	.byte		        24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
+	.byte		        47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
-	.byte		BENDR , 12
+	.byte		        c_v+0
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
+	.byte		        47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
-	.byte		        24*song105restored_FINAL_mvl/mxv
-	.byte		PAN   , c_v+0
-	.byte		BENDR , 12
-	.byte		PAN   , c_v+0
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		        c_v+0
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		BEND  , c_v+0
-	.byte		N09   , As0 , v088
+	.byte		N09   , As0 , v100
 	.byte	W12
 	.byte		        Bn0 
 	.byte	W13
@@ -4173,11 +4165,13 @@ song105restored_FINAL_3:
 	.byte		N04   
 	.byte	W07
 	.byte		VOICE , 31
-	.byte		VOL   , 59*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 80*song105restored_testloop_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N03   , Ds2 
-	.byte	W05
-	.byte		N03   
+	.byte	W01
+song105restored_testloop_3_B1:
+	.byte	W04
+	.byte		N03   , Ds2 , v100
 	.byte	W06
 	.byte		BEND  , c_v+0
 	.byte		N03   , En2 
@@ -4626,7 +4620,7 @@ song105restored_FINAL_3:
 	.byte	W12
 	.byte		N09   
 	.byte	W11
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte	W01
 	.byte		N04   , Bn1 
 	.byte	W07
@@ -4679,7 +4673,7 @@ song105restored_FINAL_3:
 	.byte	W05
 	.byte		        c_v+0
 	.byte	W05
-	.byte		VOL   , 59*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 80*song105restored_testloop_mvl/mxv
 	.byte	W01
 	.byte		N06   , As1 
 	.byte	W08
@@ -4707,7 +4701,7 @@ song105restored_FINAL_3:
 	.byte	W96
 @ 048   ----------------------------------------
 	.byte	W15
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N14   , As2 
 	.byte	W07
@@ -4766,10 +4760,10 @@ song105restored_FINAL_3:
 	.byte	W08
 	.byte		N02   , Bn1 
 	.byte	W04
-	.byte		VOL   , 39*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 63*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte	W01
 	.byte		N02   
 	.byte	W04
@@ -4779,10 +4773,10 @@ song105restored_FINAL_3:
 	.byte	W01
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 39*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 63*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
 	.byte		N02   
@@ -4897,20 +4891,20 @@ song105restored_FINAL_3:
 	.byte	W08
 	.byte		N02   , Bn1 
 	.byte	W04
-	.byte		VOL   , 39*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 63*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
 	.byte		N02   
 	.byte	W04
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 39*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 63*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
 	.byte		N02   
@@ -5024,20 +5018,20 @@ song105restored_FINAL_3:
 	.byte	W08
 	.byte		N02   , Bn1 
 	.byte	W04
-	.byte		VOL   , 39*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 63*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
 	.byte		N02   
 	.byte	W04
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 39*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 63*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
 	.byte		N02   
@@ -5151,10 +5145,10 @@ song105restored_FINAL_3:
 	.byte	W08
 	.byte		N02   , Bn1 
 	.byte	W04
-	.byte		VOL   , 39*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 63*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W02
 @ 053   ----------------------------------------
@@ -5163,10 +5157,10 @@ song105restored_FINAL_3:
 	.byte	W04
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 39*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 63*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
 	.byte		N02   
@@ -5223,11 +5217,11 @@ song105restored_FINAL_3:
 	.byte	W01
 	.byte		        c_v+22
 	.byte	W02
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N04   , As1 
 	.byte	W07
-	.byte		VOL   , 59*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 80*song105restored_testloop_mvl/mxv
 	.byte		N20   , Cs2 
 	.byte	W23
 	.byte		N04   , Bn1 
@@ -5326,11 +5320,11 @@ song105restored_FINAL_3:
 	.byte		BEND  , c_v+37
 	.byte		N01   , Cn4 
 	.byte	W03
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N04   , As1 
 	.byte	W07
-	.byte		VOL   , 59*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 80*song105restored_testloop_mvl/mxv
 	.byte		N20   , Cs2 
 	.byte	W07
 @ 055   ----------------------------------------
@@ -5367,14 +5361,14 @@ song105restored_FINAL_3:
 @ 057   ----------------------------------------
 	.byte	W44
 	.byte	W01
-	.byte		VOL   , 65*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 85*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-12
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		BEND  , c_v+0
 	.byte		N08   , As1 
 	.byte	W15
-	.byte		VOL   , 59*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 80*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W16
 	.byte		N12   
@@ -5448,10 +5442,10 @@ song105restored_FINAL_3:
 	.byte	W16
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N08   
 	.byte	W15
-	.byte		VOL   , 59*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 80*song105restored_testloop_mvl/mxv
 	.byte	W01
 	.byte		N12   
 	.byte	W15
@@ -5545,43 +5539,39 @@ song105restored_FINAL_3:
 	.byte	W15
 @ 069   ----------------------------------------
 	.byte	W01
+	.byte	GOTO
+	 .word	song105restored_testloop_3_B1
+song105restored_testloop_3_B2:
 	.byte		VOICE , 31
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
-	.byte		BENDR , 12
+	.byte		        c_v+0
+	.byte		VOL   , 80*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 59*song105restored_FINAL_mvl/mxv
-	.byte		BENDR , 12
-	.byte		PAN   , c_v+0
-	.byte		VOL   , 59*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 80*song105restored_testloop_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	FINE
 
 @**************** Track 4 (Midi-Chn.4) ****************@
 
-song105restored_FINAL_4:
-	.byte	KEYSH , song105restored_FINAL_key+0
+song105restored_testloop_4:
+	.byte	KEYSH , song105restored_testloop_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 13
-	.byte		MODT  , 0
-	.byte		LFOS  , 44
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
-	.byte		BENDR , 12
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
-	.byte		        24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
+	.byte		        47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
-	.byte		BENDR , 12
+	.byte		        c_v+0
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
+	.byte		        47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
-	.byte		        24*song105restored_FINAL_mvl/mxv
-	.byte		PAN   , c_v+0
-	.byte		BENDR , 12
-	.byte		PAN   , c_v+0
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		        c_v+0
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		BEND  , c_v+0
-	.byte		N32   , Fn2 , v088
+	.byte		N32   , Fn2 , v100
 	.byte	W01
 	.byte		BEND  , c_v+0
 	.byte	W02
@@ -7840,10 +7830,12 @@ song105restored_FINAL_4:
 	.byte	W01
 	.byte		VOICE , 27
 	.byte		PAN   , c_v-7
-	.byte		VOL   , 54*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 76*song105restored_testloop_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N30   , Cn1 
-	.byte	W18
+	.byte	W01
+song105restored_testloop_4_B1:
+	.byte	W17
 	.byte		BEND  , c_v+1
 	.byte	W01
 	.byte		        c_v+2
@@ -7874,7 +7866,7 @@ song105restored_FINAL_4:
 	.byte		        c_v+0
 	.byte	W03
 	.byte		        c_v+0
-	.byte		N54   , Cs1 
+	.byte		N54   , Cs1 , v100
 	.byte	W18
 	.byte		BEND  , c_v+1
 	.byte	W01
@@ -8665,7 +8657,7 @@ song105restored_FINAL_4:
 	.byte	W01
 	.byte		        c_v-3
 	.byte	W03
-	.byte		VOL   , 31*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 54*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+63
 	.byte		BEND  , c_v+1
 	.byte		N20   
@@ -8690,7 +8682,7 @@ song105restored_FINAL_4:
 	.byte	W02
 	.byte		        c_v+1
 	.byte	W04
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		BEND  , c_v+2
 	.byte		N20   
@@ -8713,7 +8705,7 @@ song105restored_FINAL_4:
 	.byte	W02
 	.byte		        c_v+1
 	.byte	W03
-	.byte		VOL   , 10*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 28*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+63
 	.byte		N20   
 	.byte	W01
@@ -8761,7 +8753,7 @@ song105restored_FINAL_4:
 	.byte	W02
 	.byte		        c_v+1
 	.byte	W03
-	.byte		VOL   , 0*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 0*song105restored_testloop_mvl/mxv
 	.byte		N20   
 	.byte	W01
 	.byte		BEND  , c_v+2
@@ -8855,7 +8847,7 @@ song105restored_FINAL_4:
 	.byte	W96
 @ 039   ----------------------------------------
 	.byte	W09
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-10
 	.byte		BEND  , c_v+1
 	.byte		N07   , Fn1 
@@ -8884,7 +8876,7 @@ song105restored_FINAL_4:
 	.byte		BEND  , c_v+58
 	.byte		N01   , An3 
 	.byte	W03
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+63
 	.byte		BEND  , c_v+1
 	.byte		N07   , Fn1 
@@ -8943,7 +8935,7 @@ song105restored_FINAL_4:
 	.byte	W01
 	.byte		BEND  , c_v+48
 	.byte	W02
-	.byte		VOL   , 10*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 28*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+63
 	.byte		BEND  , c_v+1
 	.byte		N07   , Fn1 
@@ -9036,7 +9028,7 @@ song105restored_FINAL_4:
 	.byte		BEND  , c_v+46
 	.byte		N01   , Cn4 
 	.byte	W03
-	.byte		VOL   , 0*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 0*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		BEND  , c_v+1
 	.byte		N07   , Fn1 
@@ -9382,23 +9374,23 @@ song105restored_FINAL_4:
 @ 042   ----------------------------------------
 	.byte	W84
 	.byte	W01
-	.byte		VOL   , 54*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 76*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-26
 	.byte	W01
 	.byte		BEND  , c_v+0
 	.byte		N04   , Cs1 
 	.byte	W07
-	.byte		VOL   , 39*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 63*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-32
 	.byte		N20   
 	.byte	W03
 @ 043   ----------------------------------------
 	.byte	W20
-	.byte		VOL   , 54*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 76*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-26
 	.byte		N04   
 	.byte	W07
-	.byte		VOL   , 39*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 63*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-32
 	.byte	W01
 	.byte		N12   
@@ -9454,20 +9446,20 @@ song105restored_FINAL_4:
 	.byte	W01
 	.byte		        c_v-25
 	.byte	W03
-	.byte		VOL   , 54*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 76*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-26
 	.byte		BEND  , c_v+0
 	.byte		N04   
 	.byte	W08
-	.byte		VOL   , 39*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 63*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-32
 	.byte		N20   
 	.byte	W23
-	.byte		VOL   , 54*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 76*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-26
 	.byte		N04   
 	.byte	W07
-	.byte		VOL   , 39*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 63*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-32
 	.byte	W01
 	.byte		N12   
@@ -9513,7 +9505,7 @@ song105restored_FINAL_4:
 	.byte	W01
 	.byte		        c_v+0
 	.byte	W03
-	.byte		VOL   , 50*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 73*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-21
 	.byte	W01
 	.byte		BEND  , c_v+1
@@ -10136,7 +10128,7 @@ song105restored_FINAL_4:
 	.byte		        c_v+1
 	.byte		N30   , Bn1 
 	.byte	W01
-	.byte		VOL   , 39*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 63*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-32
 	.byte		BEND  , c_v+2
 	.byte	W01
@@ -10150,7 +10142,7 @@ song105restored_FINAL_4:
 	.byte	W01
 	.byte		        c_v+2
 	.byte	W01
-	.byte		VOL   , 31*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 54*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-18
 	.byte		BEND  , c_v+1
 	.byte	W01
@@ -10180,7 +10172,7 @@ song105restored_FINAL_4:
 	.byte	W01
 	.byte		        c_v-3
 	.byte	W05
-	.byte		VOL   , 50*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 73*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-21
 	.byte		BEND  , c_v+6
 	.byte		N14   , En1 
@@ -10486,7 +10478,7 @@ song105restored_FINAL_4:
 	.byte	W01
 	.byte		        c_v+1
 	.byte	W02
-	.byte		VOL   , 39*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 63*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-32
 	.byte		N30   , Bn1 
 	.byte	W01
@@ -10502,7 +10494,7 @@ song105restored_FINAL_4:
 	.byte	W01
 	.byte		        c_v+1
 	.byte	W01
-	.byte		VOL   , 31*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 54*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-18
 	.byte		BEND  , c_v+1
 	.byte	W01
@@ -10530,7 +10522,7 @@ song105restored_FINAL_4:
 	.byte	W01
 	.byte		        c_v-3
 	.byte	W04
-	.byte		VOL   , 50*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 73*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-21
 	.byte		BEND  , c_v+1
 	.byte		N14   , En1 
@@ -10555,7 +10547,7 @@ song105restored_FINAL_4:
 	.byte	W01
 	.byte		        c_v+4
 	.byte	W03
-	.byte		VOL   , 54*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 76*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-26
 	.byte		BEND  , c_v+3
 	.byte		N04   , Bn0 
@@ -10564,7 +10556,7 @@ song105restored_FINAL_4:
 	.byte	W01
 	.byte		        c_v+4
 	.byte	W05
-	.byte		VOL   , 39*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 63*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-32
 	.byte		BEND  , c_v+2
 	.byte		N20   , Dn1 
@@ -10573,7 +10565,7 @@ song105restored_FINAL_4:
 	.byte	W01
 	.byte		        c_v+4
 	.byte	W21
-	.byte		VOL   , 54*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 76*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-26
 	.byte		BEND  , c_v+2
 	.byte		N05   , Cn1 
@@ -10582,9 +10574,9 @@ song105restored_FINAL_4:
 	.byte	W01
 	.byte		        c_v+4
 	.byte	W06
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-10
-	.byte		VOL   , 39*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 63*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-32
 	.byte		BEND  , c_v+3
 	.byte		N12   , Fn1 
@@ -10651,24 +10643,24 @@ song105restored_FINAL_4:
 	.byte	W01
 	.byte		        c_v-25
 	.byte	W04
-	.byte		VOL   , 54*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 76*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-26
 	.byte		BEND  , c_v+0
 	.byte		N04   , Cn1 
 	.byte	W07
-	.byte		VOL   , 39*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 63*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-32
 	.byte		BEND  , c_v+1
 	.byte		N20   , Ds1 
 	.byte	W07
 @ 055   ----------------------------------------
 	.byte	W16
-	.byte		VOL   , 54*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 76*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-26
 	.byte		BEND  , c_v+0
 	.byte		N05   , Cs1 
 	.byte	W08
-	.byte		VOL   , 39*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 63*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-32
 	.byte		BEND  , c_v+1
 	.byte		N12   , Fs1 
@@ -10715,7 +10707,7 @@ song105restored_FINAL_4:
 	.byte	W01
 	.byte		        c_v+0
 	.byte	W04
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+63
 	.byte		BEND  , c_v+1
 	.byte		N17   , An1 
@@ -10724,17 +10716,17 @@ song105restored_FINAL_4:
 	.byte		N17   
 	.byte	W30
 	.byte	W01
-	.byte		VOL   , 10*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 28*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+63
 	.byte		N17   
 	.byte	W22
 @ 057   ----------------------------------------
 	.byte	W09
-	.byte		VOL   , 0*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 0*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N18   
 	.byte	W36
-	.byte		VOL   , 59*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 80*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+16
 	.byte		BEND  , c_v+0
 	.byte		N17   , As0 
@@ -10751,7 +10743,7 @@ song105restored_FINAL_4:
 	.byte	W03
 	.byte		        c_v+0
 	.byte	W16
-	.byte		VOL   , 54*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 76*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+11
 	.byte		BEND  , c_v+1
 	.byte		N24   , An0 
@@ -11020,7 +11012,7 @@ song105restored_FINAL_4:
 	.byte	W03
 	.byte		        c_v+1
 	.byte	W04
-	.byte		VOL   , 59*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 80*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+16
 	.byte		BEND  , c_v+0
 	.byte		N17   , As0 
@@ -11037,7 +11029,7 @@ song105restored_FINAL_4:
 	.byte	W04
 	.byte		        c_v+0
 	.byte	W15
-	.byte		VOL   , 54*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 76*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+11
 	.byte		N28   , An0 
 	.byte	W01
@@ -11315,7 +11307,7 @@ song105restored_FINAL_4:
 	.byte	W04
 	.byte		        c_v+1
 	.byte	W03
-	.byte		VOL   , 31*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 54*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+63
 	.byte	W01
 	.byte		BEND  , c_v+2
@@ -11356,7 +11348,7 @@ song105restored_FINAL_4:
 	.byte	W01
 	.byte		        c_v+55
 	.byte	W03
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		BEND  , c_v+1
 	.byte		N28   
@@ -11399,7 +11391,7 @@ song105restored_FINAL_4:
 	.byte	W01
 	.byte		        c_v+55
 	.byte	W03
-	.byte		VOL   , 10*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 28*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+63
 	.byte		BEND  , c_v+1
 	.byte		N24   
@@ -11484,43 +11476,39 @@ song105restored_FINAL_4:
 	.byte	W03
 @ 069   ----------------------------------------
 	.byte	W01
+	.byte	GOTO
+	 .word	song105restored_testloop_4_B1
+song105restored_testloop_4_B2:
 	.byte		VOICE , 27
-	.byte		VOL   , 54*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 76*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-7
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
-	.byte		BENDR , 12
+	.byte		        c_v-7
+	.byte		VOL   , 76*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-7
-	.byte		VOL   , 54*song105restored_FINAL_mvl/mxv
-	.byte		BENDR , 12
-	.byte		PAN   , c_v-7
-	.byte		VOL   , 54*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 76*song105restored_testloop_mvl/mxv
 	.byte		BEND  , c_v+55
 	.byte	FINE
 
 @**************** Track 5 (Midi-Chn.5) ****************@
 
-song105restored_FINAL_5:
-	.byte	KEYSH , song105restored_FINAL_key+0
+song105restored_testloop_5:
+	.byte	KEYSH , song105restored_testloop_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 13
-	.byte		MODT  , 0
-	.byte		LFOS  , 44
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 59*song105restored_FINAL_mvl/mxv
-	.byte		BENDR , 12
+	.byte		VOL   , 80*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 59*song105restored_FINAL_mvl/mxv
-	.byte		        59*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 80*song105restored_testloop_mvl/mxv
+	.byte		        80*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
-	.byte		BENDR , 12
+	.byte		        c_v+0
+	.byte		VOL   , 80*song105restored_testloop_mvl/mxv
+	.byte		        80*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 59*song105restored_FINAL_mvl/mxv
-	.byte		        59*song105restored_FINAL_mvl/mxv
-	.byte		PAN   , c_v+0
-	.byte		BENDR , 12
-	.byte		PAN   , c_v+0
-	.byte		VOL   , 59*song105restored_FINAL_mvl/mxv
+	.byte		        c_v+0
+	.byte		VOL   , 80*song105restored_testloop_mvl/mxv
 	.byte		BEND  , c_v+56
 	.byte	W96
 @ 001   ----------------------------------------
@@ -11580,10 +11568,11 @@ song105restored_FINAL_5:
 	.byte	W01
 	.byte		VOICE , 27
 	.byte	W01
+song105restored_testloop_5_B1:
 	.byte		PAN   , c_v+16
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		BEND  , c_v+1
-	.byte		N32   , Gn1 , v088
+	.byte		N32   , Gn1 , v100
 	.byte	W28
 @ 028   ----------------------------------------
 	.byte	W06
@@ -11733,12 +11722,12 @@ song105restored_FINAL_5:
 	.byte	W01
 	.byte		        c_v-4
 	.byte	W03
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+63
 	.byte		BEND  , c_v+1
 	.byte		N20   
 	.byte	W23
-	.byte		VOL   , 10*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 28*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N20   
 	.byte	W22
@@ -11749,7 +11738,7 @@ song105restored_FINAL_5:
 	.byte		PAN   , c_v-64
 	.byte		N20   
 	.byte	W23
-	.byte		VOL   , 0*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 0*song105restored_testloop_mvl/mxv
 	.byte		N20   
 	.byte	W23
 	.byte		N20   
@@ -11764,7 +11753,7 @@ song105restored_FINAL_5:
 	.byte	W96
 @ 039   ----------------------------------------
 	.byte	W09
-	.byte		VOL   , 31*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 54*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+27
 	.byte		BEND  , c_v+1
 	.byte		N09   , Cn2 
@@ -11785,7 +11774,7 @@ song105restored_FINAL_5:
 	.byte	W01
 	.byte		        c_v+46
 	.byte	W02
-	.byte		VOL   , 10*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 28*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		BEND  , c_v+1
 	.byte		N09   
@@ -11911,7 +11900,7 @@ song105restored_FINAL_5:
 	.byte	W01
 	.byte		        c_v+45
 	.byte	W03
-	.byte		VOL   , 0*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 0*song105restored_testloop_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte		N09   
 	.byte	W03
@@ -12193,22 +12182,22 @@ song105restored_FINAL_5:
 @ 042   ----------------------------------------
 	.byte	W84
 	.byte	W02
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		BEND  , c_v+1
 	.byte		N04   , Gs1 
 	.byte	W07
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N20   
 	.byte	W03
 @ 043   ----------------------------------------
 	.byte	W20
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N04   
 	.byte	W07
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte	W01
 	.byte		N12   
@@ -12274,20 +12263,20 @@ song105restored_FINAL_5:
 	.byte	W01
 	.byte		        c_v-25
 	.byte	W03
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		BEND  , c_v+1
 	.byte		N04   
 	.byte	W08
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N20   
 	.byte	W23
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		N04   
 	.byte	W08
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N12   
 	.byte	W15
@@ -12333,7 +12322,7 @@ song105restored_FINAL_5:
 	.byte	W01
 	.byte		        c_v+0
 	.byte	W03
-	.byte		VOL   , 39*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 63*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-32
 	.byte	W01
 	.byte		BEND  , c_v+1
@@ -12697,13 +12686,13 @@ song105restored_FINAL_5:
 	.byte	W09
 	.byte		N30   , Fs2 
 	.byte	W02
-	.byte		VOL   , 31*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 54*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-18
 	.byte	W03
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte	W08
-	.byte		VOL   , 10*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 28*song105restored_testloop_mvl/mxv
 	.byte		BEND  , c_v+2
 	.byte	W01
 	.byte		        c_v+3
@@ -12740,7 +12729,7 @@ song105restored_FINAL_5:
 	.byte	W01
 	.byte		        c_v-2
 	.byte	W02
-	.byte		VOL   , 39*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 63*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-32
 	.byte		BEND  , c_v+4
 	.byte		N13   , Bn1 
@@ -12911,13 +12900,13 @@ song105restored_FINAL_5:
 	.byte	W07
 	.byte		N30   , Fs2 
 	.byte	W03
-	.byte		VOL   , 31*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 54*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-18
 	.byte	W03
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte	W08
-	.byte		VOL   , 10*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 28*song105restored_testloop_mvl/mxv
 	.byte		BEND  , c_v+2
 	.byte	W01
 	.byte		        c_v+2
@@ -12954,7 +12943,7 @@ song105restored_FINAL_5:
 	.byte	W01
 	.byte		        c_v-2
 	.byte	W01
-	.byte		VOL   , 39*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 63*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-32
 	.byte	W01
 	.byte		BEND  , c_v+6
@@ -12962,7 +12951,7 @@ song105restored_FINAL_5:
 	.byte	W01
 	.byte		BEND  , c_v+4
 	.byte	W14
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte	W01
 	.byte		BEND  , c_v+3
@@ -12972,7 +12961,7 @@ song105restored_FINAL_5:
 	.byte	W01
 	.byte		        c_v+4
 	.byte	W05
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		BEND  , c_v+2
 	.byte		N20   , An1 
@@ -12983,7 +12972,7 @@ song105restored_FINAL_5:
 	.byte	W01
 	.byte		        c_v+4
 	.byte	W20
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		BEND  , c_v+2
 	.byte		N04   , Gn1 
@@ -12994,7 +12983,7 @@ song105restored_FINAL_5:
 	.byte	W01
 	.byte		        c_v+4
 	.byte	W05
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		BEND  , c_v+2
 	.byte		N12   , Cn2 
@@ -13072,23 +13061,23 @@ song105restored_FINAL_5:
 	.byte	W01
 	.byte		        c_v-25
 	.byte	W03
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		BEND  , c_v+1
 	.byte		N05   , Gn1 
 	.byte	W07
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N20   , As1 
 	.byte	W06
 @ 055   ----------------------------------------
 	.byte	W17
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-37
 	.byte		BEND  , c_v+1
 	.byte		N05   , Gs1 
 	.byte	W08
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		BEND  , c_v+1
 	.byte		N12   , Cs2 
@@ -13137,12 +13126,12 @@ song105restored_FINAL_5:
 	.byte		        c_v+1
 	.byte		N17   , En2 
 	.byte	W20
-	.byte		VOL   , 10*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 28*song105restored_testloop_mvl/mxv
 	.byte		N17   
 	.byte	W20
 	.byte		N18   
 	.byte	W21
-	.byte		VOL   , 0*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 0*song105restored_testloop_mvl/mxv
 	.byte		N17   
 	.byte	W21
 	.byte		N17   
@@ -13151,7 +13140,7 @@ song105restored_FINAL_5:
 	.byte	W19
 	.byte		N17   
 	.byte	W28
-	.byte		VOL   , 54*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 76*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-7
 	.byte		BEND  , c_v+1
 	.byte		N28   , Fn1 
@@ -13161,7 +13150,7 @@ song105restored_FINAL_5:
 	.byte	W01
 	.byte		        c_v+2
 	.byte	W04
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-10
 	.byte		BEND  , c_v+1
 	.byte		N28   
@@ -13394,7 +13383,7 @@ song105restored_FINAL_5:
 	.byte		        c_v+1
 	.byte		N24   , As1 
 	.byte	W30
-	.byte		VOL   , 54*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 76*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-7
 	.byte		BEND  , c_v+1
 	.byte		N28   , Fn1 
@@ -13404,7 +13393,7 @@ song105restored_FINAL_5:
 	.byte	W01
 	.byte		        c_v+2
 	.byte	W04
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-10
 	.byte		BEND  , c_v+1
 	.byte		N28   
@@ -13656,7 +13645,7 @@ song105restored_FINAL_5:
 	.byte		        c_v+1
 	.byte		N24   , As1 
 	.byte	W28
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+63
 	.byte	W01
 	.byte		BEND  , c_v+1
@@ -13689,7 +13678,7 @@ song105restored_FINAL_5:
 	.byte	W01
 	.byte		        c_v+57
 	.byte	W03
-	.byte		VOL   , 10*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 28*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		BEND  , c_v+1
 	.byte		N28   
@@ -13786,39 +13775,35 @@ song105restored_FINAL_5:
 	.byte	W03
 @ 069   ----------------------------------------
 	.byte	W01
+	.byte	GOTO
+	 .word	song105restored_testloop_5_B1
+song105restored_testloop_5_B2:
 	.byte		VOICE , 27
-	.byte		VOL   , 59*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 80*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
-	.byte		BENDR , 12
-	.byte		VOL   , 10*song105restored_FINAL_mvl/mxv
-	.byte		BENDR , 12
-	.byte		VOL   , 10*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 28*song105restored_testloop_mvl/mxv
+	.byte		        28*song105restored_testloop_mvl/mxv
 	.byte		BEND  , c_v+56
 	.byte	FINE
 
 @**************** Track 6 (Midi-Chn.6) ****************@
 
-song105restored_FINAL_6:
-	.byte	KEYSH , song105restored_FINAL_key+0
+song105restored_testloop_6:
+	.byte	KEYSH , song105restored_testloop_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 13
-	.byte		MODT  , 0
-	.byte		LFOS  , 44
 	.byte		PAN   , c_v+48
-	.byte		VOL   , 54*song105restored_FINAL_mvl/mxv
-	.byte		BENDR , 12
+	.byte		VOL   , 76*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+48
-	.byte		VOL   , 54*song105restored_FINAL_mvl/mxv
-	.byte		        54*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 76*song105restored_testloop_mvl/mxv
+	.byte		        76*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+48
-	.byte		BENDR , 12
+	.byte		        c_v+48
+	.byte		VOL   , 76*song105restored_testloop_mvl/mxv
+	.byte		        76*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+48
-	.byte		VOL   , 54*song105restored_FINAL_mvl/mxv
-	.byte		        54*song105restored_FINAL_mvl/mxv
-	.byte		PAN   , c_v+48
-	.byte		BENDR , 12
-	.byte		PAN   , c_v+48
-	.byte		VOL   , 54*song105restored_FINAL_mvl/mxv
+	.byte		        c_v+48
+	.byte		VOL   , 76*song105restored_testloop_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W96
 @ 001   ----------------------------------------
@@ -13878,11 +13863,13 @@ song105restored_FINAL_6:
 	.byte	W01
 	.byte		VOICE , 28
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		BEND  , c_v+0
-	.byte		N20   , Gs2 , v088
-	.byte	W22
-	.byte		N20   
+	.byte		N20   , Gs2 , v100
+	.byte	W01
+song105restored_testloop_6_B1:
+	.byte	W21
+	.byte		N20   , Gs2 , v100
 	.byte	W07
 @ 028   ----------------------------------------
 	.byte	W16
@@ -13920,39 +13907,39 @@ song105restored_FINAL_6:
 	.byte	W16
 @ 031   ----------------------------------------
 	.byte	W01
-	.byte		VOL   , 0*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 0*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte	W01
 	.byte		N01   
 	.byte	W02
 	.byte		N01   
 	.byte	W02
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		N01   
 	.byte	W02
 	.byte		N01   
 	.byte	W03
-	.byte		VOL   , 39*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 63*song105restored_testloop_mvl/mxv
 	.byte		N01   
 	.byte	W02
-	.byte		VOL   , 50*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 73*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W06
-	.byte		VOL   , 59*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 80*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W05
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W06
 	.byte		N03   
 	.byte	W06
-	.byte		VOL   , 77*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 94*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W05
 	.byte		N03   
 	.byte	W06
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte	W01
 	.byte		N20   
 	.byte	W22
@@ -13992,42 +13979,42 @@ song105restored_FINAL_6:
 	.byte	W06
 	.byte		N15   
 	.byte	W17
-	.byte		VOL   , 0*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 0*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N01   
 	.byte	W03
 	.byte		N01   
 	.byte	W02
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		N01   
 	.byte	W02
 	.byte		N01   
 	.byte	W03
-	.byte		VOL   , 39*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 63*song105restored_testloop_mvl/mxv
 	.byte		N01   
 	.byte	W02
-	.byte		VOL   , 50*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 73*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W05
-	.byte		VOL   , 59*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 80*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W01
 @ 035   ----------------------------------------
 	.byte	W05
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W06
 	.byte		N03   
 	.byte	W05
-	.byte		VOL   , 77*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 94*song105restored_testloop_mvl/mxv
 	.byte	W01
 	.byte		N03   
 	.byte	W05
 	.byte		N03   
 	.byte	W28
 	.byte	W01
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N20   
 	.byte	W44
 	.byte	W01
@@ -14053,29 +14040,29 @@ song105restored_FINAL_6:
 	.byte	W36
 	.byte		N20   
 	.byte	W23
-	.byte		VOL   , 39*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 63*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W05
-	.byte		VOL   , 50*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 73*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W06
-	.byte		VOL   , 59*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 80*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W06
-	.byte		VOL   , 77*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 94*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W06
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W05
 	.byte		N03   
 	.byte	W06
-	.byte		VOL   , 77*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 94*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W03
 @ 039   ----------------------------------------
 	.byte	W03
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W28
 	.byte		N20   
@@ -14105,30 +14092,30 @@ song105restored_FINAL_6:
 	.byte	W17
 	.byte		N20   
 	.byte	W23
-	.byte		VOL   , 59*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 80*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+32
-	.byte		VOL   , 39*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 63*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		N03   
 	.byte	W06
-	.byte		VOL   , 50*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 73*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W05
-	.byte		VOL   , 59*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 80*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W06
-	.byte		VOL   , 77*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 94*song105restored_testloop_mvl/mxv
 	.byte		N04   
 	.byte	W05
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W06
 	.byte		N03   
 	.byte	W06
-	.byte		VOL   , 77*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 94*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W06
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N03   
 	.byte	W06
 	.byte		N04   
@@ -14137,41 +14124,41 @@ song105restored_FINAL_6:
 	.byte	W03
 @ 043   ----------------------------------------
 	.byte	W04
-	.byte		VOL   , 0*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 0*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N05   
 	.byte	W08
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		N04   
 	.byte	W08
-	.byte		VOL   , 0*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 0*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N04   
 	.byte	W07
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		N04   
 	.byte	W07
-	.byte		VOL   , 0*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 0*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N05   
 	.byte	W08
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		N05   
 	.byte	W07
-	.byte		VOL   , 0*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 0*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N01   
 	.byte	W03
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		N01   
 	.byte	W04
@@ -14179,63 +14166,63 @@ song105restored_FINAL_6:
 	.byte	W04
 	.byte		N01   
 	.byte	W02
-	.byte		VOL   , 39*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 63*song105restored_testloop_mvl/mxv
 	.byte		N01   
 	.byte	W03
-	.byte		VOL   , 50*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 73*song105restored_testloop_mvl/mxv
 	.byte		N05   
 	.byte	W07
 @ 044   ----------------------------------------
 	.byte	W01
-	.byte		VOL   , 59*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 80*song105restored_testloop_mvl/mxv
 	.byte		N05   
 	.byte	W07
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N05   
 	.byte	W08
 	.byte		N05   
 	.byte	W08
 	.byte		N04   
 	.byte	W07
-	.byte		VOL   , 0*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 0*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N04   
 	.byte	W08
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		N04   
 	.byte	W08
-	.byte		VOL   , 0*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 0*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N04   
 	.byte	W07
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		N04   
 	.byte	W07
-	.byte		VOL   , 0*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 0*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte	W01
 	.byte		N05   
 	.byte	W07
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		N04   
 	.byte	W03
 @ 045   ----------------------------------------
 	.byte	W04
-	.byte		VOL   , 0*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 0*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte	W01
 	.byte		N01   
 	.byte	W02
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		N01   
 	.byte	W04
@@ -14243,16 +14230,16 @@ song105restored_FINAL_6:
 	.byte	W04
 	.byte		N01   
 	.byte	W02
-	.byte		VOL   , 39*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 63*song105restored_testloop_mvl/mxv
 	.byte		N01   
 	.byte	W03
-	.byte		VOL   , 50*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 73*song105restored_testloop_mvl/mxv
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 59*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 80*song105restored_testloop_mvl/mxv
 	.byte		N05   
 	.byte	W07
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N05   
 	.byte	W09
 	.byte		N06   
@@ -14285,48 +14272,48 @@ song105restored_FINAL_6:
 	.byte	W05
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		N01   
 	.byte	W02
 	.byte		N01   
 	.byte	W03
 	.byte		N01   
 	.byte	W03
-	.byte		VOL   , 39*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 63*song105restored_testloop_mvl/mxv
 	.byte		N01   
 	.byte	W02
-	.byte		VOL   , 50*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 73*song105restored_testloop_mvl/mxv
 	.byte		N01   
 	.byte	W03
-	.byte		VOL   , 59*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 80*song105restored_testloop_mvl/mxv
 	.byte		N01   
 	.byte	W03
-	.byte		VOL   , 0*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 0*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N01   
 	.byte	W01
 @ 048   ----------------------------------------
 	.byte	W01
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		N01   
 	.byte	W03
-	.byte		VOL   , 39*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 63*song105restored_testloop_mvl/mxv
 	.byte		N01   
 	.byte	W03
-	.byte		VOL   , 50*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 73*song105restored_testloop_mvl/mxv
 	.byte		N01   
 	.byte	W02
-	.byte		VOL   , 59*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 80*song105restored_testloop_mvl/mxv
 	.byte		N01   
 	.byte	W02
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N01   
 	.byte	W02
-	.byte		VOL   , 77*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 94*song105restored_testloop_mvl/mxv
 	.byte		N01   
 	.byte	W02
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N15   
 	.byte	W17
 	.byte		N14   
@@ -14363,39 +14350,39 @@ song105restored_FINAL_6:
 	.byte	W04
 	.byte		N10   
 	.byte	W12
-	.byte		VOL   , 0*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 0*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte	W01
 	.byte		N01   
 	.byte	W01
 	.byte		N01   
 	.byte	W02
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		N01   
 	.byte	W01
 	.byte		N01   
 	.byte	W02
-	.byte		VOL   , 39*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 63*song105restored_testloop_mvl/mxv
 	.byte		N01   
 	.byte	W02
-	.byte		VOL   , 50*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 73*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 59*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 80*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
-	.byte		N02   
-	.byte	W04
-	.byte		N02   
-	.byte	W04
-	.byte		VOL   , 77*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 94*song105restored_testloop_mvl/mxv
+	.byte		N02   
+	.byte	W04
+	.byte		N02   
+	.byte	W04
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N15   
 	.byte	W13
 @ 051   ----------------------------------------
@@ -14434,53 +14421,53 @@ song105restored_FINAL_6:
 	.byte	W04
 	.byte		N10   
 	.byte	W12
-	.byte		VOL   , 0*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 0*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N01   
 	.byte	W02
 	.byte		N01   
 	.byte	W01
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		N01   
 	.byte	W02
 	.byte		N01   
 	.byte	W02
-	.byte		VOL   , 39*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 63*song105restored_testloop_mvl/mxv
 	.byte		N01   
 	.byte	W01
-	.byte		VOL   , 50*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 73*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 59*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 80*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 77*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 94*song105restored_testloop_mvl/mxv
 	.byte		N02   
 	.byte	W04
 	.byte		N02   
 	.byte	W05
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N04   
 	.byte	W07
 	.byte		N04   
 	.byte	W08
-	.byte		VOL   , 0*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 0*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N05   
 	.byte	W07
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 0*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 0*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N04   
 	.byte	W03
@@ -14488,25 +14475,25 @@ song105restored_FINAL_6:
 	.byte	W04
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		N04   
 	.byte	W08
-	.byte		VOL   , 0*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 0*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N04   
 	.byte	W07
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		N04   
 	.byte	W08
-	.byte		VOL   , 0*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 0*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N01   
 	.byte	W02
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		N01   
 	.byte	W04
@@ -14514,42 +14501,42 @@ song105restored_FINAL_6:
 	.byte	W04
 	.byte		N01   
 	.byte	W03
-	.byte		VOL   , 39*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 63*song105restored_testloop_mvl/mxv
 	.byte		N01   
 	.byte	W02
-	.byte		VOL   , 50*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 73*song105restored_testloop_mvl/mxv
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 59*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 80*song105restored_testloop_mvl/mxv
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N05   
 	.byte	W08
 	.byte		N04   
 	.byte	W07
-	.byte		VOL   , 77*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 94*song105restored_testloop_mvl/mxv
 	.byte		N04   
 	.byte	W07
 @ 055   ----------------------------------------
 	.byte	W01
-	.byte		VOL   , 0*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 0*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N05   
 	.byte	W07
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 0*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 0*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N04   
 	.byte	W08
 	.byte		N04   
 	.byte	W07
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		N04   
 	.byte	W08
@@ -14557,34 +14544,34 @@ song105restored_FINAL_6:
 	.byte	W08
 	.byte		N04   
 	.byte	W07
-	.byte		VOL   , 0*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 0*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N04   
 	.byte	W08
 	.byte		N01   
 	.byte	W02
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte	W01
 	.byte		N01   
 	.byte	W03
 	.byte		N01   
 	.byte	W04
-	.byte		VOL   , 50*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 73*song105restored_testloop_mvl/mxv
 	.byte		N01   
 	.byte	W03
-	.byte		VOL   , 59*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 80*song105restored_testloop_mvl/mxv
 	.byte		N01   
 	.byte	W02
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 77*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 94*song105restored_testloop_mvl/mxv
 	.byte		N05   
 	.byte	W03
 @ 056   ----------------------------------------
 	.byte	W05
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N04   
 	.byte	W08
 	.byte		N24   
@@ -14604,18 +14591,18 @@ song105restored_FINAL_6:
 	.byte	W07
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 50*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 73*song105restored_testloop_mvl/mxv
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 59*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 80*song105restored_testloop_mvl/mxv
 	.byte		N05   
 	.byte	W07
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N04   
 	.byte	W08
 	.byte		N04   
 	.byte	W08
-	.byte		VOL   , 77*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 94*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
 	.byte		N28   
@@ -14623,7 +14610,7 @@ song105restored_FINAL_6:
 @ 060   ----------------------------------------
 	.byte	W32
 	.byte	W02
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N28   
 	.byte	W60
 	.byte	W01
@@ -14633,43 +14620,43 @@ song105restored_FINAL_6:
 	.byte	W15
 	.byte		N12   
 	.byte	W30
-	.byte		VOL   , 0*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 0*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N01   
 	.byte	W04
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		N01   
 	.byte	W04
-	.byte		VOL   , 50*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 73*song105restored_testloop_mvl/mxv
 	.byte		N04   
 	.byte	W08
-	.byte		VOL   , 59*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 80*song105restored_testloop_mvl/mxv
 	.byte		N05   
 	.byte	W07
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N20   
 	.byte	W20
 @ 062   ----------------------------------------
 	.byte	W03
-	.byte		VOL   , 59*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 80*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+32
-	.byte		VOL   , 39*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 63*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		N05   
 	.byte	W08
 	.byte		N04   
 	.byte	W07
-	.byte		VOL   , 50*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 73*song105restored_testloop_mvl/mxv
 	.byte	W01
 	.byte		N05   
 	.byte	W07
-	.byte		VOL   , 59*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 80*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W16
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N04   
 	.byte	W07
 	.byte		N05   
@@ -14687,18 +14674,18 @@ song105restored_FINAL_6:
 	.byte	W19
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 50*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 73*song105restored_testloop_mvl/mxv
 	.byte		N04   
 	.byte	W08
-	.byte		VOL   , 59*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 80*song105restored_testloop_mvl/mxv
 	.byte		N04   
 	.byte	W08
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N05   
 	.byte	W07
 	.byte		N04   
 	.byte	W08
-	.byte		VOL   , 77*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 94*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
 	.byte		N24   
@@ -14706,7 +14693,7 @@ song105restored_FINAL_6:
 @ 065   ----------------------------------------
 	.byte	W44
 	.byte	W02
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N24   
 	.byte	W48
 	.byte	W02
@@ -14717,42 +14704,42 @@ song105restored_FINAL_6:
 	.byte		N12   
 	.byte	W30
 	.byte	W01
-	.byte		VOL   , 0*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 0*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N01   
 	.byte	W03
-	.byte		VOL   , 24*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 47*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		N01   
 	.byte	W04
-	.byte		VOL   , 50*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 73*song105restored_testloop_mvl/mxv
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 59*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 80*song105restored_testloop_mvl/mxv
 	.byte		N04   
 	.byte	W08
 	.byte		N05   
 	.byte	W07
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N20   
 	.byte	W08
 @ 067   ----------------------------------------
 	.byte	W15
-	.byte		VOL   , 39*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 63*song105restored_testloop_mvl/mxv
 	.byte		N05   
 	.byte	W08
 	.byte		N05   
 	.byte	W08
-	.byte		VOL   , 44*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 67*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v-10
-	.byte		VOL   , 50*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 73*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		N04   
 	.byte	W08
-	.byte		VOL   , 59*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 80*song105restored_testloop_mvl/mxv
 	.byte		N12   
 	.byte	W15
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		N05   
 	.byte	W08
 	.byte		N05   
@@ -14762,34 +14749,35 @@ song105restored_FINAL_6:
 	.byte	W96
 @ 069   ----------------------------------------
 	.byte	W01
+	.byte	GOTO
+	 .word	song105restored_testloop_6_B1
+song105restored_testloop_6_B2:
 	.byte		VOICE , 28
-	.byte		VOL   , 54*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 76*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+48
-	.byte		BENDR , 12
+	.byte		        c_v+0
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
-	.byte		BENDR , 12
-	.byte		PAN   , c_v+0
-	.byte		VOL   , 72*song105restored_FINAL_mvl/mxv
+	.byte		VOL   , 90*song105restored_testloop_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	FINE
 
 @******************************************************@
 	.align	2
 
-song105restored_FINAL:
+song105restored_testloop:
 	.byte	6	@ NumTrks
 	.byte	0	@ NumBlks
-	.byte	song105restored_FINAL_pri	@ Priority
-	.byte	song105restored_FINAL_rev	@ Reverb.
+	.byte	song105restored_testloop_pri	@ Priority
+	.byte	song105restored_testloop_rev	@ Reverb.
 
-	.word	song105restored_FINAL_grp
+	.word	song105restored_testloop_grp
 
-	.word	song105restored_FINAL_1
-	.word	song105restored_FINAL_2
-	.word	song105restored_FINAL_3
-	.word	song105restored_FINAL_4
-	.word	song105restored_FINAL_5
-	.word	song105restored_FINAL_6
+	.word	song105restored_testloop_1
+	.word	song105restored_testloop_2
+	.word	song105restored_testloop_3
+	.word	song105restored_testloop_4
+	.word	song105restored_testloop_5
+	.word	song105restored_testloop_6
 
 	.end

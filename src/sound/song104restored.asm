@@ -425,7 +425,8 @@
 	.byte		PAN   , c_v-1
 	.byte		VOL   , 94*song104restored_mvl/mxv
 	.byte		BEND  , c_v+0
-	.byte	FINE
+	.byte	GOTO
+	.word	@song104restored_1
 
 ;**************** Track 2 (Midi-Chn.2) ****************;
 
@@ -949,7 +950,8 @@
 	.byte		PAN   , c_v-1
 	.byte		VOL   , 65*song104restored_mvl/mxv
 	.byte		BEND  , c_v+0
-	.byte	FINE
+	.byte	GOTO
+	.word	@song104restored_2
 
 ;**************** Track 3 (Midi-Chn.3) ****************;
 
@@ -1508,7 +1510,8 @@
 	.byte		PAN   , c_v-7
 	.byte		VOL   , 49*song104restored_mvl/mxv
 	.byte		BEND  , c_v+0
-	.byte	FINE
+	.byte	GOTO
+	.word	@song104restored_3
 
 ;**************** Track 4 (Midi-Chn.4) ****************;
 
@@ -2708,7 +2711,8 @@
 	.byte		PAN   , c_v-1
 	.byte		VOL   , 53*song104restored_mvl/mxv
 	.byte		BEND  , c_v+0
-	.byte	FINE
+	.byte	GOTO
+	.word	@song104restored_4
 
 ;**************** Track 5 (Midi-Chn.5) ****************;
 
@@ -3367,7 +3371,8 @@
 	.byte		PAN   , c_v-14
 	.byte		VOL   , 27*song104restored_mvl/mxv
 	.byte		BEND  , c_v+0
-	.byte	FINE
+	.byte	GOTO
+	.word	@song104restored_5
 
 ;**************** Track 6 (Midi-Chn.6) ****************;
 
@@ -3947,7 +3952,8 @@
 	.byte		PAN   , c_v-1
 	.byte		VOL   , 100*song104restored_mvl/mxv
 	.byte		BEND  , c_v+0
-	.byte	FINE
+	.byte	GOTO
+	.word	@song104restored_6
 
 ;**************** Track 7 (Midi-Chn.7) ****************;
 
@@ -4608,7 +4614,8 @@
 	.byte		PAN   , c_v-1
 	.byte		VOL   , 45*song104restored_mvl/mxv
 	.byte		BEND  , c_v+0
-	.byte	FINE
+	.byte	GOTO
+	.word	@song104restored_7
 
 ;******************************************************;
 	.align	4
