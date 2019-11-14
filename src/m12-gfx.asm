@@ -47,6 +47,7 @@
 .org 0x8C917D0
 //This is the sound data
 .include "ArmipsMusicPlayDef.asm"
+.include "./sound/song002restored.asm" //File Select
 .include "./sound/song013restored.asm" //Teleportation
 .include "./sound/song016restored.asm" //Dr. Andonuts' Lab (NOT_WORKING)
 .include "./sound/song041restored.asm" //Alien Invasion
@@ -76,6 +77,7 @@
 .include "./sound/song395restored.asm" //Magic Butterfly
 
 //This repoints the sound bytes to their new locations
+.org 0x810B540 :: .word song002restored
 .org 0x810B598 :: .word song013restored
 .org 0x810B5B0 :: .word song016restored
 .org 0x810B678 :: .word song041restored
