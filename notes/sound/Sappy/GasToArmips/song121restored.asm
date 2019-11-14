@@ -1,3 +1,6 @@
+	.include "ArmipsMusicPlayDef.asm"
+
+
 	song121restored_pri equ 0
 	song121restored_rev equ 0
 	song121restored_mvl equ 127
@@ -13,7 +16,6 @@
 ;**************** Track 1 (Midi-Chn.1) ****************;
 
 @song121restored_1:
-	.byte	TEMPO , 57
 	.byte	KEYSH , song121restored_key+0
 ; 000   ----------------------------------------
 	.byte		VOICE , 22
@@ -131,19 +133,19 @@
 	.byte	PEND
 ; 004   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_1_003
+	 .word	song121restored_1_003
 ; 005   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_1_003
+	 .word	song121restored_1_003
 ; 006   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_1_003
+	 .word	song121restored_1_003
 ; 007   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_1_003
+	 .word	song121restored_1_003
 ; 008   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_1_003
+	 .word	song121restored_1_003
 ; 009   ----------------------------------------
 @song121restored_1_009:
 	.byte	W01
@@ -209,7 +211,7 @@
 	.byte	PEND
 ; 012   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_1_011
+	 .word	song121restored_1_011
 ; 013   ----------------------------------------
 	.byte	W01
 	.byte		PAN   , c_v+31
@@ -254,25 +256,25 @@
 	.byte	W11
 ; 015   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_1_003
+	 .word	song121restored_1_003
 ; 016   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_1_003
+	 .word	song121restored_1_003
 ; 017   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_1_003
+	 .word	song121restored_1_003
 ; 018   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_1_003
+	 .word	song121restored_1_003
 ; 019   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_1_003
+	 .word	song121restored_1_003
 ; 020   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_1_003
+	 .word	song121restored_1_003
 ; 021   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_1_009
+	 .word	song121restored_1_009
 ; 022   ----------------------------------------
 @song121restored_1_022:
 	.byte	W01
@@ -315,22 +317,22 @@
 	.byte	PEND
 ; 024   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_1_022
+	 .word	song121restored_1_022
 ; 025   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_1_023
+	 .word	song121restored_1_023
 ; 026   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_1_022
+	 .word	song121restored_1_022
 ; 027   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_1_023
+	 .word	song121restored_1_023
 ; 028   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_1_022
+	 .word	song121restored_1_022
 ; 029   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_1_023
+	 .word	song121restored_1_023
 ; 030   ----------------------------------------
 	.byte	W96
 ; 031   ----------------------------------------
@@ -488,7 +490,7 @@
 	.byte	PEND
 ; 009   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_2_007
+	 .word	song121restored_2_007
 ; 010   ----------------------------------------
 	.byte	W03
 	.byte		VOICE , 31
@@ -651,25 +653,25 @@
 	.byte	W03
 ; 015   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_2_003
+	 .word	song121restored_2_003
 ; 016   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_2_004
+	 .word	song121restored_2_004
 ; 017   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_2_005
+	 .word	song121restored_2_005
 ; 018   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_2_006
+	 .word	song121restored_2_006
 ; 019   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_2_007
+	 .word	song121restored_2_007
 ; 020   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_2_008
+	 .word	song121restored_2_008
 ; 021   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_2_007
+	 .word	song121restored_2_007
 ; 022   ----------------------------------------
 	.byte		VOL   , 58*song121restored_mvl/mxv
 	.byte	W20
@@ -728,7 +730,7 @@
 	.byte	W15
 ; 027   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_2_023
+	 .word	song121restored_2_023
 ; 028   ----------------------------------------
 	.byte	W09
 	.byte		N19   , As2 , v127
@@ -838,7 +840,7 @@
 	.byte	PEND
 ; 002   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_3_001
+	 .word	song121restored_3_001
 ; 003   ----------------------------------------
 	.byte	W01
 	.byte		N05   , Cs2 , v124
@@ -861,7 +863,7 @@
 	.byte	W11
 ; 004   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_3_001
+	 .word	song121restored_3_001
 ; 005   ----------------------------------------
 	.byte	W01
 	.byte		N05   , Cs2 , v124
@@ -884,7 +886,7 @@
 	.byte	W11
 ; 006   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_3_001
+	 .word	song121restored_3_001
 ; 007   ----------------------------------------
 	.byte	W01
 	.byte		N05   , Cs2 , v124
@@ -907,7 +909,7 @@
 	.byte	W11
 ; 008   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_3_001
+	 .word	song121restored_3_001
 ; 009   ----------------------------------------
 	.byte	W01
 	.byte		N05   , Cs2 , v124
@@ -1008,7 +1010,7 @@
 	.byte	W11
 ; 016   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_3_014
+	 .word	song121restored_3_014
 ; 017   ----------------------------------------
 	.byte	W01
 	.byte		N06   , Cs2 , v124
@@ -1031,7 +1033,7 @@
 	.byte	W11
 ; 018   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_3_014
+	 .word	song121restored_3_014
 ; 019   ----------------------------------------
 	.byte	W01
 	.byte		N06   , Cs2 , v124
@@ -1054,7 +1056,7 @@
 	.byte	W11
 ; 020   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_3_014
+	 .word	song121restored_3_014
 ; 021   ----------------------------------------
 @song121restored_3_021:
 	.byte	W01
@@ -1165,10 +1167,10 @@
 	.byte	W11
 ; 030   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_3_014
+	 .word	song121restored_3_014
 ; 031   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_3_021
+	 .word	song121restored_3_021
 ; 032   ----------------------------------------
 	.byte	W96
 ; 033   ----------------------------------------
@@ -1249,7 +1251,7 @@
 	.byte	PEND
 ; 004   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_4_002
+	 .word	song121restored_4_002
 ; 005   ----------------------------------------
 @song121restored_4_005:
 	.byte	W13
@@ -1299,10 +1301,10 @@
 	.byte	PEND
 ; 008   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_4_006
+	 .word	song121restored_4_006
 ; 009   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_4_007
+	 .word	song121restored_4_007
 ; 010   ----------------------------------------
 	.byte		VOICE , 31
 	.byte	W01
@@ -1469,25 +1471,25 @@
 	.byte	W03
 ; 015   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_4_003
+	 .word	song121restored_4_003
 ; 016   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_4_002
+	 .word	song121restored_4_002
 ; 017   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_4_005
+	 .word	song121restored_4_005
 ; 018   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_4_006
+	 .word	song121restored_4_006
 ; 019   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_4_007
+	 .word	song121restored_4_007
 ; 020   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_4_006
+	 .word	song121restored_4_006
 ; 021   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_4_007
+	 .word	song121restored_4_007
 ; 022   ----------------------------------------
 	.byte		VOL   , 127*song121restored_mvl/mxv
 	.byte	W12
@@ -1547,7 +1549,7 @@
 	.byte	W23
 ; 027   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_4_023
+	 .word	song121restored_4_023
 ; 028   ----------------------------------------
 	.byte	W01
 	.byte		N19   , As2 , v124
@@ -1646,22 +1648,22 @@
 	.byte	PEND
 ; 004   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_5_002
+	 .word	song121restored_5_002
 ; 005   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_5_002
+	 .word	song121restored_5_002
 ; 006   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_5_002
+	 .word	song121restored_5_002
 ; 007   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_5_002
+	 .word	song121restored_5_002
 ; 008   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_5_002
+	 .word	song121restored_5_002
 ; 009   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_5_002
+	 .word	song121restored_5_002
 ; 010   ----------------------------------------
 	.byte		VOICE , 29
 	.byte	W01
@@ -1705,25 +1707,25 @@
 	.byte	W10
 ; 015   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_5_003
+	 .word	song121restored_5_003
 ; 016   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_5_002
+	 .word	song121restored_5_002
 ; 017   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_5_002
+	 .word	song121restored_5_002
 ; 018   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_5_002
+	 .word	song121restored_5_002
 ; 019   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_5_002
+	 .word	song121restored_5_002
 ; 020   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_5_002
+	 .word	song121restored_5_002
 ; 021   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_5_002
+	 .word	song121restored_5_002
 ; 022   ----------------------------------------
 	.byte		VOICE , 29
 	.byte	W01
@@ -1852,22 +1854,22 @@
 	.byte	PEND
 ; 004   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_6_002
+	 .word	song121restored_6_002
 ; 005   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_6_002
+	 .word	song121restored_6_002
 ; 006   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_6_002
+	 .word	song121restored_6_002
 ; 007   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_6_002
+	 .word	song121restored_6_002
 ; 008   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_6_002
+	 .word	song121restored_6_002
 ; 009   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_6_002
+	 .word	song121restored_6_002
 ; 010   ----------------------------------------
 	.byte		VOICE , 29
 	.byte	W01
@@ -1913,25 +1915,25 @@
 	.byte	W11
 ; 015   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_6_003
+	 .word	song121restored_6_003
 ; 016   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_6_002
+	 .word	song121restored_6_002
 ; 017   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_6_002
+	 .word	song121restored_6_002
 ; 018   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_6_002
+	 .word	song121restored_6_002
 ; 019   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_6_002
+	 .word	song121restored_6_002
 ; 020   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_6_002
+	 .word	song121restored_6_002
 ; 021   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_6_002
+	 .word	song121restored_6_002
 ; 022   ----------------------------------------
 	.byte		VOICE , 29
 	.byte	W01
@@ -1972,7 +1974,7 @@
 	.byte	W03
 ; 027   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_6_023
+	 .word	song121restored_6_023
 ; 028   ----------------------------------------
 	.byte	W01
 	.byte		N92   , Cn2 , v084
@@ -2066,7 +2068,7 @@
 	.byte	PEND
 ; 004   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_7_002
+	 .word	song121restored_7_002
 ; 005   ----------------------------------------
 @song121restored_7_005:
 	.byte	W13
@@ -2116,10 +2118,10 @@
 	.byte	PEND
 ; 008   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_7_006
+	 .word	song121restored_7_006
 ; 009   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_7_007
+	 .word	song121restored_7_007
 ; 010   ----------------------------------------
 	.byte		VOICE , 2
 	.byte		PAN   , c_v-14
@@ -2208,25 +2210,25 @@
 	.byte	W03
 ; 015   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_7_003
+	 .word	song121restored_7_003
 ; 016   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_7_002
+	 .word	song121restored_7_002
 ; 017   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_7_005
+	 .word	song121restored_7_005
 ; 018   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_7_006
+	 .word	song121restored_7_006
 ; 019   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_7_007
+	 .word	song121restored_7_007
 ; 020   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_7_006
+	 .word	song121restored_7_006
 ; 021   ----------------------------------------
 	.byte	PATT
-	 .word	@song121restored_7_007
+	 .word	song121restored_7_007
 ; 022   ----------------------------------------
 	.byte	W96
 ; 023   ----------------------------------------
@@ -2369,15 +2371,14 @@ song121restored:
 	.byte	song121restored_pri	; Priority
 	.byte	song121restored_rev	; Reverb.
 
-	//emit_clean_voicegroup_offset_for_song 121
-	.word	0x810B228 //Voice Table
+	emit_clean_voicegroup_offset_for_song 121
 
-	.word	@song121restored_1
-	.word	@song121restored_2
-	.word	@song121restored_3
-	.word	@song121restored_4
-	.word	@song121restored_5
-	.word	@song121restored_6
-	.word	@song121restored_7
+	.word	song121restored_1
+	.word	song121restored_2
+	.word	song121restored_3
+	.word	song121restored_4
+	.word	song121restored_5
+	.word	song121restored_6
+	.word	song121restored_7
 
 

@@ -48,12 +48,13 @@
 //This is the sound data
 .include "ArmipsMusicPlayDef.asm"
 .include "./sound/song013restored.asm" //Teleportation
-.include "./sound/song041restored.asm" //Cavern of Winters
+.include "./sound/song016restored.asm" //Dr. Andonuts' Lab (NOT_WORKING)
+.include "./sound/song041restored.asm" //Alien Invasion
 .include "./sound/song055restored.asm" //Cavern of Winters
 .include "./sound/song100restored.asm" //Franky
 .include "./sound/song104restored.asm" //Kraken of The Sea
 .include "./sound/song105restored.asm" //Pokey Means Business!
-.include "./sound/song121restored.asm" //Onett (No Sunrise)
+.include "./sound/song121restored.asm" //Onett (No Sunrise) (NOT_WORKING)
 .include "./sound/song125restored.asm" //Snowman (NOT_WORKING)
 .include "./sound/song185restored.asm" //Giygas is Wounded!
 .include "./sound/song324restored.asm" //Player Attack (Imperfect)
@@ -70,11 +71,13 @@
 .include "./sound/song356restored.asm" //PSI Freeze (A)
 .include "./sound/song357restored.asm" //PSI Freeze (B)
 .include "./sound/song358restored.asm" //PSI Freeze (C)
+.include "./sound/song364restored.asm" //PSI Starstorm
 .include "./sound/song365restored.asm" //PSI Flash	(A)
 .include "./sound/song395restored.asm" //Magic Butterfly
 
 //This repoints the sound bytes to their new locations
 .org 0x810B598 :: .word song013restored
+.org 0x810B5B0 :: .word song016restored
 .org 0x810B678 :: .word song041restored
 .org 0x810B6E8 :: .word song055restored
 .org 0x810B850 :: .word song100restored
@@ -97,5 +100,6 @@
 .org 0x810C050 :: .word song356restored
 .org 0x810C058 :: .word song357restored
 .org 0x810C060 :: .word song358restored
+.org 0x810C090 :: .word song364restored
 .org 0x810C098 :: .word song365restored
 .org 0x810C188 :: .word song395restored

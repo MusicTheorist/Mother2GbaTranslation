@@ -23,6 +23,7 @@ song041restored_1:
 	.byte		LFOS  , 44
 	.byte		PAN   , c_v+0
 	.byte		VOL   , 24*song041restored_mvl/mxv
+	.byte		BENDR , 12
 	.byte		PAN   , c_v+0
 	.byte		VOL   , 24*song041restored_mvl/mxv
 	.byte		        0*song041restored_mvl/mxv
