@@ -27,46 +27,46 @@ song031restored_FINAL_1:
 	.byte		BENDR , 12
 	.byte		PAN   , c_v+24
 	.byte		VOL   , 66*song031restored_FINAL_mvl/mxv
-	.byte		MOD   , 4
+	@ .byte		MOD   , 4
 	.byte		VOL   , 66*song031restored_FINAL_mvl/mxv
 	.byte		PAN   , c_v+24
 	.byte		BENDR , 12
 	.byte		PAN   , c_v+24
 	.byte		VOL   , 66*song031restored_FINAL_mvl/mxv
-	.byte		MOD   , 4
+	@ .byte		MOD   , 4
 	.byte		VOL   , 66*song031restored_FINAL_mvl/mxv
 	.byte		PAN   , c_v+24
 	.byte		BENDR , 12
 	.byte		PAN   , c_v+24
 	.byte		VOL   , 66*song031restored_FINAL_mvl/mxv
-	.byte		MOD   , 0
+	@ .byte		MOD   , 0
 	.byte		BEND  , c_v+0
 	.byte		TIE   , Gs0 , v060
 	.byte	W96
 @ 001   ----------------------------------------
 	.byte	W30
-	.byte		MOD   , 4
+	@ .byte		MOD   , 4
 	.byte	W66
 @ 002   ----------------------------------------
 	.byte	W96
 @ 003   ----------------------------------------
 	.byte	W92
 	.byte		EOT   
-	.byte		MOD   , 0
+	@ .byte		MOD   , 0
 	.byte	W04
 @ 004   ----------------------------------------
 	.byte		TIE   
 	.byte	W96
 @ 005   ----------------------------------------
 	.byte	W30
-	.byte		MOD   , 4
+	@ .byte		MOD   , 4
 	.byte	W66
 @ 006   ----------------------------------------
 	.byte	W96
 @ 007   ----------------------------------------
 	.byte	W92
 	.byte		EOT   
-	.byte		MOD   , 0
+	@ .byte		MOD   , 0
 	.byte	W04
 @ 008   ----------------------------------------
 	.byte	W96
@@ -82,11 +82,11 @@ song031restored_FINAL_1:
 	.byte		BENDR , 12
 	.byte		PAN   , c_v+24
 	.byte		VOL   , 66*song031restored_FINAL_mvl/mxv
-	.byte		MOD   , 0
+	@ .byte		MOD   , 0
 	.byte		BENDR , 12
 	.byte		PAN   , c_v+24
 	.byte		VOL   , 66*song031restored_FINAL_mvl/mxv
-	.byte		MOD   , 0
+	@ .byte		MOD   , 0
 	.byte		BEND  , c_v+0
 	.byte	FINE
 
@@ -247,46 +247,46 @@ song031restored_FINAL_4:
 	.byte		BENDR , 12
 	.byte		PAN   , c_v-14
 	.byte		VOL   , 66*song031restored_FINAL_mvl/mxv
-	.byte		MOD   , 4
+	@ .byte		MOD   , 4
 	.byte		VOL   , 66*song031restored_FINAL_mvl/mxv
 	.byte		PAN   , c_v-14
 	.byte		BENDR , 12
 	.byte		PAN   , c_v-14
 	.byte		VOL   , 66*song031restored_FINAL_mvl/mxv
-	.byte		MOD   , 4
+	@ .byte		MOD   , 4
 	.byte		VOL   , 66*song031restored_FINAL_mvl/mxv
 	.byte		PAN   , c_v-14
 	.byte		BENDR , 12
 	.byte		PAN   , c_v-14
 	.byte		VOL   , 66*song031restored_FINAL_mvl/mxv
-	.byte		MOD   , 0
+	@ .byte		MOD   , 0
 	.byte		BEND  , c_v+0
 	.byte		TIE   , As0 , v060
 	.byte	W96
 @ 001   ----------------------------------------
 	.byte	W30
-	.byte		MOD   , 4
+	@ .byte		MOD   , 4
 	.byte	W66
 @ 002   ----------------------------------------
 	.byte	W96
 @ 003   ----------------------------------------
 	.byte	W92
 	.byte		EOT   
-	.byte		MOD   , 0
+	@ .byte		MOD   , 0
 	.byte	W04
 @ 004   ----------------------------------------
 	.byte		TIE   
 	.byte	W96
 @ 005   ----------------------------------------
 	.byte	W30
-	.byte		MOD   , 4
+	@ .byte		MOD   , 4
 	.byte	W66
 @ 006   ----------------------------------------
 	.byte	W96
 @ 007   ----------------------------------------
 	.byte	W92
 	.byte		EOT   
-	.byte		MOD   , 0
+	@ .byte		MOD   , 0
 	.byte	W04
 @ 008   ----------------------------------------
 	.byte	W96
@@ -302,11 +302,11 @@ song031restored_FINAL_4:
 	.byte		BENDR , 12
 	.byte		PAN   , c_v-14
 	.byte		VOL   , 66*song031restored_FINAL_mvl/mxv
-	.byte		MOD   , 0
+	@ .byte		MOD   , 0
 	.byte		BENDR , 12
 	.byte		PAN   , c_v-14
 	.byte		VOL   , 66*song031restored_FINAL_mvl/mxv
-	.byte		MOD   , 0
+	@ .byte		MOD   , 0
 	.byte		BEND  , c_v+0
 	.byte	FINE
 
@@ -333,7 +333,7 @@ song031restored_FINAL_5:
 	.byte		BENDR , 12
 	.byte		PAN   , c_v-45
 	.byte		VOL   , 23*song031restored_FINAL_mvl/mxv
-	.byte		MOD   , 25
+	@ .byte		MOD   , 25
 	.byte		BEND  , c_v+0
 	.byte	W60
 	.byte		PAN   , c_v+43
@@ -397,7 +397,7 @@ song031restored_FINAL_5_002:
 	.byte		N07   , Fn2 , v116
 	.byte	W96
 @ 008   ----------------------------------------
-	.byte		MOD   , 25
+	@ .byte		MOD   , 25
 	.byte	W96
 @ 009   ----------------------------------------
 	.byte	W92
@@ -411,11 +411,11 @@ song031restored_FINAL_5_002:
 	.byte		BENDR , 12
 	.byte		PAN   , c_v-45
 	.byte		VOL   , 23*song031restored_FINAL_mvl/mxv
-	.byte		MOD   , 25
+	@ .byte		MOD   , 25
 	.byte		BENDR , 12
 	.byte		PAN   , c_v-45
 	.byte		VOL   , 23*song031restored_FINAL_mvl/mxv
-	.byte		MOD   , 25
+	@ .byte		MOD   , 25
 	.byte		BEND  , c_v+0
 	.byte	FINE
 
@@ -581,7 +581,7 @@ song031restored_FINAL_7:
 	.byte		BENDR , 12
 	.byte		PAN   , c_v+12
 	.byte		VOL   , 43*song031restored_FINAL_mvl/mxv
-	.byte		MOD   , 25
+	@ .byte		MOD   , 25
 	.byte		BEND  , c_v+0
 	.byte		N07   , Gs2 , v100
 	.byte	W12
@@ -723,7 +723,7 @@ song031restored_FINAL_7_001:
 	.byte	W12
 @ 008   ----------------------------------------
 	.byte		PAN   , c_v+12
-	.byte		MOD   , 25
+	@ .byte		MOD   , 25
 	.byte	W96
 @ 009   ----------------------------------------
 	.byte	W92
@@ -737,11 +737,11 @@ song031restored_FINAL_7_001:
 	.byte		BENDR , 12
 	.byte		PAN   , c_v+12
 	.byte		VOL   , 43*song031restored_FINAL_mvl/mxv
-	.byte		MOD   , 25
+	@ .byte		MOD   , 25
 	.byte		BENDR , 12
 	.byte		PAN   , c_v+12
 	.byte		VOL   , 43*song031restored_FINAL_mvl/mxv
-	.byte		MOD   , 25
+	@ .byte		MOD   , 25
 	.byte		BEND  , c_v+0
 	.byte	FINE
 
@@ -768,7 +768,7 @@ song031restored_FINAL_8:
 	.byte		BENDR , 12
 	.byte		PAN   , c_v-14
 	.byte		VOL   , 8*song031restored_FINAL_mvl/mxv
-	.byte		MOD   , 25
+	@ .byte		MOD   , 25
 	.byte		BEND  , c_v+0
 	.byte	W20
 	.byte		N07   , Cn3 , v100
@@ -869,7 +869,7 @@ song031restored_FINAL_8_001:
 	.byte	W96
 @ 008   ----------------------------------------
 	.byte		PAN   , c_v-14
-	.byte		MOD   , 25
+	@ .byte		MOD   , 25
 	.byte	W96
 @ 009   ----------------------------------------
 	.byte	W92
@@ -883,11 +883,11 @@ song031restored_FINAL_8_001:
 	.byte		BENDR , 12
 	.byte		PAN   , c_v-14
 	.byte		VOL   , 8*song031restored_FINAL_mvl/mxv
-	.byte		MOD   , 25
+	@ .byte		MOD   , 25
 	.byte		BENDR , 12
 	.byte		PAN   , c_v-14
 	.byte		VOL   , 8*song031restored_FINAL_mvl/mxv
-	.byte		MOD   , 25
+	@ .byte		MOD   , 25
 	.byte		BEND  , c_v+0
 	.byte	FINE
 
