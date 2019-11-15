@@ -49,15 +49,15 @@
 .include "ArmipsMusicPlayDef.asm"
 .include "./sound/song002restored.asm" //File Select
 .include "./sound/song013restored.asm" //Teleportation
-.include "./sound/song016restored.asm" //Dr. Andonuts' Lab (NOT_WORKING)
+.include "./sound/song016restored.asm" //Dr. Andonuts' Lab (Preliminary)
 .include "./sound/song041restored.asm" //Alien Invasion
 .include "./sound/song055restored.asm" //Cavern of Winters
 .include "./sound/song073restored.asm" //Giygas' Intimidation
 .include "./sound/song100restored.asm" //Franky
 .include "./sound/song104restored.asm" //Kraken of The Sea
 .include "./sound/song105restored.asm" //Pokey Means Business!
-.include "./sound/song121restored.asm" //Onett (No Sunrise) (NOT_WORKING)
-.include "./sound/song125restored.asm" //Snowman (NOT_WORKING)
+.include "./sound/song121restored.asm" //Onett (No Sunrise) (Prelimiary)
+.include "./sound/song125restored.asm" //Snowman (Imperfect)
 .include "./sound/song185restored.asm" //Giygas is Wounded!
 .include "./sound/song324restored.asm" //Player Attack (Imperfect)
 .include "./sound/song326restored.asm" //S  w  i  s  h (Unable to hear fwr)
@@ -80,7 +80,7 @@
 //This repoints the sound bytes to their new locations
 .org 0x810B540 :: .word song002restored
 .org 0x810B598 :: .word song013restored
-.org 0x810B5B0 :: .word song016restored
+//.org 0x810B5B0 :: .word song016restored
 .org 0x810B678 :: .word song041restored
 .org 0x810B6E8 :: .word song055restored
 .org 0x810B778 :: .word song073restored
