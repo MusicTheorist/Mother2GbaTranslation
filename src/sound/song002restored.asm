@@ -21,13 +21,13 @@
 	.byte		VOL   , 88*song002restored_mvl/mxv
 	.byte		PAN   , c_v-1
 	.byte		VOL   , 88*song002restored_mvl/mxv
-	.byte		        88*song002restored_mvl/mxv
 	.byte		PAN   , c_v-1
-	.byte		        c_v-1
 	.byte		VOL   , 88*song002restored_mvl/mxv
-	.byte		        88*song002restored_mvl/mxv
 	.byte		PAN   , c_v-1
-	.byte		        c_v-1
+	.byte		VOL   , 88*song002restored_mvl/mxv
+	.byte		PAN   , c_v-1
+	.byte		VOL   , 88*song002restored_mvl/mxv
+	.byte		PAN   , c_v-1
 	.byte		VOL   , 88*song002restored_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W96
@@ -131,8 +131,9 @@
 	.byte		        An0 
 	.byte	W23
 	.byte		VOICE , 8
-	.byte		VOL   , 88*song002restored_mvl/mxv
 	.byte		PAN   , c_v-1
+	.byte		VOL   , 88*song002restored_mvl/mxv
+	.byte		BEND  , c_v+0
 	.byte	W01
 ; 024   ----------------------------------------
 	.byte		VOICE , 8
@@ -141,7 +142,8 @@
 	.byte		PAN   , c_v-1
 	.byte		VOL   , 88*song002restored_mvl/mxv
 	.byte		BEND  , c_v+0
-	.byte	FINE
+	.byte	GOTO
+	.word	@song002restored_1
 
 ;**************** Track 2 (Midi-Chn.2) ****************;
 
@@ -150,52 +152,35 @@
 ; 000   ----------------------------------------
 	.byte		VOICE , 3
 	.byte		PAN   , c_v-1
-	.byte		VOL   , 96*song002restored_mvl/mxv
+	.byte		VOL   , 85*song002restored_mvl/mxv
 	.byte		PAN   , c_v-1
-	.byte		VOL   , 96*song002restored_mvl/mxv
-	.byte		        96*song002restored_mvl/mxv
+	.byte		VOL   , 85*song002restored_mvl/mxv
 	.byte		PAN   , c_v-1
-	.byte		        c_v-1
-	.byte		VOL   , 96*song002restored_mvl/mxv
-	.byte		        96*song002restored_mvl/mxv
+	.byte		VOL   , 85*song002restored_mvl/mxv
 	.byte		PAN   , c_v-1
-	.byte		        c_v-1
-	.byte		VOL   , 96*song002restored_mvl/mxv
-	.byte		        96*song002restored_mvl/mxv
+	.byte		VOL   , 85*song002restored_mvl/mxv
+	.byte		PAN   , c_v-1
+	.byte		VOL   , 85*song002restored_mvl/mxv
+	.byte		PAN   , c_v-1
+	.byte		VOL   , 85*song002restored_mvl/mxv
 	.byte		BEND  , c_v+0
-	.byte		N02   , Gs4 , v124
-	.byte	W01
-	.byte		VOL   , 96*song002restored_mvl/mxv
-	.byte	W01
-	.byte		        96*song002restored_mvl/mxv
-	.byte	W01
-	.byte		        96*song002restored_mvl/mxv
-	.byte	W01
-	.byte		        96*song002restored_mvl/mxv
-	.byte	W01
-	.byte		        96*song002restored_mvl/mxv
-	.byte	W01
-	.byte		        96*song002restored_mvl/mxv
-	.byte	W01
-	.byte		        96*song002restored_mvl/mxv
-	.byte	W01
-	.byte		        96*song002restored_mvl/mxv
-	.byte	W28
-	.byte		N02   
+	.byte		N02   , Gs4 , v080
+	.byte	W36
+	.byte		        Gs4 , v084
 	.byte	W36
 	.byte		N02   
 	.byte	W24
 ; 001   ----------------------------------------
 @song002restored_2_001:
 	.byte	W24
-	.byte		N02   , Gs4 , v124
+	.byte		N02   , Gs4 , v084
 	.byte	W24
 	.byte		N02   
 	.byte	W48
 	.byte	PEND
 ; 002   ----------------------------------------
 @song002restored_2_002:
-	.byte		N02   , Gs4 , v124
+	.byte		N02   , Gs4 , v084
 	.byte	W36
 	.byte		N02   
 	.byte	W36
@@ -262,23 +247,25 @@
 	 .word	@song002restored_2_002
 ; 023   ----------------------------------------
 	.byte	W24
-	.byte		N02   , Gs4 , v124
+	.byte		N02   , Gs4 , v084
 	.byte	W24
 	.byte		N02   
 	.byte	W44
 	.byte	W03
 	.byte		VOICE , 3
-	.byte		VOL   , 96*song002restored_mvl/mxv
 	.byte		PAN   , c_v-1
+	.byte		VOL   , 85*song002restored_mvl/mxv
+	.byte		BEND  , c_v+0
 	.byte	W01
 ; 024   ----------------------------------------
 	.byte		VOICE , 3
 	.byte		PAN   , c_v-1
-	.byte		VOL   , 96*song002restored_mvl/mxv
+	.byte		VOL   , 85*song002restored_mvl/mxv
 	.byte		PAN   , c_v-1
-	.byte		VOL   , 96*song002restored_mvl/mxv
+	.byte		VOL   , 85*song002restored_mvl/mxv
 	.byte		BEND  , c_v+0
-	.byte	FINE
+	.byte	GOTO
+	.word	@song002restored_2
 
 ;**************** Track 3 (Midi-Chn.3) ****************;
 
@@ -290,17 +277,17 @@
 	.byte		VOL   , 88*song002restored_mvl/mxv
 	.byte		PAN   , c_v-1
 	.byte		VOL   , 88*song002restored_mvl/mxv
-	.byte		        88*song002restored_mvl/mxv
 	.byte		PAN   , c_v-1
-	.byte		        c_v-1
 	.byte		VOL   , 88*song002restored_mvl/mxv
-	.byte		        88*song002restored_mvl/mxv
 	.byte		PAN   , c_v-1
-	.byte		        c_v-1
+	.byte		VOL   , 88*song002restored_mvl/mxv
+	.byte		PAN   , c_v-1
+	.byte		VOL   , 88*song002restored_mvl/mxv
+	.byte		PAN   , c_v-1
 	.byte		VOL   , 88*song002restored_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W48
-	.byte		N07   , Gn3 , v124
+	.byte		N07   , Cn3 , v124
 	.byte	W48
 ; 001   ----------------------------------------
 	.byte	W48
@@ -398,8 +385,9 @@
 	.byte	W44
 	.byte	W03
 	.byte		VOICE , 22
-	.byte		VOL   , 88*song002restored_mvl/mxv
 	.byte		PAN   , c_v-1
+	.byte		VOL   , 88*song002restored_mvl/mxv
+	.byte		BEND  , c_v+0
 	.byte	W01
 ; 024   ----------------------------------------
 	.byte		VOICE , 22
@@ -408,7 +396,8 @@
 	.byte		PAN   , c_v-1
 	.byte		VOL   , 88*song002restored_mvl/mxv
 	.byte		BEND  , c_v+0
-	.byte	FINE
+	.byte	GOTO
+	.word	@song002restored_3
 
 ;**************** Track 4 (Midi-Chn.4) ****************;
 
@@ -420,13 +409,13 @@
 	.byte		VOL   , 99*song002restored_mvl/mxv
 	.byte		PAN   , c_v-1
 	.byte		VOL   , 99*song002restored_mvl/mxv
-	.byte		        99*song002restored_mvl/mxv
 	.byte		PAN   , c_v-1
-	.byte		        c_v-1
 	.byte		VOL   , 99*song002restored_mvl/mxv
-	.byte		        99*song002restored_mvl/mxv
 	.byte		PAN   , c_v-1
-	.byte		        c_v-1
+	.byte		VOL   , 99*song002restored_mvl/mxv
+	.byte		PAN   , c_v-1
+	.byte		VOL   , 99*song002restored_mvl/mxv
+	.byte		PAN   , c_v-1
 	.byte		VOL   , 99*song002restored_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W96
@@ -526,8 +515,9 @@
 	.byte	W92
 	.byte	W03
 	.byte		VOICE , 2
-	.byte		VOL   , 99*song002restored_mvl/mxv
 	.byte		PAN   , c_v-1
+	.byte		VOL   , 99*song002restored_mvl/mxv
+	.byte		BEND  , c_v+0
 	.byte	W01
 ; 024   ----------------------------------------
 	.byte		VOICE , 2
@@ -536,7 +526,8 @@
 	.byte		PAN   , c_v-1
 	.byte		VOL   , 99*song002restored_mvl/mxv
 	.byte		BEND  , c_v+0
-	.byte	FINE
+	.byte	GOTO
+	.word	@song002restored_4
 
 ;**************** Track 5 (Midi-Chn.5) ****************;
 
@@ -548,13 +539,13 @@
 	.byte		VOL   , 62*song002restored_mvl/mxv
 	.byte		PAN   , c_v-1
 	.byte		VOL   , 62*song002restored_mvl/mxv
-	.byte		        62*song002restored_mvl/mxv
 	.byte		PAN   , c_v-1
-	.byte		        c_v-1
 	.byte		VOL   , 62*song002restored_mvl/mxv
-	.byte		        62*song002restored_mvl/mxv
 	.byte		PAN   , c_v-1
-	.byte		        c_v-1
+	.byte		VOL   , 62*song002restored_mvl/mxv
+	.byte		PAN   , c_v-1
+	.byte		VOL   , 62*song002restored_mvl/mxv
+	.byte		PAN   , c_v-1
 	.byte		VOL   , 62*song002restored_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W96
@@ -661,8 +652,9 @@
 	.byte	W92
 	.byte	W03
 	.byte		VOICE , 3
-	.byte		VOL   , 62*song002restored_mvl/mxv
 	.byte		PAN   , c_v-1
+	.byte		VOL   , 62*song002restored_mvl/mxv
+	.byte		BEND  , c_v+0
 	.byte	W01
 ; 024   ----------------------------------------
 	.byte		VOICE , 3
@@ -671,7 +663,8 @@
 	.byte		PAN   , c_v-1
 	.byte		VOL   , 62*song002restored_mvl/mxv
 	.byte		BEND  , c_v+0
-	.byte	FINE
+	.byte	GOTO
+	.word	@song002restored_5
 
 ;**************** Track 6 (Midi-Chn.6) ****************;
 
@@ -683,13 +676,13 @@
 	.byte		VOL   , 88*song002restored_mvl/mxv
 	.byte		PAN   , c_v-1
 	.byte		VOL   , 88*song002restored_mvl/mxv
-	.byte		        88*song002restored_mvl/mxv
 	.byte		PAN   , c_v-1
-	.byte		        c_v-1
 	.byte		VOL   , 88*song002restored_mvl/mxv
-	.byte		        88*song002restored_mvl/mxv
 	.byte		PAN   , c_v-1
-	.byte		        c_v-1
+	.byte		VOL   , 88*song002restored_mvl/mxv
+	.byte		PAN   , c_v-1
+	.byte		VOL   , 88*song002restored_mvl/mxv
+	.byte		PAN   , c_v-1
 	.byte		VOL   , 88*song002restored_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N11   , An2 , v124
@@ -896,8 +889,9 @@
 	.byte		N11   
 	.byte	W11
 	.byte		VOICE , 12
-	.byte		VOL   , 88*song002restored_mvl/mxv
 	.byte		PAN   , c_v-1
+	.byte		VOL   , 88*song002restored_mvl/mxv
+	.byte		BEND  , c_v+0
 	.byte	W01
 ; 024   ----------------------------------------
 	.byte		VOICE , 12
@@ -906,7 +900,8 @@
 	.byte		PAN   , c_v-1
 	.byte		VOL   , 88*song002restored_mvl/mxv
 	.byte		BEND  , c_v+0
-	.byte	FINE
+	.byte	GOTO
+	.word	@song002restored_6
 
 ;**************** Track 7 (Midi-Chn.7) ****************;
 
@@ -918,13 +913,13 @@
 	.byte		VOL   , 54*song002restored_mvl/mxv
 	.byte		PAN   , c_v-1
 	.byte		VOL   , 54*song002restored_mvl/mxv
-	.byte		        54*song002restored_mvl/mxv
 	.byte		PAN   , c_v-1
-	.byte		        c_v-1
 	.byte		VOL   , 54*song002restored_mvl/mxv
-	.byte		        54*song002restored_mvl/mxv
 	.byte		PAN   , c_v-1
-	.byte		        c_v-1
+	.byte		VOL   , 54*song002restored_mvl/mxv
+	.byte		PAN   , c_v-1
+	.byte		VOL   , 54*song002restored_mvl/mxv
+	.byte		PAN   , c_v-1
 	.byte		VOL   , 54*song002restored_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W96
@@ -1010,8 +1005,9 @@
 	.byte	W92
 	.byte	W03
 	.byte		VOICE , 3
-	.byte		VOL   , 54*song002restored_mvl/mxv
 	.byte		PAN   , c_v-1
+	.byte		VOL   , 54*song002restored_mvl/mxv
+	.byte		BEND  , c_v+0
 	.byte	W01
 ; 024   ----------------------------------------
 	.byte		VOICE , 3
@@ -1020,7 +1016,8 @@
 	.byte		PAN   , c_v-1
 	.byte		VOL   , 54*song002restored_mvl/mxv
 	.byte		BEND  , c_v+0
-	.byte	FINE
+	.byte	GOTO
+	.word	@song002restored_7
 
 ;**************** Track 8 (Midi-Chn.8) ****************;
 
@@ -1032,13 +1029,13 @@
 	.byte		VOL   , 88*song002restored_mvl/mxv
 	.byte		PAN   , c_v-1
 	.byte		VOL   , 88*song002restored_mvl/mxv
-	.byte		        88*song002restored_mvl/mxv
 	.byte		PAN   , c_v-1
-	.byte		        c_v-1
 	.byte		VOL   , 88*song002restored_mvl/mxv
-	.byte		        88*song002restored_mvl/mxv
 	.byte		PAN   , c_v-1
-	.byte		        c_v-1
+	.byte		VOL   , 88*song002restored_mvl/mxv
+	.byte		PAN   , c_v-1
+	.byte		VOL   , 88*song002restored_mvl/mxv
+	.byte		PAN   , c_v-1
 	.byte		VOL   , 88*song002restored_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N12   , Gs1 , v124
@@ -1132,8 +1129,9 @@
 	.byte		N12   
 	.byte	W23
 	.byte		VOICE , 20
-	.byte		VOL   , 88*song002restored_mvl/mxv
 	.byte		PAN   , c_v-1
+	.byte		VOL   , 88*song002restored_mvl/mxv
+	.byte		BEND  , c_v+0
 	.byte	W01
 ; 024   ----------------------------------------
 	.byte		VOICE , 20
@@ -1142,7 +1140,8 @@
 	.byte		PAN   , c_v-1
 	.byte		VOL   , 88*song002restored_mvl/mxv
 	.byte		BEND  , c_v+0
-	.byte	FINE
+	.byte	GOTO
+	.word	@song002restored_8
 
 ;******************************************************;
 	.align	4
