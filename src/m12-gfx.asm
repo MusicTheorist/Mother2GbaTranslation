@@ -75,6 +75,7 @@
 .include "./sound/song358restored.asm" //PSI Freeze (C)
 .include "./sound/song364restored.asm" //PSI Starstorm
 .include "./sound/song365restored.asm" //PSI Flash	(A)
+.include "./sound/song366restored.asm" //PSI Flash	(B)
 .include "./sound/song395restored.asm" //Magic Butterfly
 
 //This repoints the sound bytes to their new locations
@@ -106,4 +107,41 @@
 .org 0x810C060 :: .word song358restored
 .org 0x810C090 :: .word song364restored
 .org 0x810C098 :: .word song365restored
+.org 0x810C0A0 :: .word song366restored
 .org 0x810C188 :: .word song395restored
+
+//Notes about sound restoration
+//334: Miss
+//335: Dodge
+//333: Enemy Death
+//328: Pray
+//327: Enemy S  w  i  s  h
+//325: Robot Walk (holy frick the missed hard)
+//311: Pick up/Hang up phone
+//316: Item from preset
+//338: Shield 1
+//339: Shield 2
+//341: Stat Down
+//343: PSI Magnet
+//344: PSI Paralysis (A)
+//345: PSI Brainshock (A)
+//346: Player gets hit
+//347: Mortal Damage
+//359: HP Sucker
+//368: Consume food
+//372: Help
+//379: PSI Paralysis (B)
+//380: PSI Brainshock (B)
+//382: Spores
+//383: Status Ailment
+//384: Y e l l
+//390: Giygas gets fatally wounded
+//399: Shield Killer
+//402: Key Item
+//403: Learn PSI
+//404: Idk what it is but it plays repeatedly in summers
+//405-410: Sphinx Dance
+//414: Spooky
+//416: Place Item In Invetory
+//429: Warp Guy
+//
