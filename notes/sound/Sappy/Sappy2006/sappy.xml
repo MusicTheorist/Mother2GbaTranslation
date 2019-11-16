@@ -705,4 +705,4 @@
 	<rom code="ASBJ" name="Phoenix Wright" songtable="0x4132C" creator="Capcom" screenshot="pwright.jpg">
 		<playlist name="Main"/>
 	</rom>
-	<rom code="A2UJ" name="MOTHER12" songtable="0x10B530"><playlist name="Main"/></rom><rom code="A2UU" name="EARTHBOUNTCG" songtable="0x10B530"><playlist name="Main"/></rom></sappy>
+	<rom code="A2UJ" name="MOTHER12" songtable="0x10B530"><playlist name="Main"/></rom><rom code="A2UU" name="EARTHBOUNTCG" songtable="0x10B530"><playlist name="Main"/></rom><rom code="BPPE" name="POKEPIN R/S" songtable="0x534E04"><playlist name="Main"/></rom></sappy>

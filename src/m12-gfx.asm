@@ -81,7 +81,7 @@
 //This repoints the sound bytes to their new locations
 .org 0x810B540 :: .word song002restored
 .org 0x810B598 :: .word song013restored
-//.org 0x810B5B0 :: .word song016restored
+//.org 0x810B5B0 :: .word song016restored //Disabled Because it crashes
 .org 0x810B678 :: .word song041restored
 .org 0x810B6E8 :: .word song055restored
 .org 0x810B778 :: .word song073restored
@@ -144,4 +144,8 @@
 //414: Spooky
 //416: Place Item In Invetory
 //429: Warp Guy
+//
+
+//Songs that are extremely difficult to do:
+//148: Otherworldly foe
 //
