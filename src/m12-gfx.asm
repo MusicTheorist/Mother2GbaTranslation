@@ -52,13 +52,13 @@
 .include "./sound/song016restored.asm" //Dr. Andonuts' Lab (Preliminary)
 .include "./sound/song041restored.asm" //Alien Invasion
 .include "./sound/song055restored.asm" //Cavern of Winters
-.include "./sound/song072restored.asm" //Giygas' Intro (Imperfect)
-.include "./sound/song073restored.asm" //Giygas' Intimidation (Imperfect)
+.include "./sound/song072restored.asm" //Giygas' Intro (Imperfect, loop)
+.include "./sound/song073restored.asm" //Giygas' Intimidation (Imperfect, loop)
 .include "./sound/song100restored.asm" //Franky
 .include "./sound/song104restored.asm" //Kraken of The Sea
 .include "./sound/song105restored.asm" //Pokey Means Business!
-.include "./sound/song121restored.asm" //Onett (No Sunrise) (Prelimiary)
-.include "./sound/song125restored.asm" //Snowman (Imperfect)
+.include "./sound/song121restored.asm" //Onett (No Sunrise) (Prelimiary, doesnt replace properly)
+.include "./sound/song125restored.asm" //Snowman (Imperfect, loop)
 .include "./sound/song185restored.asm" //Giygas is Wounded!
 .include "./sound/song186restored.asm" //Giygas Stirs
 .include "./sound/song324restored.asm" //Player Attack (Imperfect)
@@ -69,7 +69,7 @@
 .include "./sound/song332restored.asm" //ded
 .include "./sound/song336restored.asm" //Lifeup noise
 .include "./sound/song337restored.asm" //Cure noise
-.include "./sound/song348restored.asm" //PSI Rockin (A)
+.include "./sound/song348restored.asm" //PSI Rockin (A) (Imperfect, instrumentation)
 .include "./sound/song349restored.asm" //PSI Rockin (B)
 .include "./sound/song350restored.asm" //PSI Rockin (C)
 .include "./sound/song356restored.asm" //PSI Freeze (A)
