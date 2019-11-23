@@ -60,6 +60,7 @@
 .include "./sound/song121restored.asm" //Onett (No Sunrise) (Prelimiary)
 .include "./sound/song125restored.asm" //Snowman (Imperfect)
 .include "./sound/song185restored.asm" //Giygas is Wounded!
+.include "./sound/song186restored.asm" //Giygas Stirs
 .include "./sound/song324restored.asm" //Player Attack (Imperfect)
 .include "./sound/song326restored.asm" //S  w  i  s  h (Unable to hear fwr)
 .include "./sound/song329restored.asm" //Player Use PSI
@@ -93,6 +94,7 @@
 .org 0x810B9F8 :: .word song121restored
 .org 0x810B918 :: .word song125restored
 .org 0x810BAF8 :: .word song185restored
+.org 0x810BB00 :: .word song186restored
 .org 0x810BF50 :: .word song324restored
 .org 0x810BF60 :: .word song326restored
 .org 0x810BF78 :: .word song329restored
