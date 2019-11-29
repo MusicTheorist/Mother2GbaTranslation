@@ -48,11 +48,13 @@
 //This is the sound data
 .include "ArmipsMusicPlayDef.asm"
 .include "./sound/song002restored.asm" //File Select
+.include "./sound/song007restored.asm" //A Bad Dreamn
 .include "./sound/song013restored.asm" //Teleportation
-.include "./sound/song016restored.asm" //Dr. Andonuts' Lab (Preliminary)
+.include "./sound/song016restored.asm" //Dr. Andonuts' Lab (Preliminary, crash)
 .include "./sound/song041restored.asm" //Alien Invasion
 .include "./sound/song044restored.asm" //Threed, Zombie Central (Imperfect...?, loop)
 .include "./sound/song055restored.asm" //Cavern of Winters
+.include "./sound/song057restored.asm" //Jackie's Cafe
 .include "./sound/song072restored.asm" //Giygas' Intro (Imperfect, loop)
 .include "./sound/song073restored.asm" //Giygas' Intimidation (Imperfect, loop)
 .include "./sound/song074restored.asm" //Giygas is Fatally Wounded!
@@ -84,11 +86,13 @@
 
 //This repoints the sound bytes to their new locations
 .org 0x810B540 :: .word song002restored
+.org 0x810B568 :: .word song007restored
 .org 0x810B598 :: .word song013restored
 //.org 0x810B5B0 :: .word song016restored //Disabled Because it crashes
 .org 0x810B678 :: .word song041restored
 .org 0x810B690 :: .word song044restored
 .org 0x810B6E8 :: .word song055restored
+.org 0x810B6F8 :: .word song057restored
 .org 0x810B770 :: .word song072restored
 .org 0x810B778 :: .word song073restored
 .org 0x810B780 :: .word song074restored
@@ -117,9 +121,25 @@
 .org 0x810C098 :: .word song365restored
 .org 0x810C0A0 :: .word song366restored
 .org 0x810C188 :: .word song395restored
+
+//Songs that Only need Minor changes
 .org 0x82ADD23 :: .byte 0x1D //Speed up Song 169 (Eight Melodies [Giygas])
 
+//Samples
+.org 0x810AE1D :: .byte 0xFA,0x00 //Make the guitar instrument fade out
+
 //Notes about sound restoration
+//003: Your name, please
+//005: enemy defeated!
+//007: A Bad Dream
+//008: Enemy Encounter (Green/Blue)
+//009: Enemy Encounter (Red)
+//010: Eight Melodies
+//011: Joined your Party!
+//012: All Healed up!
+//014: Teleport Crash
+//015: Fall
+//042: Fire Spring
 //334: Miss
 //335: Dodge
 //333: Enemy Death
@@ -136,6 +156,7 @@
 //345: PSI Brainshock (A)
 //346: Player gets hit
 //347: Mortal Damage
+//354: a cool noise that i dont know wtf it goes to
 //359: HP Sucker
 //368: Consume food
 //372: Help
@@ -148,7 +169,7 @@
 //399: Shield Killer
 //402: Key Item
 //403: Learn PSI
-//404: Idk what it is but it plays repeatedly in summers
+//404: chicken
 //405-410: Sphinx Dance
 //414: Spooky
 //416: Place Item In Invetory
