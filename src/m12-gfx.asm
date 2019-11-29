@@ -88,7 +88,7 @@
 .org 0x810B540 :: .word song002restored
 .org 0x810B568 :: .word song007restored
 .org 0x810B598 :: .word song013restored
-.org 0x810B5B0 :: .word song016restored //Disabled Because it crashes
+.org 0x810B5B0 :: .word song016restored
 .org 0x810B678 :: .word song041restored
 .org 0x810B690 :: .word song044restored
 .org 0x810B6E8 :: .word song055restored

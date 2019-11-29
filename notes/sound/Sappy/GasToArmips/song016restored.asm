@@ -1,3 +1,6 @@
+	.include "ArmipsMusicPlayDef.asm"
+
+
 	song016restored_pri equ 0
 	song016restored_rev equ 0
 	song016restored_mvl equ 127
@@ -84,8 +87,7 @@
 	.byte		VOL   , 56*song016restored_mvl/mxv
 	.byte		MOD   , 0
 	.byte		BEND  , c_v+0
-	.byte	GOTO
-	.word	@song016restored_1
+	.byte	FINE
 
 ;**************** Track 2 (Midi-Chn.2) ****************;
 
@@ -160,8 +162,7 @@
 	.byte		VOL   , 56*song016restored_mvl/mxv
 	.byte		MOD   , 0
 	.byte		BEND  , c_v+0
-	.byte	GOTO
-	.word	@song016restored_2
+	.byte	FINE
 
 ;**************** Track 3 (Midi-Chn.3) ****************;
 
@@ -236,8 +237,7 @@
 	.byte		VOL   , 56*song016restored_mvl/mxv
 	.byte		MOD   , 0
 	.byte		BEND  , c_v+0
-	.byte	GOTO
-	.word	@song016restored_3
+	.byte	FINE
 
 ;**************** Track 4 (Midi-Chn.4) ****************;
 
@@ -326,7 +326,7 @@
 	.byte	W23
 ; 009   ----------------------------------------
 	.byte	PATT
-	 .word	@song016restored_4_003
+	 .word	song016restored_4_003
 ; 010   ----------------------------------------
 	.byte	W96
 ; 011   ----------------------------------------
@@ -349,8 +349,7 @@
 	.byte		VOL   , 82*song016restored_mvl/mxv
 	.byte		MOD   , 10
 	.byte		BEND  , c_v+0
-	.byte	GOTO
-	.word	@song016restored_4
+	.byte	FINE
 
 ;**************** Track 5 (Midi-Chn.5) ****************;
 
@@ -439,7 +438,7 @@
 	.byte	W15
 ; 009   ----------------------------------------
 	.byte	PATT
-	 .word	@song016restored_5_003
+	 .word	song016restored_5_003
 ; 010   ----------------------------------------
 	.byte	W96
 ; 011   ----------------------------------------
@@ -462,8 +461,7 @@
 	.byte		VOL   , 50*song016restored_mvl/mxv
 	.byte		MOD   , 10
 	.byte		BEND  , c_v+0
-	.byte	GOTO
-	.word	@song016restored_5
+	.byte	FINE
 
 ;**************** Track 6 (Midi-Chn.6) ****************;
 
@@ -611,7 +609,7 @@
 	.byte	W05
 ; 005   ----------------------------------------
 	.byte	PATT
-	 .word	@song016restored_6_001
+	 .word	song016restored_6_001
 ; 006   ----------------------------------------
 	.byte	W96
 ; 007   ----------------------------------------
@@ -639,8 +637,7 @@
 	.byte		PAN   , c_v-33
 	.byte		VOL   , 82*song016restored_mvl/mxv
 	.byte		BEND  , c_v+0
-	.byte	GOTO
-	.word	@song016restored_6
+	.byte	FINE
 
 ;**************** Track 7 (Midi-Chn.7) ****************;
 
@@ -781,7 +778,7 @@
 	.byte	W02
 ; 005   ----------------------------------------
 	.byte	PATT
-	 .word	@song016restored_7_001
+	 .word	song016restored_7_001
 ; 006   ----------------------------------------
 @song016restored_7_006:
 	.byte	W21
@@ -818,7 +815,7 @@
 	.byte	W96
 ; 010   ----------------------------------------
 	.byte	PATT
-	 .word	@song016restored_7_006
+	 .word	song016restored_7_006
 ; 011   ----------------------------------------
 	.byte	W92
 	.byte	W03
@@ -836,8 +833,7 @@
 	.byte		PAN   , c_v+50
 	.byte		VOL   , 56*song016restored_mvl/mxv
 	.byte		BEND  , c_v+0
-	.byte	GOTO
-	.word	@song016restored_7
+	.byte	FINE
 
 ;**************** Track 8 (Midi-Chn.8) ****************;
 
@@ -926,7 +922,7 @@
 	.byte	W07
 ; 009   ----------------------------------------
 	.byte	PATT
-	 .word	@song016restored_8_003
+	 .word	song016restored_8_003
 ; 010   ----------------------------------------
 	.byte	W96
 ; 011   ----------------------------------------
@@ -949,8 +945,7 @@
 	.byte		VOL   , 50*song016restored_mvl/mxv
 	.byte		MOD   , 10
 	.byte		BEND  , c_v+0
-	.byte	GOTO
-	.word	@song016restored_8
+	.byte	FINE
 
 ;******************************************************;
 	.align	4
@@ -961,16 +956,15 @@ song016restored:
 	.byte	song016restored_pri	; Priority
 	.byte	song016restored_rev	; Reverb.
 
-	//emit_clean_voicegroup_offset_for_song 16
-	.word	0x8107760 //Voice Table
+	emit_clean_voicegroup_offset_for_song 16
 
-	.word	@song016restored_1
-	.word	@song016restored_2
-	.word	@song016restored_3
-	.word	@song016restored_4
-	.word	@song016restored_5
-	.word	@song016restored_6
-	.word	@song016restored_7
-	.word	@song016restored_8
+	.word	song016restored_1
+	.word	song016restored_2
+	.word	song016restored_3
+	.word	song016restored_4
+	.word	song016restored_5
+	.word	song016restored_6
+	.word	song016restored_7
+	.word	song016restored_8
 
 
