@@ -48,7 +48,7 @@
 //This is the sound data
 .include "ArmipsMusicPlayDef.asm"
 .include "./sound/song002restored.asm" //File Select
-.include "./sound/song007restored.asm" //A Bad Dreamn
+.include "./sound/song007restored.asm" //A Bad Dream
 .include "./sound/song013restored.asm" //Teleportation
 .include "./sound/song016restored.asm" //Dr. Andonuts' Lab (Preliminary, crash)
 .include "./sound/song041restored.asm" //Alien Invasion
@@ -88,7 +88,7 @@
 .org 0x810B540 :: .word song002restored
 .org 0x810B568 :: .word song007restored
 .org 0x810B598 :: .word song013restored
-//.org 0x810B5B0 :: .word song016restored //Disabled Because it crashes
+.org 0x810B5B0 :: .word song016restored //Disabled Because it crashes
 .org 0x810B678 :: .word song041restored
 .org 0x810B690 :: .word song044restored
 .org 0x810B6E8 :: .word song055restored
