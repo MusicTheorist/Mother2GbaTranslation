@@ -49,6 +49,7 @@
 .include "ArmipsMusicPlayDef.asm"
 .include "./sound/song002restored.asm" //File Select
 .include "./sound/song007restored.asm" //A Bad Dream
+.include "./sound/song008restored.asm" //Enemy Encounter (Blue/Green)
 .include "./sound/song013restored.asm" //Teleportation
 .include "./sound/song016restored.asm" //Dr. Andonuts' Lab (Preliminary, crash)
 .include "./sound/song041restored.asm" //Alien Invasion
@@ -87,6 +88,7 @@
 //This repoints the sound bytes to their new locations
 .org 0x810B540 :: .word song002restored
 .org 0x810B568 :: .word song007restored
+.org 0x810B570 :: .word song008restored
 .org 0x810B598 :: .word song013restored
 .org 0x810B5B0 :: .word song016restored
 .org 0x810B678 :: .word song041restored
