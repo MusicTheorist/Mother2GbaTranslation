@@ -139,7 +139,34 @@
 //012: All Healed up!
 //014: Teleport Crash
 //015: Fall
+//017: Ominous Neighbor
+//018: Apple Kid's Theme
+//020: Onett Arcade (wtf happened here)
+//021: Pokey's Theme
+//022: Hospital
+//023: Home Sweet Home
+//024: Paula's Theme
+//026: Enjoy Your Stay
+//027: Waking up from a rest in the hotel
+//028: BUy Sumtin Will Ya!?
 //042: Fire Spring
+//043: Master Belch's Factory
+//047: Fourside
+//048: Saturn Valley
+//049: Monkey Caves
+//050: M oo ns id e
+//051: The Desert that is before Fourside that I forgot the name of
+//052: Peaceful Rest Valley
+//053: Happy Happy Village
+//054: Winters
+//056: Summers
+//059: Dalaam
+//060: Mu
+//061: Scaraba
+//062: The Unforgiving Desert
+//063: Pyramid
+//064: Deep Darkness
+//065: Tenda Village
 //334: Miss
 //335: Dodge
 //333: Enemy Death
