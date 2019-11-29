@@ -13,7 +13,7 @@
 ;**************** Track 1 (Midi-Chn.1) ****************;
 
 @song007restored_1:
-	.byte	KEYSH , song007restored_key+0
+	.byte	KEYSH , song007restored_key+12
 ; 000   ----------------------------------------
 	.byte	TEMPO , 125*song007restored_tbs/2
 	.byte		VOICE , 0
@@ -4733,7 +4733,7 @@
 ;**************** Track 7 (Midi-Chn.8) ****************;
 
 @song007restored_7:
-	.byte	KEYSH , song007restored_key+0
+	.byte	KEYSH , song007restored_key+12
 ; 000   ----------------------------------------
 	.byte		VOICE , 0
 	.byte		MODT  , 0
