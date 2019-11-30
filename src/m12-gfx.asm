@@ -54,6 +54,7 @@
 .include "./sound/song016restored.asm" //Dr. Andonuts' Lab (Preliminary, crash)
 .include "./sound/song041restored.asm" //Alien Invasion
 .include "./sound/song044restored.asm" //Threed, Zombie Central (Imperfect...?, loop)
+.include "./sound/song050restored.asm" //Moonside
 .include "./sound/song055restored.asm" //Cavern of Winters
 .include "./sound/song057restored.asm" //Jackie's Cafe
 .include "./sound/song072restored.asm" //Giygas' Intro (Imperfect, loop)
@@ -93,6 +94,7 @@
 .org 0x810B5B0 :: .word song016restored
 .org 0x810B678 :: .word song041restored
 .org 0x810B690 :: .word song044restored
+.org 0x810B6C0 :: .word song050restored
 .org 0x810B6E8 :: .word song055restored
 .org 0x810B6F8 :: .word song057restored
 .org 0x810B770 :: .word song072restored
