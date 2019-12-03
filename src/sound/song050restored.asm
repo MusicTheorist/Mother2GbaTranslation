@@ -666,5 +666,3 @@ song050restored:
 	.word	@song050restored_5
 	.word	@song050restored_6
 	.word	@song050restored_7
-
-

@@ -63,7 +63,7 @@
 .include "./sound/song100restored.asm" //Franky
 .include "./sound/song104restored.asm" //Kraken of The Sea
 .include "./sound/song105restored.asm" //Pokey Means Business!
-.include "./sound/song121restored.asm" //Onett (No Sunrise) (Prelimiary, doesnt replace properly)
+.include "./sound/song121restored.asm" //Onett (No Sunrise)
 .include "./sound/song125restored.asm" //Snowman (Imperfect, loop)
 .include "./sound/song185restored.asm" //Giygas is Wounded!
 .include "./sound/song186restored.asm" //Giygas Stirs
@@ -103,7 +103,7 @@
 .org 0x810B850 :: .word song100restored
 .org 0x810B870 :: .word song104restored
 .org 0x810B878 :: .word song105restored
-.org 0x810B9F8 :: .word song121restored
+.org 0x810B8F8 :: .word song121restored
 .org 0x810B918 :: .word song125restored
 .org 0x810BAF8 :: .word song185restored
 .org 0x810BB00 :: .word song186restored
