@@ -51,7 +51,7 @@
 .include "./sound/song007restored.asm" //A Bad Dream
 .include "./sound/song008restored.asm" //Enemy Encounter (Blue/Green)
 .include "./sound/song013restored.asm" //Teleportation
-.include "./sound/song016restored.asm" //Dr. Andonuts' Lab (Preliminary, crash)
+.include "./sound/song016restored.asm" //Dr. Andonuts' Lab (Imperfect, loop)
 .include "./sound/song041restored.asm" //Alien Invasion
 .include "./sound/song044restored.asm" //Threed, Zombie Central (Imperfect...?, loop)
 .include "./sound/song050restored.asm" //Moonside
