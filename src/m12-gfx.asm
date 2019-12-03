@@ -105,6 +105,7 @@
 .org 0x810B878 :: .word song105restored
 .org 0x810B8F8 :: .word song121restored
 .org 0x810B918 :: .word song125restored
+.org 0x810B9E8 :: .word song041restored
 .org 0x810BAF8 :: .word song185restored
 .org 0x810BB00 :: .word song186restored
 .org 0x810BF50 :: .word song324restored

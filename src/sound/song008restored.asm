@@ -1,4 +1,4 @@
-	song008restored_pri equ 100
+	song008restored_pri equ 0
 	song008restored_rev equ 0
 	song008restored_mvl equ 127
 	song008restored_key equ 0
