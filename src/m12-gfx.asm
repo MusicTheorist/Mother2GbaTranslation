@@ -64,7 +64,7 @@
 .include "./sound/song104restored.asm" //Kraken of The Sea
 .include "./sound/song105restored.asm" //Pokey Means Business!
 .include "./sound/song121restored.asm" //Onett (No Sunrise)
-.include "./sound/song125restored.asm" //Snowman (Imperfect, loop)
+.include "./sound/song125restored.asm" //Snowman (Imperfect, loop, some notes.)
 .include "./sound/song185restored.asm" //Giygas is Wounded!
 .include "./sound/song186restored.asm" //Giygas Stirs
 .include "./sound/song324restored.asm" //Player Attack (Imperfect)
@@ -160,7 +160,7 @@
 //048: Saturn Valley
 //049: Monkey Caves
 //050: M oo ns id e
-//051: The Desert that is before Fourside that I forgot the name of
+//051: Dusty Dunes Desert
 //052: Peaceful Rest Valley
 //053: Happy Happy Village
 //054: Winters
