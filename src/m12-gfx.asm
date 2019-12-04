@@ -153,7 +153,7 @@
 //024: Paula's Theme
 //026: Enjoy Your Stay
 //027: Waking up from a rest in the hotel
-//028: BUy Sumtin Will Ya!?
+//028: Buy Sumtin Will Ya!?
 //042: Fire Spring
 //043: Master Belch's Factory
 //047: Fourside
