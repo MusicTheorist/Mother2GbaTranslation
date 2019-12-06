@@ -65,8 +65,11 @@
 .include "./sound/song105restored.asm" //Pokey Means Business!
 .include "./sound/song121restored.asm" //Onett (No Sunrise)
 .include "./sound/song125restored.asm" //Snowman (Imperfect, loop, some notes.)
+.include "./sound/song175restored.asm" //Title Screen
+.include "./sound/song176restored.asm" //Boss Swirl
 .include "./sound/song185restored.asm" //Giygas is Wounded!
 .include "./sound/song186restored.asm" //Giygas Stirs
+.include "./sound/song204restored.asm" //Title Screen (Short)
 .include "./sound/song324restored.asm" //Player Attack (Imperfect)
 .include "./sound/song326restored.asm" //S  w  i  s  h (Unable to hear fwr)
 .include "./sound/song329restored.asm" //Player Use PSI
@@ -106,8 +109,11 @@
 .org 0x810B8F8 :: .word song121restored
 .org 0x810B918 :: .word song125restored
 .org 0x810B9E8 :: .word song041restored
+.org 0x810BAA8 :: .word song175restored
+.org 0x810BAB0 :: .word song176restored
 .org 0x810BAF8 :: .word song185restored
 .org 0x810BB00 :: .word song186restored
+.org 0x810BB90 :: .word song175restored //Replace the shorter title screen
 .org 0x810BF50 :: .word song324restored
 .org 0x810BF60 :: .word song326restored
 .org 0x810BF78 :: .word song329restored
