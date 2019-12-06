@@ -113,7 +113,7 @@
 .org 0x810BAB0 :: .word song176restored
 .org 0x810BAF8 :: .word song185restored
 .org 0x810BB00 :: .word song186restored
-.org 0x810BB90 :: .word song175restored //Replace the shorter title screen
+.org 0x810BB90 :: .word song204restored //Replace the shorter title screen
 .org 0x810BF50 :: .word song324restored
 .org 0x810BF60 :: .word song326restored
 .org 0x810BF78 :: .word song329restored
