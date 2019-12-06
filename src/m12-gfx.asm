@@ -165,7 +165,6 @@
 //047: Fourside
 //048: Saturn Valley
 //049: Monkey Caves
-//050: M oo ns id e
 //051: Dusty Dunes Desert
 //052: Peaceful Rest Valley
 //053: Happy Happy Village
