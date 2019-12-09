@@ -48,6 +48,7 @@
 //This is the sound data
 .include "ArmipsMusicPlayDef.asm"
 .include "./sound/song002restored.asm" //File Select
+.include "./sound/song003restored.asm" //Your name, please (Imperfect, note)
 .include "./sound/song007restored.asm" //A Bad Dream
 .include "./sound/song008restored.asm" //Enemy Encounter (Blue/Green)
 .include "./sound/song013restored.asm" //Teleportation
@@ -91,6 +92,7 @@
 
 //This repoints the sound bytes to their new locations
 .org 0x810B540 :: .word song002restored
+.org 0x810B548 :: .word song003restored
 .org 0x810B568 :: .word song007restored
 .org 0x810B570 :: .word song008restored
 .org 0x810B598 :: .word song013restored
