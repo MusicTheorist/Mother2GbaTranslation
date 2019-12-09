@@ -63,7 +63,7 @@
 .include "./sound/song100restored.asm" //Franky
 .include "./sound/song104restored.asm" //Kraken of The Sea
 .include "./sound/song105restored.asm" //Pokey Means Business!
-.include "./sound/song121restored.asm" //Onett (No Sunrise)
+.include "./sound/song121restored.asm" //Onett (No Sunrise) (preliminary, crash)
 .include "./sound/song125restored.asm" //Snowman (Imperfect, loop, some notes.)
 .include "./sound/song175restored.asm" //Title Screen
 .include "./sound/song176restored.asm" //Boss Swirl
@@ -106,7 +106,7 @@
 .org 0x810B850 :: .word song100restored
 .org 0x810B870 :: .word song104restored
 .org 0x810B878 :: .word song105restored
-.org 0x810B8F8 :: .word song121restored
+//.org 0x810B8F8 :: .word song121restored
 .org 0x810B918 :: .word song125restored
 .org 0x810B9E8 :: .word song041restored
 .org 0x810BAA8 :: .word song175restored
