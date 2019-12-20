@@ -66,6 +66,7 @@
 .include "./sound/song105restored.asm" //Pokey Means Business!
 .include "./sound/song121restored.asm" //Onett (No Sunrise) (preliminary, crash)
 .include "./sound/song125restored.asm" //Snowman (Imperfect, loop, some notes.)
+.include "./sound/song148restored.asm" //Otherworldly Foe
 .include "./sound/song175restored.asm" //Title Screen
 .include "./sound/song176restored.asm" //Boss Swirl
 .include "./sound/song185restored.asm" //Giygas is Wounded!
@@ -110,6 +111,7 @@
 .org 0x810B878 :: .word song105restored
 //.org 0x810B8F8 :: .word song121restored
 .org 0x810B918 :: .word song125restored
+.org 0x810B9D0 :: .word song148restored
 .org 0x810B9E8 :: .word song041restored
 .org 0x810BAA8 :: .word song175restored
 .org 0x810BAB0 :: .word song176restored
