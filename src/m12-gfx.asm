@@ -63,6 +63,7 @@
 .include "./sound/song073restored.asm" //Giygas' Intimidation (Imperfect, loop)
 .include "./sound/song074restored.asm" //Giygas is Fatally Wounded!
 .include "./sound/song100restored.asm" //Franky
+.include "./sound/song101restored.asm" //Weak Opponent
 .include "./sound/song104restored.asm" //Kraken of The Sea
 .include "./sound/song105restored.asm" //Pokey Means Business!
 .include "./sound/song121restored.asm" //Onett (No Sunrise) (preliminary, crash)
@@ -109,6 +110,7 @@
 .org 0x810B778 :: .word song073restored
 .org 0x810B780 :: .word song074restored
 .org 0x810B850 :: .word song100restored
+.org 0x810B858 :: .word song101restored
 .org 0x810B870 :: .word song104restored
 .org 0x810B878 :: .word song105restored
 //.org 0x810B8F8 :: .word song121restored
