@@ -53,6 +53,7 @@
 .include "./sound/song008restored.asm" //Enemy Encounter (Blue/Green)
 .include "./sound/song013restored.asm" //Teleportation
 .include "./sound/song016restored.asm" //Dr. Andonuts' Lab (Imperfect, loop)
+.include "./sound/song029restored.asm" //Onett Night 1
 .include "./sound/song041restored.asm" //Alien Invasion
 .include "./sound/song044restored.asm" //Threed, Zombie Central (Imperfect...?, loop)
 .include "./sound/song050restored.asm" //Moonside
@@ -98,6 +99,7 @@
 .org 0x810B570 :: .word song008restored
 .org 0x810B598 :: .word song013restored
 .org 0x810B5B0 :: .word song016restored
+.org 0x810B618 :: .word song029restored
 .org 0x810B678 :: .word song041restored
 .org 0x810B690 :: .word song044restored
 .org 0x810B6C0 :: .word song050restored
