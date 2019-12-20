@@ -1,1013 +1,1016 @@
-	song148restored_pri equ 0
-	song148restored_rev equ 0
-	song148restored_mvl equ 127
-	song148restored_key equ 0
-	song148restored_tbs equ 1
-	song148restored_exg equ 0
-	song148restored_cmp equ 1
+	.include "MPlayDef.s"
 
+	.equ	Otherworldly_Foe (3)_FINAL_grp, voicegroup000
+	.equ	Otherworldly_Foe (3)_FINAL_pri, 0
+	.equ	Otherworldly_Foe (3)_FINAL_rev, 0
+	.equ	Otherworldly_Foe (3)_FINAL_mvl, 127
+	.equ	Otherworldly_Foe (3)_FINAL_key, 0
+	.equ	Otherworldly_Foe (3)_FINAL_tbs, 1
+	.equ	Otherworldly_Foe (3)_FINAL_exg, 0
+	.equ	Otherworldly_Foe (3)_FINAL_cmp, 1
 
+	.section .rodata
+	.global	Otherworldly_Foe (3)_FINAL
+	.align	2
 
-	.align	4
+@**************** Track 1 (Midi-Chn.1) ****************@
 
-;**************** Track 1 (Midi-Chn.1) ****************;
-
-@song148restored_1:
-	.byte	KEYSH , song148restored_key+0
-; 000   ----------------------------------------
-	.byte	TEMPO , 125*song148restored_tbs/2
+Otherworldly_Foe (3)_FINAL_1:
+	.byte	KEYSH , Otherworldly_Foe (3)_FINAL_key+0
+@ 000   ----------------------------------------
+	.byte	TEMPO , 125*Otherworldly_Foe (3)_FINAL_tbs/2
 	.byte		VOICE , 13
 	.byte		MODT  , 0
 	.byte		LFOS  , 44
 	.byte		BENDR , 12
 	.byte	W02
-	.byte		VOL   , 59*song148restored_mvl/mxv
+	.byte		VOL   , 59*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 39
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 59*song148restored_mvl/mxv
+	.byte		VOL   , 59*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N01   , As4 , v127
 	.byte	W08
-	.byte		VOL   , 50*song148restored_mvl/mxv
+	.byte		VOL   , 50*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 17
 	.byte		PAN   , c_v+21
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		PAN   , c_v+0
 	.byte		N01   
 	.byte	W05
-	.byte		VOL   , 50*song148restored_mvl/mxv
+	.byte		VOL   , 50*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 17
 	.byte		PAN   , c_v-21
-	.byte		VOL   , 59*song148restored_mvl/mxv
+	.byte		VOL   , 59*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 39
 	.byte		PAN   , c_v+0
 	.byte		N01   
 	.byte	W09
-	.byte		VOL   , 50*song148restored_mvl/mxv
+	.byte		VOL   , 50*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 17
 	.byte		PAN   , c_v+21
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		PAN   , c_v+0
 	.byte		N01   
 	.byte	W04
-	.byte		VOL   , 50*song148restored_mvl/mxv
+	.byte		VOL   , 50*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 17
 	.byte		PAN   , c_v-21
-	.byte		VOL   , 59*song148restored_mvl/mxv
+	.byte		VOL   , 59*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 39
 	.byte		PAN   , c_v+0
 	.byte		N01   
 	.byte	W09
-	.byte		VOL   , 50*song148restored_mvl/mxv
+	.byte		VOL   , 50*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 17
 	.byte		PAN   , c_v+21
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		PAN   , c_v+0
 	.byte		N01   
 	.byte	W04
-	.byte		VOL   , 50*song148restored_mvl/mxv
+	.byte		VOL   , 50*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 17
 	.byte		PAN   , c_v-21
-	.byte		VOL   , 59*song148restored_mvl/mxv
+	.byte		VOL   , 59*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 39
 	.byte		PAN   , c_v+0
 	.byte	W01
 	.byte		N01   
 	.byte	W08
-	.byte		VOL   , 50*song148restored_mvl/mxv
+	.byte		VOL   , 50*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 17
 	.byte		PAN   , c_v+21
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		PAN   , c_v+0
 	.byte		N01   
 	.byte	W05
-	.byte		VOL   , 50*song148restored_mvl/mxv
+	.byte		VOL   , 50*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 17
 	.byte		PAN   , c_v-21
-	.byte		VOL   , 59*song148restored_mvl/mxv
+	.byte		VOL   , 59*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 39
 	.byte		PAN   , c_v+0
 	.byte		N01   
 	.byte	W09
-	.byte		VOL   , 50*song148restored_mvl/mxv
+	.byte		VOL   , 50*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 17
 	.byte		PAN   , c_v+21
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		PAN   , c_v+0
 	.byte		N01   
 	.byte	W32
-; 001   ----------------------------------------
+@ 001   ----------------------------------------
 	.byte	W12
-	.byte		VOL   , 50*song148restored_mvl/mxv
+	.byte		VOL   , 50*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 17
 	.byte		PAN   , c_v-21
-	.byte		VOL   , 59*song148restored_mvl/mxv
+	.byte		VOL   , 59*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 39
 	.byte		PAN   , c_v+0
 	.byte	W01
 	.byte		N01   
 	.byte	W08
-	.byte		VOL   , 50*song148restored_mvl/mxv
+	.byte		VOL   , 50*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 17
 	.byte		PAN   , c_v+21
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		PAN   , c_v+0
 	.byte		N01   
 	.byte	W05
-	.byte		VOL   , 50*song148restored_mvl/mxv
+	.byte		VOL   , 50*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 17
 	.byte		PAN   , c_v-21
-	.byte		VOL   , 59*song148restored_mvl/mxv
+	.byte		VOL   , 59*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 39
 	.byte		PAN   , c_v+0
 	.byte		N01   
 	.byte	W08
-	.byte		VOL   , 50*song148restored_mvl/mxv
+	.byte		VOL   , 50*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 17
 	.byte		PAN   , c_v+21
 	.byte	W01
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		PAN   , c_v+0
 	.byte		N01   
 	.byte	W04
-	.byte		VOL   , 50*song148restored_mvl/mxv
+	.byte		VOL   , 50*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 17
 	.byte		PAN   , c_v-21
-	.byte		VOL   , 59*song148restored_mvl/mxv
+	.byte		VOL   , 59*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 39
 	.byte		PAN   , c_v+0
 	.byte		N01   
 	.byte	W09
-	.byte		VOL   , 50*song148restored_mvl/mxv
+	.byte		VOL   , 50*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 17
 	.byte		PAN   , c_v+21
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		PAN   , c_v+0
 	.byte		N01   
 	.byte	W05
-	.byte		VOL   , 50*song148restored_mvl/mxv
+	.byte		VOL   , 50*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 17
 	.byte		PAN   , c_v-21
-	.byte		VOL   , 59*song148restored_mvl/mxv
+	.byte		VOL   , 59*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 39
 	.byte		PAN   , c_v+0
 	.byte		N01   
 	.byte	W08
-	.byte		VOL   , 50*song148restored_mvl/mxv
+	.byte		VOL   , 50*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 17
 	.byte		PAN   , c_v+21
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		PAN   , c_v+0
 	.byte		N01   
 	.byte	W05
-	.byte		VOL   , 50*song148restored_mvl/mxv
+	.byte		VOL   , 50*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 17
 	.byte		PAN   , c_v-21
-	.byte		VOL   , 59*song148restored_mvl/mxv
+	.byte		VOL   , 59*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 39
 	.byte		PAN   , c_v+0
 	.byte		N01   
 	.byte	W30
-; 002   ----------------------------------------
+@ 002   ----------------------------------------
 	.byte		VOICE , 20
 	.byte	W24
-@song148restored_1_B1:
+Otherworldly_Foe (3)_FINAL_1_B1:
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		PAN   , c_v-64
 	.byte		BEND  , c_v+1
 	.byte		N10   , An2 , v127
 	.byte	W04
-	.byte		VOL   , 31*song148restored_mvl/mxv
+	.byte		VOL   , 31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte	W08
-	.byte		        44*song148restored_mvl/mxv
+	.byte		        44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte	W01
 	.byte		N10   
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W10
 	.byte		N10   
 	.byte	W05
-	.byte		VOL   , 31*song148restored_mvl/mxv
+	.byte		VOL   , 31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte	W08
-	.byte		        0*song148restored_mvl/mxv
+	.byte		        0*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
-	.byte		        44*song148restored_mvl/mxv
+	.byte		        44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		PAN   , c_v+63
 	.byte		N06   
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W06
-	.byte		        44*song148restored_mvl/mxv
+	.byte		        44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		PAN   , c_v+42
-	.byte		VOL   , 10*song148restored_mvl/mxv
+	.byte		VOL   , 10*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 125
 	.byte		PAN   , c_v-64
 	.byte		N01   
 	.byte	W05
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W04
-	.byte		VOL   , 31*song148restored_mvl/mxv
+	.byte		VOL   , 31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte	W05
-	.byte		        10*song148restored_mvl/mxv
+	.byte		        10*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 125
 	.byte		N01   
 	.byte	W04
-	.byte		VOL   , 44*song148restored_mvl/mxv
+	.byte		VOL   , 44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		N10   
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W03
-; 003   ----------------------------------------
+@ 003   ----------------------------------------
 	.byte	W08
-	.byte		        31*song148restored_mvl/mxv
+	.byte		        31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte		N10   
 	.byte	W13
-	.byte		VOL   , 44*song148restored_mvl/mxv
+	.byte		VOL   , 44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		N10   
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W10
 	.byte		N10   
 	.byte	W05
-	.byte		VOL   , 31*song148restored_mvl/mxv
+	.byte		VOL   , 31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte	W09
-	.byte		        44*song148restored_mvl/mxv
+	.byte		        44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		N10   
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W10
 	.byte		N10   
 	.byte	W05
-	.byte		VOL   , 31*song148restored_mvl/mxv
+	.byte		VOL   , 31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte	W08
-	.byte		        0*song148restored_mvl/mxv
+	.byte		        0*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
-	.byte		        44*song148restored_mvl/mxv
+	.byte		        44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		PAN   , c_v+63
 	.byte	W01
 	.byte		N06   
 	.byte	W02
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W06
-	.byte		        44*song148restored_mvl/mxv
+	.byte		        44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		PAN   , c_v+42
-	.byte		VOL   , 10*song148restored_mvl/mxv
+	.byte		VOL   , 10*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 125
 	.byte		PAN   , c_v-64
 	.byte		N01   
 	.byte	W05
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W04
-	.byte		VOL   , 31*song148restored_mvl/mxv
+	.byte		VOL   , 31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte	W04
-; 004   ----------------------------------------
+@ 004   ----------------------------------------
 	.byte	W01
-	.byte		        10*song148restored_mvl/mxv
+	.byte		        10*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 125
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 44*song148restored_mvl/mxv
+	.byte		VOL   , 44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		N10   
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W10
-	.byte		        31*song148restored_mvl/mxv
+	.byte		        31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte	W01
 	.byte		N10   
 	.byte	W13
-	.byte		VOL   , 44*song148restored_mvl/mxv
+	.byte		VOL   , 44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		N10   
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W10
 	.byte		N10   
 	.byte	W05
-	.byte		VOL   , 31*song148restored_mvl/mxv
+	.byte		VOL   , 31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte	W09
-	.byte		        44*song148restored_mvl/mxv
+	.byte		        44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		N10   
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W10
 	.byte		N10   
 	.byte	W05
-	.byte		VOL   , 31*song148restored_mvl/mxv
+	.byte		VOL   , 31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte	W08
-	.byte		        0*song148restored_mvl/mxv
+	.byte		        0*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
-	.byte		        44*song148restored_mvl/mxv
+	.byte		        44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		PAN   , c_v+63
 	.byte	W01
 	.byte		N06   
 	.byte	W02
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W06
-	.byte		        44*song148restored_mvl/mxv
+	.byte		        44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		PAN   , c_v+42
-	.byte		VOL   , 10*song148restored_mvl/mxv
+	.byte		VOL   , 10*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 125
 	.byte		PAN   , c_v-64
 	.byte		N02   
 	.byte	W02
-; 005   ----------------------------------------
+@ 005   ----------------------------------------
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W04
-	.byte		VOL   , 31*song148restored_mvl/mxv
+	.byte		VOL   , 31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte	W05
-	.byte		        10*song148restored_mvl/mxv
+	.byte		        10*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 125
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 44*song148restored_mvl/mxv
+	.byte		VOL   , 44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		N10   
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W10
-	.byte		        31*song148restored_mvl/mxv
+	.byte		        31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte	W01
 	.byte		N10   
 	.byte	W13
-	.byte		VOL   , 44*song148restored_mvl/mxv
+	.byte		VOL   , 44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		N11   
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W10
 	.byte		N10   
 	.byte	W05
-	.byte		VOL   , 31*song148restored_mvl/mxv
+	.byte		VOL   , 31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte	W09
-	.byte		        44*song148restored_mvl/mxv
+	.byte		        44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		N10   
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W10
 	.byte		N10   
 	.byte	W04
-	.byte		VOL   , 31*song148restored_mvl/mxv
+	.byte		VOL   , 31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte	W09
-; 006   ----------------------------------------
+@ 006   ----------------------------------------
 	.byte	W01
-	.byte		        0*song148restored_mvl/mxv
+	.byte		        0*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
-	.byte		        44*song148restored_mvl/mxv
+	.byte		        44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		PAN   , c_v+63
 	.byte		N06   
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W05
-	.byte		        44*song148restored_mvl/mxv
+	.byte		        44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		PAN   , c_v+42
-	.byte		VOL   , 10*song148restored_mvl/mxv
+	.byte		VOL   , 10*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 125
 	.byte		PAN   , c_v-64
 	.byte		N02   
 	.byte	W05
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W04
-	.byte		VOL   , 31*song148restored_mvl/mxv
+	.byte		VOL   , 31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte	W05
-	.byte		        10*song148restored_mvl/mxv
+	.byte		        10*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 125
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 44*song148restored_mvl/mxv
+	.byte		VOL   , 44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		N10   
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W10
-	.byte		        31*song148restored_mvl/mxv
+	.byte		        31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte	W01
 	.byte		N10   
 	.byte	W13
-	.byte		VOL   , 44*song148restored_mvl/mxv
+	.byte		VOL   , 44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		N10   
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W11
 	.byte		N10   
 	.byte	W04
-	.byte		VOL   , 31*song148restored_mvl/mxv
+	.byte		VOL   , 31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte	W09
-	.byte		        44*song148restored_mvl/mxv
+	.byte		        44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		N10   
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W10
 	.byte		N10   
 	.byte	W02
-; 007   ----------------------------------------
+@ 007   ----------------------------------------
 	.byte	W03
-	.byte		VOL   , 31*song148restored_mvl/mxv
+	.byte		VOL   , 31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte	W08
-	.byte		        0*song148restored_mvl/mxv
+	.byte		        0*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
-	.byte		        44*song148restored_mvl/mxv
+	.byte		        44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		PAN   , c_v+63
 	.byte	W01
 	.byte		N06   
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W05
-	.byte		        44*song148restored_mvl/mxv
+	.byte		        44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		PAN   , c_v+42
-	.byte		VOL   , 10*song148restored_mvl/mxv
+	.byte		VOL   , 10*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 125
 	.byte		PAN   , c_v-64
 	.byte	W01
 	.byte		N01   
 	.byte	W04
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W04
-	.byte		VOL   , 31*song148restored_mvl/mxv
+	.byte		VOL   , 31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte	W05
-	.byte		        10*song148restored_mvl/mxv
+	.byte		        10*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 125
 	.byte		N01   
 	.byte	W04
-	.byte		VOL   , 44*song148restored_mvl/mxv
+	.byte		VOL   , 44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		N10   
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W11
-	.byte		        31*song148restored_mvl/mxv
+	.byte		        31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte		N10   
 	.byte	W13
-	.byte		VOL   , 44*song148restored_mvl/mxv
+	.byte		VOL   , 44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		N10   
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W11
 	.byte		N10   
 	.byte	W04
-	.byte		VOL   , 31*song148restored_mvl/mxv
+	.byte		VOL   , 31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte	W09
-	.byte		        44*song148restored_mvl/mxv
+	.byte		        44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		N10   
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W01
-; 008   ----------------------------------------
+@ 008   ----------------------------------------
 	.byte	W09
 	.byte		N10   
 	.byte	W05
-	.byte		VOL   , 31*song148restored_mvl/mxv
+	.byte		VOL   , 31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte	W09
-	.byte		        0*song148restored_mvl/mxv
+	.byte		        0*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
-	.byte		        44*song148restored_mvl/mxv
+	.byte		        44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		PAN   , c_v+63
 	.byte		N06   
 	.byte	W02
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W06
-	.byte		        44*song148restored_mvl/mxv
+	.byte		        44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		PAN   , c_v+42
-	.byte		VOL   , 10*song148restored_mvl/mxv
+	.byte		VOL   , 10*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 125
 	.byte		PAN   , c_v-64
 	.byte		N02   
 	.byte	W05
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W04
-	.byte		VOL   , 31*song148restored_mvl/mxv
+	.byte		VOL   , 31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte	W05
-	.byte		        10*song148restored_mvl/mxv
+	.byte		        10*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 125
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 44*song148restored_mvl/mxv
+	.byte		VOL   , 44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		N10   
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W11
-	.byte		        31*song148restored_mvl/mxv
+	.byte		        31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte		N10   
 	.byte	W13
-	.byte		VOL   , 44*song148restored_mvl/mxv
+	.byte		VOL   , 44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		N10   
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W11
 	.byte		N10   
 	.byte	W04
-	.byte		VOL   , 31*song148restored_mvl/mxv
+	.byte		VOL   , 31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte	W02
-; 009   ----------------------------------------
+@ 009   ----------------------------------------
 	.byte	W07
-	.byte		        44*song148restored_mvl/mxv
+	.byte		        44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		N10   
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W10
 	.byte		N10   
 	.byte	W05
-	.byte		VOL   , 31*song148restored_mvl/mxv
+	.byte		VOL   , 31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte	W09
-	.byte		        0*song148restored_mvl/mxv
+	.byte		        0*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
-	.byte		        44*song148restored_mvl/mxv
+	.byte		        44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		PAN   , c_v+63
 	.byte		N06   
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W05
-	.byte		        44*song148restored_mvl/mxv
+	.byte		        44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		PAN   , c_v+42
-	.byte		VOL   , 10*song148restored_mvl/mxv
+	.byte		VOL   , 10*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 125
 	.byte		PAN   , c_v-64
 	.byte		N02   
 	.byte	W05
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W04
-	.byte		VOL   , 31*song148restored_mvl/mxv
+	.byte		VOL   , 31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte	W05
-	.byte		        10*song148restored_mvl/mxv
+	.byte		        10*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 125
 	.byte		N01   
 	.byte	W04
-	.byte		VOL   , 44*song148restored_mvl/mxv
+	.byte		VOL   , 44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		N10   
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W11
-	.byte		        31*song148restored_mvl/mxv
+	.byte		        31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte		N10   
 	.byte	W13
-	.byte		VOL   , 44*song148restored_mvl/mxv
+	.byte		VOL   , 44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		N10   
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W06
-; 010   ----------------------------------------
+@ 010   ----------------------------------------
 	.byte	W05
 	.byte		N10   
 	.byte	W04
-	.byte		VOL   , 31*song148restored_mvl/mxv
+	.byte		VOL   , 31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte	W09
-	.byte		        44*song148restored_mvl/mxv
+	.byte		        44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		N10   
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W10
 	.byte		N10   
 	.byte	W05
-	.byte		VOL   , 31*song148restored_mvl/mxv
+	.byte		VOL   , 31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte	W09
-	.byte		        0*song148restored_mvl/mxv
+	.byte		        0*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
-	.byte		        44*song148restored_mvl/mxv
+	.byte		        44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		PAN   , c_v+63
 	.byte		N06   
 	.byte	W02
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W06
-	.byte		        44*song148restored_mvl/mxv
+	.byte		        44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		PAN   , c_v+42
-	.byte		VOL   , 10*song148restored_mvl/mxv
+	.byte		VOL   , 10*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 125
 	.byte		PAN   , c_v-64
 	.byte		N01   
 	.byte	W05
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W04
-	.byte		VOL   , 31*song148restored_mvl/mxv
+	.byte		VOL   , 31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte	W05
-	.byte		        10*song148restored_mvl/mxv
+	.byte		        10*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 125
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 44*song148restored_mvl/mxv
+	.byte		VOL   , 44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		N10   
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W11
-	.byte		        31*song148restored_mvl/mxv
+	.byte		        31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte		N10   
 	.byte	W11
-; 011   ----------------------------------------
+@ 011   ----------------------------------------
 	.byte	W02
-	.byte		VOL   , 44*song148restored_mvl/mxv
+	.byte		VOL   , 44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		N10   
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W11
 	.byte		N10   
 	.byte	W04
-	.byte		VOL   , 31*song148restored_mvl/mxv
+	.byte		VOL   , 31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte	W09
-	.byte		        44*song148restored_mvl/mxv
+	.byte		        44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		N10   
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W10
 	.byte		N10   
 	.byte	W05
-	.byte		VOL   , 31*song148restored_mvl/mxv
+	.byte		VOL   , 31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte	W09
-	.byte		        0*song148restored_mvl/mxv
+	.byte		        0*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
-	.byte		        44*song148restored_mvl/mxv
+	.byte		        44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		PAN   , c_v+63
 	.byte		N06   
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W05
-	.byte		        44*song148restored_mvl/mxv
+	.byte		        44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		PAN   , c_v+42
-	.byte		VOL   , 10*song148restored_mvl/mxv
+	.byte		VOL   , 10*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 125
 	.byte		PAN   , c_v-64
 	.byte	W01
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W04
-	.byte		VOL   , 31*song148restored_mvl/mxv
+	.byte		VOL   , 31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte	W05
-	.byte		        10*song148restored_mvl/mxv
+	.byte		        10*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 125
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 44*song148restored_mvl/mxv
+	.byte		VOL   , 44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		N10   
 	.byte	W04
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W10
-; 012   ----------------------------------------
-	.byte		        31*song148restored_mvl/mxv
+@ 012   ----------------------------------------
+	.byte		        31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte		N10   
 	.byte	W13
-	.byte		VOL   , 44*song148restored_mvl/mxv
+	.byte		VOL   , 44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		N10   
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W11
 	.byte		N10   
 	.byte	W04
-	.byte		VOL   , 31*song148restored_mvl/mxv
+	.byte		VOL   , 31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte	W09
-	.byte		        44*song148restored_mvl/mxv
+	.byte		        44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		N10   
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W10
 	.byte		N10   
 	.byte	W05
-	.byte		VOL   , 31*song148restored_mvl/mxv
+	.byte		VOL   , 31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte	W09
-	.byte		        0*song148restored_mvl/mxv
+	.byte		        0*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
-	.byte		        44*song148restored_mvl/mxv
+	.byte		        44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		PAN   , c_v+63
 	.byte		N06   
 	.byte	W02
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W07
-	.byte		        44*song148restored_mvl/mxv
+	.byte		        44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		PAN   , c_v+42
-	.byte		VOL   , 10*song148restored_mvl/mxv
+	.byte		VOL   , 10*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 125
 	.byte		PAN   , c_v-64
 	.byte		N01   
 	.byte	W04
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W05
-	.byte		VOL   , 31*song148restored_mvl/mxv
+	.byte		VOL   , 31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte	W04
-	.byte		        10*song148restored_mvl/mxv
+	.byte		        10*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 125
 	.byte		N01   
 	.byte	W04
-	.byte		VOL   , 44*song148restored_mvl/mxv
+	.byte		VOL   , 44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		N10   
 	.byte	W03
-; 013   ----------------------------------------
-	.byte		VOL   , 39*song148restored_mvl/mxv
+@ 013   ----------------------------------------
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W11
-	.byte		        31*song148restored_mvl/mxv
+	.byte		        31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte		N10   
 	.byte	W13
-	.byte		VOL   , 44*song148restored_mvl/mxv
+	.byte		VOL   , 44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		N10   
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W11
 	.byte		N10   
 	.byte	W04
-	.byte		VOL   , 31*song148restored_mvl/mxv
+	.byte		VOL   , 31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte	W09
-	.byte		        44*song148restored_mvl/mxv
+	.byte		        44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		N10   
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W10
 	.byte		N10   
 	.byte	W05
-	.byte		VOL   , 31*song148restored_mvl/mxv
+	.byte		VOL   , 31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte	W09
-	.byte		        0*song148restored_mvl/mxv
+	.byte		        0*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
-	.byte		        44*song148restored_mvl/mxv
+	.byte		        44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		PAN   , c_v+63
 	.byte		N06   
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W05
-	.byte		        44*song148restored_mvl/mxv
+	.byte		        44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		PAN   , c_v+42
-	.byte		VOL   , 10*song148restored_mvl/mxv
+	.byte		VOL   , 10*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 125
 	.byte		PAN   , c_v-64
 	.byte	W01
 	.byte		N01   
 	.byte	W04
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W04
-	.byte		VOL   , 31*song148restored_mvl/mxv
+	.byte		VOL   , 31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte	W01
-; 014   ----------------------------------------
-	.byte		        31*song148restored_mvl/mxv
+@ 014   ----------------------------------------
+	.byte		        31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W04
-	.byte		        10*song148restored_mvl/mxv
+	.byte		        10*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 125
 	.byte		N01   
 	.byte	W04
-	.byte		VOL   , 44*song148restored_mvl/mxv
+	.byte		VOL   , 44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		N10   
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W11
 	.byte	PRIO  , 109
-	.byte		        31*song148restored_mvl/mxv
+	.byte		        31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		N10   
 	.byte	W13
 	.byte	PRIO  , 84
-	.byte		VOL   , 44*song148restored_mvl/mxv
+	.byte		VOL   , 44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		N10   
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W11
 	.byte		N10   
 	.byte	W04
-	.byte		VOL   , 31*song148restored_mvl/mxv
+	.byte		VOL   , 31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte	W08
-	.byte		        44*song148restored_mvl/mxv
+	.byte		        44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte	PRIO  , 84
 	.byte		N10   
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W10
 	.byte		N10   
 	.byte	W05
-	.byte		VOL   , 31*song148restored_mvl/mxv
+	.byte		VOL   , 31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte	W08
-	.byte		        44*song148restored_mvl/mxv
+	.byte		        44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte	PRIO  , 84
 	.byte		PAN   , c_v+63
 	.byte		N06   
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W04
-; 015   ----------------------------------------
+@ 015   ----------------------------------------
 	.byte	W02
 	.byte	PRIO  , 84
 	.byte		PAN   , c_v+42
 	.byte	PRIO  , 125
 	.byte		        c_v-64
-	.byte		VOL   , 10*song148restored_mvl/mxv
+	.byte		VOL   , 10*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		N01   
 	.byte	W04
 	.byte	PRIO  , 32
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		N06   
 	.byte	W04
-	.byte		VOL   , 31*song148restored_mvl/mxv
+	.byte		VOL   , 31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte	W05
-	.byte		        10*song148restored_mvl/mxv
+	.byte		        10*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 125
 	.byte		N02   
 	.byte	W04
-	.byte		VOL   , 44*song148restored_mvl/mxv
+	.byte		VOL   , 44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		N10   
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte	PRIO  , 32
 	.byte	W10
-	.byte		        31*song148restored_mvl/mxv
+	.byte		        31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 109
 	.byte		N10   
 	.byte	W13
-	.byte		VOL   , 44*song148restored_mvl/mxv
+	.byte		VOL   , 44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		N10   
 	.byte	W02
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte	PRIO  , 32
 	.byte	W05
 	.byte		VOICE , 32
 	.byte	W06
-	.byte		VOL   , 20*song148restored_mvl/mxv
+	.byte		VOL   , 20*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
 	.byte		BEND  , c_v+1
 	.byte		TIE   , Ds2 
 	.byte	W36
-; 016   ----------------------------------------
+@ 016   ----------------------------------------
 	.byte	W68
 	.byte		EOT   
 	.byte		BEND  , c_v+0
 	.byte	W02
-	.byte		VOL   , 9*song148restored_mvl/mxv
+	.byte		VOL   , 9*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte		TIE   
 	.byte	W24
 	.byte	W01
-; 017   ----------------------------------------
+@ 017   ----------------------------------------
 	.byte	W78
 	.byte		VOICE , 20
 	.byte	W01
@@ -1015,61 +1018,61 @@
 	.byte		BEND  , c_v+0
 	.byte	W03
 	.byte	PRIO  , 32
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte		N06   , An2 
 	.byte	W08
-	.byte		VOL   , 9*song148restored_mvl/mxv
+	.byte		VOL   , 9*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
 	.byte		N02   
 	.byte	W01
-	.byte		VOL   , 10*song148restored_mvl/mxv
+	.byte		VOL   , 10*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte		BEND  , c_v+0
 	.byte	W01
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W02
 	.byte	PRIO  , 32
-	.byte		        39*song148restored_mvl/mxv
+	.byte		        39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		N06   
 	.byte	W01
-; 018   ----------------------------------------
-	.byte		VOL   , 39*song148restored_mvl/mxv
+@ 018   ----------------------------------------
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W07
-	.byte		        8*song148restored_mvl/mxv
+	.byte		        8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
 	.byte	W01
 	.byte		N02   
 	.byte	W02
 	.byte		BEND  , c_v+0
 	.byte	W02
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W09
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
 	.byte		N02   
 	.byte	W02
 	.byte		BEND  , c_v+0
 	.byte	W02
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W01
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
 	.byte		N02   
 	.byte	W02
 	.byte		BEND  , c_v+0
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		PAN   , c_v+63
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 10*song148restored_mvl/mxv
+	.byte		VOL   , 10*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte	PRIO  , 0
 	.byte		PAN   , c_v-64
@@ -1077,97 +1080,97 @@
 	.byte	W02
 	.byte		BEND  , c_v+0
 	.byte	W02
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W09
 	.byte	PRIO  , 0
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		N02   
 	.byte	W02
 	.byte		BEND  , c_v+0
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
 	.byte		N02   
 	.byte	W03
 	.byte		BEND  , c_v+0
 	.byte	W02
-	.byte		VOL   , 44*song148restored_mvl/mxv
+	.byte		VOL   , 44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
-	.byte		        39*song148restored_mvl/mxv
+	.byte		        39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte	PRIO  , 0
 	.byte		N02   
 	.byte	W02
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W01
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
-	.byte		        39*song148restored_mvl/mxv
+	.byte		        39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W01
 	.byte		N06   
 	.byte	W03
-; 019   ----------------------------------------
+@ 019   ----------------------------------------
 	.byte	W04
-	.byte		VOL   , 9*song148restored_mvl/mxv
+	.byte		VOL   , 9*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte	PRIO  , 0
 	.byte		N02   
 	.byte	W01
-	.byte		VOL   , 10*song148restored_mvl/mxv
+	.byte		VOL   , 10*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
-	.byte		        9*song148restored_mvl/mxv
+	.byte		        9*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W03
 	.byte	PRIO  , 32
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		N06   
 	.byte	W09
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
 	.byte		N02   
 	.byte	W02
 	.byte		BEND  , c_v+0
 	.byte	W02
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 9*song148restored_mvl/mxv
+	.byte		VOL   , 9*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte	PRIO  , 0
 	.byte		N02   
 	.byte	W02
 	.byte		BEND  , c_v+0
 	.byte	W02
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W01
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
 	.byte		N02   
 	.byte	W02
 	.byte		BEND  , c_v+0
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		PAN   , c_v+63
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 9*song148restored_mvl/mxv
+	.byte		VOL   , 9*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte	PRIO  , 0
 	.byte		PAN   , c_v-64
@@ -1175,23 +1178,23 @@
 	.byte	W02
 	.byte		BEND  , c_v+0
 	.byte	W01
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
-	.byte		        39*song148restored_mvl/mxv
+	.byte		        39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W09
-	.byte		VOL   , 11*song148restored_mvl/mxv
+	.byte		VOL   , 11*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
 	.byte		N02   
 	.byte	W02
 	.byte		BEND  , c_v+0
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W07
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte	PRIO  , 0
 	.byte	W01
@@ -1199,77 +1202,77 @@
 	.byte	W02
 	.byte		BEND  , c_v+0
 	.byte	W01
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
-	.byte		        44*song148restored_mvl/mxv
+	.byte		        44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
-	.byte		        39*song148restored_mvl/mxv
+	.byte		        39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W06
-; 020   ----------------------------------------
-	.byte		VOL   , 39*song148restored_mvl/mxv
+@ 020   ----------------------------------------
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
-	.byte		        7*song148restored_mvl/mxv
+	.byte		        7*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W02
 	.byte	PRIO  , 0
 	.byte		N02   
 	.byte	W02
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W02
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W01
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 10*song148restored_mvl/mxv
+	.byte		VOL   , 10*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
 	.byte		N02   
 	.byte	W01
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte		BEND  , c_v+0
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 9*song148restored_mvl/mxv
+	.byte		VOL   , 9*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
 	.byte	W01
 	.byte		N02   
 	.byte	W02
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W02
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W09
-	.byte		VOL   , 9*song148restored_mvl/mxv
+	.byte		VOL   , 9*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
 	.byte		N02   
 	.byte	W02
 	.byte		BEND  , c_v+0
 	.byte	W02
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W01
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
 	.byte		N02   
 	.byte	W02
 	.byte		BEND  , c_v+0
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		PAN   , c_v+63
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 9*song148restored_mvl/mxv
+	.byte		VOL   , 9*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte	PRIO  , 0
 	.byte		PAN   , c_v-64
@@ -1277,96 +1280,96 @@
 	.byte	W02
 	.byte		BEND  , c_v+0
 	.byte	W01
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
-	.byte		        39*song148restored_mvl/mxv
+	.byte		        39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W09
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
 	.byte		N02   
 	.byte	W02
 	.byte		BEND  , c_v+0
 	.byte	W03
 	.byte	PRIO  , 32
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		N06   
 	.byte	W08
-; 021   ----------------------------------------
-	.byte		VOL   , 8*song148restored_mvl/mxv
+@ 021   ----------------------------------------
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
 	.byte	W01
 	.byte		N02   
 	.byte	W02
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W02
-	.byte		VOL   , 44*song148restored_mvl/mxv
+	.byte		VOL   , 44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
-	.byte		        39*song148restored_mvl/mxv
+	.byte		        39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W09
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
 	.byte		N02   
 	.byte	W02
 	.byte		BEND  , c_v+0
 	.byte	W02
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W01
 	.byte		N06   
 	.byte	W07
-	.byte		VOL   , 10*song148restored_mvl/mxv
+	.byte		VOL   , 10*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte	PRIO  , 0
 	.byte		N02   
 	.byte	W02
 	.byte		BEND  , c_v+0
 	.byte	W01
-	.byte		VOL   , 9*song148restored_mvl/mxv
+	.byte		VOL   , 9*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W02
-	.byte		        39*song148restored_mvl/mxv
+	.byte		        39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W09
 	.byte	PRIO  , 0
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		N02   
 	.byte	W02
 	.byte		BEND  , c_v+0
 	.byte	W02
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W09
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
 	.byte		N02   
 	.byte	W02
 	.byte		BEND  , c_v+0
 	.byte	W02
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 11*song148restored_mvl/mxv
+	.byte		VOL   , 11*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
 	.byte		N02   
 	.byte	W02
 	.byte		BEND  , c_v+0
 	.byte	W01
-	.byte		VOL   , 10*song148restored_mvl/mxv
+	.byte		VOL   , 10*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W02
-	.byte		        39*song148restored_mvl/mxv
+	.byte		        39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		PAN   , c_v+63
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 9*song148restored_mvl/mxv
+	.byte		VOL   , 9*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte	PRIO  , 0
 	.byte		PAN   , c_v-64
@@ -1374,191 +1377,191 @@
 	.byte	W02
 	.byte		BEND  , c_v+0
 	.byte	W01
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
-	.byte		        39*song148restored_mvl/mxv
+	.byte		        39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W09
 	.byte	PRIO  , 0
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		N02   
 	.byte	W02
-; 022   ----------------------------------------
-	.byte		VOL   , 8*song148restored_mvl/mxv
+@ 022   ----------------------------------------
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W03
-	.byte		VOL   , 44*song148restored_mvl/mxv
+	.byte		VOL   , 44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
-	.byte		        39*song148restored_mvl/mxv
+	.byte		        39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W07
-	.byte		VOL   , 10*song148restored_mvl/mxv
+	.byte		VOL   , 10*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte	PRIO  , 0
 	.byte	W01
 	.byte		N02   
 	.byte	W01
-	.byte		VOL   , 9*song148restored_mvl/mxv
+	.byte		VOL   , 9*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte		BEND  , c_v+0
 	.byte	W01
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
-	.byte		        44*song148restored_mvl/mxv
+	.byte		        44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
-	.byte		        39*song148restored_mvl/mxv
+	.byte		        39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		N06   
 	.byte	W09
 	.byte	PRIO  , 0
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		N02   
 	.byte	W01
-	.byte		VOL   , 9*song148restored_mvl/mxv
+	.byte		VOL   , 9*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte		BEND  , c_v+0
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 9*song148restored_mvl/mxv
+	.byte		VOL   , 9*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
 	.byte		N02   
 	.byte	W02
 	.byte		BEND  , c_v+0
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 10*song148restored_mvl/mxv
+	.byte		VOL   , 10*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte	PRIO  , 0
 	.byte		N02   
 	.byte	W01
-	.byte		VOL   , 9*song148restored_mvl/mxv
+	.byte		VOL   , 9*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte		BEND  , c_v+0
 	.byte	W01
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
-	.byte		        39*song148restored_mvl/mxv
+	.byte		        39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W04
-	.byte		VOL   , 41*song148restored_mvl/mxv
+	.byte		VOL   , 41*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W03
-	.byte		        39*song148restored_mvl/mxv
+	.byte		        39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
-	.byte		        7*song148restored_mvl/mxv
+	.byte		        7*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte	PRIO  , 0
 	.byte		N02   
 	.byte	W02
 	.byte		BEND  , c_v+0
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
 	.byte		N02   
 	.byte	W03
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W02
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		PAN   , c_v+63
 	.byte		N06   
 	.byte	W09
 	.byte	PRIO  , 0
 	.byte		PAN   , c_v-64
-	.byte		VOL   , 7*song148restored_mvl/mxv
+	.byte		VOL   , 7*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		N02   
 	.byte	W04
-; 023   ----------------------------------------
-	.byte		VOL   , 41*song148restored_mvl/mxv
+@ 023   ----------------------------------------
+	.byte		VOL   , 41*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
-	.byte		        0*song148restored_mvl/mxv
+	.byte		        0*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
-	.byte		        8*song148restored_mvl/mxv
+	.byte		        8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		N02   
 	.byte	W02
 	.byte		BEND  , c_v+0
 	.byte	W03
-	.byte		VOL   , 44*song148restored_mvl/mxv
+	.byte		VOL   , 44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
-	.byte		        39*song148restored_mvl/mxv
+	.byte		        39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 0*song148restored_mvl/mxv
+	.byte		VOL   , 0*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
 	.byte	W01
-	.byte		        10*song148restored_mvl/mxv
+	.byte		        10*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		N02   
 	.byte	W02
 	.byte		BEND  , c_v+0
 	.byte	W02
-	.byte		VOL   , 44*song148restored_mvl/mxv
+	.byte		VOL   , 44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
-	.byte		        39*song148restored_mvl/mxv
+	.byte		        39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W09
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
 	.byte		N02   
 	.byte	W02
-	.byte		VOL   , 9*song148restored_mvl/mxv
+	.byte		VOL   , 9*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W02
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W01
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
 	.byte		N02   
 	.byte	W02
 	.byte		BEND  , c_v+0
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W09
-	.byte		VOL   , 11*song148restored_mvl/mxv
+	.byte		VOL   , 11*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
 	.byte		N02   
 	.byte	W02
 	.byte		BEND  , c_v+0
 	.byte	W02
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W09
 	.byte	PRIO  , 0
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		N02   
 	.byte	W02
 	.byte		BEND  , c_v+0
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W07
-	.byte		VOL   , 41*song148restored_mvl/mxv
+	.byte		VOL   , 41*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
-	.byte		        8*song148restored_mvl/mxv
+	.byte		        8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
 	.byte		N02   
 	.byte	W02
@@ -1566,260 +1569,260 @@
 	.byte	W03
 	.byte	PRIO  , 32
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		N06   
 	.byte	W02
-; 024   ----------------------------------------
-	.byte		VOL   , 39*song148restored_mvl/mxv
+@ 024   ----------------------------------------
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W07
-	.byte		        0*song148restored_mvl/mxv
+	.byte		        0*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
 	.byte		PAN   , c_v-64
-	.byte		VOL   , 9*song148restored_mvl/mxv
+	.byte		VOL   , 9*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		N02   
 	.byte	W01
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte		BEND  , c_v+0
 	.byte	W02
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W09
-	.byte		VOL   , 9*song148restored_mvl/mxv
+	.byte		VOL   , 9*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
 	.byte		N02   
 	.byte	W02
 	.byte		BEND  , c_v+0
 	.byte	W03
 	.byte	PRIO  , 84
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W09
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
 	.byte		N02   
 	.byte	W02
 	.byte		BEND  , c_v+0
 	.byte	W02
-	.byte		VOL   , 44*song148restored_mvl/mxv
+	.byte		VOL   , 44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
-	.byte		        39*song148restored_mvl/mxv
+	.byte		        39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W09
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
 	.byte		N02   
 	.byte	W02
 	.byte		BEND  , c_v+0
 	.byte	W03
 	.byte	PRIO  , 32
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 9*song148restored_mvl/mxv
+	.byte		VOL   , 9*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
 	.byte		N02   
 	.byte	W02
 	.byte		BEND  , c_v+0
 	.byte	W01
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W02
-	.byte		        39*song148restored_mvl/mxv
+	.byte		        39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W09
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
 	.byte		N02   
 	.byte	W02
 	.byte		BEND  , c_v+0
 	.byte	W02
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W09
 	.byte	PRIO  , 0
-	.byte		VOL   , 7*song148restored_mvl/mxv
+	.byte		VOL   , 7*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		N02   
 	.byte	W02
-	.byte		VOL   , 6*song148restored_mvl/mxv
+	.byte		VOL   , 6*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
-	.byte		        6*song148restored_mvl/mxv
+	.byte		        6*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W02
-	.byte		        5*song148restored_mvl/mxv
+	.byte		        5*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
-	.byte		        42*song148restored_mvl/mxv
+	.byte		        42*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		N06   
 	.byte	W01
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W03
-; 025   ----------------------------------------
+@ 025   ----------------------------------------
 	.byte	W04
-	.byte		        9*song148restored_mvl/mxv
+	.byte		        9*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
 	.byte	W01
 	.byte		N02   
 	.byte	W02
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W02
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		PAN   , c_v+63
 	.byte		N06   
 	.byte	W09
-	.byte		VOL   , 0*song148restored_mvl/mxv
+	.byte		VOL   , 0*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
 	.byte		PAN   , c_v-64
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		N02   
 	.byte	W02
 	.byte		BEND  , c_v+0
 	.byte	W02
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W09
-	.byte		VOL   , 10*song148restored_mvl/mxv
+	.byte		VOL   , 10*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
 	.byte		N02   
 	.byte	W02
 	.byte		BEND  , c_v+0
 	.byte	W02
-	.byte		VOL   , 9*song148restored_mvl/mxv
+	.byte		VOL   , 9*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
-	.byte		        44*song148restored_mvl/mxv
+	.byte		        44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
-	.byte		        39*song148restored_mvl/mxv
+	.byte		        39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 0*song148restored_mvl/mxv
+	.byte		VOL   , 0*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
 	.byte	W01
-	.byte		        10*song148restored_mvl/mxv
+	.byte		        10*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		N02   
 	.byte	W02
 	.byte		BEND  , c_v+0
 	.byte	W02
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W09
-	.byte		VOL   , 10*song148restored_mvl/mxv
+	.byte		VOL   , 10*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
 	.byte		N02   
 	.byte	W02
 	.byte		BEND  , c_v+0
 	.byte	W01
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
-	.byte		        39*song148restored_mvl/mxv
+	.byte		        39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte	W01
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 9*song148restored_mvl/mxv
+	.byte		VOL   , 9*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
-	.byte		        8*song148restored_mvl/mxv
+	.byte		        8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		N02   
 	.byte	W02
 	.byte		BEND  , c_v+0
 	.byte	W03
 	.byte	PRIO  , 32
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		N06   
 	.byte	W09
-	.byte		VOL   , 10*song148restored_mvl/mxv
+	.byte		VOL   , 10*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
 	.byte		N02   
 	.byte	W01
-	.byte		VOL   , 9*song148restored_mvl/mxv
+	.byte		VOL   , 9*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte		BEND  , c_v+0
 	.byte	W01
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
-	.byte		        39*song148restored_mvl/mxv
+	.byte		        39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W07
-; 026   ----------------------------------------
-	.byte		VOL   , 39*song148restored_mvl/mxv
+@ 026   ----------------------------------------
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W02
-	.byte		        0*song148restored_mvl/mxv
+	.byte		        0*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
-	.byte		        8*song148restored_mvl/mxv
+	.byte		        8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		N02   
 	.byte	W02
 	.byte		BEND  , c_v+0
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W08
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
 	.byte		N02   
 	.byte	W03
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W02
 	.byte	PRIO  , 32
 	.byte		PAN   , c_v+63
 	.byte		N06   
 	.byte	W09
-	.byte		VOL   , 9*song148restored_mvl/mxv
+	.byte		VOL   , 9*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
 	.byte		PAN   , c_v-64
 	.byte		N02   
 	.byte	W02
 	.byte		BEND  , c_v+0
 	.byte	W01
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W01
-	.byte		VOL   , 43*song148restored_mvl/mxv
+	.byte		VOL   , 43*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W02
-	.byte		        44*song148restored_mvl/mxv
+	.byte		        44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W05
-	.byte		        8*song148restored_mvl/mxv
+	.byte		        8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte	PRIO  , 0
 	.byte		N02   
 	.byte	W02
 	.byte		BEND  , c_v+0
 	.byte	W02
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W06
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W02
-	.byte		        9*song148restored_mvl/mxv
+	.byte		        9*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte	PRIO  , 0
 	.byte		N02   
 	.byte	W01
-	.byte		VOL   , 10*song148restored_mvl/mxv
+	.byte		VOL   , 10*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
-	.byte		        44*song148restored_mvl/mxv
+	.byte		        44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W02
 	.byte	PRIO  , 84
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		N06   
 	.byte	W07
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
-	.byte		        11*song148restored_mvl/mxv
+	.byte		        11*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte	PRIO  , 0
 	.byte		N02   
@@ -1827,26 +1830,26 @@
 	.byte		BEND  , c_v+1
 	.byte	W02
 	.byte	GOTO
-	 .word	@song148restored_1_B1
-@song148restored_1_B2:
+	 .word	Otherworldly_Foe (3)_FINAL_1_B1
+Otherworldly_Foe (3)_FINAL_1_B2:
 	.byte	PRIO  , 109
-	.byte		VOL   , 31*song148restored_mvl/mxv
+	.byte		VOL   , 31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	FINE
 
-;**************** Track 2 (Midi-Chn.2) ****************;
+@**************** Track 2 (Midi-Chn.2) ****************@
 
-@song148restored_2:
-	.byte	KEYSH , song148restored_key+0
-; 000   ----------------------------------------
+Otherworldly_Foe (3)_FINAL_2:
+	.byte	KEYSH , Otherworldly_Foe (3)_FINAL_key+0
+@ 000   ----------------------------------------
 	.byte		VOICE , 32
 	.byte		MODT  , 0
 	.byte		LFOS  , 44
-	.byte		VOL   , 37*song148restored_mvl/mxv
+	.byte		VOL   , 37*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BENDR , 12
 	.byte	W02
 	.byte	PRIO  , 125
 	.byte		PAN   , c_v-64
-	.byte		VOL   , 37*song148restored_mvl/mxv
+	.byte		VOL   , 37*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte		N36   , As4 , v088
 	.byte	W01
@@ -2028,7 +2031,7 @@
 	.byte		        c_v+1
 	.byte		N10   , As2 
 	.byte	W01
-; 001   ----------------------------------------
+@ 001   ----------------------------------------
 	.byte		BEND  , c_v+1
 	.byte	W01
 	.byte		        c_v+2
@@ -2193,7 +2196,7 @@
 	.byte	W01
 	.byte		        c_v-4
 	.byte	W01
-; 002   ----------------------------------------
+@ 002   ----------------------------------------
 	.byte		        c_v-6
 	.byte	W01
 	.byte		        c_v-8
@@ -2238,20 +2241,20 @@
 	.byte	W01
 	.byte		        c_v-43
 	.byte	W01
-	.byte		VOL   , 54*song148restored_mvl/mxv
+	.byte		VOL   , 54*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
-	.byte		        13*song148restored_mvl/mxv
+	.byte		        13*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
-@song148restored_2_B1:
+Otherworldly_Foe (3)_FINAL_2_B1:
 	.byte		VOICE , 32
-	.byte		VOL   , 13*song148restored_mvl/mxv
+	.byte		VOL   , 13*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
 	.byte		BEND  , c_v+1
 	.byte		TIE   , En2 , v088
 	.byte	W01
 	.byte		BEND  , c_v+1
 	.byte	W01
-	.byte		VOL   , 13*song148restored_mvl/mxv
+	.byte		VOL   , 13*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+2
 	.byte	W01
 	.byte		        c_v+2
@@ -2276,7 +2279,7 @@
 	.byte	W01
 	.byte		        c_v+0
 	.byte	W01
-	.byte		VOL   , 14*song148restored_mvl/mxv
+	.byte		VOL   , 14*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W01
 	.byte		        c_v+0
@@ -2301,7 +2304,7 @@
 	.byte	W01
 	.byte		        c_v+1
 	.byte	W01
-	.byte		VOL   , 15*song148restored_mvl/mxv
+	.byte		VOL   , 15*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W01
 	.byte		        c_v+1
@@ -2320,7 +2323,7 @@
 	.byte	W01
 	.byte		        c_v+0
 	.byte	W01
-	.byte		VOL   , 16*song148restored_mvl/mxv
+	.byte		VOL   , 16*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W01
 	.byte		        c_v+1
@@ -2345,7 +2348,7 @@
 	.byte	W01
 	.byte		        c_v+0
 	.byte	W01
-	.byte		VOL   , 16*song148restored_mvl/mxv
+	.byte		VOL   , 16*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W01
 	.byte		        c_v+0
@@ -2369,7 +2372,7 @@
 	.byte	W02
 	.byte		        c_v+2
 	.byte	W01
-	.byte		VOL   , 17*song148restored_mvl/mxv
+	.byte		VOL   , 17*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte		BEND  , c_v+1
 	.byte	W01
@@ -2389,8 +2392,8 @@
 	.byte	W01
 	.byte		        c_v+1
 	.byte	W02
-; 003   ----------------------------------------
-	.byte		VOL   , 18*song148restored_mvl/mxv
+@ 003   ----------------------------------------
+	.byte		VOL   , 18*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W02
 	.byte		        c_v+2
@@ -2407,7 +2410,7 @@
 	.byte	W02
 	.byte		        c_v+0
 	.byte	W02
-	.byte		VOL   , 19*song148restored_mvl/mxv
+	.byte		VOL   , 19*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W01
 	.byte		        c_v+0
@@ -2428,7 +2431,7 @@
 	.byte	W01
 	.byte		        c_v+2
 	.byte	W01
-	.byte		VOL   , 19*song148restored_mvl/mxv
+	.byte		VOL   , 19*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W02
 	.byte		        c_v+1
@@ -2442,7 +2445,7 @@
 	.byte		EOT   
 	.byte		BEND  , c_v+0
 	.byte	W03
-	.byte		VOL   , 20*song148restored_mvl/mxv
+	.byte		VOL   , 20*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte		TIE   , Ds2 
 	.byte	W02
@@ -2462,7 +2465,7 @@
 	.byte	W01
 	.byte		        c_v+0
 	.byte	W01
-	.byte		VOL   , 21*song148restored_mvl/mxv
+	.byte		VOL   , 21*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W01
 	.byte		        c_v+0
@@ -2479,7 +2482,7 @@
 	.byte	W02
 	.byte		        c_v+2
 	.byte	W01
-	.byte		VOL   , 22*song148restored_mvl/mxv
+	.byte		VOL   , 22*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+3
 	.byte	W01
 	.byte		        c_v+2
@@ -2502,7 +2505,7 @@
 	.byte	W01
 	.byte		        c_v+0
 	.byte	W01
-	.byte		VOL   , 23*song148restored_mvl/mxv
+	.byte		VOL   , 23*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W01
 	.byte		        c_v+1
@@ -2521,7 +2524,7 @@
 	.byte	W02
 	.byte		        c_v+1
 	.byte	W02
-	.byte		VOL   , 23*song148restored_mvl/mxv
+	.byte		VOL   , 23*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W01
 	.byte		        c_v+0
@@ -2544,10 +2547,10 @@
 	.byte	W01
 	.byte		        c_v+2
 	.byte	W02
-	.byte		VOL   , 24*song148restored_mvl/mxv
+	.byte		VOL   , 24*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W01
-; 004   ----------------------------------------
+@ 004   ----------------------------------------
 	.byte	W01
 	.byte		        c_v+1
 	.byte	W02
@@ -2557,7 +2560,7 @@
 	.byte	W01
 	.byte		        c_v+0
 	.byte	W02
-	.byte		VOL   , 25*song148restored_mvl/mxv
+	.byte		VOL   , 25*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W02
 	.byte		        c_v+1
@@ -2576,7 +2579,7 @@
 	.byte	W01
 	.byte		        c_v+1
 	.byte	W02
-	.byte		VOL   , 26*song148restored_mvl/mxv
+	.byte		VOL   , 26*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W02
 	.byte		        c_v+0
@@ -2593,7 +2596,7 @@
 	.byte	W02
 	.byte		        c_v+2
 	.byte	W01
-	.byte		VOL   , 27*song148restored_mvl/mxv
+	.byte		VOL   , 27*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte		BEND  , c_v+2
 	.byte	W01
@@ -2617,7 +2620,7 @@
 	.byte	W02
 	.byte		EOT   
 	.byte	W02
-	.byte		VOL   , 28*song148restored_mvl/mxv
+	.byte		VOL   , 28*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte		BEND  , c_v+1
 	.byte		TIE   , En2 
@@ -2716,7 +2719,7 @@
 	.byte	W01
 	.byte		        c_v+0
 	.byte	W01
-; 005   ----------------------------------------
+@ 005   ----------------------------------------
 	.byte		        c_v+0
 	.byte	W01
 	.byte		        c_v+0
@@ -2857,7 +2860,7 @@
 	.byte	W01
 	.byte		        c_v+1
 	.byte	W02
-; 006   ----------------------------------------
+@ 006   ----------------------------------------
 	.byte		        c_v+2
 	.byte	W01
 	.byte		        c_v+3
@@ -2954,7 +2957,7 @@
 	.byte	W01
 	.byte		EOT   
 	.byte	W04
-	.byte		VOL   , 16*song148restored_mvl/mxv
+	.byte		VOL   , 16*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 33
 	.byte		PAN   , c_v+63
 	.byte	PRIO  , 0
@@ -2972,7 +2975,7 @@
 	.byte	W01
 	.byte		        c_v+2
 	.byte	W01
-	.byte		VOL   , 17*song148restored_mvl/mxv
+	.byte		VOL   , 17*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+2
 	.byte	W01
 	.byte		        c_v+1
@@ -2993,7 +2996,7 @@
 	.byte	W01
 	.byte		        c_v+0
 	.byte	W01
-	.byte		VOL   , 18*song148restored_mvl/mxv
+	.byte		VOL   , 18*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W01
 	.byte		        c_v+1
@@ -3016,10 +3019,10 @@
 	.byte	W01
 	.byte		        c_v+1
 	.byte	W01
-; 007   ----------------------------------------
+@ 007   ----------------------------------------
 	.byte		        c_v+0
 	.byte	W01
-	.byte		VOL   , 19*song148restored_mvl/mxv
+	.byte		VOL   , 19*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W01
 	.byte		        c_v+0
@@ -3044,7 +3047,7 @@
 	.byte	W01
 	.byte		        c_v+3
 	.byte	W01
-	.byte		VOL   , 19*song148restored_mvl/mxv
+	.byte		VOL   , 19*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+2
 	.byte	W02
 	.byte		        c_v+1
@@ -3077,7 +3080,7 @@
 	.byte	W01
 	.byte		        c_v+2
 	.byte	W01
-	.byte		VOL   , 20*song148restored_mvl/mxv
+	.byte		VOL   , 20*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+2
 	.byte	W01
 	.byte		        c_v+3
@@ -3098,7 +3101,7 @@
 	.byte	W01
 	.byte		        c_v+0
 	.byte	W01
-	.byte		VOL   , 21*song148restored_mvl/mxv
+	.byte		VOL   , 21*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W01
 	.byte		        c_v+1
@@ -3117,7 +3120,7 @@
 	.byte	W01
 	.byte		        c_v+1
 	.byte	W02
-	.byte		VOL   , 22*song148restored_mvl/mxv
+	.byte		VOL   , 22*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W01
 	.byte		        c_v+0
@@ -3134,7 +3137,7 @@
 	.byte	W01
 	.byte		        c_v+2
 	.byte	W02
-	.byte		VOL   , 23*song148restored_mvl/mxv
+	.byte		VOL   , 23*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+3
 	.byte	W01
 	.byte		        c_v+2
@@ -3157,7 +3160,7 @@
 	.byte	W01
 	.byte		BEND  , c_v+1
 	.byte	W01
-	.byte		VOL   , 23*song148restored_mvl/mxv
+	.byte		VOL   , 23*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte		BEND  , c_v+2
 	.byte	W02
@@ -3177,13 +3180,13 @@
 	.byte	W01
 	.byte		        c_v+0
 	.byte	W02
-	.byte		VOL   , 24*song148restored_mvl/mxv
+	.byte		VOL   , 24*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte		BEND  , c_v+0
 	.byte	W01
 	.byte		        c_v+0
 	.byte	W01
-; 008   ----------------------------------------
+@ 008   ----------------------------------------
 	.byte		        c_v+1
 	.byte	W01
 	.byte		        c_v+1
@@ -3198,7 +3201,7 @@
 	.byte	W01
 	.byte		        c_v+1
 	.byte	W01
-	.byte		VOL   , 25*song148restored_mvl/mxv
+	.byte		VOL   , 25*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W01
 	.byte		        c_v+1
@@ -3219,7 +3222,7 @@
 	.byte	W01
 	.byte		        c_v+1
 	.byte	W02
-	.byte		VOL   , 26*song148restored_mvl/mxv
+	.byte		VOL   , 26*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+2
 	.byte	W01
 	.byte		        c_v+3
@@ -3244,7 +3247,7 @@
 	.byte	W01
 	.byte		        c_v+1
 	.byte	W01
-	.byte		VOL   , 27*song148restored_mvl/mxv
+	.byte		VOL   , 27*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W01
 	.byte		        c_v+1
@@ -3263,7 +3266,7 @@
 	.byte	W02
 	.byte		        c_v+0
 	.byte	W02
-	.byte		VOL   , 28*song148restored_mvl/mxv
+	.byte		VOL   , 28*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W03
 	.byte		        c_v+0
@@ -3282,7 +3285,7 @@
 	.byte	W01
 	.byte		        c_v+2
 	.byte	W01
-	.byte		VOL   , 29*song148restored_mvl/mxv
+	.byte		VOL   , 29*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W02
 	.byte		        c_v+1
@@ -3295,7 +3298,7 @@
 	.byte	W02
 	.byte		        c_v+1
 	.byte	W02
-	.byte		VOL   , 30*song148restored_mvl/mxv
+	.byte		VOL   , 30*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W01
 	.byte		        c_v+1
@@ -3320,7 +3323,7 @@
 	.byte	W02
 	.byte		EOT   
 	.byte	W01
-	.byte		VOL   , 31*song148restored_mvl/mxv
+	.byte		VOL   , 31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W02
 	.byte		BEND  , c_v+1
 	.byte		TIE   , En2 
@@ -3333,7 +3336,7 @@
 	.byte	W01
 	.byte		        c_v+2
 	.byte	W01
-; 009   ----------------------------------------
+@ 009   ----------------------------------------
 	.byte		        c_v+2
 	.byte	W01
 	.byte		        c_v+1
@@ -3502,7 +3505,7 @@
 	.byte	W02
 	.byte		        c_v+0
 	.byte	W02
-; 010   ----------------------------------------
+@ 010   ----------------------------------------
 	.byte		        c_v+0
 	.byte	W01
 	.byte		        c_v+0
@@ -3638,7 +3641,7 @@
 	.byte	W02
 	.byte		        c_v+1
 	.byte	W01
-; 011   ----------------------------------------
+@ 011   ----------------------------------------
 	.byte	W01
 	.byte		        c_v+2
 	.byte	W01
@@ -3659,7 +3662,7 @@
 	.byte		VOICE , 8
 	.byte	W01
 	.byte		EOT   
-	.byte		VOL   , 27*song148restored_mvl/mxv
+	.byte		VOL   , 27*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W03
 	.byte	PRIO  , 33
 	.byte		PAN   , c_v+63
@@ -3794,7 +3797,7 @@
 	.byte	W01
 	.byte		        c_v-51
 	.byte	W01
-	.byte		VOL   , 24*song148restored_mvl/mxv
+	.byte		VOL   , 24*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-49
 	.byte	W01
 	.byte	PRIO  , 33
@@ -3829,7 +3832,7 @@
 	.byte	W01
 	.byte		        c_v-59
 	.byte	W01
-; 012   ----------------------------------------
+@ 012   ----------------------------------------
 	.byte		        c_v-57
 	.byte	W01
 	.byte		        c_v-55
@@ -4024,7 +4027,7 @@
 	.byte	W01
 	.byte		        c_v+3
 	.byte	W01
-; 013   ----------------------------------------
+@ 013   ----------------------------------------
 	.byte		        c_v+6
 	.byte	W01
 	.byte		        c_v+8
@@ -4215,7 +4218,7 @@
 	.byte	W01
 	.byte		        c_v-30
 	.byte	W01
-; 014   ----------------------------------------
+@ 014   ----------------------------------------
 	.byte		        c_v-29
 	.byte	W01
 	.byte		        c_v-27
@@ -4409,7 +4412,7 @@
 	.byte	W01
 	.byte		        c_v-10
 	.byte	W01
-; 015   ----------------------------------------
+@ 015   ----------------------------------------
 	.byte		        c_v-13
 	.byte	W01
 	.byte		        c_v-18
@@ -4528,7 +4531,7 @@
 	.byte		VOICE , 32
 	.byte		BEND  , c_v-29
 	.byte	W01
-	.byte		VOL   , 15*song148restored_mvl/mxv
+	.byte		VOL   , 15*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W02
 	.byte	PRIO  , 125
 	.byte		PAN   , c_v+63
@@ -4537,7 +4540,7 @@
 	.byte		BEND  , c_v+4
 	.byte		TIE   , An2 
 	.byte	W01
-	.byte		VOL   , 14*song148restored_mvl/mxv
+	.byte		VOL   , 14*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+5
 	.byte	W01
 	.byte		        c_v+2
@@ -4608,7 +4611,7 @@
 	.byte	W01
 	.byte		        c_v+0
 	.byte	W01
-; 016   ----------------------------------------
+@ 016   ----------------------------------------
 	.byte		        c_v+3
 	.byte	W01
 	.byte		        c_v+5
@@ -4746,7 +4749,7 @@
 	.byte		        c_v+6
 	.byte	W01
 	.byte		EOT   
-	.byte		VOL   , 7*song148restored_mvl/mxv
+	.byte		VOL   , 7*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+5
 	.byte	W03
 	.byte		        c_v+4
@@ -4800,7 +4803,7 @@
 	.byte	W01
 	.byte		        c_v+2
 	.byte	W01
-; 017   ----------------------------------------
+@ 017   ----------------------------------------
 	.byte		        c_v+0
 	.byte	W01
 	.byte		        c_v-3
@@ -4951,7 +4954,7 @@
 	.byte	W01
 	.byte		        c_v-3
 	.byte	W01
-	.byte		VOL   , 6*song148restored_mvl/mxv
+	.byte		VOL   , 6*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-2
 	.byte	W01
 	.byte		        c_v+1
@@ -4963,35 +4966,35 @@
 	.byte		EOT   
 	.byte		BEND  , c_v+5
 	.byte	W17
-; 018   ----------------------------------------
+@ 018   ----------------------------------------
 	.byte		VOICE , 30
 	.byte	W10
-	.byte		VOL   , 70*song148restored_mvl/mxv
+	.byte		VOL   , 70*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W02
 	.byte	PRIO  , 74
 	.byte		PAN   , c_v+0
 	.byte		BEND  , c_v+0
 	.byte		N24   , Cs3 
 	.byte	W04
-	.byte		VOL   , 72*song148restored_mvl/mxv
+	.byte		VOL   , 72*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W48
 	.byte	W02
 	.byte		N24   
 	.byte	W30
-; 019   ----------------------------------------
+@ 019   ----------------------------------------
 	.byte	W23
 	.byte		N24   
 	.byte	W54
 	.byte		N24   
 	.byte	W19
-; 020   ----------------------------------------
+@ 020   ----------------------------------------
 	.byte	W32
 	.byte	W02
 	.byte		N24   
 	.byte	W54
 	.byte		N24   
 	.byte	W08
-; 021   ----------------------------------------
+@ 021   ----------------------------------------
 	.byte	W44
 	.byte	W01
 	.byte		N24   
@@ -4999,14 +5002,14 @@
 	.byte	W03
 	.byte		N24   
 	.byte	W24
-; 022   ----------------------------------------
+@ 022   ----------------------------------------
 	.byte	W03
 	.byte		N24   
 	.byte	W52
 	.byte	W01
 	.byte		N24   
 	.byte	W40
-; 023   ----------------------------------------
+@ 023   ----------------------------------------
 	.byte	W14
 	.byte		N24   
 	.byte	W52
@@ -5014,7 +5017,7 @@
 	.byte		N24   
 	.byte	W28
 	.byte	W01
-; 024   ----------------------------------------
+@ 024   ----------------------------------------
 	.byte	W24
 	.byte	W01
 	.byte		N24   
@@ -5022,21 +5025,21 @@
 	.byte	W01
 	.byte		N24   
 	.byte	W18
-; 025   ----------------------------------------
+@ 025   ----------------------------------------
 	.byte	W36
 	.byte		N24   
 	.byte	W52
 	.byte	W01
 	.byte		N24   
 	.byte	W07
-; 026   ----------------------------------------
+@ 026   ----------------------------------------
 	.byte	W20
 	.byte		N24   
 	.byte	W24
 	.byte	W03
 	.byte		N24   
 	.byte	W24
-	.byte		VOL   , 0*song148restored_mvl/mxv
+	.byte		VOL   , 0*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W01
 	.byte	PRIO  , 0
@@ -5044,24 +5047,24 @@
 	.byte		BEND  , c_v+0
 	.byte	W01
 	.byte	GOTO
-	 .word	@song148restored_2_B1
-@song148restored_2_B2:
+	 .word	Otherworldly_Foe (3)_FINAL_2_B1
+Otherworldly_Foe (3)_FINAL_2_B2:
 	.byte	FINE
 
-;**************** Track 3 (Midi-Chn.3) ****************;
+@**************** Track 3 (Midi-Chn.3) ****************@
 
-@song148restored_3:
-	.byte	KEYSH , song148restored_key+0
-; 000   ----------------------------------------
+Otherworldly_Foe (3)_FINAL_3:
+	.byte	KEYSH , Otherworldly_Foe (3)_FINAL_key+0
+@ 000   ----------------------------------------
 	.byte		VOICE , 32
 	.byte		MODT  , 0
 	.byte		LFOS  , 44
-	.byte		VOL   , 37*song148restored_mvl/mxv
+	.byte		VOL   , 37*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BENDR , 12
 	.byte	W02
 	.byte	PRIO  , 125
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 37*song148restored_mvl/mxv
+	.byte		VOL   , 37*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N36   , Fn4 , v088
 	.byte	W01
@@ -5246,7 +5249,7 @@
 	.byte		        c_v+1
 	.byte		N10   , Fn2 
 	.byte	W01
-; 001   ----------------------------------------
+@ 001   ----------------------------------------
 	.byte		BEND  , c_v+1
 	.byte	W01
 	.byte		        c_v+2
@@ -5410,7 +5413,7 @@
 	.byte	W01
 	.byte		        c_v-4
 	.byte	W01
-; 002   ----------------------------------------
+@ 002   ----------------------------------------
 	.byte		        c_v-6
 	.byte	W01
 	.byte		        c_v-8
@@ -5455,15 +5458,15 @@
 	.byte	W01
 	.byte		        c_v-43
 	.byte	W03
-@song148restored_3_B1:
+Otherworldly_Foe (3)_FINAL_3_B1:
 	.byte		VOICE , 32
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 37*song148restored_mvl/mxv
+	.byte		VOL   , 37*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-43
 	.byte	W24
 	.byte	W01
 	.byte		VOICE , 22
-	.byte		VOL   , 72*song148restored_mvl/mxv
+	.byte		VOL   , 72*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte	PRIO  , 31
 	.byte		PAN   , c_v-45
@@ -5520,7 +5523,7 @@
 	.byte	W01
 	.byte		        c_v-44
 	.byte	W22
-; 003   ----------------------------------------
+@ 003   ----------------------------------------
 	.byte	W08
 	.byte		        c_v-2
 	.byte		N24   
@@ -5625,7 +5628,7 @@
 	.byte	W01
 	.byte		        c_v-44
 	.byte	W11
-; 004   ----------------------------------------
+@ 004   ----------------------------------------
 	.byte	W19
 	.byte		        c_v-2
 	.byte		N24   
@@ -5728,7 +5731,7 @@
 	.byte	W01
 	.byte		        c_v-43
 	.byte	W01
-; 005   ----------------------------------------
+@ 005   ----------------------------------------
 	.byte		        c_v-44
 	.byte	W30
 	.byte		        c_v-2
@@ -5810,7 +5813,7 @@
 	.byte	W01
 	.byte		        c_v-22
 	.byte	W01
-; 006   ----------------------------------------
+@ 006   ----------------------------------------
 	.byte		        c_v-24
 	.byte	W01
 	.byte		        c_v-26
@@ -5835,7 +5838,7 @@
 	.byte	W01
 	.byte		        c_v-44
 	.byte	W14
-	.byte		VOL   , 10*song148restored_mvl/mxv
+	.byte		VOL   , 10*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 17
 	.byte		PAN   , c_v+63
 	.byte	PRIO  , 0
@@ -5850,7 +5853,7 @@
 	.byte		BEND  , c_v+0
 	.byte		N01   
 	.byte	W01
-	.byte		VOL   , 24*song148restored_mvl/mxv
+	.byte		VOL   , 24*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-2
 	.byte	W02
 	.byte	PRIO  , 125
@@ -5860,16 +5863,16 @@
 	.byte		BEND  , c_v+0
 	.byte		N02   
 	.byte	W01
-	.byte		VOL   , 11*song148restored_mvl/mxv
+	.byte		VOL   , 11*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-2
 	.byte	W01
 	.byte		        c_v-4
 	.byte	W01
-	.byte		VOL   , 11*song148restored_mvl/mxv
+	.byte		VOL   , 11*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W02
 	.byte	PRIO  , 32
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-2
 	.byte		N01   
 	.byte	W01
@@ -5880,7 +5883,7 @@
 	.byte	W01
 	.byte		BEND  , c_v-2
 	.byte	W01
-	.byte		VOL   , 72*song148restored_mvl/mxv
+	.byte		VOL   , 72*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 39
 	.byte		PAN   , c_v-32
 	.byte	W01
@@ -5901,7 +5904,7 @@
 	.byte	W01
 	.byte		        c_v-12
 	.byte	W02
-	.byte		VOL   , 59*song148restored_mvl/mxv
+	.byte		VOL   , 59*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 121
 	.byte		PAN   , c_v+12
 	.byte	PRIO  , 39
@@ -5912,7 +5915,7 @@
 	.byte	W01
 	.byte		BEND  , c_v-4
 	.byte	W03
-	.byte		VOL   , 65*song148restored_mvl/mxv
+	.byte		VOL   , 65*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 91
 	.byte		PAN   , c_v-5
 	.byte	PRIO  , 121
@@ -5932,7 +5935,7 @@
 	.byte	W01
 	.byte		        c_v-12
 	.byte	W03
-	.byte		VOL   , 81*song148restored_mvl/mxv
+	.byte		VOL   , 81*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 30
 	.byte		PAN   , c_v-14
 	.byte	PRIO  , 122
@@ -5949,13 +5952,13 @@
 	.byte		PAN   , c_v+9
 	.byte	PRIO  , 74
 	.byte		        c_v+0
-	.byte		VOL   , 72*song148restored_mvl/mxv
+	.byte		VOL   , 72*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-1
 	.byte		N24   
 	.byte	W01
 	.byte		BEND  , c_v-3
 	.byte	W01
-; 007   ----------------------------------------
+@ 007   ----------------------------------------
 	.byte		        c_v-5
 	.byte	W01
 	.byte		        c_v-6
@@ -6053,7 +6056,7 @@
 	.byte	W01
 	.byte		        c_v-44
 	.byte	W20
-; 008   ----------------------------------------
+@ 008   ----------------------------------------
 	.byte	W09
 	.byte		        c_v-1
 	.byte		N24   
@@ -6157,7 +6160,7 @@
 	.byte	W01
 	.byte		        c_v-44
 	.byte	W09
-; 009   ----------------------------------------
+@ 009   ----------------------------------------
 	.byte	W20
 	.byte		        c_v-1
 	.byte		N24   
@@ -6255,7 +6258,7 @@
 	.byte	W01
 	.byte		        c_v-40
 	.byte	W01
-; 010   ----------------------------------------
+@ 010   ----------------------------------------
 	.byte		        c_v-42
 	.byte	W01
 	.byte		        c_v-43
@@ -6314,12 +6317,12 @@
 	.byte	W01
 	.byte		        c_v-44
 	.byte	W14
-	.byte		VOL   , 11*song148restored_mvl/mxv
+	.byte		VOL   , 11*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 17
 	.byte		PAN   , c_v+63
 	.byte	PRIO  , 0
 	.byte		        c_v-64
-	.byte		VOL   , 9*song148restored_mvl/mxv
+	.byte		VOL   , 9*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-1
 	.byte		N01   
 	.byte	W01
@@ -6327,15 +6330,15 @@
 	.byte	W01
 	.byte	PRIO  , 33
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 24*song148restored_mvl/mxv
+	.byte		VOL   , 24*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N01   
 	.byte	W01
 	.byte		BEND  , c_v-2
 	.byte	W02
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
-	.byte		        11*song148restored_mvl/mxv
+	.byte		        11*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 125
 	.byte		PAN   , c_v+63
 	.byte	PRIO  , 0
@@ -6345,13 +6348,13 @@
 	.byte	W01
 	.byte		BEND  , c_v-4
 	.byte	W01
-	.byte		VOL   , 10*song148restored_mvl/mxv
+	.byte		VOL   , 10*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-4
 	.byte	W02
-	.byte		VOL   , 10*song148restored_mvl/mxv
+	.byte		VOL   , 10*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 32
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 39*song148restored_mvl/mxv
+	.byte		VOL   , 39*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-2
 	.byte		N01   
 	.byte	W01
@@ -6366,7 +6369,7 @@
 	.byte		PAN   , c_v-32
 	.byte	PRIO  , 74
 	.byte		        c_v+0
-	.byte		VOL   , 72*song148restored_mvl/mxv
+	.byte		VOL   , 72*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-2
 	.byte		N06   
 	.byte	W01
@@ -6386,15 +6389,15 @@
 	.byte		PAN   , c_v+12
 	.byte	PRIO  , 39
 	.byte		        c_v+0
-	.byte		VOL   , 59*song148restored_mvl/mxv
+	.byte		VOL   , 59*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-2
 	.byte		N01   
 	.byte	W01
 	.byte		BEND  , c_v-4
 	.byte	W01
-; 011   ----------------------------------------
+@ 011   ----------------------------------------
 	.byte	W02
-	.byte		VOL   , 65*song148restored_mvl/mxv
+	.byte		VOL   , 65*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 91
 	.byte		PAN   , c_v-5
 	.byte	PRIO  , 121
@@ -6414,7 +6417,7 @@
 	.byte	W01
 	.byte		        c_v-12
 	.byte	W03
-	.byte		VOL   , 81*song148restored_mvl/mxv
+	.byte		VOL   , 81*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 30
 	.byte		PAN   , c_v-14
 	.byte	PRIO  , 122
@@ -6427,7 +6430,7 @@
 	.byte		        c_v-4
 	.byte	W28
 	.byte	W01
-	.byte		VOL   , 72*song148restored_mvl/mxv
+	.byte		VOL   , 72*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 67
 	.byte		PAN   , c_v+9
 	.byte	PRIO  , 74
@@ -6483,7 +6486,7 @@
 	.byte	W01
 	.byte		        c_v-44
 	.byte	W30
-; 012   ----------------------------------------
+@ 012   ----------------------------------------
 	.byte		        c_v-2
 	.byte		N24   
 	.byte	W01
@@ -6587,7 +6590,7 @@
 	.byte	W01
 	.byte		        c_v-44
 	.byte	W19
-; 013   ----------------------------------------
+@ 013   ----------------------------------------
 	.byte	W11
 	.byte		        c_v-2
 	.byte		N23   
@@ -6692,7 +6695,7 @@
 	.byte	W01
 	.byte		        c_v-44
 	.byte	W08
-; 014   ----------------------------------------
+@ 014   ----------------------------------------
 	.byte	W22
 	.byte		        c_v-2
 	.byte		N24   
@@ -6789,7 +6792,7 @@
 	.byte	W01
 	.byte		        c_v-37
 	.byte	W01
-; 015   ----------------------------------------
+@ 015   ----------------------------------------
 	.byte		        c_v-38
 	.byte	W01
 	.byte		        c_v-40
@@ -6850,7 +6853,7 @@
 	.byte		VOICE , 32
 	.byte		BEND  , c_v-44
 	.byte	W03
-	.byte		VOL   , 19*song148restored_mvl/mxv
+	.byte		VOL   , 19*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 17
 	.byte		PAN   , c_v+63
 	.byte	PRIO  , 0
@@ -6922,7 +6925,7 @@
 	.byte	W01
 	.byte		        c_v+1
 	.byte	W01
-; 016   ----------------------------------------
+@ 016   ----------------------------------------
 	.byte		        c_v+1
 	.byte	W01
 	.byte		        c_v+0
@@ -7050,7 +7053,7 @@
 	.byte		EOT   
 	.byte		BEND  , c_v+0
 	.byte	W02
-	.byte		VOL   , 6*song148restored_mvl/mxv
+	.byte		VOL   , 6*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte		BEND  , c_v+2
 	.byte		TIE   
@@ -7099,7 +7102,7 @@
 	.byte	W01
 	.byte		        c_v+2
 	.byte	W01
-; 017   ----------------------------------------
+@ 017   ----------------------------------------
 	.byte		        c_v+1
 	.byte	W01
 	.byte		        c_v+0
@@ -7247,12 +7250,12 @@
 	.byte		EOT   
 	.byte		BEND  , c_v+0
 	.byte	W17
-; 018   ----------------------------------------
+@ 018   ----------------------------------------
 	.byte		VOICE , 22
 	.byte	W08
-	.byte		VOL   , 0*song148restored_mvl/mxv
+	.byte		VOL   , 0*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W04
-	.byte		        72*song148restored_mvl/mxv
+	.byte		        72*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 74
 	.byte		PAN   , c_v+0
 	.byte		BEND  , c_v+0
@@ -7260,33 +7263,33 @@
 	.byte	W54
 	.byte		N24   
 	.byte	W30
-; 019   ----------------------------------------
+@ 019   ----------------------------------------
 	.byte	W23
 	.byte		N24   
 	.byte	W54
 	.byte		N24   
 	.byte	W19
-; 020   ----------------------------------------
+@ 020   ----------------------------------------
 	.byte	W32
 	.byte	W02
 	.byte		N24   
 	.byte	W54
 	.byte		N24   
 	.byte	W08
-; 021   ----------------------------------------
+@ 021   ----------------------------------------
 	.byte	W44
 	.byte	W01
 	.byte		N24   
 	.byte	W48
 	.byte	W03
-; 022   ----------------------------------------
+@ 022   ----------------------------------------
 	.byte	W03
 	.byte		N24   
 	.byte	W52
 	.byte	W01
 	.byte		N24   
 	.byte	W40
-; 023   ----------------------------------------
+@ 023   ----------------------------------------
 	.byte	W14
 	.byte		N24   
 	.byte	W52
@@ -7294,7 +7297,7 @@
 	.byte		N24   
 	.byte	W28
 	.byte	W01
-; 024   ----------------------------------------
+@ 024   ----------------------------------------
 	.byte	W24
 	.byte	W01
 	.byte		N24   
@@ -7302,37 +7305,37 @@
 	.byte	W01
 	.byte		N24   
 	.byte	W18
-; 025   ----------------------------------------
+@ 025   ----------------------------------------
 	.byte	W36
 	.byte		N24   
 	.byte	W52
 	.byte	W01
 	.byte		N24   
 	.byte	W07
-; 026   ----------------------------------------
+@ 026   ----------------------------------------
 	.byte	W68
 	.byte	W03
 	.byte		BEND  , c_v+0
 	.byte	W02
 	.byte	GOTO
-	 .word	@song148restored_3_B1
-@song148restored_3_B2:
+	 .word	Otherworldly_Foe (3)_FINAL_3_B1
+Otherworldly_Foe (3)_FINAL_3_B2:
 	.byte	FINE
 
-;**************** Track 4 (Midi-Chn.4) ****************;
+@**************** Track 4 (Midi-Chn.4) ****************@
 
-@song148restored_4:
-	.byte	KEYSH , song148restored_key+0
-; 000   ----------------------------------------
+Otherworldly_Foe (3)_FINAL_4:
+	.byte	KEYSH , Otherworldly_Foe (3)_FINAL_key+0
+@ 000   ----------------------------------------
 	.byte		VOICE , 32
 	.byte		MODT  , 0
 	.byte		LFOS  , 44
-	.byte		VOL   , 37*song148restored_mvl/mxv
+	.byte		VOL   , 37*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BENDR , 12
 	.byte	W02
 	.byte	PRIO  , 125
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 37*song148restored_mvl/mxv
+	.byte		VOL   , 37*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte		N36   , Ds4 , v088
 	.byte	W01
@@ -7515,7 +7518,7 @@
 	.byte		        c_v+1
 	.byte		N11   , Ds2 
 	.byte	W01
-; 001   ----------------------------------------
+@ 001   ----------------------------------------
 	.byte		BEND  , c_v+1
 	.byte	W01
 	.byte		        c_v+2
@@ -7681,7 +7684,7 @@
 	.byte	W01
 	.byte		        c_v-4
 	.byte	W01
-; 002   ----------------------------------------
+@ 002   ----------------------------------------
 	.byte		        c_v-6
 	.byte	W01
 	.byte		        c_v-8
@@ -7727,9 +7730,9 @@
 	.byte		VOICE , 0
 	.byte		BEND  , c_v-43
 	.byte	W02
-	.byte		VOL   , 72*song148restored_mvl/mxv
+	.byte		VOL   , 72*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
-@song148restored_4_B1:
+Otherworldly_Foe (3)_FINAL_4_B1:
 	.byte		PAN   , c_v+63
 	.byte	PRIO  , 31
 	.byte		        c_v-45
@@ -7746,7 +7749,7 @@
 	.byte	W03
 	.byte		N10   
 	.byte	W06
-; 003   ----------------------------------------
+@ 003   ----------------------------------------
 	.byte	W08
 	.byte		N10   
 	.byte	W24
@@ -7758,7 +7761,7 @@
 	.byte	W14
 	.byte		N10   
 	.byte	W21
-; 004   ----------------------------------------
+@ 004   ----------------------------------------
 	.byte	W05
 	.byte		N10   
 	.byte	W14
@@ -7772,7 +7775,7 @@
 	.byte	W14
 	.byte		N10   
 	.byte	W10
-; 005   ----------------------------------------
+@ 005   ----------------------------------------
 	.byte	W16
 	.byte		N10   
 	.byte	W14
@@ -7784,7 +7787,7 @@
 	.byte	W03
 	.byte		N10   
 	.byte	W13
-; 006   ----------------------------------------
+@ 006   ----------------------------------------
 	.byte	W01
 	.byte		N10   
 	.byte	W24
@@ -7799,7 +7802,7 @@
 	.byte	W02
 	.byte		N10   
 	.byte	W02
-; 007   ----------------------------------------
+@ 007   ----------------------------------------
 	.byte	W12
 	.byte		N10   
 	.byte	W24
@@ -7811,7 +7814,7 @@
 	.byte	W03
 	.byte		N10   
 	.byte	W17
-; 008   ----------------------------------------
+@ 008   ----------------------------------------
 	.byte	W09
 	.byte		N10   
 	.byte	W14
@@ -7825,7 +7828,7 @@
 	.byte	W03
 	.byte		N10   
 	.byte	W06
-; 009   ----------------------------------------
+@ 009   ----------------------------------------
 	.byte	W20
 	.byte		N10   
 	.byte	W14
@@ -7836,7 +7839,7 @@
 	.byte	W14
 	.byte		N10   
 	.byte	W22
-; 010   ----------------------------------------
+@ 010   ----------------------------------------
 	.byte	W05
 	.byte		N10   
 	.byte	W24
@@ -7850,7 +7853,7 @@
 	.byte	W14
 	.byte		N10   
 	.byte	W11
-; 011   ----------------------------------------
+@ 011   ----------------------------------------
 	.byte	W16
 	.byte		N10   
 	.byte	W24
@@ -7862,7 +7865,7 @@
 	.byte	W02
 	.byte		N11   
 	.byte	W14
-; 012   ----------------------------------------
+@ 012   ----------------------------------------
 	.byte		N10   
 	.byte	W24
 	.byte	W03
@@ -7876,8 +7879,8 @@
 	.byte	W02
 	.byte		N10   
 	.byte	W03
-; 013   ----------------------------------------
-	.byte		VOL   , 72*song148restored_mvl/mxv
+@ 013   ----------------------------------------
+	.byte		VOL   , 72*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W11
 	.byte		N10   
 	.byte	W24
@@ -7889,7 +7892,7 @@
 	.byte	W14
 	.byte		N10   
 	.byte	W18
-; 014   ----------------------------------------
+@ 014   ----------------------------------------
 	.byte	W08
 	.byte		N10   
 	.byte	W14
@@ -7903,14 +7906,14 @@
 	.byte	W14
 	.byte		N11   
 	.byte	W07
-; 015   ----------------------------------------
-	.byte		VOL   , 72*song148restored_mvl/mxv
+@ 015   ----------------------------------------
+	.byte		VOL   , 72*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W19
 	.byte		N10   
 	.byte	W14
 	.byte		N10   
 	.byte	W14
-	.byte		VOL   , 18*song148restored_mvl/mxv
+	.byte		VOL   , 18*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte		VOICE , 32
 	.byte	W12
@@ -7920,11 +7923,11 @@
 	.byte		BEND  , c_v+1
 	.byte		TIE   , Cn3 , v080
 	.byte	W36
-; 016   ----------------------------------------
+@ 016   ----------------------------------------
 	.byte	W68
 	.byte		EOT   
 	.byte	W01
-	.byte		VOL   , 6*song148restored_mvl/mxv
+	.byte		VOL   , 6*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte	PRIO  , 0
 	.byte		PAN   , c_v-64
@@ -7932,25 +7935,25 @@
 	.byte		TIE   
 	.byte	W24
 	.byte	W01
-; 017   ----------------------------------------
+@ 017   ----------------------------------------
 	.byte	W78
 	.byte	W01
 	.byte		EOT   
-	.byte		VOL   , 7*song148restored_mvl/mxv
+	.byte		VOL   , 7*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W02
 	.byte		VOICE , 0
-	.byte		VOL   , 8*song148restored_mvl/mxv
+	.byte		VOL   , 8*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte	PRIO  , 122
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 82*song148restored_mvl/mxv
+	.byte		VOL   , 82*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-1
 	.byte		N10   , Fs1 , v127
 	.byte	W11
-	.byte		VOL   , 81*song148restored_mvl/mxv
+	.byte		VOL   , 81*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W03
-; 018   ----------------------------------------
-	.byte		        72*song148restored_mvl/mxv
+@ 018   ----------------------------------------
+	.byte		        72*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W12
 	.byte	PRIO  , 67
 	.byte		PAN   , c_v+9
@@ -7968,7 +7971,7 @@
 	.byte	W03
 	.byte		N10   
 	.byte	W03
-; 019   ----------------------------------------
+@ 019   ----------------------------------------
 	.byte	W23
 	.byte		N10   
 	.byte	W14
@@ -7979,7 +7982,7 @@
 	.byte	W14
 	.byte		N10   
 	.byte	W19
-; 020   ----------------------------------------
+@ 020   ----------------------------------------
 	.byte	W08
 	.byte		N10   
 	.byte	W24
@@ -7993,7 +7996,7 @@
 	.byte	W14
 	.byte		N10   
 	.byte	W08
-; 021   ----------------------------------------
+@ 021   ----------------------------------------
 	.byte	W19
 	.byte		N10   
 	.byte	W24
@@ -8005,7 +8008,7 @@
 	.byte	W02
 	.byte		N10   
 	.byte	W11
-; 022   ----------------------------------------
+@ 022   ----------------------------------------
 	.byte	W03
 	.byte		N10   
 	.byte	W24
@@ -8026,7 +8029,7 @@
 	.byte		N10   
 	.byte	W24
 	.byte	W02
-; 023   ----------------------------------------
+@ 023   ----------------------------------------
 	.byte		N10   
 	.byte	W14
 	.byte		N11   
@@ -8039,7 +8042,7 @@
 	.byte	W14
 	.byte		N10   
 	.byte	W15
-; 024   ----------------------------------------
+@ 024   ----------------------------------------
 	.byte	W11
 	.byte		N10   
 	.byte	W14
@@ -8053,7 +8056,7 @@
 	.byte	W14
 	.byte		N10   
 	.byte	W04
-; 025   ----------------------------------------
+@ 025   ----------------------------------------
 	.byte	W22
 	.byte		N10   
 	.byte	W14
@@ -8065,7 +8068,7 @@
 	.byte	W02
 	.byte		N10   
 	.byte	W07
-; 026   ----------------------------------------
+@ 026   ----------------------------------------
 	.byte	W07
 	.byte		N10   
 	.byte	W24
@@ -8076,26 +8079,26 @@
 	.byte	W24
 	.byte	W02
 	.byte	GOTO
-	 .word	@song148restored_4_B1
-@song148restored_4_B2:
+	 .word	Otherworldly_Foe (3)_FINAL_4_B1
+Otherworldly_Foe (3)_FINAL_4_B2:
 	.byte	W02
 	.byte		BEND  , c_v-1
 	.byte	FINE
 
-;**************** Track 5 (Midi-Chn.5) ****************;
+@**************** Track 5 (Midi-Chn.5) ****************@
 
-@song148restored_5:
-	.byte	KEYSH , song148restored_key+0
-; 000   ----------------------------------------
+Otherworldly_Foe (3)_FINAL_5:
+	.byte	KEYSH , Otherworldly_Foe (3)_FINAL_key+0
+@ 000   ----------------------------------------
 	.byte		VOICE , 32
 	.byte		MODT  , 0
 	.byte		LFOS  , 44
-	.byte		VOL   , 37*song148restored_mvl/mxv
+	.byte		VOL   , 37*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BENDR , 12
 	.byte	W02
 	.byte	PRIO  , 125
 	.byte		PAN   , c_v-64
-	.byte		VOL   , 37*song148restored_mvl/mxv
+	.byte		VOL   , 37*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte		N36   , Cs4 , v088
 	.byte	W01
@@ -8278,7 +8281,7 @@
 	.byte		        c_v+1
 	.byte		N11   , Cs2 
 	.byte	W01
-; 001   ----------------------------------------
+@ 001   ----------------------------------------
 	.byte		BEND  , c_v+1
 	.byte	W01
 	.byte		        c_v+2
@@ -8301,7 +8304,7 @@
 	.byte	W01
 	.byte		        c_v+8
 	.byte	W02
-	.byte		VOL   , 36*song148restored_mvl/mxv
+	.byte		VOL   , 36*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte		BEND  , c_v+1
 	.byte		N36   , As2 
@@ -8447,7 +8450,7 @@
 	.byte	W01
 	.byte		        c_v-4
 	.byte	W01
-; 002   ----------------------------------------
+@ 002   ----------------------------------------
 	.byte		        c_v-6
 	.byte	W01
 	.byte		        c_v-8
@@ -8491,16 +8494,16 @@
 	.byte		        c_v-42
 	.byte	W01
 	.byte		VOICE , 8
-	.byte		VOL   , 35*song148restored_mvl/mxv
+	.byte		VOL   , 35*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-43
 	.byte	W01
-	.byte		VOL   , 54*song148restored_mvl/mxv
+	.byte		VOL   , 54*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
-	.byte		        87*song148restored_mvl/mxv
+	.byte		        87*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
-@song148restored_5_B1:
+Otherworldly_Foe (3)_FINAL_5_B1:
 	.byte		PAN   , c_v-64
-	.byte		VOL   , 87*song148restored_mvl/mxv
+	.byte		VOL   , 87*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 74
 	.byte		PAN   , c_v+0
 	.byte		BEND  , c_v-15
@@ -8550,7 +8553,7 @@
 	.byte		        c_v+0
 	.byte		N18   , Fs0 
 	.byte	W13
-; 003   ----------------------------------------
+@ 003   ----------------------------------------
 	.byte	W32
 	.byte	W02
 	.byte		N06   , Fs1 
@@ -8600,10 +8603,10 @@
 	.byte		        c_v+0
 	.byte		N18   , Fs0 
 	.byte	W02
-; 004   ----------------------------------------
+@ 004   ----------------------------------------
 	.byte	W36
 	.byte	W03
-	.byte		VOL   , 88*song148restored_mvl/mxv
+	.byte		VOL   , 88*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W06
 	.byte		N06   , Fs1 
 	.byte	W01
@@ -8636,7 +8639,7 @@
 	.byte	W01
 	.byte		        c_v-52
 	.byte	W05
-; 005   ----------------------------------------
+@ 005   ----------------------------------------
 	.byte	W03
 	.byte		        c_v-9
 	.byte		N06   
@@ -8690,7 +8693,7 @@
 	.byte		        c_v+0
 	.byte		N05   , Fs0 
 	.byte	W06
-; 006   ----------------------------------------
+@ 006   ----------------------------------------
 	.byte	W14
 	.byte		BEND  , c_v-8
 	.byte		N05   , Fs1 
@@ -8760,7 +8763,7 @@
 	.byte		        c_v+0
 	.byte		N05   , Fs0 
 	.byte	W22
-; 007   ----------------------------------------
+@ 007   ----------------------------------------
 	.byte	W12
 	.byte		BEND  , c_v-11
 	.byte		N05   , Fs1 
@@ -8807,7 +8810,7 @@
 	.byte		        c_v+0
 	.byte		N05   , Fs0 
 	.byte	W11
-; 008   ----------------------------------------
+@ 008   ----------------------------------------
 	.byte	W23
 	.byte		BEND  , c_v-11
 	.byte		N05   , Fs1 
@@ -8851,7 +8854,7 @@
 	.byte	W01
 	.byte		        c_v-61
 	.byte	W01
-; 009   ----------------------------------------
+@ 009   ----------------------------------------
 	.byte		        c_v+0
 	.byte		N05   , Fs0 
 	.byte	W32
@@ -8886,7 +8889,7 @@
 	.byte		N19   , Fs0 
 	.byte	W42
 	.byte	W01
-; 010   ----------------------------------------
+@ 010   ----------------------------------------
 	.byte	W05
 	.byte		BEND  , c_v-11
 	.byte		N06   , Fs1 
@@ -8963,7 +8966,7 @@
 	.byte	W01
 	.byte		        c_v-53
 	.byte	W06
-; 011   ----------------------------------------
+@ 011   ----------------------------------------
 	.byte	W02
 	.byte		        c_v-7
 	.byte		N05   
@@ -9024,7 +9027,7 @@
 	.byte		        c_v+0
 	.byte		N18   , Fs0 
 	.byte	W21
-; 012   ----------------------------------------
+@ 012   ----------------------------------------
 	.byte	W24
 	.byte	W03
 	.byte		BEND  , c_v-11
@@ -9073,7 +9076,7 @@
 	.byte		        c_v+0
 	.byte		N18   , Fs0 
 	.byte	W10
-; 013   ----------------------------------------
+@ 013   ----------------------------------------
 	.byte	W36
 	.byte	W02
 	.byte		BEND  , c_v-11
@@ -9117,13 +9120,13 @@
 	.byte	W01
 	.byte		        c_v-46
 	.byte	W01
-; 014   ----------------------------------------
+@ 014   ----------------------------------------
 	.byte		        c_v-54
 	.byte	W01
 	.byte		        c_v-1
 	.byte		N19   , Fs0 
 	.byte	W21
-	.byte		VOL   , 90*song148restored_mvl/mxv
+	.byte		VOL   , 90*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W24
 	.byte	W03
 	.byte		BEND  , c_v-12
@@ -9160,8 +9163,8 @@
 	.byte		        c_v-1
 	.byte		N05   , Fs0 
 	.byte	W14
-; 015   ----------------------------------------
-	.byte		VOL   , 90*song148restored_mvl/mxv
+@ 015   ----------------------------------------
+	.byte		VOL   , 90*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W06
 	.byte		BEND  , c_v-8
 	.byte		N05   , Fs1 
@@ -9219,7 +9222,7 @@
 	.byte	W03
 	.byte		VOICE , 32
 	.byte	W04
-	.byte		VOL   , 20*song148restored_mvl/mxv
+	.byte		VOL   , 20*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W02
 	.byte	PRIO  , 17
 	.byte		PAN   , c_v+63
@@ -9228,26 +9231,26 @@
 	.byte		BEND  , c_v-1
 	.byte		TIE   , Fn3 , v080
 	.byte	W36
-; 016   ----------------------------------------
+@ 016   ----------------------------------------
 	.byte	W68
 	.byte		EOT   
 	.byte	W02
-	.byte		VOL   , 5*song148restored_mvl/mxv
+	.byte		VOL   , 5*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte		TIE   
 	.byte	W24
 	.byte	W01
-; 017   ----------------------------------------
+@ 017   ----------------------------------------
 	.byte	W78
 	.byte	W01
 	.byte		EOT   
 	.byte	W02
 	.byte		VOICE , 8
-	.byte		VOL   , 5*song148restored_mvl/mxv
+	.byte		VOL   , 5*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte	PRIO  , 127
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 91*song148restored_mvl/mxv
+	.byte		VOL   , 91*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-14
 	.byte		N06   , Fs1 , v127
 	.byte	W01
@@ -9257,7 +9260,7 @@
 	.byte	W01
 	.byte		        c_v-43
 	.byte	W01
-	.byte		VOL   , 90*song148restored_mvl/mxv
+	.byte		VOL   , 90*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-50
 	.byte	W01
 	.byte		        c_v-63
@@ -9265,10 +9268,10 @@
 	.byte		        c_v-1
 	.byte		N05   , Fs0 
 	.byte	W08
-; 018   ----------------------------------------
-	.byte		VOL   , 85*song148restored_mvl/mxv
+@ 018   ----------------------------------------
+	.byte		VOL   , 85*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W24
-	.byte		        81*song148restored_mvl/mxv
+	.byte		        81*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W02
 	.byte	PRIO  , 27
 	.byte		PAN   , c_v+4
@@ -9313,7 +9316,7 @@
 	.byte	W01
 	.byte		        c_v-33
 	.byte	W01
-; 019   ----------------------------------------
+@ 019   ----------------------------------------
 	.byte		        c_v-43
 	.byte	W01
 	.byte		        c_v-51
@@ -9353,7 +9356,7 @@
 	.byte		        c_v+0
 	.byte		N19   , Fs0 
 	.byte	W40
-; 020   ----------------------------------------
+@ 020   ----------------------------------------
 	.byte	W08
 	.byte		BEND  , c_v-11
 	.byte		N06   , Fs1 
@@ -9403,7 +9406,7 @@
 	.byte		        c_v+0
 	.byte		N18   , Fs0 
 	.byte	W28
-; 021   ----------------------------------------
+@ 021   ----------------------------------------
 	.byte	W19
 	.byte		BEND  , c_v-11
 	.byte		N06   , Fs1 
@@ -9467,7 +9470,7 @@
 	.byte	W01
 	.byte		        c_v-54
 	.byte	W05
-; 022   ----------------------------------------
+@ 022   ----------------------------------------
 	.byte	W03
 	.byte		        c_v-9
 	.byte		N05   
@@ -9495,7 +9498,7 @@
 	.byte	W01
 	.byte		        c_v-54
 	.byte	W06
-	.byte		VOL   , 85*song148restored_mvl/mxv
+	.byte		VOL   , 85*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W03
 	.byte	PRIO  , 27
 	.byte		PAN   , c_v-3
@@ -9518,7 +9521,7 @@
 	.byte		N05   , Fs0 
 	.byte	W32
 	.byte	W01
-	.byte		VOL   , 81*song148restored_mvl/mxv
+	.byte		VOL   , 81*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte	PRIO  , 27
 	.byte		PAN   , c_v+4
@@ -9555,7 +9558,7 @@
 	.byte		        c_v+0
 	.byte		N18   , Fs0 
 	.byte	W06
-; 023   ----------------------------------------
+@ 023   ----------------------------------------
 	.byte	W40
 	.byte	W01
 	.byte		BEND  , c_v-11
@@ -9593,7 +9596,7 @@
 	.byte	W01
 	.byte		BEND  , c_v-16
 	.byte	W01
-; 024   ----------------------------------------
+@ 024   ----------------------------------------
 	.byte		        c_v-26
 	.byte	W01
 	.byte		        c_v-36
@@ -9631,7 +9634,7 @@
 	.byte	W01
 	.byte		        c_v-39
 	.byte	W01
-; 025   ----------------------------------------
+@ 025   ----------------------------------------
 	.byte		        c_v-48
 	.byte	W01
 	.byte		        c_v-53
@@ -9685,7 +9688,7 @@
 	.byte	W01
 	.byte		        c_v-62
 	.byte	W01
-; 026   ----------------------------------------
+@ 026   ----------------------------------------
 	.byte		        c_v+0
 	.byte		N05   , Fs0 
 	.byte	W20
@@ -9745,11 +9748,11 @@
 	.byte	W01
 	.byte		        c_v-54
 	.byte	W06
-	.byte		VOL   , 72*song148restored_mvl/mxv
+	.byte		VOL   , 72*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte	GOTO
-	 .word	@song148restored_5_B1
-@song148restored_5_B2:
+	 .word	Otherworldly_Foe (3)_FINAL_5_B1
+Otherworldly_Foe (3)_FINAL_5_B2:
 	.byte	W01
 	.byte	PRIO  , 67
 	.byte		PAN   , c_v+9
@@ -9770,20 +9773,20 @@
 	.byte		        c_v+0
 	.byte	FINE
 
-;**************** Track 6 (Midi-Chn.6) ****************;
+@**************** Track 6 (Midi-Chn.6) ****************@
 
-@song148restored_6:
-	.byte	KEYSH , song148restored_key+0
-; 000   ----------------------------------------
+Otherworldly_Foe (3)_FINAL_6:
+	.byte	KEYSH , Otherworldly_Foe (3)_FINAL_key+0
+@ 000   ----------------------------------------
 	.byte		VOICE , 32
 	.byte		MODT  , 0
 	.byte		LFOS  , 44
-	.byte		VOL   , 37*song148restored_mvl/mxv
+	.byte		VOL   , 37*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BENDR , 12
 	.byte	W02
 	.byte	PRIO  , 125
 	.byte		PAN   , c_v-64
-	.byte		VOL   , 37*song148restored_mvl/mxv
+	.byte		VOL   , 37*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte		N36   , En3 , v088
 	.byte	W01
@@ -9964,7 +9967,7 @@
 	.byte		        c_v+1
 	.byte		N11   , En1 
 	.byte	W01
-; 001   ----------------------------------------
+@ 001   ----------------------------------------
 	.byte		BEND  , c_v+1
 	.byte	W01
 	.byte		        c_v+2
@@ -10125,7 +10128,7 @@
 	.byte	W01
 	.byte		        c_v-4
 	.byte	W01
-; 002   ----------------------------------------
+@ 002   ----------------------------------------
 	.byte		        c_v-6
 	.byte	W01
 	.byte		        c_v-8
@@ -10170,33 +10173,33 @@
 	.byte	W01
 	.byte		        c_v-43
 	.byte	W01
-	.byte		VOL   , 54*song148restored_mvl/mxv
+	.byte		VOL   , 54*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
-	.byte		        11*song148restored_mvl/mxv
+	.byte		        11*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
-@song148restored_6_B1:
+Otherworldly_Foe (3)_FINAL_6_B1:
 	.byte		VOICE , 32
 	.byte		PAN   , c_v-64
-	.byte		VOL   , 11*song148restored_mvl/mxv
+	.byte		VOL   , 11*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
 	.byte		BEND  , c_v+1
 	.byte		TIE   , Bn1 , v088
 	.byte	W02
-	.byte		VOL   , 11*song148restored_mvl/mxv
+	.byte		VOL   , 11*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W02
 	.byte		        c_v+1
 	.byte	W02
 	.byte		        c_v+2
 	.byte	W02
-	.byte		VOL   , 12*song148restored_mvl/mxv
+	.byte		VOL   , 12*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+2
 	.byte	W05
 	.byte		        c_v+2
 	.byte	W02
 	.byte		        c_v+1
 	.byte	W02
-	.byte		VOL   , 13*song148restored_mvl/mxv
+	.byte		VOL   , 13*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W02
 	.byte		        c_v+1
@@ -10205,13 +10208,13 @@
 	.byte	W02
 	.byte		        c_v+0
 	.byte	W03
-	.byte		VOL   , 13*song148restored_mvl/mxv
+	.byte		VOL   , 13*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte		BEND  , c_v+0
 	.byte	W02
 	.byte		        c_v+0
 	.byte	W03
-	.byte		VOL   , 14*song148restored_mvl/mxv
+	.byte		VOL   , 14*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte		BEND  , c_v+0
 	.byte	W02
@@ -10221,14 +10224,14 @@
 	.byte	W03
 	.byte		        c_v+1
 	.byte	W01
-	.byte		VOL   , 15*song148restored_mvl/mxv
+	.byte		VOL   , 15*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+2
 	.byte	W03
 	.byte		        c_v+2
 	.byte	W04
 	.byte		        c_v+2
 	.byte	W02
-	.byte		VOL   , 16*song148restored_mvl/mxv
+	.byte		VOL   , 16*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W02
 	.byte		        c_v+1
@@ -10236,7 +10239,7 @@
 	.byte	PRIO  , 125
 	.byte		        c_v+1
 	.byte	W02
-	.byte		VOL   , 16*song148restored_mvl/mxv
+	.byte		VOL   , 16*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W02
 	.byte		        c_v+0
@@ -10245,24 +10248,24 @@
 	.byte	W02
 	.byte		        c_v+0
 	.byte	W01
-	.byte		VOL   , 17*song148restored_mvl/mxv
+	.byte		VOL   , 17*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W03
 	.byte		BEND  , c_v+0
 	.byte	W02
 	.byte		        c_v+1
 	.byte	W01
-; 003   ----------------------------------------
+@ 003   ----------------------------------------
 	.byte	W01
 	.byte		        c_v+1
 	.byte	W02
-	.byte		VOL   , 18*song148restored_mvl/mxv
+	.byte		VOL   , 18*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W02
 	.byte		        c_v+2
 	.byte	W02
 	.byte		        c_v+2
 	.byte	W02
-	.byte		VOL   , 19*song148restored_mvl/mxv
+	.byte		VOL   , 19*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W03
 	.byte		BEND  , c_v+2
 	.byte	W02
@@ -10270,7 +10273,7 @@
 	.byte	W02
 	.byte		        c_v+1
 	.byte	W02
-	.byte		VOL   , 19*song148restored_mvl/mxv
+	.byte		VOL   , 19*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W02
 	.byte		        c_v+0
@@ -10279,13 +10282,13 @@
 	.byte	W04
 	.byte		        c_v+0
 	.byte	W01
-	.byte		VOL   , 20*song148restored_mvl/mxv
+	.byte		VOL   , 20*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W02
 	.byte		BEND  , c_v+0
 	.byte	W02
 	.byte		EOT   
 	.byte	W03
-	.byte		VOL   , 21*song148restored_mvl/mxv
+	.byte		VOL   , 21*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte		TIE   , As1 
 	.byte	W03
@@ -10295,7 +10298,7 @@
 	.byte	W02
 	.byte		        c_v+2
 	.byte	W01
-	.byte		VOL   , 22*song148restored_mvl/mxv
+	.byte		VOL   , 22*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte		BEND  , c_v+2
 	.byte	W05
@@ -10303,7 +10306,7 @@
 	.byte	W02
 	.byte		        c_v+1
 	.byte	W01
-	.byte		VOL   , 23*song148restored_mvl/mxv
+	.byte		VOL   , 23*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte		BEND  , c_v+1
 	.byte	W02
@@ -10311,13 +10314,13 @@
 	.byte	W02
 	.byte		        c_v+0
 	.byte	W01
-	.byte		VOL   , 23*song148restored_mvl/mxv
+	.byte		VOL   , 23*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte		BEND  , c_v+0
 	.byte	W02
 	.byte		        c_v+0
 	.byte	W05
-	.byte		VOL   , 24*song148restored_mvl/mxv
+	.byte		VOL   , 24*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte		BEND  , c_v+0
 	.byte	W02
@@ -10325,7 +10328,7 @@
 	.byte	W02
 	.byte		        c_v+1
 	.byte	W03
-	.byte		VOL   , 25*song148restored_mvl/mxv
+	.byte		VOL   , 25*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W02
 	.byte		        c_v+1
@@ -10334,7 +10337,7 @@
 	.byte	W02
 	.byte		        c_v+2
 	.byte	W02
-	.byte		VOL   , 26*song148restored_mvl/mxv
+	.byte		VOL   , 26*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W03
 	.byte		BEND  , c_v+2
 	.byte	W01
@@ -10344,29 +10347,29 @@
 	.byte	W02
 	.byte		        c_v+1
 	.byte	W01
-	.byte		VOL   , 27*song148restored_mvl/mxv
+	.byte		VOL   , 27*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte		BEND  , c_v+0
 	.byte	W02
 	.byte		        c_v+0
 	.byte	W02
-; 004   ----------------------------------------
+@ 004   ----------------------------------------
 	.byte		        c_v+0
 	.byte	W01
-	.byte		VOL   , 28*song148restored_mvl/mxv
+	.byte		VOL   , 28*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W04
 	.byte		BEND  , c_v+0
 	.byte	W03
 	.byte		        c_v+0
 	.byte	W02
-	.byte		VOL   , 29*song148restored_mvl/mxv
+	.byte		VOL   , 29*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W02
 	.byte		        c_v+1
 	.byte	W02
 	.byte		        c_v+1
 	.byte	W02
-	.byte		VOL   , 30*song148restored_mvl/mxv
+	.byte		VOL   , 30*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+2
 	.byte	W02
 	.byte		        c_v+2
@@ -10375,7 +10378,7 @@
 	.byte	W02
 	.byte		        c_v+1
 	.byte	W01
-	.byte		VOL   , 31*song148restored_mvl/mxv
+	.byte		VOL   , 31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte		BEND  , c_v+1
 	.byte	W02
@@ -10383,7 +10386,7 @@
 	.byte	W02
 	.byte		        c_v+0
 	.byte	W03
-	.byte		VOL   , 31*song148restored_mvl/mxv
+	.byte		VOL   , 31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W02
 	.byte		        c_v+0
@@ -10391,7 +10394,7 @@
 	.byte	PRIO  , 109
 	.byte		PAN   , c_v-18
 	.byte	W02
-	.byte		VOL   , 32*song148restored_mvl/mxv
+	.byte		VOL   , 32*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte		BEND  , c_v+0
 	.byte	W01
@@ -10402,7 +10405,7 @@
 	.byte	W03
 	.byte		BEND  , c_v+1
 	.byte	W02
-	.byte		VOL   , 31*song148restored_mvl/mxv
+	.byte		VOL   , 31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W02
 	.byte		        c_v+2
@@ -10439,7 +10442,7 @@
 	.byte	W04
 	.byte		        c_v+2
 	.byte	W02
-; 005   ----------------------------------------
+@ 005   ----------------------------------------
 	.byte		        c_v+1
 	.byte	W02
 	.byte		        c_v+1
@@ -10517,7 +10520,7 @@
 	.byte	W02
 	.byte		        c_v+1
 	.byte	W02
-; 006   ----------------------------------------
+@ 006   ----------------------------------------
 	.byte	W01
 	.byte		        c_v+1
 	.byte	W01
@@ -10571,7 +10574,7 @@
 	.byte	W01
 	.byte		EOT   
 	.byte	W01
-	.byte		VOL   , 11*song148restored_mvl/mxv
+	.byte		VOL   , 11*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W03
 	.byte	PRIO  , 125
 	.byte		PAN   , c_v+63
@@ -10580,7 +10583,7 @@
 	.byte		BEND  , c_v+1
 	.byte		TIE   , Bn1 
 	.byte	W02
-	.byte		VOL   , 11*song148restored_mvl/mxv
+	.byte		VOL   , 11*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W02
 	.byte		        c_v+1
@@ -10589,13 +10592,13 @@
 	.byte	W02
 	.byte		        c_v+2
 	.byte	W01
-	.byte		VOL   , 12*song148restored_mvl/mxv
+	.byte		VOL   , 12*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W04
 	.byte		BEND  , c_v+2
 	.byte	W02
 	.byte		        c_v+1
 	.byte	W02
-	.byte		VOL   , 13*song148restored_mvl/mxv
+	.byte		VOL   , 13*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W02
 	.byte		        c_v+1
@@ -10604,16 +10607,16 @@
 	.byte	W02
 	.byte		        c_v+0
 	.byte	W04
-	.byte		VOL   , 13*song148restored_mvl/mxv
+	.byte		VOL   , 13*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W01
-; 007   ----------------------------------------
+@ 007   ----------------------------------------
 	.byte	W01
 	.byte		        c_v+0
 	.byte	W04
 	.byte		        c_v+0
 	.byte	W02
-	.byte		VOL   , 14*song148restored_mvl/mxv
+	.byte		VOL   , 14*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W03
 	.byte		        c_v+1
@@ -10622,7 +10625,7 @@
 	.byte	W01
 	.byte		        c_v+2
 	.byte	W01
-	.byte		VOL   , 15*song148restored_mvl/mxv
+	.byte		VOL   , 15*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W02
 	.byte		BEND  , c_v+2
 	.byte	W05
@@ -10630,7 +10633,7 @@
 	.byte	W01
 	.byte		        c_v+1
 	.byte	W01
-	.byte		VOL   , 16*song148restored_mvl/mxv
+	.byte		VOL   , 16*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W02
 	.byte		BEND  , c_v+1
 	.byte	W01
@@ -10642,13 +10645,13 @@
 	.byte	W02
 	.byte		        c_v+0
 	.byte	W01
-	.byte		VOL   , 16*song148restored_mvl/mxv
+	.byte		VOL   , 16*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W03
 	.byte		BEND  , c_v+0
 	.byte	W02
 	.byte		        c_v+0
 	.byte	W02
-	.byte		VOL   , 17*song148restored_mvl/mxv
+	.byte		VOL   , 17*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W02
 	.byte		BEND  , c_v+0
 	.byte	W02
@@ -10658,7 +10661,7 @@
 	.byte	W02
 	.byte		        c_v+1
 	.byte	W01
-	.byte		VOL   , 18*song148restored_mvl/mxv
+	.byte		VOL   , 18*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte		BEND  , c_v+2
 	.byte	W02
@@ -10666,13 +10669,13 @@
 	.byte	W05
 	.byte		        c_v+2
 	.byte	W01
-	.byte		VOL   , 19*song148restored_mvl/mxv
+	.byte		VOL   , 19*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte		BEND  , c_v+1
 	.byte	W02
 	.byte		        c_v+1
 	.byte	W02
-	.byte		VOL   , 19*song148restored_mvl/mxv
+	.byte		VOL   , 19*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W02
 	.byte		        c_v+0
@@ -10681,7 +10684,7 @@
 	.byte	W04
 	.byte		        c_v+0
 	.byte	W02
-	.byte		VOL   , 20*song148restored_mvl/mxv
+	.byte		VOL   , 20*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte		BEND  , c_v+0
 	.byte	W03
@@ -10690,29 +10693,29 @@
 	.byte		BEND  , c_v+1
 	.byte		TIE   , As1 
 	.byte	W02
-	.byte		VOL   , 21*song148restored_mvl/mxv
+	.byte		VOL   , 21*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W02
 	.byte		        c_v+1
 	.byte	W02
 	.byte		        c_v+2
 	.byte	W02
-	.byte		VOL   , 22*song148restored_mvl/mxv
+	.byte		VOL   , 22*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+2
 	.byte	W05
 	.byte		        c_v+2
 	.byte	W02
 	.byte		        c_v+1
 	.byte	W02
-; 008   ----------------------------------------
-	.byte		VOL   , 23*song148restored_mvl/mxv
+@ 008   ----------------------------------------
+	.byte		VOL   , 23*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W02
 	.byte		        c_v+1
 	.byte	W02
 	.byte		        c_v+0
 	.byte	W01
-	.byte		VOL   , 23*song148restored_mvl/mxv
+	.byte		VOL   , 23*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte		BEND  , c_v+0
 	.byte	W03
@@ -10720,7 +10723,7 @@
 	.byte	W05
 	.byte		        c_v+0
 	.byte	W02
-	.byte		VOL   , 24*song148restored_mvl/mxv
+	.byte		VOL   , 24*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W02
 	.byte		        c_v+1
@@ -10729,12 +10732,12 @@
 	.byte	W02
 	.byte		        c_v+1
 	.byte	W01
-	.byte		VOL   , 25*song148restored_mvl/mxv
+	.byte		VOL   , 25*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+2
 	.byte	W03
 	.byte		        c_v+2
 	.byte	W03
-	.byte		VOL   , 26*song148restored_mvl/mxv
+	.byte		VOL   , 26*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W02
 	.byte		BEND  , c_v+2
 	.byte	W02
@@ -10744,7 +10747,7 @@
 	.byte	W02
 	.byte		        c_v+1
 	.byte	W01
-	.byte		VOL   , 27*song148restored_mvl/mxv
+	.byte		VOL   , 27*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte		BEND  , c_v+0
 	.byte	W02
@@ -10752,7 +10755,7 @@
 	.byte	W02
 	.byte		        c_v+0
 	.byte	W04
-	.byte		VOL   , 28*song148restored_mvl/mxv
+	.byte		VOL   , 28*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte		BEND  , c_v+0
 	.byte	W03
@@ -10760,7 +10763,7 @@
 	.byte	W02
 	.byte		        c_v+1
 	.byte	W01
-	.byte		VOL   , 29*song148restored_mvl/mxv
+	.byte		VOL   , 29*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte		BEND  , c_v+1
 	.byte	W02
@@ -10770,7 +10773,7 @@
 	.byte	W02
 	.byte		        c_v+2
 	.byte	W02
-	.byte		VOL   , 30*song148restored_mvl/mxv
+	.byte		VOL   , 30*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W03
 	.byte		BEND  , c_v+2
 	.byte	W02
@@ -10778,7 +10781,7 @@
 	.byte	W02
 	.byte		        c_v+1
 	.byte	W02
-	.byte		VOL   , 31*song148restored_mvl/mxv
+	.byte		VOL   , 31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W03
 	.byte		        c_v+0
@@ -10801,7 +10804,7 @@
 	.byte	W02
 	.byte		        c_v+1
 	.byte	W02
-; 009   ----------------------------------------
+@ 009   ----------------------------------------
 	.byte		        c_v+2
 	.byte	W02
 	.byte		        c_v+2
@@ -10878,7 +10881,7 @@
 	.byte	W03
 	.byte		        c_v+0
 	.byte	W01
-; 010   ----------------------------------------
+@ 010   ----------------------------------------
 	.byte	W02
 	.byte		EOT   
 	.byte	W03
@@ -10957,7 +10960,7 @@
 	.byte	W02
 	.byte		        c_v+1
 	.byte	W01
-; 011   ----------------------------------------
+@ 011   ----------------------------------------
 	.byte	W02
 	.byte		        c_v+0
 	.byte	W02
@@ -10970,14 +10973,14 @@
 	.byte		VOICE , 8
 	.byte	W01
 	.byte		EOT   
-	.byte		VOL   , 11*song148restored_mvl/mxv
+	.byte		VOL   , 11*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W03
 	.byte	PRIO  , 125
 	.byte		PAN   , c_v+63
 	.byte	PRIO  , 0
 	.byte		        c_v-64
 	.byte	W03
-	.byte		VOL   , 12*song148restored_mvl/mxv
+	.byte		VOL   , 12*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W05
 	.byte		BEND  , c_v+0
 	.byte		N78   , Gs4 
@@ -10988,7 +10991,7 @@
 	.byte	W01
 	.byte		        c_v-1
 	.byte	W01
-	.byte		VOL   , 13*song148restored_mvl/mxv
+	.byte		VOL   , 13*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-5
 	.byte	W01
 	.byte		        c_v-9
@@ -11015,7 +11018,7 @@
 	.byte	W01
 	.byte		        c_v-7
 	.byte	W01
-	.byte		VOL   , 13*song148restored_mvl/mxv
+	.byte		VOL   , 13*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-10
 	.byte	W01
 	.byte		        c_v-14
@@ -11040,7 +11043,7 @@
 	.byte	W01
 	.byte		        c_v-23
 	.byte	W01
-	.byte		VOL   , 14*song148restored_mvl/mxv
+	.byte		VOL   , 14*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-22
 	.byte	W01
 	.byte		        c_v-20
@@ -11065,7 +11068,7 @@
 	.byte	W01
 	.byte		        c_v-29
 	.byte	W01
-	.byte		VOL   , 15*song148restored_mvl/mxv
+	.byte		VOL   , 15*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-33
 	.byte	W01
 	.byte		        c_v-35
@@ -11090,7 +11093,7 @@
 	.byte	W01
 	.byte		        c_v-35
 	.byte	W01
-	.byte		VOL   , 16*song148restored_mvl/mxv
+	.byte		VOL   , 16*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-35
 	.byte	W01
 	.byte		        c_v-38
@@ -11109,7 +11112,7 @@
 	.byte	W01
 	.byte		        c_v-42
 	.byte	W01
-	.byte		VOL   , 16*song148restored_mvl/mxv
+	.byte		VOL   , 16*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-46
 	.byte	W01
 	.byte		        c_v-50
@@ -11130,12 +11133,12 @@
 	.byte	W01
 	.byte		        c_v-57
 	.byte	W01
-; 012   ----------------------------------------
+@ 012   ----------------------------------------
 	.byte		        c_v-55
 	.byte	W01
 	.byte		        c_v-54
 	.byte	W01
-	.byte		VOL   , 17*song148restored_mvl/mxv
+	.byte		VOL   , 17*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-52
 	.byte	W01
 	.byte	PRIO  , 125
@@ -11163,7 +11166,7 @@
 	.byte	W01
 	.byte		        c_v-2
 	.byte	W01
-	.byte		VOL   , 18*song148restored_mvl/mxv
+	.byte		VOL   , 18*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-3
 	.byte	W01
 	.byte		        c_v-1
@@ -11190,7 +11193,7 @@
 	.byte	W01
 	.byte		        c_v-6
 	.byte	W01
-	.byte		VOL   , 19*song148restored_mvl/mxv
+	.byte		VOL   , 19*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-9
 	.byte	W01
 	.byte		        c_v-13
@@ -11215,7 +11218,7 @@
 	.byte	W01
 	.byte		        c_v-18
 	.byte	W01
-	.byte		VOL   , 19*song148restored_mvl/mxv
+	.byte		VOL   , 19*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-15
 	.byte	W01
 	.byte		        c_v-13
@@ -11240,7 +11243,7 @@
 	.byte	W01
 	.byte		        c_v-26
 	.byte	W01
-	.byte		VOL   , 20*song148restored_mvl/mxv
+	.byte		VOL   , 20*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-30
 	.byte	W01
 	.byte		        c_v-29
@@ -11259,7 +11262,7 @@
 	.byte	W01
 	.byte		        c_v-36
 	.byte	W01
-	.byte		VOL   , 21*song148restored_mvl/mxv
+	.byte		VOL   , 21*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-34
 	.byte	W01
 	.byte		        c_v-31
@@ -11284,7 +11287,7 @@
 	.byte	W01
 	.byte		        c_v-38
 	.byte	W01
-	.byte		VOL   , 22*song148restored_mvl/mxv
+	.byte		VOL   , 22*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-41
 	.byte	W01
 	.byte		        c_v-44
@@ -11309,7 +11312,7 @@
 	.byte	W01
 	.byte		        c_v-47
 	.byte	W01
-	.byte		VOL   , 23*song148restored_mvl/mxv
+	.byte		VOL   , 23*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-46
 	.byte	W01
 	.byte		        c_v-47
@@ -11334,8 +11337,8 @@
 	.byte	W01
 	.byte		        c_v-61
 	.byte	W01
-; 013   ----------------------------------------
-	.byte		VOL   , 23*song148restored_mvl/mxv
+@ 013   ----------------------------------------
+	.byte		VOL   , 23*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-61
 	.byte	W01
 	.byte		        c_v+10
@@ -11363,7 +11366,7 @@
 	.byte	W01
 	.byte		        c_v+2
 	.byte	W01
-	.byte		VOL   , 24*song148restored_mvl/mxv
+	.byte		VOL   , 24*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-1
 	.byte	W01
 	.byte		        c_v-4
@@ -11388,7 +11391,7 @@
 	.byte	W01
 	.byte		        c_v-4
 	.byte	W01
-	.byte		VOL   , 25*song148restored_mvl/mxv
+	.byte		VOL   , 25*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-2
 	.byte	W01
 	.byte		        c_v-5
@@ -11419,7 +11422,7 @@
 	.byte	W01
 	.byte		        c_v-13
 	.byte	W01
-	.byte		VOL   , 24*song148restored_mvl/mxv
+	.byte		VOL   , 24*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-13
 	.byte	W01
 	.byte	PRIO  , 33
@@ -11533,8 +11536,8 @@
 	.byte	W01
 	.byte		        c_v-18
 	.byte	W01
-; 014   ----------------------------------------
-	.byte		VOL   , 24*song148restored_mvl/mxv
+@ 014   ----------------------------------------
+	.byte		VOL   , 24*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-19
 	.byte	W01
 	.byte		        c_v-18
@@ -11729,7 +11732,7 @@
 	.byte	W01
 	.byte		        c_v-56
 	.byte	W01
-; 015   ----------------------------------------
+@ 015   ----------------------------------------
 	.byte		        c_v-59
 	.byte	W01
 	.byte		        c_v-64
@@ -11846,7 +11849,7 @@
 	.byte	W01
 	.byte		        c_v-23
 	.byte	W01
-	.byte		VOL   , 19*song148restored_mvl/mxv
+	.byte		VOL   , 19*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-23
 	.byte	W01
 	.byte		VOICE , 32
@@ -11922,7 +11925,7 @@
 	.byte	W01
 	.byte		        c_v+0
 	.byte	W01
-; 016   ----------------------------------------
+@ 016   ----------------------------------------
 	.byte	W01
 	.byte		        c_v+0
 	.byte	W01
@@ -12049,7 +12052,7 @@
 	.byte		        c_v+1
 	.byte	W01
 	.byte		EOT   
-	.byte		VOL   , 7*song148restored_mvl/mxv
+	.byte		VOL   , 7*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W03
 	.byte	PRIO  , 0
 	.byte		BEND  , c_v+1
@@ -12069,7 +12072,7 @@
 	.byte	W01
 	.byte		        c_v+1
 	.byte	W01
-	.byte		VOL   , 6*song148restored_mvl/mxv
+	.byte		VOL   , 6*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W01
 	.byte		        c_v+0
@@ -12100,7 +12103,7 @@
 	.byte	W02
 	.byte		        c_v+0
 	.byte	W01
-; 017   ----------------------------------------
+@ 017   ----------------------------------------
 	.byte		        c_v+1
 	.byte	W01
 	.byte		        c_v+1
@@ -12239,7 +12242,7 @@
 	.byte	W01
 	.byte		        c_v+1
 	.byte	W01
-	.byte		VOL   , 7*song148restored_mvl/mxv
+	.byte		VOL   , 7*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W01
 	.byte		        c_v+0
@@ -12252,21 +12255,21 @@
 	.byte		EOT   
 	.byte		BEND  , c_v+1
 	.byte	W01
-	.byte		VOL   , 6*song148restored_mvl/mxv
+	.byte		VOL   , 6*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte		VOICE , 29
-	.byte		VOL   , 7*song148restored_mvl/mxv
+	.byte		VOL   , 7*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte	PRIO  , 127
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 85*song148restored_mvl/mxv
+	.byte		VOL   , 85*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-2
 	.byte		N11   , Fn2 
 	.byte	W14
-; 018   ----------------------------------------
+@ 018   ----------------------------------------
 	.byte	W24
 	.byte	W01
-	.byte		VOL   , 81*song148restored_mvl/mxv
+	.byte		VOL   , 81*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte	PRIO  , 27
 	.byte		PAN   , c_v+4
@@ -12278,7 +12281,7 @@
 	.byte	W54
 	.byte		N12   
 	.byte	W03
-; 019   ----------------------------------------
+@ 019   ----------------------------------------
 	.byte	W36
 	.byte	W01
 	.byte		N05   
@@ -12286,7 +12289,7 @@
 	.byte		N24   
 	.byte	W44
 	.byte	W02
-; 020   ----------------------------------------
+@ 020   ----------------------------------------
 	.byte	W08
 	.byte		N11   
 	.byte	W40
@@ -12295,7 +12298,7 @@
 	.byte		N24   
 	.byte	W32
 	.byte	W03
-; 021   ----------------------------------------
+@ 021   ----------------------------------------
 	.byte	W19
 	.byte		N12   
 	.byte	W24
@@ -12307,13 +12310,13 @@
 	.byte	W13
 	.byte		N05   
 	.byte	W11
-; 022   ----------------------------------------
+@ 022   ----------------------------------------
 	.byte	W03
 	.byte		N05   
 	.byte	W13
 	.byte		N05   
 	.byte	W11
-	.byte		VOL   , 85*song148restored_mvl/mxv
+	.byte		VOL   , 85*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W03
 	.byte	PRIO  , 27
 	.byte		PAN   , c_v-3
@@ -12321,7 +12324,7 @@
 	.byte		        c_v+0
 	.byte		N11   
 	.byte	W36
-	.byte		VOL   , 81*song148restored_mvl/mxv
+	.byte		VOL   , 81*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W04
 	.byte	PRIO  , 27
 	.byte		PAN   , c_v+4
@@ -12331,7 +12334,7 @@
 	.byte	W13
 	.byte		N24   
 	.byte	W13
-; 023   ----------------------------------------
+@ 023   ----------------------------------------
 	.byte	W40
 	.byte	W01
 	.byte		N12   
@@ -12340,13 +12343,13 @@
 	.byte	W13
 	.byte		N24   
 	.byte	W02
-; 024   ----------------------------------------
+@ 024   ----------------------------------------
 	.byte	W52
 	.byte		N11   
 	.byte	W40
 	.byte		N05   
 	.byte	W04
-; 025   ----------------------------------------
+@ 025   ----------------------------------------
 	.byte	W09
 	.byte		N24   
 	.byte	W54
@@ -12355,7 +12358,7 @@
 	.byte	W02
 	.byte		N11   
 	.byte	W07
-; 026   ----------------------------------------
+@ 026   ----------------------------------------
 	.byte	W20
 	.byte		N05   
 	.byte	W13
@@ -12365,11 +12368,11 @@
 	.byte	W13
 	.byte		N05   
 	.byte	W11
-	.byte		VOL   , 0*song148restored_mvl/mxv
+	.byte		VOL   , 0*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W02
 	.byte	GOTO
-	 .word	@song148restored_6_B1
-@song148restored_6_B2:
+	 .word	Otherworldly_Foe (3)_FINAL_6_B1
+Otherworldly_Foe (3)_FINAL_6_B2:
 	.byte	W01
 	.byte	PRIO  , 39
 	.byte		PAN   , c_v+63
@@ -12386,17 +12389,17 @@
 	.byte		        c_v+0
 	.byte	FINE
 
-;**************** Track 7 (Midi-Chn.7) ****************;
+@**************** Track 7 (Midi-Chn.7) ****************@
 
-@song148restored_7:
-	.byte	KEYSH , song148restored_key+0
-; 000   ----------------------------------------
+Otherworldly_Foe (3)_FINAL_7:
+	.byte	KEYSH , Otherworldly_Foe (3)_FINAL_key+0
+@ 000   ----------------------------------------
 	.byte		VOICE , 17
 	.byte		MODT  , 0
 	.byte		LFOS  , 44
-	.byte		VOL   , 54*song148restored_mvl/mxv
+	.byte		VOL   , 54*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BENDR , 12
-	.byte		VOL   , 54*song148restored_mvl/mxv
+	.byte		VOL   , 54*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W28
 	.byte	PRIO  , 17
@@ -12414,7 +12417,7 @@
 	.byte	W07
 	.byte		N01   
 	.byte	W21
-; 001   ----------------------------------------
+@ 001   ----------------------------------------
 	.byte	W13
 	.byte		N01   
 	.byte	W06
@@ -12428,24 +12431,24 @@
 	.byte	W02
 	.byte		N01   
 	.byte	W03
-; 002   ----------------------------------------
+@ 002   ----------------------------------------
 	.byte	W03
 	.byte		N01   
 	.byte	W03
 	.byte		VOICE , 32
 	.byte	W17
-	.byte		VOL   , 13*song148restored_mvl/mxv
+	.byte		VOL   , 13*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
-@song148restored_7_B1:
+Otherworldly_Foe (3)_FINAL_7_B1:
 	.byte		VOICE , 32
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 13*song148restored_mvl/mxv
+	.byte		VOL   , 13*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 0
 	.byte		PAN   , c_v-64
 	.byte		BEND  , c_v+1
 	.byte		TIE   , Gs2 , v088
 	.byte	W02
-	.byte		VOL   , 16*song148restored_mvl/mxv
+	.byte		VOL   , 16*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W01
 	.byte		        c_v+2
@@ -12462,7 +12465,7 @@
 	.byte	W01
 	.byte		        c_v+0
 	.byte	W01
-	.byte		VOL   , 16*song148restored_mvl/mxv
+	.byte		VOL   , 16*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W01
 	.byte		        c_v+0
@@ -12487,7 +12490,7 @@
 	.byte	W01
 	.byte		        c_v+1
 	.byte	W01
-	.byte		VOL   , 17*song148restored_mvl/mxv
+	.byte		VOL   , 17*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W01
 	.byte		        c_v+0
@@ -12504,7 +12507,7 @@
 	.byte	W01
 	.byte		        c_v+1
 	.byte	W01
-	.byte		VOL   , 18*song148restored_mvl/mxv
+	.byte		VOL   , 18*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+2
 	.byte	W01
 	.byte		        c_v+2
@@ -12521,7 +12524,7 @@
 	.byte	W01
 	.byte		        c_v+0
 	.byte	W01
-	.byte		VOL   , 19*song148restored_mvl/mxv
+	.byte		VOL   , 19*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W01
 	.byte		        c_v+0
@@ -12542,7 +12545,7 @@
 	.byte	W01
 	.byte		        c_v+1
 	.byte	W01
-	.byte		VOL   , 19*song148restored_mvl/mxv
+	.byte		VOL   , 19*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W01
 	.byte		        c_v+0
@@ -12561,7 +12564,7 @@
 	.byte	W01
 	.byte		        c_v+1
 	.byte	W01
-	.byte		VOL   , 20*song148restored_mvl/mxv
+	.byte		VOL   , 20*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+2
 	.byte	W01
 	.byte		        c_v+2
@@ -12578,8 +12581,8 @@
 	.byte	W01
 	.byte		        c_v+0
 	.byte	W01
-; 003   ----------------------------------------
-	.byte		VOL   , 21*song148restored_mvl/mxv
+@ 003   ----------------------------------------
+	.byte		VOL   , 21*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W01
 	.byte		        c_v+0
@@ -12600,7 +12603,7 @@
 	.byte	W01
 	.byte		        c_v+1
 	.byte	W01
-	.byte		VOL   , 22*song148restored_mvl/mxv
+	.byte		VOL   , 22*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W01
 	.byte		        c_v+0
@@ -12623,7 +12626,7 @@
 	.byte	W01
 	.byte		        c_v+2
 	.byte	W01
-	.byte		VOL   , 23*song148restored_mvl/mxv
+	.byte		VOL   , 23*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+2
 	.byte	W02
 	.byte		        c_v+2
@@ -12641,7 +12644,7 @@
 	.byte		        c_v+0
 	.byte	W01
 	.byte		EOT   
-	.byte		VOL   , 23*song148restored_mvl/mxv
+	.byte		VOL   , 23*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W03
 	.byte		        c_v+1
@@ -12657,7 +12660,7 @@
 	.byte	W01
 	.byte		        c_v+1
 	.byte	W01
-	.byte		VOL   , 24*song148restored_mvl/mxv
+	.byte		VOL   , 24*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W01
 	.byte		        c_v+1
@@ -12676,7 +12679,7 @@
 	.byte	W01
 	.byte		        c_v+1
 	.byte	W01
-	.byte		VOL   , 25*song148restored_mvl/mxv
+	.byte		VOL   , 25*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W01
 	.byte		        c_v+2
@@ -12693,7 +12696,7 @@
 	.byte	W01
 	.byte		        c_v+0
 	.byte	W01
-	.byte		VOL   , 26*song148restored_mvl/mxv
+	.byte		VOL   , 26*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W01
 	.byte		        c_v+0
@@ -12714,7 +12717,7 @@
 	.byte	W01
 	.byte		        c_v+1
 	.byte	W01
-	.byte		VOL   , 27*song148restored_mvl/mxv
+	.byte		VOL   , 27*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W01
 	.byte		        c_v+1
@@ -12731,7 +12734,7 @@
 	.byte	W01
 	.byte		        c_v+1
 	.byte	W01
-	.byte		VOL   , 28*song148restored_mvl/mxv
+	.byte		VOL   , 28*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W02
 	.byte		        c_v+2
@@ -12746,7 +12749,7 @@
 	.byte	W01
 	.byte		        c_v+0
 	.byte	W01
-	.byte		VOL   , 29*song148restored_mvl/mxv
+	.byte		VOL   , 29*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W01
 	.byte		        c_v+0
@@ -12755,7 +12758,7 @@
 	.byte	W01
 	.byte		        c_v+1
 	.byte	W01
-; 004   ----------------------------------------
+@ 004   ----------------------------------------
 	.byte		        c_v+1
 	.byte	W01
 	.byte		        c_v+1
@@ -12770,7 +12773,7 @@
 	.byte	W01
 	.byte		        c_v+1
 	.byte	W01
-	.byte		VOL   , 30*song148restored_mvl/mxv
+	.byte		VOL   , 30*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W01
 	.byte		        c_v+0
@@ -12781,7 +12784,7 @@
 	.byte	W02
 	.byte		        c_v+0
 	.byte	W01
-	.byte		VOL   , 29*song148restored_mvl/mxv
+	.byte		VOL   , 29*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W01
 	.byte		        c_v+1
@@ -12790,7 +12793,7 @@
 	.byte	W02
 	.byte		        c_v+2
 	.byte	W02
-	.byte		VOL   , 30*song148restored_mvl/mxv
+	.byte		VOL   , 30*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+2
 	.byte	W01
 	.byte		        c_v+1
@@ -12922,7 +12925,7 @@
 	.byte	W01
 	.byte		        c_v+2
 	.byte	W01
-; 005   ----------------------------------------
+@ 005   ----------------------------------------
 	.byte	W01
 	.byte		        c_v+2
 	.byte	W01
@@ -13090,7 +13093,7 @@
 	.byte	W01
 	.byte		        c_v+1
 	.byte	W01
-; 006   ----------------------------------------
+@ 006   ----------------------------------------
 	.byte		        c_v+1
 	.byte	W01
 	.byte		        c_v+0
@@ -13195,10 +13198,10 @@
 	.byte	W01
 	.byte		EOT   
 	.byte	W01
-	.byte		VOL   , 11*song148restored_mvl/mxv
+	.byte		VOL   , 11*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W03
-	.byte		VOL   , 12*song148restored_mvl/mxv
+	.byte		VOL   , 12*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 125
 	.byte		PAN   , c_v+63
 	.byte	PRIO  , 0
@@ -13212,7 +13215,7 @@
 	.byte	W01
 	.byte		        c_v+2
 	.byte	W02
-	.byte		VOL   , 13*song148restored_mvl/mxv
+	.byte		VOL   , 13*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+2
 	.byte	W01
 	.byte		        c_v+1
@@ -13231,7 +13234,7 @@
 	.byte	W01
 	.byte		        c_v+0
 	.byte	W01
-	.byte		VOL   , 13*song148restored_mvl/mxv
+	.byte		VOL   , 13*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W01
 	.byte		        c_v+1
@@ -13246,7 +13249,7 @@
 	.byte	W01
 	.byte		        c_v+1
 	.byte	W01
-	.byte		VOL   , 14*song148restored_mvl/mxv
+	.byte		VOL   , 14*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W01
 	.byte		        c_v+0
@@ -13255,11 +13258,11 @@
 	.byte	W01
 	.byte		        c_v+0
 	.byte	W01
-; 007   ----------------------------------------
+@ 007   ----------------------------------------
 	.byte	W01
 	.byte		        c_v+0
 	.byte	W01
-	.byte		VOL   , 15*song148restored_mvl/mxv
+	.byte		VOL   , 15*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W01
 	.byte		        c_v+1
@@ -13276,7 +13279,7 @@
 	.byte	W01
 	.byte		        c_v+1
 	.byte	W01
-	.byte		VOL   , 16*song148restored_mvl/mxv
+	.byte		VOL   , 16*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W01
 	.byte		        c_v+0
@@ -13293,7 +13296,7 @@
 	.byte	W01
 	.byte		        c_v+1
 	.byte	W02
-	.byte		VOL   , 16*song148restored_mvl/mxv
+	.byte		VOL   , 16*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W01
 	.byte		        c_v+2
@@ -13312,7 +13315,7 @@
 	.byte	W01
 	.byte		        c_v+0
 	.byte	W01
-	.byte		VOL   , 17*song148restored_mvl/mxv
+	.byte		VOL   , 17*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W01
 	.byte		        c_v+0
@@ -13329,7 +13332,7 @@
 	.byte	W02
 	.byte		        c_v+2
 	.byte	W01
-	.byte		VOL   , 18*song148restored_mvl/mxv
+	.byte		VOL   , 18*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W01
 	.byte		        c_v+1
@@ -13342,7 +13345,7 @@
 	.byte	W01
 	.byte		        c_v+0
 	.byte	W01
-	.byte		VOL   , 19*song148restored_mvl/mxv
+	.byte		VOL   , 19*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W01
 	.byte		        c_v+0
@@ -13359,7 +13362,7 @@
 	.byte	W01
 	.byte		        c_v+2
 	.byte	W01
-	.byte		VOL   , 19*song148restored_mvl/mxv
+	.byte		VOL   , 19*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W01
 	.byte		        c_v+1
@@ -13380,7 +13383,7 @@
 	.byte	W01
 	.byte	PRIO  , 33
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 20*song148restored_mvl/mxv
+	.byte		VOL   , 20*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W01
 	.byte		        c_v+1
@@ -13397,7 +13400,7 @@
 	.byte	W01
 	.byte		        c_v+1
 	.byte	W01
-	.byte		VOL   , 21*song148restored_mvl/mxv
+	.byte		VOL   , 21*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W01
 	.byte		        c_v+0
@@ -13408,7 +13411,7 @@
 	.byte	W01
 	.byte		EOT   
 	.byte	W02
-	.byte		VOL   , 22*song148restored_mvl/mxv
+	.byte		VOL   , 22*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte		BEND  , c_v+1
 	.byte		TIE   , Gn2 
@@ -13423,7 +13426,7 @@
 	.byte	W01
 	.byte		        c_v+1
 	.byte	W01
-	.byte		VOL   , 23*song148restored_mvl/mxv
+	.byte		VOL   , 23*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W02
 	.byte		        c_v+0
@@ -13438,8 +13441,8 @@
 	.byte	W01
 	.byte		        c_v+1
 	.byte	W01
-; 008   ----------------------------------------
-	.byte		VOL   , 23*song148restored_mvl/mxv
+@ 008   ----------------------------------------
+	.byte		VOL   , 23*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W01
 	.byte		        c_v+2
@@ -13456,7 +13459,7 @@
 	.byte	W01
 	.byte		        c_v+0
 	.byte	W01
-	.byte		VOL   , 24*song148restored_mvl/mxv
+	.byte		VOL   , 24*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W01
 	.byte		        c_v+0
@@ -13473,7 +13476,7 @@
 	.byte	W01
 	.byte		        c_v+2
 	.byte	W02
-	.byte		VOL   , 25*song148restored_mvl/mxv
+	.byte		VOL   , 25*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+2
 	.byte	W01
 	.byte		        c_v+1
@@ -13484,7 +13487,7 @@
 	.byte	W01
 	.byte		        c_v+0
 	.byte	W01
-	.byte		VOL   , 26*song148restored_mvl/mxv
+	.byte		VOL   , 26*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W02
 	.byte		        c_v+0
@@ -13497,7 +13500,7 @@
 	.byte	W01
 	.byte		        c_v+2
 	.byte	W02
-	.byte		VOL   , 27*song148restored_mvl/mxv
+	.byte		VOL   , 27*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+2
 	.byte	W01
 	.byte		        c_v+1
@@ -13514,7 +13517,7 @@
 	.byte	W02
 	.byte		        c_v+0
 	.byte	W01
-	.byte		VOL   , 28*song148restored_mvl/mxv
+	.byte		VOL   , 28*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W01
 	.byte		        c_v+1
@@ -13529,7 +13532,7 @@
 	.byte	W01
 	.byte		        c_v+1
 	.byte	W01
-	.byte		VOL   , 29*song148restored_mvl/mxv
+	.byte		VOL   , 29*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W01
 	.byte		        c_v+0
@@ -13544,7 +13547,7 @@
 	.byte	W01
 	.byte		        c_v+1
 	.byte	W02
-	.byte		VOL   , 30*song148restored_mvl/mxv
+	.byte		VOL   , 30*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W01
 	.byte		        c_v+2
@@ -13557,7 +13560,7 @@
 	.byte	W01
 	.byte		        c_v+1
 	.byte	W01
-	.byte		VOL   , 31*song148restored_mvl/mxv
+	.byte		VOL   , 31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W01
 	.byte		        c_v+0
@@ -13568,7 +13571,7 @@
 	.byte	W02
 	.byte		        c_v+0
 	.byte	W01
-	.byte		VOL   , 31*song148restored_mvl/mxv
+	.byte		VOL   , 31*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W01
 	.byte		        c_v+1
@@ -13603,7 +13606,7 @@
 	.byte	W01
 	.byte		        c_v+2
 	.byte	W02
-; 009   ----------------------------------------
+@ 009   ----------------------------------------
 	.byte		        c_v+2
 	.byte	W01
 	.byte		        c_v+1
@@ -13770,7 +13773,7 @@
 	.byte	W01
 	.byte		        c_v+0
 	.byte	W01
-; 010   ----------------------------------------
+@ 010   ----------------------------------------
 	.byte		        c_v+0
 	.byte	W01
 	.byte		        c_v+0
@@ -13924,7 +13927,7 @@
 	.byte	W01
 	.byte		        c_v+1
 	.byte	W01
-; 011   ----------------------------------------
+@ 011   ----------------------------------------
 	.byte		        c_v+1
 	.byte	W01
 	.byte		        c_v+1
@@ -13951,11 +13954,11 @@
 	.byte	PRIO  , 0
 	.byte		        c_v-64
 	.byte	W06
-	.byte		VOL   , 11*song148restored_mvl/mxv
+	.byte		VOL   , 11*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W02
 	.byte		VOICE , 8
 	.byte	W04
-	.byte		VOL   , 12*song148restored_mvl/mxv
+	.byte		VOL   , 12*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W05
 	.byte		BEND  , c_v+0
 	.byte		N78   , Gs4 
@@ -13974,7 +13977,7 @@
 	.byte	W01
 	.byte		        c_v-5
 	.byte	W01
-	.byte		VOL   , 13*song148restored_mvl/mxv
+	.byte		VOL   , 13*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-3
 	.byte	W01
 	.byte		        c_v-2
@@ -13993,7 +13996,7 @@
 	.byte	W01
 	.byte		        c_v-8
 	.byte	W01
-	.byte		VOL   , 13*song148restored_mvl/mxv
+	.byte		VOL   , 13*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-9
 	.byte	W01
 	.byte		        c_v-13
@@ -14018,7 +14021,7 @@
 	.byte	W01
 	.byte		        c_v-23
 	.byte	W01
-	.byte		VOL   , 14*song148restored_mvl/mxv
+	.byte		VOL   , 14*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-21
 	.byte	W01
 	.byte		        c_v-19
@@ -14037,7 +14040,7 @@
 	.byte	W01
 	.byte		        c_v-25
 	.byte	W01
-	.byte		VOL   , 15*song148restored_mvl/mxv
+	.byte		VOL   , 15*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-24
 	.byte	W01
 	.byte		        c_v-25
@@ -14062,7 +14065,7 @@
 	.byte	W01
 	.byte		        c_v-41
 	.byte	W01
-	.byte		VOL   , 16*song148restored_mvl/mxv
+	.byte		VOL   , 16*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-40
 	.byte	W01
 	.byte		        c_v-37
@@ -14087,10 +14090,10 @@
 	.byte	W01
 	.byte		        c_v-42
 	.byte	W01
-	.byte		VOL   , 16*song148restored_mvl/mxv
+	.byte		VOL   , 16*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-46
 	.byte	W01
-; 012   ----------------------------------------
+@ 012   ----------------------------------------
 	.byte		        c_v-50
 	.byte	W01
 	.byte		        c_v-51
@@ -14108,7 +14111,7 @@
 	.byte	W01
 	.byte		        c_v-53
 	.byte	W01
-	.byte		VOL   , 17*song148restored_mvl/mxv
+	.byte		VOL   , 17*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-57
 	.byte	W01
 	.byte		        c_v-55
@@ -14136,7 +14139,7 @@
 	.byte	W01
 	.byte		        c_v+4
 	.byte	W01
-	.byte		VOL   , 18*song148restored_mvl/mxv
+	.byte		VOL   , 18*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+2
 	.byte	W01
 	.byte		        c_v-2
@@ -14155,7 +14158,7 @@
 	.byte	W01
 	.byte		        c_v-6
 	.byte	W01
-	.byte		VOL   , 19*song148restored_mvl/mxv
+	.byte		VOL   , 19*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-9
 	.byte	W01
 	.byte		        c_v-7
@@ -14180,7 +14183,7 @@
 	.byte	W01
 	.byte		        c_v-8
 	.byte	W01
-	.byte		VOL   , 19*song148restored_mvl/mxv
+	.byte		VOL   , 19*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-11
 	.byte	W01
 	.byte		        c_v-15
@@ -14199,7 +14202,7 @@
 	.byte	W01
 	.byte		        c_v-15
 	.byte	W01
-	.byte		VOL   , 20*song148restored_mvl/mxv
+	.byte		VOL   , 20*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-18
 	.byte	W01
 	.byte		        c_v-22
@@ -14224,7 +14227,7 @@
 	.byte	W01
 	.byte		        c_v-27
 	.byte	W01
-	.byte		VOL   , 21*song148restored_mvl/mxv
+	.byte		VOL   , 21*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-25
 	.byte	W01
 	.byte		        c_v-24
@@ -14249,7 +14252,7 @@
 	.byte	W01
 	.byte		        c_v-37
 	.byte	W01
-	.byte		VOL   , 22*song148restored_mvl/mxv
+	.byte		VOL   , 22*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-41
 	.byte	W01
 	.byte		        c_v-39
@@ -14268,7 +14271,7 @@
 	.byte	W01
 	.byte		        c_v-46
 	.byte	W01
-	.byte		VOL   , 23*song148restored_mvl/mxv
+	.byte		VOL   , 23*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-43
 	.byte	W01
 	.byte		        c_v-42
@@ -14293,8 +14296,8 @@
 	.byte	W01
 	.byte		        c_v-50
 	.byte	W01
-; 013   ----------------------------------------
-	.byte		VOL   , 23*song148restored_mvl/mxv
+@ 013   ----------------------------------------
+	.byte		VOL   , 23*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-54
 	.byte	W01
 	.byte		        c_v-57
@@ -14315,7 +14318,7 @@
 	.byte	W01
 	.byte		        c_v-61
 	.byte	W01
-	.byte		VOL   , 24*song148restored_mvl/mxv
+	.byte		VOL   , 24*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+10
 	.byte		N42   , Gn2 
 	.byte	W01
@@ -14341,7 +14344,7 @@
 	.byte	W01
 	.byte		        c_v+2
 	.byte	W01
-	.byte		VOL   , 25*song148restored_mvl/mxv
+	.byte		VOL   , 25*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-1
 	.byte	W01
 	.byte		        c_v-4
@@ -14372,7 +14375,7 @@
 	.byte	W01
 	.byte		        c_v-9
 	.byte	W01
-	.byte		VOL   , 24*song148restored_mvl/mxv
+	.byte		VOL   , 24*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v-12
 	.byte	W01
 	.byte		        c_v-14
@@ -14490,7 +14493,7 @@
 	.byte	W01
 	.byte		        c_v+0
 	.byte	W01
-; 014   ----------------------------------------
+@ 014   ----------------------------------------
 	.byte		        c_v-5
 	.byte	W01
 	.byte		        c_v-8
@@ -14685,7 +14688,7 @@
 	.byte	W01
 	.byte		        c_v-47
 	.byte	W01
-; 015   ----------------------------------------
+@ 015   ----------------------------------------
 	.byte		        c_v-46
 	.byte	W01
 	.byte		        c_v-45
@@ -14804,7 +14807,7 @@
 	.byte	W01
 	.byte		        c_v-13
 	.byte	W28
-	.byte		VOL   , 28*song148restored_mvl/mxv
+	.byte		VOL   , 28*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte	PRIO  , 109
 	.byte		BEND  , c_v+0
@@ -14817,7 +14820,7 @@
 	.byte	W01
 	.byte		BEND  , c_v+1
 	.byte	W02
-; 016   ----------------------------------------
+@ 016   ----------------------------------------
 	.byte	W30
 	.byte	PRIO  , 125
 	.byte		        c_v+0
@@ -14831,7 +14834,7 @@
 	.byte		BEND  , c_v+1
 	.byte	W56
 	.byte	W02
-; 017   ----------------------------------------
+@ 017   ----------------------------------------
 	.byte	W01
 	.byte		        c_v+0
 	.byte		N01   
@@ -14855,21 +14858,21 @@
 	.byte	W28
 	.byte	W01
 	.byte		VOICE , 31
-	.byte		VOL   , 54*song148restored_mvl/mxv
+	.byte		VOL   , 54*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W04
 	.byte	PRIO  , 31
 	.byte		PAN   , c_v+30
 	.byte		BEND  , c_v+3
 	.byte		N10   , An2 
 	.byte	W12
-	.byte		VOL   , 44*song148restored_mvl/mxv
+	.byte		VOL   , 44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
 	.byte	PRIO  , 17
 	.byte		PAN   , c_v+42
 	.byte	PRIO  , 84
 	.byte		N11   
 	.byte	W01
-; 018   ----------------------------------------
+@ 018   ----------------------------------------
 	.byte	W12
 	.byte		N10   
 	.byte	W14
@@ -14885,7 +14888,7 @@
 	.byte	W14
 	.byte		N10   
 	.byte	W03
-; 019   ----------------------------------------
+@ 019   ----------------------------------------
 	.byte	W10
 	.byte		N11   
 	.byte	W13
@@ -14901,7 +14904,7 @@
 	.byte	W13
 	.byte		N11   
 	.byte	W06
-; 020   ----------------------------------------
+@ 020   ----------------------------------------
 	.byte	W08
 	.byte		N10   
 	.byte	W13
@@ -14917,7 +14920,7 @@
 	.byte	W14
 	.byte		N10   
 	.byte	W08
-; 021   ----------------------------------------
+@ 021   ----------------------------------------
 	.byte	W05
 	.byte		N11   
 	.byte	W14
@@ -14933,13 +14936,13 @@
 	.byte	W13
 	.byte		N10   
 	.byte	W11
-; 022   ----------------------------------------
+@ 022   ----------------------------------------
 	.byte	W03
 	.byte		N10   
 	.byte	W13
 	.byte		N11   
 	.byte	W11
-	.byte		VOL   , 54*song148restored_mvl/mxv
+	.byte		VOL   , 54*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W03
 	.byte	PRIO  , 17
 	.byte		PAN   , c_v+21
@@ -14947,7 +14950,7 @@
 	.byte		        c_v+30
 	.byte		N10   
 	.byte	W09
-	.byte		VOL   , 44*song148restored_mvl/mxv
+	.byte		VOL   , 44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W04
 	.byte	PRIO  , 17
 	.byte		PAN   , c_v+42
@@ -14960,7 +14963,7 @@
 	.byte	W13
 	.byte		N10   
 	.byte	W13
-; 023   ----------------------------------------
+@ 023   ----------------------------------------
 	.byte		N10   
 	.byte	W14
 	.byte		N11   
@@ -14977,7 +14980,7 @@
 	.byte	W13
 	.byte		N10   
 	.byte	W02
-; 024   ----------------------------------------
+@ 024   ----------------------------------------
 	.byte	W11
 	.byte		N10   
 	.byte	W14
@@ -14993,7 +14996,7 @@
 	.byte	W14
 	.byte		N10   
 	.byte	W04
-; 025   ----------------------------------------
+@ 025   ----------------------------------------
 	.byte	W09
 	.byte		N10   
 	.byte	W13
@@ -15009,7 +15012,7 @@
 	.byte	W13
 	.byte		N10   
 	.byte	W07
-; 026   ----------------------------------------
+@ 026   ----------------------------------------
 	.byte	W07
 	.byte		N10   
 	.byte	W13
@@ -15021,11 +15024,11 @@
 	.byte	W13
 	.byte		N11   
 	.byte	W11
-	.byte		VOL   , 0*song148restored_mvl/mxv
+	.byte		VOL   , 0*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W02
 	.byte	GOTO
-	 .word	@song148restored_7_B1
-@song148restored_7_B2:
+	 .word	Otherworldly_Foe (3)_FINAL_7_B1
+Otherworldly_Foe (3)_FINAL_7_B2:
 	.byte	W01
 	.byte	PRIO  , 32
 	.byte		PAN   , c_v+63
@@ -15046,20 +15049,20 @@
 	.byte		        c_v+0
 	.byte	FINE
 
-;**************** Track 8 (Midi-Chn.8) ****************;
+@**************** Track 8 (Midi-Chn.8) ****************@
 
-@song148restored_8:
-	.byte	KEYSH , song148restored_key+0
-; 000   ----------------------------------------
+Otherworldly_Foe (3)_FINAL_8:
+	.byte	KEYSH , Otherworldly_Foe (3)_FINAL_key+0
+@ 000   ----------------------------------------
 	.byte		VOICE , 17
 	.byte		MODT  , 0
 	.byte		LFOS  , 44
-	.byte		VOL   , 127*song148restored_mvl/mxv
+	.byte		VOL   , 127*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BENDR , 12
-	.byte		VOL   , 127*song148restored_mvl/mxv
+	.byte		VOL   , 127*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W28
-	.byte		VOL   , 44*song148restored_mvl/mxv
+	.byte		VOL   , 44*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	PRIO  , 84
 	.byte		PAN   , c_v-37
 	.byte		BEND  , c_v+5
@@ -15067,7 +15070,7 @@
 	.byte	W07
 	.byte		N01   
 	.byte	W23
-	.byte		VOL   , 45*song148restored_mvl/mxv
+	.byte		VOL   , 45*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W10
 	.byte	PRIO  , 33
 	.byte		PAN   , c_v+0
@@ -15077,9 +15080,9 @@
 	.byte	W07
 	.byte		N01   
 	.byte	W20
-	.byte		VOL   , 54*song148restored_mvl/mxv
+	.byte		VOL   , 54*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W01
-; 001   ----------------------------------------
+@ 001   ----------------------------------------
 	.byte	W13
 	.byte		N01   
 	.byte	W06
@@ -15093,19 +15096,19 @@
 	.byte	W02
 	.byte		N01   
 	.byte	W03
-; 002   ----------------------------------------
+@ 002   ----------------------------------------
 	.byte	W03
 	.byte		N01   
 	.byte	W21
-@song148restored_8_B1:
-	.byte		VOL   , 54*song148restored_mvl/mxv
+Otherworldly_Foe (3)_FINAL_8_B1:
+	.byte		VOL   , 54*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W24
 	.byte	W02
 	.byte	PRIO  , 84
 	.byte		PAN   , c_v-37
 	.byte		N04   , Cn0 , v127
 	.byte	W01
-	.byte		VOL   , 43*song148restored_mvl/mxv
+	.byte		VOL   , 43*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	W06
 	.byte		N04   
 	.byte	W32
@@ -15114,7 +15117,7 @@
 	.byte		PAN   , c_v-32
 	.byte		N04   
 	.byte	W06
-; 003   ----------------------------------------
+@ 003   ----------------------------------------
 	.byte	W01
 	.byte		N04   
 	.byte	W32
@@ -15128,14 +15131,14 @@
 	.byte	W06
 	.byte		N04   
 	.byte	W15
-; 004   ----------------------------------------
+@ 004   ----------------------------------------
 	.byte	W19
 	.byte		N04   
 	.byte	W06
 	.byte		N04   
 	.byte	W68
 	.byte	W03
-; 005   ----------------------------------------
+@ 005   ----------------------------------------
 	.byte	W56
 	.byte	PRIO  , 33
 	.byte		PAN   , c_v+0
@@ -15146,14 +15149,14 @@
 	.byte		N04   
 	.byte	W32
 	.byte	W01
-; 006   ----------------------------------------
+@ 006   ----------------------------------------
 	.byte	W92
 	.byte	W02
 	.byte	PRIO  , 84
 	.byte		PAN   , c_v-37
 	.byte		N04   
 	.byte	W02
-; 007   ----------------------------------------
+@ 007   ----------------------------------------
 	.byte	W05
 	.byte		N04   
 	.byte	W32
@@ -15169,7 +15172,7 @@
 	.byte	W06
 	.byte		N04   
 	.byte	W11
-; 008   ----------------------------------------
+@ 008   ----------------------------------------
 	.byte	W23
 	.byte		N04   
 	.byte	W06
@@ -15181,9 +15184,9 @@
 	.byte		N04   
 	.byte	W24
 	.byte	W03
-; 009   ----------------------------------------
+@ 009   ----------------------------------------
 	.byte	W96
-; 010   ----------------------------------------
+@ 010   ----------------------------------------
 	.byte	W05
 	.byte	PRIO  , 33
 	.byte		PAN   , c_v+0
@@ -15194,7 +15197,7 @@
 	.byte		N04   
 	.byte	W84
 	.byte	W01
-; 011   ----------------------------------------
+@ 011   ----------------------------------------
 	.byte	W42
 	.byte	PRIO  , 84
 	.byte		PAN   , c_v-37
@@ -15209,7 +15212,7 @@
 	.byte	W07
 	.byte		N04   
 	.byte	W07
-; 012   ----------------------------------------
+@ 012   ----------------------------------------
 	.byte	W24
 	.byte	W03
 	.byte		N04   
@@ -15221,14 +15224,14 @@
 	.byte	W07
 	.byte		N04   
 	.byte	W22
-; 013   ----------------------------------------
+@ 013   ----------------------------------------
 	.byte	W11
 	.byte		N03   
 	.byte	W06
 	.byte		N04   
 	.byte	W78
 	.byte	W01
-; 014   ----------------------------------------
+@ 014   ----------------------------------------
 	.byte	W48
 	.byte	W01
 	.byte	PRIO  , 33
@@ -15240,57 +15243,56 @@
 	.byte		N04   
 	.byte	W40
 	.byte	W01
-; 015   ----------------------------------------
+@ 015   ----------------------------------------
 	.byte	W96
-; 016   ----------------------------------------
+@ 016   ----------------------------------------
 	.byte	W96
-; 017   ----------------------------------------
+@ 017   ----------------------------------------
 	.byte	W96
-; 018   ----------------------------------------
+@ 018   ----------------------------------------
 	.byte	W96
-; 019   ----------------------------------------
+@ 019   ----------------------------------------
 	.byte	W96
-; 020   ----------------------------------------
+@ 020   ----------------------------------------
 	.byte	W96
-; 021   ----------------------------------------
+@ 021   ----------------------------------------
 	.byte	W96
-; 022   ----------------------------------------
+@ 022   ----------------------------------------
 	.byte	W96
-; 023   ----------------------------------------
+@ 023   ----------------------------------------
 	.byte	W96
-; 024   ----------------------------------------
+@ 024   ----------------------------------------
 	.byte	W96
-; 025   ----------------------------------------
+@ 025   ----------------------------------------
 	.byte	W96
-; 026   ----------------------------------------
+@ 026   ----------------------------------------
 	.byte	W72
 	.byte	W01
 	.byte	GOTO
-	 .word	@song148restored_8_B1
-@song148restored_8_B2:
+	 .word	Otherworldly_Foe (3)_FINAL_8_B1
+Otherworldly_Foe (3)_FINAL_8_B2:
 	.byte	W10
-	.byte		VOL   , 10*song148restored_mvl/mxv
+	.byte		VOL   , 10*Otherworldly_Foe (3)_FINAL_mvl/mxv
 	.byte	FINE
 
-;******************************************************;
-	.align	4
+@******************************************************@
+	.align	2
 
-song148restored:
-	.byte	8	; NumTrks
-	.byte	0	; NumBlks
-	.byte	song148restored_pri	; Priority
-	.byte	song148restored_rev	; Reverb.
+Otherworldly_Foe (3)_FINAL:
+	.byte	8	@ NumTrks
+	.byte	0	@ NumBlks
+	.byte	Otherworldly_Foe (3)_FINAL_pri	@ Priority
+	.byte	Otherworldly_Foe (3)_FINAL_rev	@ Reverb.
 
-	//emit_clean_voicegroup_offset_for_song 148
-	.word	0x8107FAC //Voice Table
+	.word	Otherworldly_Foe (3)_FINAL_grp
 
-	.word	@song148restored_1
-	.word	@song148restored_2
-	.word	@song148restored_3
-	.word	@song148restored_4
-	.word	@song148restored_5
-	.word	@song148restored_6
-	.word	@song148restored_7
-	.word	@song148restored_8
+	.word	Otherworldly_Foe (3)_FINAL_1
+	.word	Otherworldly_Foe (3)_FINAL_2
+	.word	Otherworldly_Foe (3)_FINAL_3
+	.word	Otherworldly_Foe (3)_FINAL_4
+	.word	Otherworldly_Foe (3)_FINAL_5
+	.word	Otherworldly_Foe (3)_FINAL_6
+	.word	Otherworldly_Foe (3)_FINAL_7
+	.word	Otherworldly_Foe (3)_FINAL_8
 
-
+	.end
