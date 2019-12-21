@@ -5703,7 +5703,7 @@ song003restored:
 	.byte	song003restored_rev	; Reverb.
 
 	//emit_clean_voicegroup_offset_for_song 3
-	.word	0x8109C4 //Voice Table
+	.word	0x8109DC4 //Voice Table
 
 	.word	@song003restored_1
 	.word	@song003restored_2
