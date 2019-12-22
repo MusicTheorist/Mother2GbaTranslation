@@ -62,6 +62,7 @@
 .include "./sound/song072restored.asm" //Giygas' Intro (Imperfect, loop)
 .include "./sound/song073restored.asm" //Giygas' Intimidation (Imperfect, loop)
 .include "./sound/song074restored.asm" //Giygas is Fatally Wounded!
+.include "./sound/song087restored.asm" //Get On The Bus
 .include "./sound/song100restored.asm" //Franky
 .include "./sound/song101restored.asm" //Weak Opponent
 .include "./sound/song104restored.asm" //Kraken of The Sea
@@ -109,6 +110,7 @@
 .org 0x810B770 :: .word song072restored
 .org 0x810B778 :: .word song073restored
 .org 0x810B780 :: .word song074restored
+.org 0x810B7E8 :: .word song087restored
 .org 0x810B850 :: .word song100restored
 .org 0x810B858 :: .word song101restored
 .org 0x810B870 :: .word song104restored
