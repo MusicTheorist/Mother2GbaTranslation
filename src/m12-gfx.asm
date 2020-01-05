@@ -55,7 +55,7 @@ brass_stop_organ_gauss:
 .include "./sound/song002restored.asm" //File Select
 .include "./sound/song003restored.asm" //Your name, please (Imperfect, note)
 .include "./sound/song007restored.asm" //A Bad Dream
-.include "./sound/song008restored.asm" //Enemy Encounter (Blue/Green)
+.include "./sound/song008restored.asm" //Enemy Encounter (Blue/Green) (Imperfect, causes a vblanking issue)
 .include "./sound/song013restored.asm" //Teleportation
 .include "./sound/song016restored.asm" //Dr. Andonuts' Lab (Imperfect, loop)
 .include "./sound/song029restored.asm" //Onett Night 1
