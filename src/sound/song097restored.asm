@@ -1,24 +1,21 @@
-	.include "MPlayDef.s"
+	song097restored_pri equ 0
+	song097restored_rev equ 0
+	song097restored_mvl equ 127
+	song097restored_key equ 0
+	song097restored_tbs equ 1
+	song097restored_exg equ 0
+	song097restored_cmp equ 1
 
-	.equ	song097restored_grp, voicegroup000
-	.equ	song097restored_pri, 0
-	.equ	song097restored_rev, 0
-	.equ	song097restored_mvl, 127
-	.equ	song097restored_key, 0
-	.equ	song097restored_tbs, 1
-	.equ	song097restored_exg, 0
-	.equ	song097restored_cmp, 1
 
-	.section .rodata
-	.global	song097restored
-	.align	2
 
-@**************** Track 1 (Midi-Chn.1) ****************@
+	.align	4
 
-song097restored_1:
+;**************** Track 1 (Midi-Chn.1) ****************;
+
+@song097restored_1:
 	.byte	TEMPO , 62
 	.byte	KEYSH , song097restored_key+0
-@ 000   ----------------------------------------
+; 000   ----------------------------------------
 	.byte		VOICE , 8
 	.byte		MODT  , 0
 	.byte		LFOS  , 44
@@ -33,13 +30,13 @@ song097restored_1:
 	.byte		BENDR , 12
 	.byte		BEND  , c_v-46
 	.byte	W96
-@ 001   ----------------------------------------
+; 001   ----------------------------------------
 	.byte	W96
-@ 002   ----------------------------------------
+; 002   ----------------------------------------
 	.byte	W96
-@ 003   ----------------------------------------
+; 003   ----------------------------------------
 	.byte	W96
-@ 004   ----------------------------------------
+; 004   ----------------------------------------
 	.byte	W22
 	.byte		VOL   , 81*song097restored_mvl/mxv
 	.byte		PAN   , c_v+0
@@ -107,7 +104,7 @@ song097restored_1:
 	.byte	W01
 	.byte		        c_v-45
 	.byte	W16
-@ 005   ----------------------------------------
+; 005   ----------------------------------------
 	.byte		        c_v+0
 	.byte		N06   , Gs1 
 	.byte	W01
@@ -194,7 +191,7 @@ song097restored_1:
 	.byte	W01
 	.byte		        c_v-46
 	.byte	W13
-@ 006   ----------------------------------------
+; 006   ----------------------------------------
 	.byte	W03
 	.byte		        c_v-3
 	.byte		N05   , Gs1 
@@ -280,7 +277,7 @@ song097restored_1:
 	.byte	W01
 	.byte		        c_v-46
 	.byte	W11
-@ 007   ----------------------------------------
+; 007   ----------------------------------------
 	.byte	W05
 	.byte		        c_v+0
 	.byte		N05   , Gs1 
@@ -368,7 +365,7 @@ song097restored_1:
 	.byte	W01
 	.byte		        c_v-46
 	.byte	W08
-@ 008   ----------------------------------------
+; 008   ----------------------------------------
 	.byte	W07
 	.byte		        c_v+0
 	.byte		N05   , Gs1 
@@ -458,7 +455,7 @@ song097restored_1:
 	.byte	W01
 	.byte		        c_v-46
 	.byte	W06
-@ 009   ----------------------------------------
+; 009   ----------------------------------------
 	.byte	W10
 	.byte		        c_v+0
 	.byte		N05   , Gs1 
@@ -544,7 +541,7 @@ song097restored_1:
 	.byte	W01
 	.byte		        c_v-46
 	.byte	W04
-@ 010   ----------------------------------------
+; 010   ----------------------------------------
 	.byte	W12
 	.byte		        c_v+0
 	.byte		N05   , Gs1 
@@ -634,7 +631,7 @@ song097restored_1:
 	.byte	W01
 	.byte		        c_v-46
 	.byte	W01
-@ 011   ----------------------------------------
+; 011   ----------------------------------------
 	.byte	W15
 	.byte		        c_v+0
 	.byte		N06   , Gs1 
@@ -718,7 +715,7 @@ song097restored_1:
 	.byte	W01
 	.byte		BEND  , c_v-15
 	.byte	W01
-@ 012   ----------------------------------------
+; 012   ----------------------------------------
 	.byte		        c_v-30
 	.byte	W01
 	.byte		        c_v-46
@@ -800,7 +797,7 @@ song097restored_1:
 	.byte	W01
 	.byte		        c_v-59
 	.byte	W01
-@ 013   ----------------------------------------
+; 013   ----------------------------------------
 	.byte		        c_v-64
 	.byte	W01
 	.byte		        c_v-9
@@ -883,7 +880,7 @@ song097restored_1:
 	.byte	W01
 	.byte		        c_v-20
 	.byte	W01
-@ 014   ----------------------------------------
+; 014   ----------------------------------------
 	.byte		        c_v-36
 	.byte	W01
 	.byte		        c_v-49
@@ -965,7 +962,7 @@ song097restored_1:
 	.byte	W01
 	.byte		        c_v-46
 	.byte	W16
-@ 015   ----------------------------------------
+; 015   ----------------------------------------
 	.byte		        c_v+0
 	.byte		N05   , Gs1 
 	.byte	W01
@@ -1052,7 +1049,7 @@ song097restored_1:
 	.byte	W01
 	.byte		        c_v-46
 	.byte	W13
-@ 016   ----------------------------------------
+; 016   ----------------------------------------
 	.byte	W02
 	.byte		        c_v+0
 	.byte		N05   , Gs1 
@@ -1136,7 +1133,7 @@ song097restored_1:
 	.byte	W01
 	.byte		BEND  , c_v-14
 	.byte	W01
-@ 017   ----------------------------------------
+; 017   ----------------------------------------
 	.byte	W11
 	.byte		        c_v+0
 	.byte		N03   , Cs3 
@@ -1222,7 +1219,7 @@ song097restored_1:
 	.byte	W01
 	.byte		        c_v-58
 	.byte	W01
-@ 018   ----------------------------------------
+; 018   ----------------------------------------
 	.byte		        c_v-64
 	.byte	W01
 	.byte		        c_v-10
@@ -1319,7 +1316,7 @@ song097restored_1:
 	.byte	W01
 	.byte		BEND  , c_v-15
 	.byte	W01
-@ 019   ----------------------------------------
+; 019   ----------------------------------------
 	.byte		        c_v-34
 	.byte	W01
 	.byte		        c_v-48
@@ -1406,7 +1403,7 @@ song097restored_1:
 	.byte	W01
 	.byte		        c_v-46
 	.byte	W16
-@ 020   ----------------------------------------
+; 020   ----------------------------------------
 	.byte		        c_v+0
 	.byte		N05   , Cs3 
 	.byte	W01
@@ -1509,7 +1506,7 @@ song097restored_1:
 	.byte	W01
 	.byte		        c_v-45
 	.byte	W13
-@ 021   ----------------------------------------
+; 021   ----------------------------------------
 	.byte	W02
 	.byte		        c_v+0
 	.byte		N06   , Cs3 
@@ -1604,7 +1601,7 @@ song097restored_1:
 	.byte	W01
 	.byte		        c_v-46
 	.byte	W11
-@ 022   ----------------------------------------
+; 022   ----------------------------------------
 	.byte	W05
 	.byte		        c_v+0
 	.byte		N05   , Cs3 
@@ -1704,7 +1701,7 @@ song097restored_1:
 	.byte	W01
 	.byte		        c_v-46
 	.byte	W09
-@ 023   ----------------------------------------
+; 023   ----------------------------------------
 	.byte	W07
 	.byte		        c_v+0
 	.byte		N05   , Cs3 
@@ -1797,7 +1794,7 @@ song097restored_1:
 	.byte	W01
 	.byte		        c_v-45
 	.byte	W06
-@ 024   ----------------------------------------
+; 024   ----------------------------------------
 	.byte	W10
 	.byte		        c_v+0
 	.byte		N05   , Cs3 
@@ -1888,7 +1885,7 @@ song097restored_1:
 	.byte		VOL   , 0*song097restored_mvl/mxv
 	.byte		BEND  , c_v-46
 	.byte	W01
-@ 025   ----------------------------------------
+; 025   ----------------------------------------
 	.byte		VOICE , 8
 	.byte		BENDR , 12
 	.byte		PAN   , c_v+0
@@ -1897,13 +1894,14 @@ song097restored_1:
 	.byte		PAN   , c_v+0
 	.byte		VOL   , 81*song097restored_mvl/mxv
 	.byte		BEND  , c_v-46
-	.byte	FINE
+	.byte	GOTO
+	.word	@song097restored_1
 
-@**************** Track 2 (Midi-Chn.2) ****************@
+;**************** Track 2 (Midi-Chn.2) ****************;
 
-song097restored_2:
+@song097restored_2:
 	.byte	KEYSH , song097restored_key+0
-@ 000   ----------------------------------------
+; 000   ----------------------------------------
 	.byte		VOICE , 28
 	.byte		MODT  , 0
 	.byte		LFOS  , 44
@@ -2073,7 +2071,7 @@ song097restored_2:
 	.byte	W02
 	.byte		        c_v-41
 	.byte	W01
-@ 001   ----------------------------------------
+; 001   ----------------------------------------
 	.byte		        c_v-41
 	.byte	W01
 	.byte		        c_v-42
@@ -2202,7 +2200,7 @@ song097restored_2:
 	.byte		BEND  , c_v-1
 	.byte		N08   , Gn3 
 	.byte	W06
-@ 002   ----------------------------------------
+; 002   ----------------------------------------
 	.byte	W05
 	.byte		VOL   , 24*song097restored_mvl/mxv
 	.byte		TIE   , Cn3 
@@ -2343,7 +2341,7 @@ song097restored_2:
 	.byte	W01
 	.byte		        c_v+37
 	.byte	W01
-@ 003   ----------------------------------------
+; 003   ----------------------------------------
 	.byte		        c_v+37
 	.byte	W02
 	.byte		        c_v+38
@@ -2474,7 +2472,7 @@ song097restored_2:
 	.byte	W01
 	.byte		        c_v+63
 	.byte	W18
-@ 004   ----------------------------------------
+; 004   ----------------------------------------
 	.byte	W07
 	.byte		EOT   
 	.byte	W15
@@ -2595,7 +2593,7 @@ song097restored_2:
 	.byte	W01
 	.byte		        c_v-31
 	.byte	W02
-@ 005   ----------------------------------------
+; 005   ----------------------------------------
 	.byte		        c_v-32
 	.byte	W02
 	.byte		        c_v-32
@@ -2754,7 +2752,7 @@ song097restored_2:
 	.byte	W01
 	.byte		        c_v-64
 	.byte	W02
-@ 006   ----------------------------------------
+; 006   ----------------------------------------
 	.byte	W16
 	.byte		EOT   
 	.byte		BEND  , c_v-1
@@ -2866,7 +2864,7 @@ song097restored_2:
 	.byte	W01
 	.byte		        c_v-29
 	.byte	W03
-@ 007   ----------------------------------------
+; 007   ----------------------------------------
 	.byte		        c_v-30
 	.byte	W01
 	.byte		        c_v-30
@@ -3034,7 +3032,7 @@ song097restored_2:
 	.byte	W01
 	.byte		        c_v+22
 	.byte	W01
-@ 008   ----------------------------------------
+; 008   ----------------------------------------
 	.byte		        c_v+29
 	.byte	W01
 	.byte		        c_v+35
@@ -3128,7 +3126,7 @@ song097restored_2:
 	.byte		VOL   , 44*song097restored_mvl/mxv
 	.byte		N04   
 	.byte	W03
-@ 009   ----------------------------------------
+; 009   ----------------------------------------
 	.byte	W04
 	.byte		VOL   , 24*song097restored_mvl/mxv
 	.byte		N01   
@@ -3176,7 +3174,7 @@ song097restored_2:
 	.byte		VOL   , 24*song097restored_mvl/mxv
 	.byte		N01   
 	.byte	W05
-@ 010   ----------------------------------------
+; 010   ----------------------------------------
 	.byte		VOL   , 44*song097restored_mvl/mxv
 	.byte		N04   
 	.byte	W07
@@ -3226,7 +3224,7 @@ song097restored_2:
 	.byte		VOL   , 24*song097restored_mvl/mxv
 	.byte		N01   
 	.byte	W03
-@ 011   ----------------------------------------
+; 011   ----------------------------------------
 	.byte	W02
 	.byte		VOL   , 44*song097restored_mvl/mxv
 	.byte		N04   
@@ -3274,7 +3272,7 @@ song097restored_2:
 	.byte	W01
 	.byte		N01   
 	.byte	W07
-@ 012   ----------------------------------------
+; 012   ----------------------------------------
 	.byte		VOL   , 24*song097restored_mvl/mxv
 	.byte		N01   
 	.byte	W05
@@ -3324,7 +3322,7 @@ song097restored_2:
 	.byte		VOL   , 39*song097restored_mvl/mxv
 	.byte		N01   
 	.byte	W05
-@ 013   ----------------------------------------
+; 013   ----------------------------------------
 	.byte	W02
 	.byte		VOL   , 24*song097restored_mvl/mxv
 	.byte		N01   
@@ -3374,7 +3372,7 @@ song097restored_2:
 	.byte		VOL   , 39*song097restored_mvl/mxv
 	.byte		N01   
 	.byte	W03
-@ 014   ----------------------------------------
+; 014   ----------------------------------------
 	.byte	W04
 	.byte		VOL   , 24*song097restored_mvl/mxv
 	.byte	W01
@@ -3423,7 +3421,7 @@ song097restored_2:
 	.byte		VOL   , 24*song097restored_mvl/mxv
 	.byte		N03   
 	.byte	W05
-@ 015   ----------------------------------------
+; 015   ----------------------------------------
 	.byte		VOL   , 39*song097restored_mvl/mxv
 	.byte		N01   
 	.byte	W07
@@ -3474,7 +3472,7 @@ song097restored_2:
 	.byte		VOL   , 24*song097restored_mvl/mxv
 	.byte		N03   
 	.byte	W03
-@ 016   ----------------------------------------
+; 016   ----------------------------------------
 	.byte	W02
 	.byte		VOL   , 39*song097restored_mvl/mxv
 	.byte		N01   
@@ -3514,7 +3512,7 @@ song097restored_2:
 	.byte		VOL   , 24*song097restored_mvl/mxv
 	.byte		N01   
 	.byte	W07
-@ 017   ----------------------------------------
+; 017   ----------------------------------------
 	.byte		VOL   , 10*song097restored_mvl/mxv
 	.byte		N01   
 	.byte	W05
@@ -3565,7 +3563,7 @@ song097restored_2:
 	.byte		VOL   , 24*song097restored_mvl/mxv
 	.byte		N01   
 	.byte	W05
-@ 018   ----------------------------------------
+; 018   ----------------------------------------
 	.byte	W02
 	.byte		VOL   , 10*song097restored_mvl/mxv
 	.byte		N01   
@@ -3616,7 +3614,7 @@ song097restored_2:
 	.byte		VOL   , 24*song097restored_mvl/mxv
 	.byte		N01   
 	.byte	W02
-@ 019   ----------------------------------------
+; 019   ----------------------------------------
 	.byte	W04
 	.byte		VOL   , 10*song097restored_mvl/mxv
 	.byte	W01
@@ -3664,7 +3662,7 @@ song097restored_2:
 	.byte		VOL   , 10*song097restored_mvl/mxv
 	.byte		N01   
 	.byte	W05
-@ 020   ----------------------------------------
+; 020   ----------------------------------------
 	.byte		VOL   , 24*song097restored_mvl/mxv
 	.byte		N01   
 	.byte	W07
@@ -3714,7 +3712,7 @@ song097restored_2:
 	.byte		VOL   , 10*song097restored_mvl/mxv
 	.byte		N01   
 	.byte	W03
-@ 021   ----------------------------------------
+; 021   ----------------------------------------
 	.byte	W02
 	.byte		VOL   , 24*song097restored_mvl/mxv
 	.byte		N01   
@@ -3762,7 +3760,7 @@ song097restored_2:
 	.byte	W01
 	.byte		N04   
 	.byte	W07
-@ 022   ----------------------------------------
+; 022   ----------------------------------------
 	.byte		VOL   , 10*song097restored_mvl/mxv
 	.byte		N01   
 	.byte	W05
@@ -3813,7 +3811,7 @@ song097restored_2:
 	.byte		VOL   , 31*song097restored_mvl/mxv
 	.byte		N04   
 	.byte	W05
-@ 023   ----------------------------------------
+; 023   ----------------------------------------
 	.byte	W02
 	.byte		VOL   , 10*song097restored_mvl/mxv
 	.byte		N01   
@@ -3865,7 +3863,7 @@ song097restored_2:
 	.byte	W01
 	.byte		N04   
 	.byte	W02
-@ 024   ----------------------------------------
+; 024   ----------------------------------------
 	.byte	W05
 	.byte		VOL   , 10*song097restored_mvl/mxv
 	.byte		N01   
@@ -3914,7 +3912,7 @@ song097restored_2:
 	.byte		VOL   , 10*song097restored_mvl/mxv
 	.byte		BEND  , c_v-1
 	.byte	W01
-@ 025   ----------------------------------------
+; 025   ----------------------------------------
 	.byte		VOICE , 20
 	.byte		BENDR , 12
 	.byte		PAN   , c_v+63
@@ -3923,13 +3921,14 @@ song097restored_2:
 	.byte		PAN   , c_v+63
 	.byte		VOL   , 10*song097restored_mvl/mxv
 	.byte		BEND  , c_v+2
-	.byte	FINE
+	.byte	GOTO
+	.word	@song097restored_2
 
-@**************** Track 3 (Midi-Chn.3) ****************@
+;**************** Track 3 (Midi-Chn.3) ****************;
 
-song097restored_3:
+@song097restored_3:
 	.byte	KEYSH , song097restored_key+0
-@ 000   ----------------------------------------
+; 000   ----------------------------------------
 	.byte		VOICE , 28
 	.byte		MODT  , 0
 	.byte		LFOS  , 44
@@ -4094,7 +4093,7 @@ song097restored_3:
 	.byte	W02
 	.byte		        c_v-36
 	.byte	W01
-@ 001   ----------------------------------------
+; 001   ----------------------------------------
 	.byte	W01
 	.byte		VOL   , 4*song097restored_mvl/mxv
 	.byte		BEND  , c_v-36
@@ -4254,7 +4253,7 @@ song097restored_3:
 	.byte	W09
 	.byte		VOL   , 9*song097restored_mvl/mxv
 	.byte	W02
-@ 002   ----------------------------------------
+; 002   ----------------------------------------
 	.byte	W06
 	.byte		EOT   
 	.byte		BEND  , c_v+0
@@ -4378,7 +4377,7 @@ song097restored_3:
 	.byte	W01
 	.byte		        c_v+31
 	.byte	W01
-@ 003   ----------------------------------------
+; 003   ----------------------------------------
 	.byte		        c_v+32
 	.byte	W01
 	.byte		        c_v+33
@@ -4529,7 +4528,7 @@ song097restored_3:
 	.byte	W01
 	.byte		        c_v+63
 	.byte	W06
-@ 004   ----------------------------------------
+; 004   ----------------------------------------
 	.byte	W07
 	.byte		EOT   
 	.byte	W24
@@ -4633,7 +4632,7 @@ song097restored_3:
 	.byte	W02
 	.byte		        c_v-26
 	.byte	W01
-@ 005   ----------------------------------------
+; 005   ----------------------------------------
 	.byte		        c_v-27
 	.byte	W02
 	.byte		        c_v-27
@@ -4788,7 +4787,7 @@ song097restored_3:
 	.byte	W01
 	.byte		        c_v-64
 	.byte	W01
-@ 006   ----------------------------------------
+; 006   ----------------------------------------
 	.byte		        c_v-64
 	.byte	W01
 	.byte		        c_v-64
@@ -4946,7 +4945,7 @@ song097restored_3:
 	.byte	W01
 	.byte		        c_v+38
 	.byte	W01
-@ 007   ----------------------------------------
+; 007   ----------------------------------------
 	.byte		        c_v+44
 	.byte	W01
 	.byte		        c_v+51
@@ -5043,7 +5042,7 @@ song097restored_3:
 	.byte		VOL   , 10*song097restored_mvl/mxv
 	.byte		N03   , Cs3 
 	.byte	W05
-@ 008   ----------------------------------------
+; 008   ----------------------------------------
 	.byte	W01
 	.byte		VOL   , 31*song097restored_mvl/mxv
 	.byte		PAN   , c_v-18
@@ -5109,7 +5108,7 @@ song097restored_3:
 	.byte		PAN   , c_v-64
 	.byte		N03   
 	.byte	W03
-@ 009   ----------------------------------------
+; 009   ----------------------------------------
 	.byte	W03
 	.byte		VOL   , 39*song097restored_mvl/mxv
 	.byte		PAN   , c_v-32
@@ -5172,7 +5171,7 @@ song097restored_3:
 	.byte		PAN   , c_v-26
 	.byte		N04   
 	.byte	W06
-@ 010   ----------------------------------------
+; 010   ----------------------------------------
 	.byte		VOL   , 0*song097restored_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte		N03   
@@ -5240,7 +5239,7 @@ song097restored_3:
 	.byte		PAN   , c_v-26
 	.byte		N04   
 	.byte	W04
-@ 011   ----------------------------------------
+; 011   ----------------------------------------
 	.byte	W02
 	.byte		VOL   , 0*song097restored_mvl/mxv
 	.byte		PAN   , c_v-64
@@ -5307,7 +5306,7 @@ song097restored_3:
 	.byte		PAN   , c_v-26
 	.byte		N04   
 	.byte	W01
-@ 012   ----------------------------------------
+; 012   ----------------------------------------
 	.byte	W05
 	.byte		VOL   , 0*song097restored_mvl/mxv
 	.byte		PAN   , c_v-64
@@ -5369,7 +5368,7 @@ song097restored_3:
 	.byte		PAN   , c_v-64
 	.byte		N04   
 	.byte	W05
-@ 013   ----------------------------------------
+; 013   ----------------------------------------
 	.byte	W01
 	.byte		VOL   , 54*song097restored_mvl/mxv
 	.byte		PAN   , c_v-26
@@ -5435,7 +5434,7 @@ song097restored_3:
 	.byte		PAN   , c_v-64
 	.byte		N03   
 	.byte	W03
-@ 014   ----------------------------------------
+; 014   ----------------------------------------
 	.byte	W03
 	.byte		VOL   , 54*song097restored_mvl/mxv
 	.byte		PAN   , c_v-26
@@ -5499,7 +5498,7 @@ song097restored_3:
 	.byte		PAN   , c_v-21
 	.byte		N04   
 	.byte	W06
-@ 015   ----------------------------------------
+; 015   ----------------------------------------
 	.byte		VOL   , 44*song097restored_mvl/mxv
 	.byte		PAN   , c_v+42
 	.byte		VOL   , 10*song097restored_mvl/mxv
@@ -5570,7 +5569,7 @@ song097restored_3:
 	.byte		PAN   , c_v-21
 	.byte		N04   
 	.byte	W04
-@ 016   ----------------------------------------
+; 016   ----------------------------------------
 	.byte	W02
 	.byte		VOL   , 10*song097restored_mvl/mxv
 	.byte		PAN   , c_v-64
@@ -5631,7 +5630,7 @@ song097restored_3:
 	.byte	W01
 	.byte		        c_v-28
 	.byte	W05
-@ 017   ----------------------------------------
+; 017   ----------------------------------------
 	.byte	W05
 	.byte		        c_v+0
 	.byte		N10   , Bn0 
@@ -5701,7 +5700,7 @@ song097restored_3:
 	.byte	W01
 	.byte		        c_v-28
 	.byte	W02
-@ 018   ----------------------------------------
+; 018   ----------------------------------------
 	.byte	W08
 	.byte		        c_v-3
 	.byte		N09   , Bn0 
@@ -5765,7 +5764,7 @@ song097restored_3:
 	.byte	W01
 	.byte		BEND  , c_v-13
 	.byte	W01
-@ 019   ----------------------------------------
+; 019   ----------------------------------------
 	.byte		        c_v-28
 	.byte	W10
 	.byte		        c_v+0
@@ -5831,7 +5830,7 @@ song097restored_3:
 	.byte	W01
 	.byte		        c_v-28
 	.byte	W09
-@ 020   ----------------------------------------
+; 020   ----------------------------------------
 	.byte		        c_v+0
 	.byte		N09   , Ds1 
 	.byte	W01
@@ -5904,7 +5903,7 @@ song097restored_3:
 	.byte	W01
 	.byte		        c_v-28
 	.byte	W07
-@ 021   ----------------------------------------
+; 021   ----------------------------------------
 	.byte	W02
 	.byte		        c_v+0
 	.byte		N10   , Ds1 
@@ -5972,7 +5971,7 @@ song097restored_3:
 	.byte	W01
 	.byte		        c_v-28
 	.byte	W05
-@ 022   ----------------------------------------
+; 022   ----------------------------------------
 	.byte	W05
 	.byte		        c_v+0
 	.byte		N10   , Ds1 
@@ -6044,7 +6043,7 @@ song097restored_3:
 	.byte	W01
 	.byte		        c_v-28
 	.byte	W02
-@ 023   ----------------------------------------
+; 023   ----------------------------------------
 	.byte	W07
 	.byte		        c_v+0
 	.byte		N09   , Ds1 
@@ -6110,7 +6109,7 @@ song097restored_3:
 	.byte	W01
 	.byte		BEND  , c_v-14
 	.byte	W01
-@ 024   ----------------------------------------
+; 024   ----------------------------------------
 	.byte		        c_v-28
 	.byte	W10
 	.byte		        c_v+0
@@ -6173,7 +6172,7 @@ song097restored_3:
 	.byte		VOL   , 1*song097restored_mvl/mxv
 	.byte		BEND  , c_v-28
 	.byte	W01
-@ 025   ----------------------------------------
+; 025   ----------------------------------------
 	.byte		VOICE , 29
 	.byte		BENDR , 12
 	.byte		PAN   , c_v+0
@@ -6182,13 +6181,14 @@ song097restored_3:
 	.byte		PAN   , c_v+0
 	.byte		VOL   , 24*song097restored_mvl/mxv
 	.byte		BEND  , c_v-28
-	.byte	FINE
+	.byte	GOTO
+	.word	@song097restored_3
 
-@**************** Track 4 (Midi-Chn.4) ****************@
+;**************** Track 4 (Midi-Chn.4) ****************;
 
-song097restored_4:
+@song097restored_4:
 	.byte	KEYSH , song097restored_key+0
-@ 000   ----------------------------------------
+; 000   ----------------------------------------
 	.byte		VOICE , 28
 	.byte		MODT  , 0
 	.byte		LFOS  , 44
@@ -6219,7 +6219,7 @@ song097restored_4:
 	.byte	W01
 	.byte		N16   , Gs3 
 	.byte	W22
-@ 001   ----------------------------------------
+; 001   ----------------------------------------
 	.byte	W02
 	.byte		VOL   , 54*song097restored_mvl/mxv
 	.byte		PAN   , c_v-26
@@ -6239,7 +6239,7 @@ song097restored_4:
 	.byte	W13
 	.byte		        As3 
 	.byte	W07
-@ 002   ----------------------------------------
+; 002   ----------------------------------------
 	.byte	W05
 	.byte		VOL   , 54*song097restored_mvl/mxv
 	.byte		PAN   , c_v-26
@@ -6254,7 +6254,7 @@ song097restored_4:
 	.byte	W01
 	.byte		N16   , Gs3 
 	.byte	W17
-@ 003   ----------------------------------------
+; 003   ----------------------------------------
 	.byte	W07
 	.byte		VOL   , 54*song097restored_mvl/mxv
 	.byte		PAN   , c_v-26
@@ -6273,7 +6273,7 @@ song097restored_4:
 	.byte	W24
 	.byte		N10   
 	.byte	W03
-@ 004   ----------------------------------------
+; 004   ----------------------------------------
 	.byte	W22
 	.byte		VOL   , 54*song097restored_mvl/mxv
 	.byte		PAN   , c_v-26
@@ -6286,7 +6286,7 @@ song097restored_4:
 	.byte		N24   
 	.byte	W36
 	.byte	W01
-@ 005   ----------------------------------------
+; 005   ----------------------------------------
 	.byte		N16   , Gs3 
 	.byte	W24
 	.byte	W01
@@ -6301,7 +6301,7 @@ song097restored_4:
 	.byte		N24   
 	.byte	W32
 	.byte	W03
-@ 006   ----------------------------------------
+; 006   ----------------------------------------
 	.byte	W02
 	.byte		VOL   , 50*song097restored_mvl/mxv
 	.byte		PAN   , c_v-21
@@ -6321,7 +6321,7 @@ song097restored_4:
 	.byte	W18
 	.byte		N24   
 	.byte	W32
-@ 007   ----------------------------------------
+; 007   ----------------------------------------
 	.byte	W05
 	.byte		N16   , Gs3 
 	.byte	W24
@@ -6341,7 +6341,7 @@ song097restored_4:
 	.byte		PAN   , c_v-21
 	.byte		N22   , Gn3 
 	.byte	W05
-@ 008   ----------------------------------------
+; 008   ----------------------------------------
 	.byte	W20
 	.byte		N10   
 	.byte	W12
@@ -6356,7 +6356,7 @@ song097restored_4:
 	.byte		N24   
 	.byte	W24
 	.byte	W03
-@ 009   ----------------------------------------
+; 009   ----------------------------------------
 	.byte	W10
 	.byte		N16   , Gs3 
 	.byte	W24
@@ -6372,7 +6372,7 @@ song097restored_4:
 	.byte		N24   
 	.byte	W24
 	.byte	W01
-@ 010   ----------------------------------------
+; 010   ----------------------------------------
 	.byte	W12
 	.byte		VOL   , 50*song097restored_mvl/mxv
 	.byte		PAN   , c_v-21
@@ -6390,7 +6390,7 @@ song097restored_4:
 	.byte	W19
 	.byte		N24   
 	.byte	W22
-@ 011   ----------------------------------------
+; 011   ----------------------------------------
 	.byte	W15
 	.byte		N16   , Gs3 
 	.byte	W24
@@ -6404,7 +6404,7 @@ song097restored_4:
 	.byte	W18
 	.byte		N16   
 	.byte	W20
-@ 012   ----------------------------------------
+; 012   ----------------------------------------
 	.byte	W05
 	.byte		VOL   , 50*song097restored_mvl/mxv
 	.byte		PAN   , c_v-21
@@ -6422,7 +6422,7 @@ song097restored_4:
 	.byte	W19
 	.byte		N24   
 	.byte	W17
-@ 013   ----------------------------------------
+; 013   ----------------------------------------
 	.byte	W20
 	.byte		N16   , Gs3 
 	.byte	W24
@@ -6436,7 +6436,7 @@ song097restored_4:
 	.byte	W18
 	.byte		N24   
 	.byte	W15
-@ 014   ----------------------------------------
+; 014   ----------------------------------------
 	.byte	W22
 	.byte		VOL   , 50*song097restored_mvl/mxv
 	.byte		PAN   , c_v-21
@@ -6454,7 +6454,7 @@ song097restored_4:
 	.byte	W19
 	.byte		N24   
 	.byte	W12
-@ 015   ----------------------------------------
+; 015   ----------------------------------------
 	.byte	W24
 	.byte	W01
 	.byte		N16   , Gs3 
@@ -6470,7 +6470,7 @@ song097restored_4:
 	.byte	W18
 	.byte		N16   
 	.byte	W10
-@ 016   ----------------------------------------
+; 016   ----------------------------------------
 	.byte	W15
 	.byte		VOL   , 50*song097restored_mvl/mxv
 	.byte		PAN   , c_v-21
@@ -6492,7 +6492,7 @@ song097restored_4:
 	.byte	W18
 	.byte		N02   
 	.byte	W14
-@ 017   ----------------------------------------
+; 017   ----------------------------------------
 	.byte	W05
 	.byte		N01   
 	.byte	W36
@@ -6504,7 +6504,7 @@ song097restored_4:
 	.byte	W18
 	.byte		N01   
 	.byte	W11
-@ 018   ----------------------------------------
+; 018   ----------------------------------------
 	.byte	W08
 	.byte		N01   
 	.byte	W36
@@ -6515,7 +6515,7 @@ song097restored_4:
 	.byte	W18
 	.byte		N01   
 	.byte	W09
-@ 019   ----------------------------------------
+; 019   ----------------------------------------
 	.byte	W10
 	.byte		N01   
 	.byte	W36
@@ -6526,7 +6526,7 @@ song097restored_4:
 	.byte	W19
 	.byte		N02   
 	.byte	W06
-@ 020   ----------------------------------------
+; 020   ----------------------------------------
 	.byte	W12
 	.byte		N03   
 	.byte	W60
@@ -6535,7 +6535,7 @@ song097restored_4:
 	.byte	W18
 	.byte		N02   
 	.byte	W04
-@ 021   ----------------------------------------
+; 021   ----------------------------------------
 	.byte	W15
 	.byte		N01   
 	.byte	W36
@@ -6546,7 +6546,7 @@ song097restored_4:
 	.byte	W19
 	.byte		N01   
 	.byte	W01
-@ 022   ----------------------------------------
+; 022   ----------------------------------------
 	.byte	W17
 	.byte		N01   
 	.byte	W36
@@ -6556,7 +6556,7 @@ song097restored_4:
 	.byte	W01
 	.byte		N04   , En4 
 	.byte	W17
-@ 023   ----------------------------------------
+; 023   ----------------------------------------
 	.byte	W01
 	.byte		N01   
 	.byte	W19
@@ -6567,7 +6567,7 @@ song097restored_4:
 	.byte	W24
 	.byte		N08   , En4 
 	.byte	W15
-@ 024   ----------------------------------------
+; 024   ----------------------------------------
 	.byte	W03
 	.byte		N02   
 	.byte	W19
@@ -6583,7 +6583,7 @@ song097restored_4:
 	.byte		VOL   , 54*song097restored_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W01
-@ 025   ----------------------------------------
+; 025   ----------------------------------------
 	.byte		VOICE , 28
 	.byte		BENDR , 12
 	.byte		PAN   , c_v-18
@@ -6592,13 +6592,14 @@ song097restored_4:
 	.byte		PAN   , c_v-18
 	.byte		VOL   , 31*song097restored_mvl/mxv
 	.byte		BEND  , c_v+1
-	.byte	FINE
+	.byte	GOTO
+	.word	@song097restored_4
 
-@**************** Track 5 (Midi-Chn.5) ****************@
+;**************** Track 5 (Midi-Chn.5) ****************;
 
-song097restored_5:
+@song097restored_5:
 	.byte	KEYSH , song097restored_key+0
-@ 000   ----------------------------------------
+; 000   ----------------------------------------
 	.byte		VOICE , 28
 	.byte		MODT  , 0
 	.byte		LFOS  , 44
@@ -6629,7 +6630,7 @@ song097restored_5:
 	.byte	W01
 	.byte		N16   , Fn4 
 	.byte	W22
-@ 001   ----------------------------------------
+; 001   ----------------------------------------
 	.byte	W02
 	.byte		VOL   , 31*song097restored_mvl/mxv
 	.byte		PAN   , c_v-18
@@ -6649,7 +6650,7 @@ song097restored_5:
 	.byte	W13
 	.byte		        Cs4 
 	.byte	W07
-@ 002   ----------------------------------------
+; 002   ----------------------------------------
 	.byte	W05
 	.byte		N07   , As3 
 	.byte	W18
@@ -6662,7 +6663,7 @@ song097restored_5:
 	.byte	W01
 	.byte		N16   , Fn4 
 	.byte	W17
-@ 003   ----------------------------------------
+; 003   ----------------------------------------
 	.byte	W07
 	.byte		VOL   , 31*song097restored_mvl/mxv
 	.byte		PAN   , c_v-18
@@ -6681,7 +6682,7 @@ song097restored_5:
 	.byte	W24
 	.byte		N10   
 	.byte	W03
-@ 004   ----------------------------------------
+; 004   ----------------------------------------
 	.byte	W22
 	.byte		N08   , As3 
 	.byte	W19
@@ -6692,7 +6693,7 @@ song097restored_5:
 	.byte		N24   
 	.byte	W36
 	.byte	W01
-@ 005   ----------------------------------------
+; 005   ----------------------------------------
 	.byte		N16   , Fn4 
 	.byte	W24
 	.byte	W01
@@ -6707,7 +6708,7 @@ song097restored_5:
 	.byte		N24   
 	.byte	W32
 	.byte	W03
-@ 006   ----------------------------------------
+; 006   ----------------------------------------
 	.byte	W02
 	.byte		VOL   , 31*song097restored_mvl/mxv
 	.byte		PAN   , c_v-18
@@ -6724,7 +6725,7 @@ song097restored_5:
 	.byte	W18
 	.byte		N24   
 	.byte	W32
-@ 007   ----------------------------------------
+; 007   ----------------------------------------
 	.byte	W05
 	.byte		N16   , Fn4 
 	.byte	W24
@@ -6744,7 +6745,7 @@ song097restored_5:
 	.byte		PAN   , c_v-18
 	.byte		N22   , En3 
 	.byte	W05
-@ 008   ----------------------------------------
+; 008   ----------------------------------------
 	.byte	W20
 	.byte		N10   
 	.byte	W12
@@ -6757,7 +6758,7 @@ song097restored_5:
 	.byte		N24   
 	.byte	W24
 	.byte	W03
-@ 009   ----------------------------------------
+; 009   ----------------------------------------
 	.byte	W10
 	.byte		N16   , Fn4 
 	.byte	W24
@@ -6773,7 +6774,7 @@ song097restored_5:
 	.byte		N24   
 	.byte	W24
 	.byte	W01
-@ 010   ----------------------------------------
+; 010   ----------------------------------------
 	.byte	W12
 	.byte		VOL   , 31*song097restored_mvl/mxv
 	.byte		PAN   , c_v-18
@@ -6789,7 +6790,7 @@ song097restored_5:
 	.byte	W19
 	.byte		N24   
 	.byte	W22
-@ 011   ----------------------------------------
+; 011   ----------------------------------------
 	.byte	W15
 	.byte		N16   , Fn4 
 	.byte	W24
@@ -6803,7 +6804,7 @@ song097restored_5:
 	.byte	W18
 	.byte		N16   
 	.byte	W20
-@ 012   ----------------------------------------
+; 012   ----------------------------------------
 	.byte	W05
 	.byte		VOL   , 31*song097restored_mvl/mxv
 	.byte		PAN   , c_v-18
@@ -6819,7 +6820,7 @@ song097restored_5:
 	.byte	W19
 	.byte		N24   
 	.byte	W17
-@ 013   ----------------------------------------
+; 013   ----------------------------------------
 	.byte	W20
 	.byte		N16   , Fn4 
 	.byte	W24
@@ -6833,7 +6834,7 @@ song097restored_5:
 	.byte	W18
 	.byte		N24   
 	.byte	W15
-@ 014   ----------------------------------------
+; 014   ----------------------------------------
 	.byte	W22
 	.byte		VOL   , 31*song097restored_mvl/mxv
 	.byte		PAN   , c_v-18
@@ -6849,7 +6850,7 @@ song097restored_5:
 	.byte	W19
 	.byte		N24   
 	.byte	W12
-@ 015   ----------------------------------------
+; 015   ----------------------------------------
 	.byte	W24
 	.byte	W01
 	.byte		N16   , Fn4 
@@ -6864,7 +6865,7 @@ song097restored_5:
 	.byte	W18
 	.byte		N16   
 	.byte	W10
-@ 016   ----------------------------------------
+; 016   ----------------------------------------
 	.byte	W15
 	.byte		VOL   , 31*song097restored_mvl/mxv
 	.byte		PAN   , c_v-18
@@ -6885,7 +6886,7 @@ song097restored_5:
 	.byte	W18
 	.byte		N02   
 	.byte	W14
-@ 017   ----------------------------------------
+; 017   ----------------------------------------
 	.byte	W05
 	.byte		N01   
 	.byte	W36
@@ -6899,7 +6900,7 @@ song097restored_5:
 	.byte	W18
 	.byte		N01   
 	.byte	W11
-@ 018   ----------------------------------------
+; 018   ----------------------------------------
 	.byte	W08
 	.byte		N01   
 	.byte	W36
@@ -6912,7 +6913,7 @@ song097restored_5:
 	.byte	W18
 	.byte		N01   
 	.byte	W09
-@ 019   ----------------------------------------
+; 019   ----------------------------------------
 	.byte	W10
 	.byte		N01   
 	.byte	W36
@@ -6925,7 +6926,7 @@ song097restored_5:
 	.byte	W19
 	.byte		N02   
 	.byte	W06
-@ 020   ----------------------------------------
+; 020   ----------------------------------------
 	.byte	W12
 	.byte		N01   
 	.byte	W60
@@ -6934,7 +6935,7 @@ song097restored_5:
 	.byte	W18
 	.byte		N02   
 	.byte	W04
-@ 021   ----------------------------------------
+; 021   ----------------------------------------
 	.byte	W15
 	.byte		N01   
 	.byte	W36
@@ -6947,7 +6948,7 @@ song097restored_5:
 	.byte	W19
 	.byte		N01   
 	.byte	W01
-@ 022   ----------------------------------------
+; 022   ----------------------------------------
 	.byte	W17
 	.byte		N01   
 	.byte	W36
@@ -6959,7 +6960,7 @@ song097restored_5:
 	.byte		BEND  , c_v+0
 	.byte		N04   , Dn1 
 	.byte	W17
-@ 023   ----------------------------------------
+; 023   ----------------------------------------
 	.byte	W01
 	.byte		N01   
 	.byte	W19
@@ -6972,7 +6973,7 @@ song097restored_5:
 	.byte		BEND  , c_v+0
 	.byte		N08   , Dn1 
 	.byte	W15
-@ 024   ----------------------------------------
+; 024   ----------------------------------------
 	.byte	W03
 	.byte		N02   
 	.byte	W19
@@ -6989,7 +6990,7 @@ song097restored_5:
 	.byte		VOL   , 31*song097restored_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W01
-@ 025   ----------------------------------------
+; 025   ----------------------------------------
 	.byte		VOICE , 28
 	.byte		BENDR , 12
 	.byte		PAN   , c_v-18
@@ -6998,13 +6999,14 @@ song097restored_5:
 	.byte		PAN   , c_v-18
 	.byte		VOL   , 10*song097restored_mvl/mxv
 	.byte		BEND  , c_v+0
-	.byte	FINE
+	.byte	GOTO
+	.word	@song097restored_5
 
-@**************** Track 6 (Midi-Chn.6) ****************@
+;**************** Track 6 (Midi-Chn.6) ****************;
 
-song097restored_6:
+@song097restored_6:
 	.byte	KEYSH , song097restored_key+0
-@ 000   ----------------------------------------
+; 000   ----------------------------------------
 	.byte		VOICE , 28
 	.byte		MODT  , 0
 	.byte		LFOS  , 44
@@ -7037,7 +7039,7 @@ song097restored_6:
 	.byte	W01
 	.byte		N16   , Gs3 
 	.byte	W10
-@ 001   ----------------------------------------
+; 001   ----------------------------------------
 	.byte	W15
 	.byte		N08   , Fs3 
 	.byte	W18
@@ -7048,7 +7050,7 @@ song097restored_6:
 	.byte	W01
 	.byte		N08   , Gs3 
 	.byte	W07
-@ 002   ----------------------------------------
+; 002   ----------------------------------------
 	.byte	W05
 	.byte		N07   , As3 
 	.byte	W12
@@ -7061,7 +7063,7 @@ song097restored_6:
 	.byte	W01
 	.byte		N16   , Gs3 
 	.byte	W05
-@ 003   ----------------------------------------
+; 003   ----------------------------------------
 	.byte	W20
 	.byte		N08   , Fs3 
 	.byte	W18
@@ -7071,7 +7073,7 @@ song097restored_6:
 	.byte	W24
 	.byte		N22   , Gn3 
 	.byte	W15
-@ 004   ----------------------------------------
+; 004   ----------------------------------------
 	.byte	W10
 	.byte		N10   
 	.byte	W22
@@ -7082,7 +7084,7 @@ song097restored_6:
 	.byte		N24   
 	.byte	W24
 	.byte	W03
-@ 005   ----------------------------------------
+; 005   ----------------------------------------
 	.byte	W10
 	.byte		N16   , Gs3 
 	.byte	W24
@@ -7093,7 +7095,7 @@ song097restored_6:
 	.byte	W19
 	.byte		N24   
 	.byte	W24
-@ 006   ----------------------------------------
+; 006   ----------------------------------------
 	.byte	W13
 	.byte		N08   , Gs3 
 	.byte	W12
@@ -7105,7 +7107,7 @@ song097restored_6:
 	.byte	W18
 	.byte		N24   
 	.byte	W22
-@ 007   ----------------------------------------
+; 007   ----------------------------------------
 	.byte	W15
 	.byte		N16   , Gs3 
 	.byte	W24
@@ -7116,7 +7118,7 @@ song097restored_6:
 	.byte	W19
 	.byte		N16   
 	.byte	W19
-@ 008   ----------------------------------------
+; 008   ----------------------------------------
 	.byte	W05
 	.byte		N22   , Gn3 
 	.byte	W24
@@ -7168,7 +7170,7 @@ song097restored_6:
 	.byte	W01
 	.byte		BEND  , c_v-8
 	.byte	W02
-@ 009   ----------------------------------------
+; 009   ----------------------------------------
 	.byte	W10
 	.byte		VOL   , 85*song097restored_mvl/mxv
 	.byte		BEND  , c_v-7
@@ -7216,7 +7218,7 @@ song097restored_6:
 	.byte		BEND  , c_v-7
 	.byte		N10   , GsM1
 	.byte	W12
-@ 010   ----------------------------------------
+; 010   ----------------------------------------
 	.byte		VOL   , 77*song097restored_mvl/mxv
 	.byte		BEND  , c_v-7
 	.byte		N10   , FsM1
@@ -7278,7 +7280,7 @@ song097restored_6:
 	.byte	W01
 	.byte		BEND  , c_v-7
 	.byte	W09
-@ 011   ----------------------------------------
+; 011   ----------------------------------------
 	.byte	W02
 	.byte		VOL   , 77*song097restored_mvl/mxv
 	.byte		BEND  , c_v-3
@@ -7335,7 +7337,7 @@ song097restored_6:
 	.byte		BEND  , c_v-7
 	.byte		N10   , GsM1
 	.byte	W07
-@ 012   ----------------------------------------
+; 012   ----------------------------------------
 	.byte	W05
 	.byte		VOL   , 77*song097restored_mvl/mxv
 	.byte		BEND  , c_v-7
@@ -7398,7 +7400,7 @@ song097restored_6:
 	.byte	W01
 	.byte		BEND  , c_v-7
 	.byte	W04
-@ 013   ----------------------------------------
+; 013   ----------------------------------------
 	.byte	W07
 	.byte		VOL   , 77*song097restored_mvl/mxv
 	.byte		BEND  , c_v-3
@@ -7452,7 +7454,7 @@ song097restored_6:
 	.byte	W01
 	.byte		BEND  , c_v-7
 	.byte	W02
-@ 014   ----------------------------------------
+; 014   ----------------------------------------
 	.byte	W10
 	.byte		VOL   , 77*song097restored_mvl/mxv
 	.byte		BEND  , c_v-7
@@ -7509,7 +7511,7 @@ song097restored_6:
 	.byte	W02
 	.byte		        c_v-8
 	.byte	W10
-@ 015   ----------------------------------------
+; 015   ----------------------------------------
 	.byte		VOL   , 85*song097restored_mvl/mxv
 	.byte		BEND  , c_v-6
 	.byte		N10   , GsM1
@@ -7564,7 +7566,7 @@ song097restored_6:
 	.byte	W02
 	.byte		        c_v-8
 	.byte	W07
-@ 016   ----------------------------------------
+; 016   ----------------------------------------
 	.byte	W02
 	.byte		VOL   , 85*song097restored_mvl/mxv
 	.byte		BEND  , c_v-3
@@ -7623,7 +7625,7 @@ song097restored_6:
 	.byte	W01
 	.byte		        c_v-28
 	.byte	W04
-@ 017   ----------------------------------------
+; 017   ----------------------------------------
 	.byte	W05
 	.byte		VOL   , 72*song097restored_mvl/mxv
 	.byte		BEND  , c_v-2
@@ -7702,7 +7704,7 @@ song097restored_6:
 	.byte	W01
 	.byte		        c_v-28
 	.byte	W02
-@ 018   ----------------------------------------
+; 018   ----------------------------------------
 	.byte	W07
 	.byte		VOL   , 72*song097restored_mvl/mxv
 	.byte	W01
@@ -7775,7 +7777,7 @@ song097restored_6:
 	.byte	W01
 	.byte		BEND  , c_v-15
 	.byte	W01
-@ 019   ----------------------------------------
+; 019   ----------------------------------------
 	.byte		        c_v-28
 	.byte	W10
 	.byte		VOL   , 72*song097restored_mvl/mxv
@@ -7848,7 +7850,7 @@ song097restored_6:
 	.byte	W01
 	.byte		        c_v-27
 	.byte	W09
-@ 020   ----------------------------------------
+; 020   ----------------------------------------
 	.byte		VOL   , 81*song097restored_mvl/mxv
 	.byte		BEND  , c_v-1
 	.byte		N09   , AsM1
@@ -7927,7 +7929,7 @@ song097restored_6:
 	.byte	W01
 	.byte		        c_v-27
 	.byte	W07
-@ 021   ----------------------------------------
+; 021   ----------------------------------------
 	.byte	W02
 	.byte		VOL   , 81*song097restored_mvl/mxv
 	.byte		BEND  , c_v-1
@@ -8008,7 +8010,7 @@ song097restored_6:
 	.byte	W01
 	.byte		        c_v-27
 	.byte	W05
-@ 022   ----------------------------------------
+; 022   ----------------------------------------
 	.byte	W05
 	.byte		VOL   , 81*song097restored_mvl/mxv
 	.byte		BEND  , c_v-1
@@ -8088,7 +8090,7 @@ song097restored_6:
 	.byte	W01
 	.byte		        c_v-27
 	.byte	W02
-@ 023   ----------------------------------------
+; 023   ----------------------------------------
 	.byte	W07
 	.byte		VOL   , 81*song097restored_mvl/mxv
 	.byte		BEND  , c_v-1
@@ -8165,7 +8167,7 @@ song097restored_6:
 	.byte	W01
 	.byte		BEND  , c_v-14
 	.byte	W01
-@ 024   ----------------------------------------
+; 024   ----------------------------------------
 	.byte		        c_v-27
 	.byte	W10
 	.byte		VOL   , 81*song097restored_mvl/mxv
@@ -8235,7 +8237,7 @@ song097restored_6:
 	.byte		VOL   , 72*song097restored_mvl/mxv
 	.byte		BEND  , c_v-27
 	.byte	W01
-@ 025   ----------------------------------------
+; 025   ----------------------------------------
 	.byte		VOICE , 14
 	.byte		BENDR , 12
 	.byte		PAN   , c_v+0
@@ -8244,13 +8246,14 @@ song097restored_6:
 	.byte		PAN   , c_v+0
 	.byte		VOL   , 72*song097restored_mvl/mxv
 	.byte		BEND  , c_v-27
-	.byte	FINE
+	.byte	GOTO
+	.word	@song097restored_6
 
-@**************** Track 7 (Midi-Chn.7) ****************@
+;**************** Track 7 (Midi-Chn.7) ****************;
 
-song097restored_7:
+@song097restored_7:
 	.byte	KEYSH , song097restored_key+0
-@ 000   ----------------------------------------
+; 000   ----------------------------------------
 	.byte		VOICE , 28
 	.byte		MODT  , 0
 	.byte		LFOS  , 44
@@ -8282,7 +8285,7 @@ song097restored_7:
 	.byte	W01
 	.byte		N16   , Fn4 
 	.byte	W10
-@ 001   ----------------------------------------
+; 001   ----------------------------------------
 	.byte	W15
 	.byte		VOL   , 10*song097restored_mvl/mxv
 	.byte		PAN   , c_v+63
@@ -8299,7 +8302,7 @@ song097restored_7:
 	.byte		PAN   , c_v+63
 	.byte		N08   , Bn3 
 	.byte	W07
-@ 002   ----------------------------------------
+; 002   ----------------------------------------
 	.byte	W05
 	.byte		N07   , Cs4 
 	.byte	W12
@@ -8314,7 +8317,7 @@ song097restored_7:
 	.byte	W01
 	.byte		N16   , Fn4 
 	.byte	W05
-@ 003   ----------------------------------------
+; 003   ----------------------------------------
 	.byte	W20
 	.byte		VOL   , 10*song097restored_mvl/mxv
 	.byte		PAN   , c_v+63
@@ -8330,7 +8333,7 @@ song097restored_7:
 	.byte		PAN   , c_v+63
 	.byte		N22   , En3 
 	.byte	W15
-@ 004   ----------------------------------------
+; 004   ----------------------------------------
 	.byte	W10
 	.byte		N10   
 	.byte	W22
@@ -8343,7 +8346,7 @@ song097restored_7:
 	.byte		N24   
 	.byte	W24
 	.byte	W03
-@ 005   ----------------------------------------
+; 005   ----------------------------------------
 	.byte	W10
 	.byte		N16   , Fn4 
 	.byte	W24
@@ -8358,7 +8361,7 @@ song097restored_7:
 	.byte	W19
 	.byte		N24   
 	.byte	W24
-@ 006   ----------------------------------------
+; 006   ----------------------------------------
 	.byte	W13
 	.byte		VOL   , 10*song097restored_mvl/mxv
 	.byte		PAN   , c_v+63
@@ -8374,7 +8377,7 @@ song097restored_7:
 	.byte	W18
 	.byte		N24   
 	.byte	W22
-@ 007   ----------------------------------------
+; 007   ----------------------------------------
 	.byte	W15
 	.byte		N16   , Fn4 
 	.byte	W24
@@ -8389,7 +8392,7 @@ song097restored_7:
 	.byte	W19
 	.byte		N16   
 	.byte	W19
-@ 008   ----------------------------------------
+; 008   ----------------------------------------
 	.byte	W05
 	.byte		VOL   , 10*song097restored_mvl/mxv
 	.byte		PAN   , c_v+63
@@ -8406,7 +8409,7 @@ song097restored_7:
 	.byte	W19
 	.byte		N24   
 	.byte	W17
-@ 009   ----------------------------------------
+; 009   ----------------------------------------
 	.byte	W20
 	.byte		N16   , Fn4 
 	.byte	W24
@@ -8421,7 +8424,7 @@ song097restored_7:
 	.byte	W18
 	.byte		N24   
 	.byte	W15
-@ 010   ----------------------------------------
+; 010   ----------------------------------------
 	.byte	W22
 	.byte		VOL   , 10*song097restored_mvl/mxv
 	.byte		PAN   , c_v+63
@@ -8437,7 +8440,7 @@ song097restored_7:
 	.byte	W19
 	.byte		N24   
 	.byte	W12
-@ 011   ----------------------------------------
+; 011   ----------------------------------------
 	.byte	W24
 	.byte	W01
 	.byte		N16   , Fn4 
@@ -8453,7 +8456,7 @@ song097restored_7:
 	.byte	W18
 	.byte		N16   
 	.byte	W10
-@ 012   ----------------------------------------
+; 012   ----------------------------------------
 	.byte	W15
 	.byte		VOL   , 10*song097restored_mvl/mxv
 	.byte		PAN   , c_v+63
@@ -8470,7 +8473,7 @@ song097restored_7:
 	.byte	W19
 	.byte		N24   
 	.byte	W07
-@ 013   ----------------------------------------
+; 013   ----------------------------------------
 	.byte	W30
 	.byte		N16   , Fn4 
 	.byte	W24
@@ -8484,7 +8487,7 @@ song097restored_7:
 	.byte	W18
 	.byte		N24   
 	.byte	W05
-@ 014   ----------------------------------------
+; 014   ----------------------------------------
 	.byte	W32
 	.byte		VOL   , 10*song097restored_mvl/mxv
 	.byte		PAN   , c_v+63
@@ -8500,7 +8503,7 @@ song097restored_7:
 	.byte	W19
 	.byte		N24   
 	.byte	W02
-@ 015   ----------------------------------------
+; 015   ----------------------------------------
 	.byte	W32
 	.byte	W03
 	.byte		N16   , Fn4 
@@ -8513,7 +8516,7 @@ song097restored_7:
 	.byte		PAN   , c_v-64
 	.byte		N08   
 	.byte	W18
-@ 016   ----------------------------------------
+; 016   ----------------------------------------
 	.byte		N16   
 	.byte	W24
 	.byte	W01
@@ -8628,7 +8631,7 @@ song097restored_7:
 	.byte	W01
 	.byte		        c_v-28
 	.byte	W01
-@ 017   ----------------------------------------
+; 017   ----------------------------------------
 	.byte		        c_v-53
 	.byte	W01
 	.byte		        c_v-64
@@ -8916,7 +8919,7 @@ song097restored_7:
 	.byte	W01
 	.byte		        c_v-24
 	.byte	W01
-@ 018   ----------------------------------------
+; 018   ----------------------------------------
 	.byte		        c_v-12
 	.byte	W01
 	.byte		        c_v-25
@@ -9111,7 +9114,7 @@ song097restored_7:
 	.byte	W01
 	.byte		        c_v-9
 	.byte	W01
-@ 019   ----------------------------------------
+; 019   ----------------------------------------
 	.byte		        c_v-11
 	.byte	W01
 	.byte		        c_v-17
@@ -9316,7 +9319,7 @@ song097restored_7:
 	.byte	W01
 	.byte		        c_v-64
 	.byte	W01
-@ 020   ----------------------------------------
+; 020   ----------------------------------------
 	.byte		        c_v-64
 	.byte	W01
 	.byte		        c_v-56
@@ -9540,7 +9543,7 @@ song097restored_7:
 	.byte	W01
 	.byte		        c_v-32
 	.byte	W01
-@ 021   ----------------------------------------
+; 021   ----------------------------------------
 	.byte		        c_v-19
 	.byte	W01
 	.byte		        c_v-1
@@ -9831,7 +9834,7 @@ song097restored_7:
 	.byte	W01
 	.byte		        c_v-8
 	.byte	W01
-@ 022   ----------------------------------------
+; 022   ----------------------------------------
 	.byte		        c_v-25
 	.byte	W01
 	.byte		        c_v-17
@@ -10026,7 +10029,7 @@ song097restored_7:
 	.byte	W01
 	.byte		        c_v-8
 	.byte	W01
-@ 023   ----------------------------------------
+; 023   ----------------------------------------
 	.byte		        c_v-14
 	.byte	W01
 	.byte		        c_v-10
@@ -10231,7 +10234,7 @@ song097restored_7:
 	.byte	W01
 	.byte		        c_v-52
 	.byte	W01
-@ 024   ----------------------------------------
+; 024   ----------------------------------------
 	.byte		        c_v-58
 	.byte	W01
 	.byte		        c_v-63
@@ -10407,7 +10410,7 @@ song097restored_7:
 	.byte		VOL   , 10*song097restored_mvl/mxv
 	.byte		BEND  , c_v+1
 	.byte	W01
-@ 025   ----------------------------------------
+; 025   ----------------------------------------
 	.byte		VOICE , 28
 	.byte		BENDR , 12
 	.byte		PAN   , c_v+63
@@ -10416,25 +10419,27 @@ song097restored_7:
 	.byte		PAN   , c_v+63
 	.byte		VOL   , 10*song097restored_mvl/mxv
 	.byte		BEND  , c_v-15
-	.byte	FINE
+	.byte	GOTO
+	.word	@song097restored_7
 
-@******************************************************@
-	.align	2
+;******************************************************;
+	.align	4
 
 song097restored:
-	.byte	7	@ NumTrks
-	.byte	0	@ NumBlks
-	.byte	song097restored_pri	@ Priority
-	.byte	song097restored_rev	@ Reverb.
+	.byte	7	; NumTrks
+	.byte	0	; NumBlks
+	.byte	song097restored_pri	; Priority
+	.byte	song097restored_rev	; Reverb.
 
-	.word	song097restored_grp
+	//emit_clean_voicegroup_offset_for_song 97
+	.word	0x810815C //Voice Table
 
-	.word	song097restored_1
-	.word	song097restored_2
-	.word	song097restored_3
-	.word	song097restored_4
-	.word	song097restored_5
-	.word	song097restored_6
-	.word	song097restored_7
+	.word	@song097restored_1
+	.word	@song097restored_2
+	.word	@song097restored_3
+	.word	@song097restored_4
+	.word	@song097restored_5
+	.word	@song097restored_6
+	.word	@song097restored_7
 
-	.end
+
