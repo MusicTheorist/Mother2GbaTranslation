@@ -47,8 +47,8 @@
 .org 0x8C917D0
 
 .align 4
-brass_stop_organ_gauss:
-.incbin "data/brass_stop_organ_gauss.bin"
+brass_stop_organ:
+.incbin "data/brass_stop_organ.bin"
 
 //This is the sound data
 .include "ArmipsMusicPlayDef.asm"
@@ -154,7 +154,7 @@ brass_stop_organ_gauss:
 .org 0x82ADD23 :: .byte 0x1D //Speed up Song 169 (Eight Melodies [Giygas])
 
 //Samples
-.org 0x810A788 :: dw brass_stop_organ_gauss
+.org 0x810A788 :: dw brass_stop_organ
 
 .org 0x810AE1D :: .byte 0xFA,0x00 //Make the guitar instrument fade out
 
