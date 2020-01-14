@@ -155,6 +155,7 @@ brass_stop_organ:
 
 //Samples
 .org 0x810A788 :: dw brass_stop_organ
+.org 0x810A78C :: .byte 0xE7 //Better attack
 
 .org 0x810AE1D :: .byte 0xFA,0x00 //Make the guitar instrument fade out
 
