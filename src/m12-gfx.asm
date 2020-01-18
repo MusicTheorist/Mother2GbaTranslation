@@ -157,6 +157,8 @@ brass_stop_organ:
 .org 0x810A788 :: dw brass_stop_organ
 .org 0x810A78C :: .byte 0xE7 //Better attack
 
+.org 0x81081DD :: .byte 0xFC,0x00 //Fix decay+sustain for Weird Opponent melody
+
 .org 0x810AE1D :: .byte 0xFA,0x00 //Make the guitar instrument fade out
 
 //Notes about sound restoration
